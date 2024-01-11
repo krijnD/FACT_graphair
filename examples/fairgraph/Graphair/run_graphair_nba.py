@@ -1,4 +1,4 @@
-from dig.fairgraph.method import run
+from dig.fairgraph.method.run import run
 from dig.fairgraph.dataset import POKEC, NBA
 import torch
 
