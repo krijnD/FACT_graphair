@@ -1,36 +1,33 @@
-name: fact_env
+name: dig
 channels:
-  - pytorch
   - conda-forge
   - defaults
 dependencies:
   - python==3.8
   - pip>=21.0
-  - cudatoolkit=11.8  # Using CUDA 11.8 toolkit
-  - pytorch
-  - torchvision
-  - torchaudio
   - pip:
     - rdkit-pypi
+    - torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu118
     - furo
     - numpy
     - sphinx
-    - sphinx_rtd_theme  # No specific version for GPU
-    - torch-scatter -f https://data.pyg.org/whl/torch-1.10.0%2Bcu118.html  # GPU version
-    - torch-sparse -f https://data.pyg.org/whl/torch-1.10.0%2Bcu118.html  # GPU version
-    - torch-cluster -f https://data.pyg.org/whl/torch-1.10.0%2Bcu118.html  # GPU version
-    - torch-spline-conv -f https://data.pyg.org/whl/torch-1.10.0%2Bcu118.html  # GPU version
-    - torch-geometric==2.1.0
+    - sphinx_rtd_theme==0.5.2
+    - pyg_lib 
+    - torch_scatter 
+    - torch_sparse 
+    - torch_cluster 
+    - torch_spline-conv
+    - torch_geometric
+    - pyro-ppl
     - git+https://github.com/Chilipp/autodocsumm.git
     - captum==0.2.0
     - munch
     - gdown
     - cilog
-    - typed-argument-parser==1.5.4
+    - typed-argument-parser==1.5.4 
     - tensorboard
     - sympy
     - pyscf>=1.7.6
     - hydra-core
     - pygmtools
-    - pyro-ppl
-    - networkx
+    - networkx ⁠
