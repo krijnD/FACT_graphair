@@ -11,10 +11,9 @@ module purge
 module load 2022
 module load Anaconda3/2022.05
 
-cd docs
-conda env create -f environment.yaml
+
+conda env create -f docs/environment.yaml
 
 # Activate your environment
 source activate fact_env
-cd DIG
 pip install .
