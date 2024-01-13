@@ -1,11 +1,12 @@
 #!/bin/bash
 #SBATCH --partition=gpu
-#SBATCH --gpus=1
+#SBATCH --gpus=4
+#SBATCH --nodes=1
 #SBATCH --job-name=pokec
-#SBATCH --time=08:00:00
-#SBATCH --ntasks=1
-#SBATCH --cpus-per-task=18
+#SBATCH --time=01:00:00
 #SBATCH --output=slurm_output_%A.out
+#SBATCH --mem-per-gpu=15GB
+
 
 module purge
 module load 2022

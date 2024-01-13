@@ -1,0 +1,53 @@
+============================================================================================== 
+Warning! Mixing Conda and module environments may lead to corruption of the
+user environment. 
+We do not recommend users mixing those two environments unless absolutely
+necessary. Note that 
+SURF does not provide any support for Conda environment.
+For more information, please refer to our software policy page:
+https://servicedesk.surf.nl/wiki/display/WIKI/Software+policy+Snellius+and+Lisa#SoftwarepolicySnelliusandLisa-UseofAnacondaandMinicondaenvironmentsonSnellius 
+
+Remember that many packages have already been installed on the system and can
+be loaded using 
+the 'module load <package__name>' command. If you are uncertain if a package is
+already available 
+on the system, please use 'module avail' or 'module spider' to search for it.
+============================================================================================== 
+downloading raw files from: https://github.com/divelab/DIG_storage/raw/main/fairgraph/datasets/pockec/
+Using existing file region_job.csv
+Using existing file region_job_relationship.txt
+Using existing file region_job.embedding
+Loading region_job dataset from /gpfs/home5/igardner/DIG_FACT/examples/fairgraph/Graphair/dataset/pokec/region_job.csv
+/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/dig/fairgraph/utils/utils.py:12: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:605.)
+  pyt_sp_mx = torch.sparse.FloatTensor(torch.LongTensor(coords.T),
+Traceback (most recent call last):
+  File "run_graphair_pokec.py", line 11, in <module>
+    run_fairgraph.run(device,dataset=pokec,model='Graphair',epochs=2_000,
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/dig/fairgraph/method/run.py", line 65, in run
+    model.fit_whole(epochs=epochs,adj=adj, x=features,sens=sens,idx_sens = idx_sens,warmup=0, adv_epoches=1)
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/dig/fairgraph/method/Graphair/graphair.py", line 166, in fit_whole
+    adj_aug, x_aug, adj_logits = self.aug_model(adj, x, adj_orig = adj_orig.cuda())
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/dig/fairgraph/method/Graphair/aug_module.py", line 26, in forward
+    edge_probs = torch.sigmoid(adj_logits)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 17.12 GiB. GPU 0 has a total capacty of 39.39 GiB of which 4.39 GiB is free. Including non-PyTorch memory, this process has 34.99 GiB memory in use. Of the allocated memory 34.49 GiB is allocated by PyTorch, and 12.69 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+srun: error: gcn36: task 0: Exited with exit code 1
+srun: Terminating StepId=4855172.0
+
+JOB STATISTICS
+==============
+Job ID: 4855172
+Cluster: snellius
+User/Group: igardner/igardner
+State: RUNNING
+Nodes: 1
+Cores per node: 36
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 00:14:24 core-walltime
+Job Wall-clock time: 00:00:24
+Memory Utilized: 0.00 MB (estimated maximum)
+Memory Efficiency: 0.00% of 30.00 GB (30.00 GB/node)
+WARNING: Efficiency statistics may be misleading for RUNNING jobs.
