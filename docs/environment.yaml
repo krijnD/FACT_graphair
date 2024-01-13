@@ -7,8 +7,10 @@ dependencies:
   - python==3.8
   - pip>=21.0
   - cudatoolkit=11.8  # Using CUDA 11.8 toolkit
+  - pytorch==1.10.0  # Specify the version of PyTorch you want to install
+  - torchvision
+  - torchaudio
   - pip:
-    - torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
     - rdkit-pypi
     - furo
     - numpy
