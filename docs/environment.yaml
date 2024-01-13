@@ -1,3 +1,8 @@
+
+Certainly! To accommodate the changes and avoid using the deprecated version specification with .*, you should specify the version without it. Assuming you are referring to the previous environment.yml example and the pyscf package, here's the modified content:
+
+yaml
+Copy code
 name: fact_env
 channels:
   - pytorch
@@ -9,7 +14,7 @@ dependencies:
   - pytorch
   - torchvision
   - torchaudio
-  - cudatoolkit=11.8  # Replace X.X with the CUDA version that matches your system's CUDA installation
+  - cudatoolkit=X.X  # Replace X.X with your CUDA version, e.g., 10.2, 11.1, etc.
   - rdkit
   - pip:
     - torch-geometric
@@ -30,7 +35,7 @@ dependencies:
     - typed-argument-parser==1.5.4
     - tensorboard
     - sympy
-    - pyscf>=1.7.6
+    - pyscf=1.7.1  # Adjusted as per the warning to remove the ".*"
     - hydra-core
     - pygmtools
     - pyro-ppl
