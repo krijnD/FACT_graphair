@@ -145,7 +145,7 @@ class graphair(nn.Module):
         best_contras = float("inf")
 
         # Open a file to write the results
-        with open('fit_whole_results.txt', 'w') as file:
+        with open('./fit_whole_results.txt', 'w') as file:
             if warmup:
                 for _ in range(warmup):
                     adj_aug, x_aug, adj_logits = self.aug_model(adj, x, adj_orig=adj_orig.cuda())
