@@ -49,7 +49,7 @@ class graphair(nn.Module):
         :type num_proj_hidden: int,optional
 
     '''
-    def __init__(self, aug_model, f_encoder, sens_model, classifier_model, lr = 1e-4, weight_decay = 1e-5, alpha = 20, beta = 0.9, gamma = 0.7, lam = 1, dataset = 'POKEC', num_hidden = 64, num_proj_hidden = 64):
+    def __init__(self, aug_model, f_encoder, sens_model, classifier_model, lr = 1e-4, weight_decay = 1e-5, alpha = 20, beta = 1, gamma = 0.7, lam = 1, dataset = 'POKEC', num_hidden = 128, num_proj_hidden = 64):
         super(graphair, self).__init__()
         self.aug_model = aug_model
         self.f_encoder = f_encoder
