@@ -9,7 +9,7 @@
 
 module purge
 module load 2022
-module load CUDA/11.7.0
+module load CUDA/11.8.0
 module load Anaconda3/2022.05
 
 

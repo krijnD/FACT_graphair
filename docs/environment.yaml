@@ -6,8 +6,8 @@ channels:
 dependencies:
   - python==3.8
   - pip>=21.0
-  - cudatoolkit=11.7  # Using CUDA 11.7 toolkit
-  - pytorch=1.10.0=py3.8_cuda11.7_cudnn8_0  # PyTorch for CUDA 11.7
+  - cudatoolkit=11.8  # Using CUDA 11.8 toolkit
+  - pytorch=1.10.0=py3.8_cuda11.8_cudnn8.4_0  # PyTorch for CUDA 11.8
   - torchvision
   - torchaudio
   - pip:
@@ -15,11 +15,11 @@ dependencies:
     - furo
     - numpy
     - sphinx
-    - sphinx_rtd_theme==0.5.2
-    - torch-scatter -f https://data.pyg.org/whl/torch-1.10.0+cu117.html
-    - torch-sparse -f https://data.pyg.org/whl/torch-1.10.0+cu117.html
-    - torch-cluster -f https://data.pyg.org/whl/torch-1.10.0+cu117.html
-    - torch-spline-conv -f https://data.pyg.org/whl/torch-1.10.0+cu117.html
+    - sphinx_rtd_theme  # No specific version for GPU
+    - torch-scatter -f https://data.pyg.org/whl/torch-1.10.0%2Bcu118.html  # GPU version
+    - torch-sparse -f https://data.pyg.org/whl/torch-1.10.0%2Bcu118.html  # GPU version
+    - torch-cluster -f https://data.pyg.org/whl/torch-1.10.0%2Bcu118.html  # GPU version
+    - torch-spline-conv -f https://data.pyg.org/whl/torch-1.10.0%2Bcu118.html  # GPU version
     - torch-geometric==2.1.0
     - git+https://github.com/Chilipp/autodocsumm.git
     - captum==0.2.0
