@@ -70,7 +70,7 @@ class graphair(nn.Module):
         FG_params = [{'params': self.aug_model.parameters(), 'lr': 1e-4} ,  {'params':self.f_encoder.parameters()}]
         self.optimizer = torch.optim.Adam(FG_params, lr = lr, weight_decay = weight_decay)
 
-        self.optimizer_aug = torch.optim.Adam(self.aug_model.parameters(), lr = 1e-3, weight_decay = weight_decay)
+        self.optimizer_aug = torch.optim.Adam(self.aug_model.parameters(), lr = 1e-4, weight_decay = weight_decay)
         self.optimizer_enc = torch.optim.Adam(self.f_encoder.parameters(), lr = lr, weight_decay = weight_decay)
 
 
@@ -209,72 +209,63 @@ class graphair(nn.Module):
 
         self.save_path = "./checkpoint/graphair_{}_alpha{}_beta{}_gamma{}_lambda{}".format(self.dataset, self.alpha, self.beta, self.gamma, self.lam)
         torch.save(self.state_dict(),self.save_path)
-    
 
-    def test(self,adj,features,labels,epochs,idx_train,idx_val,idx_test,sens):
-        h = self.forward(adj,features)
+    def test(self, adj, features, labels, epochs, idx_train, idx_val, idx_test, sens):
+        h = self.forward(adj, features)
         h = h.detach()
 
         acc_list = []
         dp_list = []
         eo_list = []
 
-        for i in range(5):
-            torch.manual_seed(i *10)
-            np.random.seed(i *10)
+        # Open a file to write the results
+        with open('results.txt', 'w') as file:
 
-            # train classifier
-            best_acc = 0.0
-            best_test = 0.0
-            for epoch in range(epochs):
+            for i in range(5):
+                file.write(
+                    f"Experiment [{i}] \n")
+                torch.manual_seed(i * 10)
+                np.random.seed(i * 10)
 
-                self.classifier.train()
-                self.optimizer_classifier.zero_grad()
-                output = self.classifier(h)
-                loss_train = F.binary_cross_entropy_with_logits(output[idx_train], labels[idx_train].unsqueeze(1).float())
-                acc_train = accuracy(output[idx_train], labels[idx_train])
-                loss_train.backward()
-                self.optimizer_classifier.step()
-                            
-                self.classifier.eval()
-                output = self.classifier(h)
-                acc_val = accuracy(output[idx_val], labels[idx_val])
-                acc_test = accuracy(output[idx_test], labels[idx_test])
+                # train classifier
+                best_acc = 0.0
+                best_test = 0.0
+                for epoch in range(epochs):
 
-                parity_val, equality_val = fair_metric(output,idx_val, labels, sens)
-                parity_test, equality_test = fair_metric(output,idx_test, labels, sens)
-                if epoch%10==0:
-                    print("Epoch [{}] Test set results:".format(epoch),
-                        "acc_test= {:.4f}".format(acc_test.item()),
-                        "acc_val: {:.4f}".format(acc_val.item()),
-                        "dp_val: {:.4f}".format(parity_val),
-                        "dp_test: {:.4f}".format(parity_test),
-                        "eo_val: {:.4f}".format(equality_val),
-                        "eo_test: {:.4f}".format(equality_test), )
-                if acc_val > best_acc:
-                    best_acc = acc_val
-                    best_test = acc_test
-                    best_dp = parity_val
-                    best_dp_test = parity_test
-                    best_eo = equality_val
-                    best_eo_test = equality_test
+                    self.classifier.train()
+                    self.optimizer_classifier.zero_grad()
+                    output = self.classifier(h)
+                    loss_train = F.binary_cross_entropy_with_logits(output[idx_train],
+                                                                    labels[idx_train].unsqueeze(1).float())
+                    acc_train = accuracy(output[idx_train], labels[idx_train])
+                    loss_train.backward()
+                    self.optimizer_classifier.step()
 
-            print("Optimization Finished!")
-            print("Test results:",
-                        "acc_test= {:.4f}".format(best_test.item()),
-                        "acc_val: {:.4f}".format(best_acc.item()),
-                        "dp_val: {:.4f}".format(best_dp),
-                        "dp_test: {:.4f}".format(best_dp_test),
-                        "eo_val: {:.4f}".format(best_eo),
-                        "eo_test: {:.4f}".format(best_eo_test),)
-        
-            acc_list.append(best_test.item())
-            dp_list.append(best_dp_test)
-            eo_list.append(best_eo_test)
-        
-        print("Avg results:",
-                    "acc: {:.4f} std: {:.4f}".format(np.mean(acc_list), np.std(acc_list)), 
-                    "dp: {:.4f} std: {:.4f}".format(np.mean(dp_list), np.std(dp_list)),
-                    "eo: {:.4f} std: {:.4f}".format(np.mean(eo_list), np.std(eo_list)),)
+                    self.classifier.eval()
+                    output = self.classifier(h)
+                    acc_val = accuracy(output[idx_val], labels[idx_val])
+                    acc_test = accuracy(output[idx_test], labels[idx_test])
 
-        
+                    parity_val, equality_val = fair_metric(output, idx_val, labels, sens)
+                    parity_test, equality_test = fair_metric(output, idx_test, labels, sens)
+                    if epoch % 10 == 0:
+                        file.write(
+                            f"Epoch [{epoch}] Test set results: acc_test= {acc_test.item():.4f} acc_val: {acc_val.item():.4f} dp_val: {parity_val:.4f} dp_test: {parity_test:.4f} eo_val: {equality_val:.4f} eo_test: {equality_test:.4f}\n")
+
+                    if acc_val > best_acc:
+                        best_acc = acc_val
+                        best_test = acc_test
+                        best_dp = parity_val
+                        best_dp_test = parity_test
+                        best_eo = equality_val
+                        best_eo_test = equality_test
+
+                file.write(
+                    f"Optimization Finished!\nTest results: acc_test= {best_test.item():.4f} acc_val: {best_acc.item():.4f} dp_val: {best_dp:.4f} dp_test: {best_dp_test:.4f} eo_val: {best_eo:.4f} eo_test: {best_eo_test:.4f}\n")
+
+                acc_list.append(best_test.item())
+                dp_list.append(best_dp_test)
+                eo_list.append(best_eo_test)
+
+            file.write(
+                f"Avg results: acc: {np.mean(acc_list):.4f} std: {np.std(acc_list):.4f} dp: {np.mean(dp_list):.4f} std: {np.std(dp_list):.4f} eo: {np.mean(eo_list):.4f} std: {np.std(eo_list):.4f}\n")
