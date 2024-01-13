@@ -6,22 +6,21 @@ channels:
 dependencies:
   - python==3.8
   - pip>=21.0
-  - pytorch
+  - cudatoolkit=11.7  # Using CUDA 11.7 toolkit
+  - pytorch=1.10.0=py3.8_cuda11.7_cudnn8_0  # PyTorch for CUDA 11.7
   - torchvision
   - torchaudio
-  - cudatoolkit=11.8  # Replace X.X with your CUDA version, e.g., 10.2, 11.1, etc.
-  - rdkit
   - pip:
-    - torch-geometric
-    - torch-sparse
-    - torch-scatter
-    - torch-cluster
-    - torch-spline-conv
     - rdkit-pypi
     - furo
     - numpy
     - sphinx
     - sphinx_rtd_theme==0.5.2
+    - torch-scatter -f https://data.pyg.org/whl/torch-1.10.0+cu117.html
+    - torch-sparse -f https://data.pyg.org/whl/torch-1.10.0+cu117.html
+    - torch-cluster -f https://data.pyg.org/whl/torch-1.10.0+cu117.html
+    - torch-spline-conv -f https://data.pyg.org/whl/torch-1.10.0+cu117.html
+    - torch-geometric==2.1.0
     - git+https://github.com/Chilipp/autodocsumm.git
     - captum==0.2.0
     - munch
@@ -30,7 +29,7 @@ dependencies:
     - typed-argument-parser==1.5.4
     - tensorboard
     - sympy
-    - pyscf=1.7.1  # Adjusted as per the warning to remove the ".*"
+    - pyscf>=1.7.6
     - hydra-core
     - pygmtools
     - pyro-ppl
