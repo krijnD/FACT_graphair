@@ -13,6 +13,6 @@ module load Anaconda3/2022.05
 module load CUDA/11.8.0
 
 # Activate your environment
-source activate fact_env
+source activate dig
 
 srun python -u run_graphair_nba.py
