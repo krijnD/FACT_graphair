@@ -217,7 +217,7 @@ class graphair(nn.Module):
         eo_list = []
 
         # Open a file to write the results
-        with open('results.txt', 'w') as file:
+        with open('./results.txt', 'w') as file:
 
             for i in range(5):
                 file.write(
