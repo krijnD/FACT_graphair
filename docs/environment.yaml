@@ -1,10 +1,16 @@
 name: dig
 channels:
+  - pytorch
   - conda-forge
   - defaults
+
 dependencies:
   - python==3.8
   - pip>=21.0
+  - cudatoolkit=11.8  # Using CUDA 11.8 toolkit
+  - pytorch
+  - torchvision
+  - torchaudio
   - pip:
     - rdkit-pypi
     - torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu118
@@ -30,4 +36,4 @@ dependencies:
     - pyscf>=1.7.6
     - hydra-core
     - pygmtools
-    - networkx ⁠
+    - networkx
