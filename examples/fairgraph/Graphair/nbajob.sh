@@ -5,7 +5,7 @@
 #SBATCH --time=02:00:00
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=18
-#SBATCH --output=slurm_output_%A.out
+#SBATCH --output=nba_test_128_output_%A.out
 
 module purge
 module load 2022
