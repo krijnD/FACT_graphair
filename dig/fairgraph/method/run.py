@@ -58,7 +58,7 @@ class run():
             f_encoder = GCN_Body(in_feats=features.shape[1], n_hidden=64, out_feats=64, dropout=0.1, nlayer=3).to(
                 device)
             sens_model = GCN(in_feats=features.shape[1], n_hidden=64, out_feats=64, nclass=1).to(device)
-            classifier_model = Classifier(input_dim=64, hidden_dim=64)
+            classifier_model = Classifier(input_dim=64, hidden_dim=128)
             model = graphair(aug_model=aug_model, f_encoder=f_encoder, sens_model=sens_model,
                              classifier_model=classifier_model, lr=lr, weight_decay=weight_decay,
                              dataset=dataset_name).to(device)
