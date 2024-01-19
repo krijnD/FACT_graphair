@@ -1,3 +1,4 @@
-from .run import run
+from .Graphair.run import run
+
 
 __all_ = ['run']
