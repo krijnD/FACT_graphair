@@ -10,5 +10,6 @@ __all__ = [
     'aug_module',
     'GCN',
     'GCN_Body',
-    'Classifier'
+    'Classifier',
+    'run'
 ]
