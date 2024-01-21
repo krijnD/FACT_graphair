@@ -1,5 +1,8 @@
-from dig.fairgraph.method.Graphair import graphair, aug_module, GCN, GCN_Body, Classifier
+from dig.fairgraph.method.Graphair.aug_module import *
+from dig.fairgraph.method.Graphair.classifier import Classifier
 from dig.fairgraph.dataset import POKEC, NBA
+from dig.fairgraph.method.Graphair.graphair import graphair
+from dig.fairgraph.method.Graphair.GCN import GCN, GCN_Body
 import torch
 import time
 

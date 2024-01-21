@@ -117,6 +117,7 @@ class graphair(nn.Module):
         return logits, labels
 
     def forward(self, adj, x):
+        print("updated version used!")
         assert sp.issparse(adj)
         if not isinstance(adj, sp.coo_matrix):
             adj = sp.coo_matrix(adj)
