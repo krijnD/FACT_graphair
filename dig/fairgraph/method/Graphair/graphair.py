@@ -131,6 +131,7 @@ class graphair(nn.Module):
         return self.f_encoder(adj, x)
 
     def fit_whole(self, epochs, adj, x, sens, idx_sens, warmup=None, adv_epoches=1):
+        print("updated version used!")
         assert sp.issparse(adj)
         if not isinstance(adj, sp.coo_matrix):
             adj = sp.coo_matrix(adj)
@@ -161,7 +162,7 @@ class graphair(nn.Module):
                         recons_loss.backward(retain_graph=True)
                     self.optimizer_aug.step()
 
-                    file.write(
+                    print(
                         f'edge reconstruction loss: {edge_loss.item():.4f} feature reconstruction loss: {feat_loss.item():.4f}\n')
 
             for epoch_counter in range(epochs):
@@ -203,7 +204,7 @@ class graphair(nn.Module):
                 loss.backward()
                 self.optimizer.step()
 
-                file.write(
+                print(
                     f'Epoch: {epoch_counter + 1:04d} sens loss: {senloss.item():.4f} contrastive loss: {contrastive_loss.item():.4f} edge reconstruction loss: {edge_loss.item():.4f} feature reconstruction loss: {feat_loss.item():.4f}\n')
         self.save_path = "./checkpoint/graphair_{}_alpha{}_beta{}_gamma{}_lambda{}".format(self.dataset, self.alpha,
                                                                                            self.beta, self.gamma,
@@ -211,6 +212,7 @@ class graphair(nn.Module):
         torch.save(self.state_dict(), self.save_path)
 
     def test(self, adj, features, labels, epochs, idx_train, idx_val, idx_test, sens):
+        print("updated version used!")
         h = self.forward(adj, features)
         h = h.detach()
 
@@ -222,7 +224,7 @@ class graphair(nn.Module):
         with open('./results.txt', 'w') as file:
 
             for i in range(5):
-                file.write(
+                print(
                     f"Experiment [{i + 1}] \n")
                 torch.manual_seed(i * 10)
                 np.random.seed(i * 10)
@@ -249,7 +251,7 @@ class graphair(nn.Module):
                     parity_val, equality_val = fair_metric(output, idx_val, labels, sens)
                     parity_test, equality_test = fair_metric(output, idx_test, labels, sens)
                     if epoch % 10 == 0:
-                        file.write(
+                        print(
                             f"Epoch [{epoch}] Test set results: acc_test= {acc_test.item():.4f} acc_val: {acc_val.item():.4f} dp_val: {parity_val:.4f} dp_test: {parity_test:.4f} eo_val: {equality_val:.4f} eo_test: {equality_test:.4f}\n")
 
                     if acc_val > best_acc:
@@ -260,12 +262,12 @@ class graphair(nn.Module):
                         best_eo = equality_val
                         best_eo_test = equality_test
 
-                file.write(
+                print(
                     f"Optimization Finished!\nTest results: acc_test= {best_test.item():.4f} acc_val: {best_acc.item():.4f} dp_val: {best_dp:.4f} dp_test: {best_dp_test:.4f} eo_val: {best_eo:.4f} eo_test: {best_eo_test:.4f}\n")
 
                 acc_list.append(best_test.item())
                 dp_list.append(best_dp_test)
                 eo_list.append(best_eo_test)
 
-            file.write(
+            print(
                 f"Avg results: acc: {np.mean(acc_list):.4f} std: {np.std(acc_list):.4f} dp: {np.mean(dp_list):.4f} std: {np.std(dp_list):.4f} eo: {np.mean(eo_list):.4f} std: {np.std(eo_list):.4f}\n")
