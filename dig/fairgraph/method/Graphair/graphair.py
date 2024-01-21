@@ -52,7 +52,7 @@ class graphair(nn.Module):
     '''
 
     def __init__(self, aug_model, f_encoder, sens_model, classifier_model, lr=1e-3, weight_decay=1e-5, alpha=1, beta=1,
-                 gamma=0.7, lam=1, dataset='POKEC', num_hidden=128, num_proj_hidden=64):
+                 gamma=0.7, lam=1, dataset='POKEC', num_hidden=64, num_proj_hidden=64):
         super(graphair, self).__init__()
         self.save_path = None
         self.aug_model = aug_model
