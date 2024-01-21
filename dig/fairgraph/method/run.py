@@ -58,6 +58,7 @@ class run():
             f_encoder = GCN_Body(in_feats=features.shape[1], n_hidden=64, out_feats=64, dropout=0.1, nlayer=3).to(
                 device)
             sens_model = GCN(in_feats=features.shape[1], n_hidden=64, out_feats=64, nclass=1).to(device)
+            print("with hidden dim 128")
             classifier_model = Classifier(input_dim=64, hidden_dim=128)
             model = graphair(aug_model=aug_model, f_encoder=f_encoder, sens_model=sens_model,
                              classifier_model=classifier_model, lr=lr, weight_decay=weight_decay,
@@ -76,3 +77,11 @@ class run():
 
 
 
+# Load the dataset
+nba = NBA()
+
+# Train and evaluate
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+run_fairgraph = run()
+run_fairgraph.run(device,dataset=nba,model='Graphair',epochs=500,test_epochs=500,
+            lr=1e-3,weight_decay=1e-5)

@@ -51,7 +51,7 @@ class graphair(nn.Module):
 
     '''
 
-    def __init__(self, aug_model, f_encoder, sens_model, classifier_model, lr=1e-4, weight_decay=1e-5, alpha=20, beta=1,
+    def __init__(self, aug_model, f_encoder, sens_model, classifier_model, lr=1e-3, weight_decay=1e-5, alpha=1, beta=1,
                  gamma=0.7, lam=1, dataset='POKEC', num_hidden=128, num_proj_hidden=64):
         super(graphair, self).__init__()
         self.save_path = None
@@ -59,22 +59,23 @@ class graphair(nn.Module):
         self.f_encoder = f_encoder
         self.sens_model = sens_model
         self.classifier = classifier_model
-        self.alpha = alpha
-        self.beta = beta
-        self.gamma = gamma
+        self.alpha = 1
+        self.beta = 1
+        self.gamma = 0.1
         self.dataset = dataset
-        self.lam = lam
+        self.lam = 1
+        print("with hpo values")
 
         self.criterion_sens = nn.BCEWithLogitsLoss()
         self.criterion_cont = nn.CrossEntropyLoss()
         self.criterion_recons = nn.MSELoss()
 
-        self.optimizer_s = torch.optim.Adam(self.sens_model.parameters(), lr=1e-4, weight_decay=1e-5)
+        self.optimizer_s = torch.optim.Adam(self.sens_model.parameters(), lr=lr, weight_decay=1e-5)
 
-        FG_params = [{'params': self.aug_model.parameters(), 'lr': 1e-4}, {'params': self.f_encoder.parameters()}]
+        FG_params = [{'params': self.aug_model.parameters(), 'lr': lr}, {'params': self.f_encoder.parameters()}]
         self.optimizer = torch.optim.Adam(FG_params, lr=lr, weight_decay=weight_decay)
 
-        self.optimizer_aug = torch.optim.Adam(self.aug_model.parameters(), lr=1e-4, weight_decay=weight_decay)
+        self.optimizer_aug = torch.optim.Adam(self.aug_model.parameters(), lr=lr, weight_decay=weight_decay)
         self.optimizer_enc = torch.optim.Adam(self.f_encoder.parameters(), lr=lr, weight_decay=weight_decay)
 
         self.fc1 = torch.nn.Linear(num_hidden, num_proj_hidden)
