@@ -5,6 +5,10 @@ import torch
 # Load the dataset and split
 pokec = POKEC(dataset_sample='pockec_z') # you may also choose 'pockec_n'
 
+# Print the current working directory
+import os
+print("Current working directory:", os.getcwd())
+
 # Train and evaluate
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 run_fairgraph = run()
