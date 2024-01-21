@@ -3,6 +3,14 @@ from dig.fairgraph.dataset import POKEC, NBA
 import torch
 import time
 
+def log_gpu_usage():
+    if torch.cuda.is_available():
+        print(f"Total GPU Memory: {torch.cuda.get_device_properties(0).total_memory}")
+        print(f"Used GPU Memory: {torch.cuda.memory_allocated()}")
+        print(f"Free GPU Memory: {torch.cuda.memory_reserved()}")
+    else:
+        print("CUDA not available")
+
 
 class run():
     r"""
@@ -44,6 +52,8 @@ class run():
         """
 
         # Train script
+        # Log GPU usage before training
+        log_gpu_usage()
 
         dataset_name = dataset.name
 
@@ -70,10 +80,15 @@ class run():
         st_time = time.time()
         model.fit_whole(epochs=epochs, adj=adj, x=features, sens=sens, idx_sens=idx_sens, warmup=0, adv_epoches=1)
         print("Training time: ", time.time() - st_time)
+        # Log GPU usage after training
+        log_gpu_usage()
 
         # Test script
+        print("Testing Beginning")
+        log_gpu_usage()
         model.test(adj=adj, features=features, labels=dataset.labels, epochs=test_epochs, idx_train=dataset.idx_train,
                    idx_val=dataset.idx_val, idx_test=dataset.idx_test, sens=sens)
+        log_gpu_usage()
 
 
 
