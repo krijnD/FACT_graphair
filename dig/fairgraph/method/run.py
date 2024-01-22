@@ -10,7 +10,7 @@ class run():
     def __init__(self):
         pass
 
-    def run(self,device,dataset,model='Graphair',epochs=10_000,test_epochs=1_000,batch_size=1_000,
+    def run(self,device,dataset,model='Graphair',epochs=10_000,test_epochs=500,batch_size=500,
             lr=1e-4,weight_decay=1e-5):
         r""" This method runs training and evaluation for a fairgraph model on the given dataset.
         Check :obj:`examples.fairgraph.Graphair.run_graphair_nba.py` for examples on how to run the Graphair model.
