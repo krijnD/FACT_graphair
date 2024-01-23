@@ -13,4 +13,4 @@ print("Current working directory:", os.getcwd())
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 run_fairgraph = run()
 run_fairgraph.run(device,dataset=pokec,model='Graphair',epochs=500,batch_size=1000,
-            lr=1e-4,weight_decay=1e-5)
+            lr=1e-3,weight_decay=1e-5)
