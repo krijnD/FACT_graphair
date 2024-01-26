@@ -69,7 +69,6 @@ class run():
                         print("Test for alpha, gamma, lam as", alpha, gamma, lam)
 
                         # generate model
-                        print(f"Model before check: {model}")
                         if model_type=='Graphair':
                             aug_model = aug_module(features, n_hidden=64, temperature=1).to(device)
                             f_encoder = GCN_Body(in_feats = features.shape[1], n_hidden = 64, out_feats = 64, dropout = 0.1, nlayer = 3).to(device)
