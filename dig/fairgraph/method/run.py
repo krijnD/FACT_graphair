@@ -11,7 +11,7 @@ class run():
     def __init__(self):
         pass
 
-    def run(self,device,dataset,model='Graphair',epochs=10_000,test_epochs=500,batch_size=1000,
+    def run(self,device,dataset,model_type='Graphair',epochs=10_000,test_epochs=500,batch_size=1000,
             lr=1e-4,weight_decay=1e-5, search = True):
         r""" This method runs training and evaluation for a fairgraph model on the given dataset.
         Check :obj:`examples.fairgraph.Graphair.run_graphair_nba.py` for examples on how to run the Graphair model.
@@ -70,7 +70,7 @@ class run():
 
                         # generate model
                         print(f"Model before check: {model}")
-                        if model=='Graphair':
+                        if model_type=='Graphair':
                             aug_model = aug_module(features, n_hidden=64, temperature=1).to(device)
                             f_encoder = GCN_Body(in_feats = features.shape[1], n_hidden = 64, out_feats = 64, dropout = 0.1, nlayer = 3).to(device)
                             sens_model = GCN(in_feats = features.shape[1], n_hidden = 64, out_feats = 64, nclass = 1).to(device)
