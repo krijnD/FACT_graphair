@@ -117,5 +117,5 @@ class run():
                         }
 
             # export hpo_results to a JSON file
-            with open('hpo_results.json', 'w') as file:
+            with open('hpo_results_n.json', 'w') as file:
                 json.dump(hpo_results, file, indent=4)
