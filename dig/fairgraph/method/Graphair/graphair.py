@@ -376,5 +376,8 @@ class graphair(nn.Module):
                     "acc: {:.4f} std: {:.4f}".format(np.mean(acc_list), np.std(acc_list)), 
                     "dp: {:.4f} std: {:.4f}".format(np.mean(dp_list), np.std(dp_list)),
                     "eo: {:.4f} std: {:.4f}".format(np.mean(eo_list), np.std(eo_list)),)
+        
+        # return mean values to store for hpo analysis
+        return np.mean(acc_list), np.mean(dp_list), np.mean(eo_list)
 
         
