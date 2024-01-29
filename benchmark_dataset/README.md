@@ -1,12 +1,114 @@
 
 
+## Congress Benchmark Data 
 
 
-## Novel Dataset: full_with_ed.csv
+### Usage
+This dataset can be used for analytical 
+studies, such as assessing the correlation 
+between net worth and political affiliations,
+the diversity of educational backgrounds, or the
+representation of states. It is also suitable for 
+sociological studies into gender distribution and 
+religious beliefs among political figures. We utilized it to test graph fairness while predicting the
+average net worth of congress members based on their demographic factors. 
+
+**PLEASE NOTE:** Using names, gender, age, and political affiliation
+in this context will  introduce or amplify biases
+based on gender, ethnicity, or other personal 
+characteristics associated with demographic. Any 
+analysis or model development should be approached 
+with caution, ensuring transparency about the 
+potential for bias and taking steps to mitigate 
+these effects. This dataset was used to show systemic bias 
+based on sensitive characteristics. We do not recommend utilizing this dataset to earnestly predict 
+attributes such as net worth due to the bias that would entail and this dataset should 
+not be employed in any decision-making based on these attributes. 
+
+
+
+## Original Datasets
+
+1. **congress_networth.csv**
+   - Contains financial information about members of Congress, specifically their net worth estimations.
+   - **Please Note**: This is from 2018 and is not up-to-date information.
+   - **Source**: https://www.opensecrets.org/personal-finances/top-net-worth 
+
+2. **congress_twitter_handle_name.csv**
+   - Provides a mapping between members of Congress and their Twitter handles, including their names and other identifying information for social media analysis.
+   - **Source**: https://pressgallery.house.gov/member-data/members-official-twitter-handles 
+   - **Source**: https://www.kaggle.com/datasets/thedevastator/us-congress-legislators-historical-data
+
+3. **legislators-current_biographic.csv**
+   - Holds current biographical information about legislators, which consist of their names, dates of birth, gender, ids and other personal details.
+   - **Source**: https://www.kaggle.com/datasets/thedevastator/us-congress-legislators-historical-data
+   - **Source**: https://en.wikipedia.org/wiki/Religious_affiliation_in_the_United_States_House_of_Representatives
+
+4. **legislators-social-media.csv**
+   - Contains data on legislators' social media accounts across various platforms, not limited to Twitter but including Facebook, YouTube, Instagram, and more.
+   - **Source**: https://www.kaggle.com/datasets/thedevastator/us-congress-legislators-historical-data
+
+5. **original_graph_usernames.txt**
+   - Text file with a list of twitter (I guess X now) handles for members of Congress, which are used for network graphing or other forms of social analysis.
+   - **Source**: https://github.com/gsprint23/CongressionalTwitterNetwork/tree/v1?tab=readme-ov-file 
+
+6. **US_Congress_Education_Data.csv**
+   - Provides educational background information for members of Congress, such as degrees earned, institutions attended, fields of study, and graduation years.
+   - **Source**: https://www.kaggle.com/datasets/philmohun/complete-education-details-116th-us-congress 
+
+7. **Congressional Twitter Network**
+    - 
+    - **Source Repository**:
+    - **Source Paper**:
+
+## Processing non-Graph Information
+To see a rough version of the code used to take the original dataset csv and
+merge them into a full dataset please see `data_merging_and_processing/data.ipynb`. 
+Here one can find a jupyter notebook (made and utilized in Google Colab) that processed the original data files and merged them
+into `full_with_ed.csv` and the process of encoding features from `full_with_ed.csv` into numerical features in `encoded_data.csv`
+
+### Description
+This project involves extensive data processing and manipulation for a dataset related to [specific domain, e.g., U.S. Congress data]. The data encompasses various aspects such as education details, net worth, social media presence, and other personal attributes of individuals associated with the domain.
+
+### Data Sources
+The data is sourced from multiple CSV files, which are processed and merged to form a comprehensive dataset. The sources include:
+
+- Education data
+- Net worth information
+- Social media profiles
+- Biographic Information
+
+### Data Processing Steps
+The Jupyter notebook `data.ipynb` contains all the data processing logic, which includes:
+
+1. **Data Loading**: CSV files are loaded into pandas DataFrames for manipulation.
+2. **Data Cleaning**: Various cleaning operations are performed, such as:
+    - Standardizing string fields (e.g., Twitter handles).
+    - Dropping unnecessary rows and columns.
+    - Handling missing values by filtering or filling them.
+3. **Data Merging**: Data from different sources are combined based on common attributes.
+4. **Data Deduplication**: Duplicate entries are identified and removed to ensure data integrity.
+5. **Data Extraction**: Regular expressions are used to extract structured data from text fields.
+6. **Data Transformation**: The data undergoes transformations to ensure it is in a usable format for analysis, including:
+    - Merging related columns.
+    - Splitting columns into more granular parts.
+    - Aggregating information where necessary.
+7. **Data Storage**: The processed data is saved into a clean CSV file for downstream analysis or modeling.
+
+### Output
+The final output is a cleaned and consolidated dataset stored as `encoded_data.csv` which can be utilized for further analysis or modeling tasks.
+
+### Dependencies
+- Python 3.x
+- Pandas
+- NumPy
+- Matplotlib (optional, for any data visualization if included)
+
+### Dataset: full_with_ed.csv
 This repository contributes a new combination of various datasets to get a complete overview
 of congress member demographics for machine learning and data analysis purposes.
 
-### Overview
+#### Overview
 
 - **Total**:
   - 254 congress members
@@ -112,110 +214,14 @@ of congress member demographics for machine learning and data analysis purposes.
     - Type: Float
     - Description: The cleaned numeric value of the individual's average net worth for
 
-### Usage
-This dataset can be used for analytical 
-studies, such as assessing the correlation 
-between net worth and political affiliations,
-the diversity of educational backgrounds, or the
-representation of states. It is also suitable for 
-sociological studies into gender distribution and 
-religious beliefs among political figures. We utilized it to test graph fairness while predicting the
-average net worth of congress members based on their demographic factors. 
-
-**PLEASE NOTE:** Using names, gender, age, and political affiliation
-in this context will  introduce or amplify biases
-based on gender, ethnicity, or other personal 
-characteristics associated with demographic. Any 
-analysis or model development should be approached 
-with caution, ensuring transparency about the 
-potential for bias and taking steps to mitigate 
-these effects. This dataset was used to show systemic bias 
-based on sensitive characteristics. We do not recommend utilizing this dataset to earnestly predict 
-attributes such as net worth due to the bias that would entail and this dataset should 
-not be employed in any decision-making based on these attributes. 
 
 
-
-## Original Datasets
-
-1. **congress_networth.csv**
-   - Contains financial information about members of Congress, specifically their net worth estimations.
-   - **Please Note**: This is from 2018 and is not up-to-date information.
-   - **Source**: https://www.opensecrets.org/personal-finances/top-net-worth 
-
-2. **congress_twitter_handle_name.csv**
-   - Provides a mapping between members of Congress and their Twitter handles, including their names and other identifying information for social media analysis.
-   - **Source**: https://pressgallery.house.gov/member-data/members-official-twitter-handles 
-   - **Source**: https://www.kaggle.com/datasets/thedevastator/us-congress-legislators-historical-data
-
-3. **legislators-current_biographic.csv**
-   - Holds current biographical information about legislators, which consist of their names, dates of birth, gender, ids and other personal details.
-   - **Source**: https://www.kaggle.com/datasets/thedevastator/us-congress-legislators-historical-data
-   - **Source**: https://en.wikipedia.org/wiki/Religious_affiliation_in_the_United_States_House_of_Representatives
-
-4. **legislators-social-media.csv**
-   - Contains data on legislators' social media accounts across various platforms, not limited to Twitter but including Facebook, YouTube, Instagram, and more.
-   - **Source**: https://www.kaggle.com/datasets/thedevastator/us-congress-legislators-historical-data
-
-5. **original_graph_usernames.txt**
-   - Text file with a list of twitter (I guess X now) handles for members of Congress, which are used for network graphing or other forms of social analysis.
-   - **Source**: https://github.com/gsprint23/CongressionalTwitterNetwork/tree/v1?tab=readme-ov-file 
-
-6. **US_Congress_Education_Data.csv**
-   - Provides educational background information for members of Congress, such as degrees earned, institutions attended, fields of study, and graduation years.
-   - **Source**: https://www.kaggle.com/datasets/philmohun/complete-education-details-116th-us-congress 
-
-
-## Processing
-To see a rough version of the code used to take the original dataset csv and
-merge them into a full dataset please see `data_merging_and_processing/data.ipynb`. 
-Here one can find a jupyter notebook (made and utilized in Google Colab) that processed the original data files and merged them
-into `full_with_ed.csv` and the process of encoding features from `full_with_ed.csv` into numerical features in `encoded_data.csv`
-
-### Description
-This project involves extensive data processing and manipulation for a dataset related to [specific domain, e.g., U.S. Congress data]. The data encompasses various aspects such as education details, net worth, social media presence, and other personal attributes of individuals associated with the domain.
-
-### Data Sources
-The data is sourced from multiple CSV files, which are processed and merged to form a comprehensive dataset. The sources include:
-
-- Education data
-- Net worth information
-- Social media profiles
-- Biographic Information
-
-### Data Processing Steps
-The Jupyter notebook `data.ipynb` contains all the data processing logic, which includes:
-
-1. **Data Loading**: CSV files are loaded into pandas DataFrames for manipulation.
-2. **Data Cleaning**: Various cleaning operations are performed, such as:
-    - Standardizing string fields (e.g., Twitter handles).
-    - Dropping unnecessary rows and columns.
-    - Handling missing values by filtering or filling them.
-3. **Data Merging**: Data from different sources are combined based on common attributes.
-4. **Data Deduplication**: Duplicate entries are identified and removed to ensure data integrity.
-5. **Data Extraction**: Regular expressions are used to extract structured data from text fields.
-6. **Data Transformation**: The data undergoes transformations to ensure it is in a usable format for analysis, including:
-    - Merging related columns.
-    - Splitting columns into more granular parts.
-    - Aggregating information where necessary.
-7. **Data Storage**: The processed data is saved into a clean CSV file for downstream analysis or modeling.
-
-### Output
-The final output is a cleaned and consolidated dataset stored as `encoded_data.csv` which can be utilized for further analysis or modeling tasks.
-
-### Dependencies
-- Python 3.x
-- Pandas
-- NumPy
-- Matplotlib (optional, for any data visualization if included)
-
-
-## Feature Dataset: encoded_data.csv
+### Feature Dataset: encoded_data.csv
 For utilization in our project (and generally)  we transformed 
 all the categorical variables gathered in `full_with_ed.csv` into various
 numerical or binary values, most are one-hot encoded. 
 
-### Overview
+#### Overview
 Not in any specific order.
 
 1. **Twitter**
@@ -287,6 +293,8 @@ Not in any specific order.
     - Type: Binary Integer
     - Description: This column was created to examine religion as a sensitive attributes. This encoding was applied to the grouped religious affiliation column. Minority religions in Congress (in this case for this dataset that is Jewish or Other) were encoded with a 1. Majority religious groups which were Unknown and Christianity have value 0. 
 
+## Processing Graph Dataset
+TOFILL 
 
 ## References and Acknowledgements 
 
