@@ -139,28 +139,31 @@ not be employed in any decision-making based on these attributes.
 ## Original Datasets
 
 1. **congress_networth.csv**
-   - Contains financial information about members of Congress, likely including their net worth, assets, liabilities, and other financial disclosures.
-   - **Source**: 
+   - Contains financial information about members of Congress, specifically their net worth estimations.
+   - **Please Note**: This is from 2018 and is not up-to-date information.
+   - **Source**: https://www.opensecrets.org/personal-finances/top-net-worth 
 
 2. **congress_twitter_handle_name.csv**
-   - Provides a mapping between members of Congress and their Twitter handles, possibly including their names and other identifying information for social media analysis.
-   - **Source**:
+   - Provides a mapping between members of Congress and their Twitter handles, including their names and other identifying information for social media analysis.
+   - **Source**: https://pressgallery.house.gov/member-data/members-official-twitter-handles 
+   - **Source**: https://www.kaggle.com/datasets/thedevastator/us-congress-legislators-historical-data
 
 3. **legislators-current_biographic.csv**
-   - Holds current biographical information about legislators, which might consist of their names, dates of birth, places of birth, tenure in office, and other personal details.
-   - **Source**:
+   - Holds current biographical information about legislators, which consist of their names, dates of birth, gender, ids and other personal details.
+   - **Source**: https://www.kaggle.com/datasets/thedevastator/us-congress-legislators-historical-data
+   - **Source**: https://en.wikipedia.org/wiki/Religious_affiliation_in_the_United_States_House_of_Representatives
 
 4. **legislators-social-media.csv**
-   - Contains data on legislators' social media accounts across various platforms, not limited to Twitter but potentially including Facebook, YouTube, Instagram, and more.
-   - **Source**:
+   - Contains data on legislators' social media accounts across various platforms, not limited to Twitter but including Facebook, YouTube, Instagram, and more.
+   - **Source**: https://www.kaggle.com/datasets/thedevastator/us-congress-legislators-historical-data
 
 5. **original_graph_usernames.txt**
-   - Likely a text file with a list of usernames or identifiers for members of Congress, which may be used for network graphing or other forms of social analysis.
-   - **Source**:
+   - Text file with a list of twitter (I guess X now) handles for members of Congress, which are used for network graphing or other forms of social analysis.
+   - **Source**: https://github.com/gsprint23/CongressionalTwitterNetwork/tree/v1?tab=readme-ov-file 
 
 6. **US_Congress_Education_Data.csv**
    - Provides educational background information for members of Congress, such as degrees earned, institutions attended, fields of study, and graduation years.
-   - **Source**:
+   - **Source**: https://www.kaggle.com/datasets/philmohun/complete-education-details-116th-us-congress 
 
 
 ## Processing
@@ -178,7 +181,7 @@ The data is sourced from multiple CSV files, which are processed and merged to f
 - Education data
 - Net worth information
 - Social media profiles
-- Current status or position data
+- Biographic Information
 
 ### Data Processing Steps
 The Jupyter notebook `data.ipynb` contains all the data processing logic, which includes:
@@ -208,9 +211,85 @@ The final output is a cleaned and consolidated dataset stored as `encoded_data.c
 
 
 ## Feature Dataset: encoded_data.csv
+For utilization in our project (and generally)  we transformed 
+all the categorical variables gathered in `full_with_ed.csv` into various
+numerical or binary values, most are one-hot encoded. 
+
+### Overview
+Not in any specific order.
+
+1. **Twitter**
+   - Type: String
+   - Description: The official Twitter handle of the individual.
+   - Sample Values: ['SenatorBaldwin', 'SenJohnBarrasso', 'RoyBlunt', 'CoryBooker', 'SenSherrodBrown']
+
+2. **Class Net Worth**
+    - Type: Integer
+    - Description: Based on the mean net worth value in U.S. Dollars found in `Cleaned Average Networth` in `full_with_ed.csv`. The average of these values for these congress people were found and separated into 3 classes: 0 if their net worth is on or around the average (10% buffer), 1 if it is above the average, -1 if it is below the average.
+    - Sample Values: [1, 0, -1]
+
+
+3. **feat_party**
+    - Type: Binary Integer
+    - Description: If the party is 'D' for Democrat then it is encoded as 1, if the party is Republican ('R') then value is 0.
+    - Sample Values: [0,1]
+
+4. **age**
+    - Type: Integer
+    - Description: Age of congress member calculated with the birthday in column `birthday_bio`
+    - Sample Values: [63, 75]
+    - **Please Note**: Age is time-dependent. This is the congress members age as of 28.01.2024
+
+5. **gender_feat**
+    - Type: Binary Integer
+    - Description: Based on the `gender_bio` column. Value is 0 if 'M' indicating Male, otherwise it is 1, in this particular case 1 only represents 'F' Female as those were the gender identifies given. Thus, please note in theory 1 can also represent other non-Male genders on the gender spectrum.
+    - Sample Values: [0,1]
+
+6. **Education Degrees One-Hot Encoded**
+    - Column Names: ['AA', 'AAS', 'AB', 'ALB', 'BA', 'BS', 'DDS', 'DVM',
+       'EdD', 'JD', 'JD MBA', 'LLM', 'MA', 'MA PhD', 'MBA', 'MD', 'MDiv',
+       'MEd', 'MFA', 'MPA', 'MPP', 'MPhil', 'MS', 'MSS', 'MSW', 'PhD']
+    - Value Type: Binary Integer
+    - Description: Each column has a binary value 1 if this is the highest congress member educational degree and 0 if not. Some members have more than one.
+    - Sample Values: [0,1]
+
+7. **chamber_feat**
+    - Type: Binary Integer
+    - Description: Based on the `Chamber` column. Value is 1 if the congress person is in the House and 0 if they are in the Senate.
+    - Sample Values: [0,1]
+
+8. **University Information One-Hot Encoded**
+    - Column Names:['Tech School Grad', 'Ivy League Grad',
+       'State University Grad', 'Community College Grad', 'Drop Out']
+    - Type: Binary Integer
+    - Description: Due to the large amount of unique education places of congress members we sorted universities from the `Highest Degree School` column into a few categories. Specifically, we used a 1 if their university could be classified under the umbrella term we established. We focused on Technology Schools, Ivy League (https://en.wikipedia.org/wiki/Ivy_League), State School, and Community College.
+    - Sample Values: [0,1]
+    - **Please Note**: The Tech, State, and Community College labels were assigned by keywords in a University name such as 'State', 'Technology' and 'University of'. Thus, they cannot be guaranteed to be completely correct university classifications. The categories are not mutually exclusive.
+ 
+9. **first_name_vector, last_name_vector**
+    - Type: pre-trained Word Vector
+    - Description: Congress member first and last name were separately encoded as word vectors using gensim "glove-wiki-gigaword-100" GloVe model.
+
+10. **Religious Affiliation Grouped**
+    - Column Names: ['Christian', 'Jewish', 'Other', 'Unknown']
+    - Type: Binary Integer
+    - Description: The religions found in the `religion_bio` column of `full_with_ed.csv` have been grouped under a few umbrella terms and made into one-hot encodings. If the congress member has a religious affiliation to that group 1, else 0.
+    - Sample Values: [0,1]
+    - **Please Note**: We did not find a lot of parsable data for this and thus a lot of them are unknown. They are grouped under religions based on Wikipedia answers, we do not know much about the different subsets of Christianity.
+
+11. **State** 
+    - Column Names: https://en.wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States
+    - Type: Binary Integer
+    - Description: One-hot encoding in each column for all the States in the U.S.A.
+    - Sample Values: [0,1]
+
+12. **Religion Sensitivity**
+    - Type: Binary Integer
+    - Description: This column was created to examine religion as a sensitive attributes. This encoding was applied to the grouped religious affiliation column. Minority religions in Congress (in this case for this dataset that is Jewish or Other) were encoded with a 1. Majority religious groups which were Unknown and Christianity have value 0. 
 
 
 ## References and Acknowledgements 
+
 
 ## Warning
 We cannot guarantee the validity or accuracy of this information. This data was pulled from a multitude of sources and merged together 

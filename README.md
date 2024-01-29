@@ -19,7 +19,7 @@ Our project includes a file `dig/fairgraph/mehtod/hpo_run.py` for running a hype
 
 ## Benchmark Dataset
 Within the `benchmark_dataset` directory, users will find our novel dataset. This allows for direct usage of the dataset when training and evaluating models with Graphair.
-
+For information on the dataset please see `benchmark_dataset/README.md`.
 ## Getting Started
 To get started with DIG_FACT, please refer to the `install_env_conda.sh` for setting up the environment and `examples/` for running your first experiments.
 
