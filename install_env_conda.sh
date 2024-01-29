@@ -13,8 +13,9 @@ module load CUDA/11.8.0
 module load Anaconda3/2022.05
 
 
-conda env create -f ./docs/environment.yaml
+conda env create -f finalenv.yaml
 
 # Activate your environment
 source activate fact_env
+cd dig
 pip install .
