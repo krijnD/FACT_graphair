@@ -3,7 +3,8 @@
 
 
 ## Novel Dataset: full_with_ed.csv
-
+This repository contributes a new combination of various datasets to get a complete overview
+of congress member demographics for machine learning and data analysis purposes.
 
 ### Overview
 
@@ -17,6 +18,10 @@
 - **Chamber Counts**:
   - House: 198
   - Senate: 56
+
+- **Party Counts**:
+  - Democrat: 134
+  - Republican: 120
 
 - **Average Net Worth**: The average net worth across all individuals in the dataset is approximately $6,007,207.76.
 
@@ -116,6 +121,7 @@ representation of states. It is also suitable for
 sociological studies into gender distribution and 
 religious beliefs among political figures. We utilized it to test graph fairness while predicting the
 average net worth of congress members based on their demographic factors. 
+
 **PLEASE NOTE:** Using names, gender, age, and political affiliation
 in this context will  introduce or amplify biases
 based on gender, ethnicity, or other personal 
@@ -131,6 +137,30 @@ not be employed in any decision-making based on these attributes.
 
 
 ## Original Datasets
+
+1. **congress_networth.csv**
+   - Contains financial information about members of Congress, likely including their net worth, assets, liabilities, and other financial disclosures.
+   - **Source**: 
+
+2. **congress_twitter_handle_name.csv**
+   - Provides a mapping between members of Congress and their Twitter handles, possibly including their names and other identifying information for social media analysis.
+   - **Source**:
+
+3. **legislators-current_biographic.csv**
+   - Holds current biographical information about legislators, which might consist of their names, dates of birth, places of birth, tenure in office, and other personal details.
+   - **Source**:
+
+4. **legislators-social-media.csv**
+   - Contains data on legislators' social media accounts across various platforms, not limited to Twitter but potentially including Facebook, YouTube, Instagram, and more.
+   - **Source**:
+
+5. **original_graph_usernames.txt**
+   - Likely a text file with a list of usernames or identifiers for members of Congress, which may be used for network graphing or other forms of social analysis.
+   - **Source**:
+
+6. **US_Congress_Education_Data.csv**
+   - Provides educational background information for members of Congress, such as degrees earned, institutions attended, fields of study, and graduation years.
+   - **Source**:
 
 
 ## Processing

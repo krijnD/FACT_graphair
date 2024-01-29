@@ -265,3 +265,117 @@ class NBA():
         self.idx_sens_train = idx_sens_train.long().cuda()
 
         self.adj = adj
+
+
+class Congress():
+    '''
+    Congress dataset class for handling data operations.
+
+    :param data_path: The path where the dataset files are located, defaults to 'benchmark_dataset/'
+    :type data_path: str, optional
+
+    :param root: The path to root directory where the dataset is processed and saved, defaults to './dataset/cng'
+    :type root: str, optional
+    '''
+
+    def __init__(self, data_path='benchmark_dataset/', root='./dataset/cng', sens_attr="gender_feat"):
+        self.name = "CNG"
+        self.root = root
+        self.dataset = 'cng'
+        self.sens_attr = sens_attr
+        self.predict_attr = "class_net_worth"
+        self.label_number = 100
+        self.seed = 20
+        self.test_idx = False
+        self.data_path = data_path
+        self.process()
+
+    @property
+    def raw_paths(self):
+        # Paths to the raw data files relative to `self.root`
+        if self.sens_attr == "religion_sensitivity":
+            data_csv = "encoded_data_wo_religions.csv"
+        else:
+            data_csv =  "encoded_data.csv"
+
+        data_csv
+        return [os.path.join(self.data_path, data_csv),
+                os.path.join(self.data_path, "cng_relationship.txt"),
+                os.path.join(self.data_path, "cng.embedding")]
+
+    def read_graph(self):
+        print(f'Loading {self.dataset} dataset from {os.path.abspath(self.raw_paths[0])}')
+        idx_features_labels = pd.read_csv(self.raw_paths[0])
+        header = list(idx_features_labels.columns)
+        header.remove("twitter")  # Assuming "user_id" column is present and unique identifier does it need to be a number or can we do it by twitter id?
+
+        # Remove sensitive and prediction attribute columns from features
+        header.remove(self.sens_attr)
+        header.remove(self.predict_attr)
+
+        # Create feature matrix
+        features = sp.csr_matrix(idx_features_labels[header], dtype=np.float32)
+        labels = idx_features_labels[self.predict_attr].values
+
+        # If your dataset includes relationships, adjust the following section
+        edges_unordered = np.genfromtxt(self.raw_paths[1], dtype=int)
+        edges = np.array(list(map(lambda x: (idx_features_labels.index[idx_features_labels["twitter"] == x[0]].tolist()[0],
+                                             idx_features_labels.index[idx_features_labels["twitter"] == x[1]].tolist()[0]),
+                                  edges_unordered)),
+                         dtype=int)
+        adj = sp.coo_matrix((np.ones(edges.shape[0]), (edges[:, 0], edges[:, 1])),
+                            shape=(labels.shape[0], labels.shape[0]),
+                            dtype=np.float32)
+        # Build symmetric adjacency matrix
+        adj = adj + adj.T.multiply(adj.T > adj) - adj.multiply(adj.T > adj)
+        adj = adj + sp.eye(adj.shape[0])
+
+        features = torch.FloatTensor(np.array(features.todense()))
+        labels = torch.LongTensor(labels)
+
+        # Split dataset
+        random.seed(self.seed)
+        label_idx = np.where(labels >= 0)[0]
+        random.shuffle(label_idx)
+        idx_train = label_idx[:min(int(0.2 * len(label_idx)), self.label_number)]
+        idx_val = label_idx[int(0.2 * len(label_idx)):int(0.55 * len(label_idx))]
+        if self.test_idx:
+            idx_test = label_idx[self.label_number:]
+            idx_val = idx_test
+        else:
+            idx_test = label_idx[int(0.55 * len(label_idx)):]
+
+        # Handle sensitive attributes
+        sens = idx_features_labels[self.sens_attr].values
+        sens_idx = set(np.where(sens >= 0)[0])
+        idx_test = np.asarray(list(sens_idx & set(idx_test)))
+        sens = torch.FloatTensor(sens)
+        idx_sens_train = torch.LongTensor(list(sens_idx))
+
+        return adj, features, labels, idx_train, idx_val, idx_test, sens, idx_sens_train
+
+    def feature_norm(self, features):
+        # Normalize features
+        min_values = features.min(axis=0)[0]
+        max_values = features.max(axis=0)[0]
+        return 2 * (features - min_values).div(max_values - min_values) - 1
+
+    def process(self):
+        # Main processing function
+        adj, features, labels, idx_train, idx_val, idx_test, sens, idx_sens_train = self.read_graph()
+        features = self.feature_norm(features)
+
+        labels[labels > 1] = 1  # Assuming binary classification, adjust if necessary
+        sens[sens > 0] = 1  # Assuming binary sensitive attribute, adjust if necessary
+
+        # Move data to GPU if available
+        device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        self.features = features.to(device)
+        self.labels = labels.to(device)
+        self.idx_train = idx_train.to(device)
+        self.idx_val = idx_val.to(device)
+        self.idx_test = idx_test.to(device)
+        self.sens = sens.to(device)
+        self.idx_sens_train = idx_sens_train.to(device).long()
+
+        self.adj = adj.to(device)
