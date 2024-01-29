@@ -5,6 +5,131 @@
 ## Novel Dataset: full_with_ed.csv
 
 
+### Overview
+
+- **Total**:
+  - 254 congress members
+
+- **Gender Counts**:
+  - Male: 191
+  - Female: 63
+
+- **Chamber Counts**:
+  - House: 198
+  - Senate: 56
+
+- **Average Net Worth**: The average net worth across all individuals in the dataset is approximately $6,007,207.76.
+
+### Column Descriptions
+
+
+1. **Twitter**
+   - Type: String
+   - Description: The official Twitter handle of the individual.
+   - Sample Values: ['SenatorBaldwin', 'SenJohnBarrasso', 'RoyBlunt', 'CoryBooker', 'SenSherrodBrown']
+   
+2. **First Name**
+   - Type: String
+   - Description: The first name of the individual.
+   - Sample Values: ['Tammy', 'John', 'Roy', 'Cory', 'Sherrod']
+
+3. **Last Name**
+   - Type: String
+   - Description: The last name of the individual.
+   - Sample Values: ['Baldwin', 'Barrasso', 'Blunt', 'Booker', 'Brown']
+
+4. **Party**
+   - Type: String
+   - Description: The political party affiliation of the individual, Democrat('D') or Republican ('R').
+   - Sample Values: ['D', 'R']
+
+5. **Bioguide ID**
+   - Type: String
+   - Description: A unique identifier assigned to each individual for biographical purposes.
+   - Sample Values: ['B001230', 'B001261', 'B000575', 'B001288', 'B000944']
+
+6. **Birthday Bio**
+   - Type: String
+   - Description: The birthdate of the individual.
+   - Sample Values: ['1962-02-11', '1952-07-21', '1950-01-10', '1969-04-27', '1952-11-09']
+
+7. **Gender Bio**
+   - Type: String
+   - Description: The gender of the individual.
+   - Sample Values: ['F', 'M']
+
+8. **Official Full Name**
+   - Type: String
+   - Description: The full official name of the individual.
+   - Sample Values: ['Tammy Baldwin', 'John Barrasso', 'Roy Blunt', 'Cory A. Booker', 'Sherrod Brown']
+
+9. **Religion Bio**
+    - Type: String
+    - Description: The religious affiliation of the individual.
+    - Sample Values: ['Lutheran', 'Roman Catholic', 'Baptist', 'Presbyterian', 'Church of Christ']
+
+10. **Minimum Net Worth**
+    - Type: String
+    - Description: The minimum estimated net worth of the individual.
+    - Sample Values: ['$434,008', '$3,533,013', '$2,599,022', '$515,006', '-$163,988']
+
+11. **Average Net Worth**
+    - Type: String
+    - Description: The average estimated net worth of the individual.
+    - Sample Values: ['$1,147,003', '$8,339,006', '$5,704,510', '$807,503', '$263,005']
+
+12. **Maximum Net Worth**
+    - Type: String
+    - Description: The maximum estimated net worth of the individual.
+    - Sample Values: ['$1,859,998', '$13,145,000', '$8,809,999', '$1,100,000', '$689,998']
+
+13. **Chamber**
+    - Type: String
+    - Description: The chamber of the legislature the individual serves in, such as the House of Representatives or the Senate.
+    - Sample Values: ['Senate', 'House']
+
+14. **State**
+    - Type: String
+    - Description: The state that the individual represents.
+    - Sample Values: ['Wisconsin', 'Wyoming', 'Missouri', 'Alaska', 'Ohio']
+
+15. **Highest Level of Education**
+    - Type: String
+    - Description: The highest level of education the individual has achieved.
+    - Sample Values: ['J.D.', 'MD', 'MA', ' (MA, MPA)', 'BA']
+
+16. **Highest Degree School**
+    - Type: String
+    - Description: The name of the school where the individual earned their highest degree.
+    - Sample Values: ['University of Wisconsin–Madison', 'Georgetown University', 'Missouri State University', 'Willamette University', 'Ohio State University']
+
+17. **Cleaned Average Net Worth**
+    - Type: Float
+    - Description: The cleaned numeric value of the individual's average net worth for
+
+### Usage
+This dataset can be used for analytical 
+studies, such as assessing the correlation 
+between net worth and political affiliations,
+the diversity of educational backgrounds, or the
+representation of states. It is also suitable for 
+sociological studies into gender distribution and 
+religious beliefs among political figures. We utilized it to test graph fairness while predicting the
+average net worth of congress members based on their demographic factors. 
+**PLEASE NOTE:** Using names, gender, age, and political affiliation
+in this context will  introduce or amplify biases
+based on gender, ethnicity, or other personal 
+characteristics associated with demographic. Any 
+analysis or model development should be approached 
+with caution, ensuring transparency about the 
+potential for bias and taking steps to mitigate 
+these effects. This dataset was used to show systemic bias 
+based on sensitive characteristics. We do not recommend utilizing this dataset to earnestly predict 
+attributes such as net worth due to the bias that would entail and this dataset should 
+not be employed in any decision-making based on these attributes. 
+
+
+
 ## Original Datasets
 
 
@@ -56,6 +181,10 @@ The final output is a cleaned and consolidated dataset stored as `encoded_data.c
 
 
 ## References and Acknowledgements 
+
+## Warning
+We cannot guarantee the validity or accuracy of this information. This data was pulled from a multitude of sources and merged together 
+based on string parsing techniques. 
 
 ## Contribution
 Contributions are welcome. If you wish to contribute, please fork the repository and submit a pull request.
