@@ -1,7 +1,7 @@
 import setuptools
 from dig.version import __version__
 
-with open("README.md", "r") as fh:
+with open("DIG_README.md", "r") as fh:
     long_description = fh.read()
 
 setup_requires = ['pytest-runner']
