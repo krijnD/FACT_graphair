@@ -304,35 +304,34 @@ class Congress():
                 os.path.join(self.data_path, "cng_relationship.txt"),
                 ]
 
+    @staticmethod
     def convert_string_to_list(vector_string):
-        # Attempt to clean and convert the string representation of a vector into a list
         try:
             # Insert commas between values and remove newline characters
             cleaned_string = vector_string.replace('\n', '').replace(' ', ', ')
-            # Ensure the string starts with '[' and ends with ']' to form a valid list format
+            # Ensure the string starts with '[' and ends with ']'
             if not cleaned_string.startswith('['):
                 cleaned_string = '[' + cleaned_string
             if not cleaned_string.endswith(']'):
-                cleaned_string = cleaned_string + ']'
+                cleaned_string += ']'
             # Safely evaluate the cleaned string as a Python literal
             vector_list = ast.literal_eval(cleaned_string)
             return vector_list
         except Exception as e:
-            # Handle exceptions or malformed strings
             print(f"Error converting string to list: {e}")
             return []
 
     def preprocess_vectors(self, df):
         # Apply the conversion to 'first_name_vector' and 'last_name_vector' columns
-        df['first_name_vector'] = df['first_name_vector'].apply(self.convert_string_to_list)
-        df['last_name_vector'] = df['last_name_vector'].apply(self.convert_string_to_list)
+        df['first_name_vector'] = df['first_name_vector'].apply(Congress.convert_string_to_list)
+        df['last_name_vector'] = df['last_name_vector'].apply(Congress.convert_string_to_list)
         return df
 
     def read_graph(self):
         print(f'Loading {self.dataset} dataset from {os.path.abspath(self.raw_paths[0])}')
         idx_features_labels = pd.read_csv(self.raw_paths[0])
 
-        # Preprocess 'first_name_vector' and 'last_name_vector' columns before any numerical processing
+        # Preprocess 'first_name_vector' and 'last_name_vector' columns
         idx_features_labels = self.preprocess_vectors(idx_features_labels)
 
         # Continue with the existing operations...
