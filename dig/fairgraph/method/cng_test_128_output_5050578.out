@@ -1,0 +1,47 @@
+============================================================================================== 
+Warning! Mixing Conda and module environments may lead to corruption of the
+user environment. 
+We do not recommend users mixing those two environments unless absolutely
+necessary. Note that 
+SURF does not provide any support for Conda environment.
+For more information, please refer to our software policy page:
+https://servicedesk.surf.nl/wiki/display/WIKI/Software+policy+Snellius+and+Lisa#SoftwarepolicySnelliusandLisa-UseofAnacondaandMinicondaenvironmentsonSnellius 
+
+Remember that many packages have already been installed on the system and can
+be loaded using 
+the 'module load <package__name>' command. If you are uncertain if a package is
+already available 
+on the system, please use 'module avail' or 'module spider' to search for it.
+============================================================================================== 
+Loading cng dataset from /gpfs/home5/igardner/DIG_FACT/dig/fairgraph/method/benchmark_dataset/encoded_data.csv
+Traceback (most recent call last):
+  File "run.py", line 1, in <module>
+    from dig.fairgraph.method.Graphair.aug_module import *
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/dig/fairgraph/method/__init__.py", line 1, in <module>
+    from .run import run
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/dig/fairgraph/method/run.py", line 99, in <module>
+    congress = Congress()
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/dig/fairgraph/dataset/fairgraph_dataset.py", line 294, in __init__
+    self.process()
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/dig/fairgraph/dataset/fairgraph_dataset.py", line 377, in process
+    adj, features, labels, idx_train, idx_val, idx_test, sens, idx_sens_train = self.read_graph()
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/dig/fairgraph/dataset/fairgraph_dataset.py", line 335, in read_graph
+    edges = np.array(list(map(idx_map.get, edges_unordered.flatten())),
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+srun: error: gcn23: task 0: Exited with exit code 1
+srun: Terminating StepId=5050578.0
+
+JOB STATISTICS
+==============
+Job ID: 5050578
+Cluster: snellius
+User/Group: igardner/igardner
+State: RUNNING
+Nodes: 1
+Cores per node: 18
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 00:03:54 core-walltime
+Job Wall-clock time: 00:00:13
+Memory Utilized: 0.00 MB (estimated maximum)
+Memory Efficiency: 0.00% of 120.00 GB (120.00 GB/node)
+WARNING: Efficiency statistics may be misleading for RUNNING jobs.
