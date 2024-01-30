@@ -304,12 +304,22 @@ class Congress():
                 os.path.join(self.data_path, "cng_relationship.txt"),
                 ]
 
-    def convert_string_to_list(self, row):
+    def convert_string_to_list(vector_string):
+        # Attempt to clean and convert the string representation of a vector into a list
         try:
-            # Safely evaluate the string as a Python expression (list)
-            return ast.literal_eval(row)
-        except ValueError:
-            # Return None or some default in case of a malformed string
+            # Insert commas between values and remove newline characters
+            cleaned_string = vector_string.replace('\n', '').replace(' ', ', ')
+            # Ensure the string starts with '[' and ends with ']' to form a valid list format
+            if not cleaned_string.startswith('['):
+                cleaned_string = '[' + cleaned_string
+            if not cleaned_string.endswith(']'):
+                cleaned_string = cleaned_string + ']'
+            # Safely evaluate the cleaned string as a Python literal
+            vector_list = ast.literal_eval(cleaned_string)
+            return vector_list
+        except Exception as e:
+            # Handle exceptions or malformed strings
+            print(f"Error converting string to list: {e}")
             return []
 
     def preprocess_vectors(self, df):
