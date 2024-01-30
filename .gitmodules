@@ -1,3 +1,6 @@
 [submodule "benchmark_dataset/data_merging_and_processing/original_datafiles/CongressionalTwitterNetwork"]
 	path = benchmark_dataset/data_merging_and_processing/original_datafiles/CongressionalTwitterNetwork
 	url = https://github.com/gsprint23/CongressionalTwitterNetwork.git
+[submodule "dig/fairgraph/dataset/benchmark_dataset/data_merging_and_processing/original_datafiles/CongressionalTwitterNetwork"]
+	path = dig/fairgraph/dataset/benchmark_dataset/data_merging_and_processing/original_datafiles/CongressionalTwitterNetwork
+	url = https://github.com/gsprint23/CongressionalTwitterNetwork.git

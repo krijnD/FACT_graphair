@@ -307,7 +307,7 @@ class Congress():
 
     def preprocess_vectors(self, df):
         # Dropping first and last name vector
-        df = df.drop(['first_name_vector', 'last_name_vector', "Unnamed: 0.1", "Unnamed: 0.2", "twitter", "Unnamed: 0"], axis=1)
+        df = df.drop(['first_name_vector', 'last_name_vector',  "Unnamed: 0"], axis=1)
         return df
 
     def read_graph(self):
@@ -331,8 +331,9 @@ class Congress():
 
         idx_map = {j: i for i, j in enumerate(idx)}
         edges_unordered = np.genfromtxt(os.path.abspath(self.raw_paths[1]), dtype=int)
-
-        edges = np.array(list(map(idx_map.get, edges_unordered.flatten())),
+        edges_unordered_flat = edges_unordered.flatten()
+        #print(list(map(idx_map.get, edges_unordered_flat)))
+        edges = np.array(list(map(idx_map.get, edges_unordered_flat)),
                          dtype=int).reshape(edges_unordered.shape)
 
         adj = sp.coo_matrix((np.ones(edges.shape[0]), (edges[:, 0], edges[:, 1])),
@@ -384,11 +385,11 @@ class Congress():
         device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         self.features = features.to(device)
         self.labels = labels.to(device)
-        self.idx_train = idx_train.to(device)
-        self.idx_val = idx_val.to(device)
-        self.idx_test = idx_test.to(device)
+        self.idx_train = torch.tensor(idx_train, dtype=torch.long).to(device)
+        self.idx_val = torch.tensor(idx_val, dtype=torch.long).to(device)
+        self.idx_test = torch.tensor(idx_test, dtype=torch.long).to(device)
         self.sens = sens.to(device)
         self.idx_sens_train = idx_sens_train.to(device).long()
 
-        self.adj = adj.to(device)
+        self.adj = adj
 
