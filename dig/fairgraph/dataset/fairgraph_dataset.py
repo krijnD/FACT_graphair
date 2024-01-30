@@ -7,6 +7,7 @@ import random
 from torch_geometric.data import download_url
 import ast
 import re
+import json
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -300,48 +301,41 @@ class Congress():
         else:
             data_csv = "encoded_data.csv"
 
-        data_csv
         return [os.path.join(self.data_path, data_csv),
                 os.path.join(self.data_path, "cng_relationship.txt"),
                 ]
 
-    @staticmethod
-    def convert_string_to_list(vector_string):
-        # Remove brackets and split the string by spaces
-        vector_string = vector_string.strip("[]")
-        vector_elements = re.split(r'\s+', vector_string)
-        # Convert each element to float and ignore empty strings
-        vector_list = [float(elem) for elem in vector_elements if elem]
-        return np.array(vector_list)
-
     def preprocess_vectors(self, df):
-        # Apply the conversion to 'first_name_vector' and 'last_name_vector' columns
-        df['first_name_vector'] = df['first_name_vector'].apply(Congress.convert_string_to_list)
-        df['last_name_vector'] = df['last_name_vector'].apply(Congress.convert_string_to_list)
+        # Convert JSON strings back to lists or arrays
+        df['first_name_vector'] = df['first_name_vector'].apply(json.loads)
+        df['last_name_vector'] = df['last_name_vector'].apply(json.loads)
         return df
 
     def read_graph(self):
         print(f'Loading {self.dataset} dataset from {os.path.abspath(self.raw_paths[0])}')
         idx_features_labels = pd.read_csv(self.raw_paths[0])
 
+
         # Preprocess 'first_name_vector' and 'last_name_vector' columns
         idx_features_labels = self.preprocess_vectors(idx_features_labels)
 
-        # Continue with the existing operations...
-        # Remove columns not part of features
-        features = idx_features_labels.drop(
-            columns=[self.sens_attr, self.predict_attr, "numeric_id", "first_name_vector", "last_name_vector"])
+        header = list(idx_features_labels.columns)
+        header.remove("numeric_id")
 
-        # Create feature matrix
-        features_matrix = sp.csr_matrix(features, dtype=np.float32)
+        header.remove(self.sens_attr)
+        header.remove(self.predict_attr)
+
+        features = sp.csr_matrix(idx_features_labels[header], dtype=np.float32)
         labels = idx_features_labels[self.predict_attr].values
 
-        # If your dataset includes relationships, adjust the following section
-        edges_unordered = np.genfromtxt(self.raw_paths[1], dtype=int)
-        edges = np.array(list(map(lambda x: (idx_features_labels.index[idx_features_labels["numeric_id"] == x[0]].tolist()[0],
-                                             idx_features_labels.index[idx_features_labels["numeric_id"] == x[1]].tolist()[0]),
-                                  edges_unordered)),
-                         dtype=int)
+        # build graph
+        idx = np.array(idx_features_labels["numeric_id"], dtype=int)
+        idx_map = {j: i for i, j in enumerate(idx)}
+        edges_unordered = np.genfromtxt(os.path.abspath(self.raw_paths[1]), dtype=int)
+
+        edges = np.array(list(map(idx_map.get, edges_unordered.flatten())),
+                         dtype=int).reshape(edges_unordered.shape)
+
         adj = sp.coo_matrix((np.ones(edges.shape[0]), (edges[:, 0], edges[:, 1])),
                             shape=(labels.shape[0], labels.shape[0]),
                             dtype=np.float32)
