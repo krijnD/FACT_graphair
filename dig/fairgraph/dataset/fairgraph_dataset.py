@@ -306,7 +306,7 @@ class Congress():
                 ]
 
     def preprocess_vectors(self, df):
-        # Convert JSON strings back to lists or arrays
+        # Dropping first and last name vector
         df = df.drop(['first_name_vector', 'last_name_vector'], axis=1)
         return df
 
@@ -314,7 +314,7 @@ class Congress():
         print(f'Loading {self.dataset} dataset from {os.path.abspath(self.raw_paths[0])}')
         idx_features_labels = pd.read_csv(self.raw_paths[0])
 
-        # Preprocess 'first_name_vector' and 'last_name_vector' columns
+        # We don't use the first and last name
         idx_features_labels = self.preprocess_vectors(idx_features_labels)
 
         header = list(idx_features_labels.columns)
@@ -328,6 +328,7 @@ class Congress():
 
         # build graph
         idx = np.array(idx_features_labels["numeric_id"], dtype=int)
+
         idx_map = {j: i for i, j in enumerate(idx)}
         edges_unordered = np.genfromtxt(os.path.abspath(self.raw_paths[1]), dtype=int)
 
