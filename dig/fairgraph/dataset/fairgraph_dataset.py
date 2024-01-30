@@ -5,6 +5,7 @@ import pandas as pd
 import scipy.sparse as sp
 import random
 from torch_geometric.data import download_url
+import ast
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -303,18 +304,34 @@ class Congress():
                 os.path.join(self.data_path, "cng_relationship.txt"),
                 ]
 
+    def convert_string_to_list(self, row):
+        try:
+            # Safely evaluate the string as a Python expression (list)
+            return ast.literal_eval(row)
+        except ValueError:
+            # Return None or some default in case of a malformed string
+            return []
+
+    def preprocess_vectors(self, df):
+        # Apply the conversion to 'first_name_vector' and 'last_name_vector' columns
+        df['first_name_vector'] = df['first_name_vector'].apply(self.convert_string_to_list)
+        df['last_name_vector'] = df['last_name_vector'].apply(self.convert_string_to_list)
+        return df
+
     def read_graph(self):
         print(f'Loading {self.dataset} dataset from {os.path.abspath(self.raw_paths[0])}')
         idx_features_labels = pd.read_csv(self.raw_paths[0])
-        header = list(idx_features_labels.columns)
-        header.remove("numeric_id")  # Assuming "user_id" column is present and unique identifier does it need to be a number or can we do it by twitter id?
 
-        # Remove sensitive and prediction attribute columns from features
-        header.remove(self.sens_attr)
-        header.remove(self.predict_attr)
+        # Preprocess 'first_name_vector' and 'last_name_vector' columns before any numerical processing
+        idx_features_labels = self.preprocess_vectors(idx_features_labels)
+
+        # Continue with the existing operations...
+        # Remove columns not part of features
+        features = idx_features_labels.drop(
+            columns=[self.sens_attr, self.predict_attr, "numeric_id", "first_name_vector", "last_name_vector"])
 
         # Create feature matrix
-        features = sp.csr_matrix(idx_features_labels[header], dtype=np.float32)
+        features_matrix = sp.csr_matrix(features, dtype=np.float32)
         labels = idx_features_labels[self.predict_attr].values
 
         # If your dataset includes relationships, adjust the following section
