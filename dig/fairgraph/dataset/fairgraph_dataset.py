@@ -6,6 +6,7 @@ import scipy.sparse as sp
 import random
 from torch_geometric.data import download_url
 import ast
+import re
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -306,20 +307,12 @@ class Congress():
 
     @staticmethod
     def convert_string_to_list(vector_string):
-        try:
-            # Insert commas between values and remove newline characters
-            cleaned_string = vector_string.replace('\n', '').replace(' ', ', ')
-            # Ensure the string starts with '[' and ends with ']'
-            if not cleaned_string.startswith('['):
-                cleaned_string = '[' + cleaned_string
-            if not cleaned_string.endswith(']'):
-                cleaned_string += ']'
-            # Safely evaluate the cleaned string as a Python literal
-            vector_list = ast.literal_eval(cleaned_string)
-            return vector_list
-        except Exception as e:
-            print(f"Error converting string to list: {e}")
-            return []
+        # Remove brackets and split the string by spaces
+        vector_string = vector_string.strip("[]")
+        vector_elements = re.split(r'\s+', vector_string)
+        # Convert each element to float and ignore empty strings
+        vector_list = [float(elem) for elem in vector_elements if elem]
+        return np.array(vector_list)
 
     def preprocess_vectors(self, df):
         # Apply the conversion to 'first_name_vector' and 'last_name_vector' columns
