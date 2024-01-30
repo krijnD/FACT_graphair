@@ -6,6 +6,7 @@ from dig.fairgraph.method.Graphair.GCN import GCN, GCN_Body
 import torch
 import time
 
+
 def log_gpu_usage():
     if torch.cuda.is_available():
         print(f"Total GPU Memory: {torch.cuda.get_device_properties(0).total_memory}")
@@ -94,12 +95,11 @@ class run():
         log_gpu_usage()
 
 
-
 # Load the dataset
-nba = NBA()
+congress = Congress()
 
 # Train and evaluate
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 run_fairgraph = run()
-run_fairgraph.run(device,dataset=nba,model='Graphair',epochs=500,test_epochs=500,
-            lr=1e-3,weight_decay=1e-5)
+run_fairgraph.run(device, dataset=congress, model='Graphair', epochs=500, test_epochs=500,
+                  lr=1e-3, weight_decay=1e-5)

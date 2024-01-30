@@ -1,255 +1,255 @@
-,twitter,first_name,last_name,party,bioguide_id,birthday_bio,gender_bio,official_full_name,religion_bio,Minimum Net Worth,Average Net Worth,Maximum Net Worth,Chamber,State,Highest Level of Education,Highest Degree School
-0,SenatorBaldwin,Tammy,Baldwin,D,B001230,1962-02-11,F,Tammy Baldwin,Lutheran,"$434,008","$1,147,003","$1,859,998",Senate,Wisconsin,J.D.,University of Wisconsin–Madison
-1,SenJohnBarrasso,John,Barrasso,R,B001261,1952-07-21,M,John Barrasso,Roman Catholic,"$3,533,013","$8,339,006","$13,145,000",Senate,Wyoming,MD,Georgetown University 
-2,RoyBlunt,Roy,Blunt,R,B000575,1950-01-10,M,Roy Blunt,Baptist,"$2,599,022","$5,704,510","$8,809,999",Senate,Missouri,MA,Missouri State University
-3,CoryBooker,Cory,Booker,D,B001288,1969-04-27,M,Cory A. Booker,,"$515,006","$807,503","$1,100,000",Senate,Alaska,J.D.,Willamette University 
-4,SenSherrodBrown,Sherrod,Brown,D,B000944,1952-11-09,M,Sherrod Brown,Lutheran,"-$163,988","$263,005","$689,998",Senate,Ohio," (MA, MPA)",Ohio State University
-5,SenatorCantwell,Maria,Cantwell,D,C000127,1958-10-13,F,Maria Cantwell,Roman Catholic,"$1,094,022","$5,756,508","$10,418,994",Senate,Washington,BA,Miami University 
-6,SenCapito,Shelley,Capito,R,C001047,1953-11-26,F,Shelley Moore Capito,Presbyterian,"-$224,830","$2,149,080","$4,522,991",Senate,West Virginia,MEd,University of Virginia
-7,JohnCornyn,John,Cornyn,R,C001056,1952-02-02,M,John Cornyn,Church of Christ,"$1,074,046","$1,884,522","$2,694,999",Senate,Texas,LLM,University of Virginia 
-8,SenTomCotton,Tom,Cotton,R,C001095,1977-05-13,M,Tom Cotton,,"$229,017","$498,008","$767,000",Senate,Arkansas,J.D.,Claremont Graduate University
-9,SenTedCruz,Ted,Cruz,R,C001098,1970-12-22,M,Ted Cruz,,"-$9,027,848","$3,198,068","$15,423,985",Senate,Texas,J.D.,Harvard University
-10,SenJoniErnst,Joni,Ernst,R,E000295,1970-07-01,F,Joni Ernst,Baptist,"-$783,966","-$196,984","$389,998",Senate,Iowa,MPA,Columbus State University 
-11,SenFeinstein,Dianne,Feinstein,D,F000062,1933-06-22,F,Dianne Feinstein,Jewish,"$55,027,069","$87,938,540","$120,850,011",Senate,California,BA,Stanford University
-12,SenatorFischer,Deb,Fischer,R,F000463,1951-03-01,F,Deb Fischer,Church of Christ,"$122,012","$2,776,005","$5,429,998",Senate,Nebraska,BS,University of Nebraska–Lincoln
-13,SenGillibrand,Kirsten,Gillibrand,D,G000555,1966-12-09,F,Kirsten E. Gillibrand,Roman Catholic,"$162,008","$296,004","$430,000",Senate,Connecticut,J.D.,Yale University 
-14,MartinHeinrich,Martin,Heinrich,D,H001046,1971-10-17,M,Martin Heinrich,Southern Baptist,"-$361,964","$309,017","$979,998",Senate,New Mexico,BS,University of Missouri 
-15,SenJohnHoeven,John,Hoeven,R,H001061,1957-03-13,M,John Hoeven,Presbyterian,"$19,263,138","$46,689,569","$74,116,000",Senate,North Dakota,MBA,Northwestern University 
-16,SenRonJohnson,Ron,Johnson,R,J000293,1955-04-08,M,Ron Johnson,Baptist,"$14,101,014","$39,233,507","$64,366,000",Senate,Wisconsin,BS,University of Minnesota
-17,SenatorLankford,James,Lankford,R,L000575,1968-03-04,M,James Lankford,Roman Catholic,"-$159,980","$116,509","$392,999",Senate,Oklahoma,(MDiv),Southwestern Baptist Theological Seminary 
-18,SenatorLeahy,Patrick,Leahy,D,L000174,1940-03-31,M,Patrick J. Leahy,Roman Catholic,"-$330,992","-$85,496","$159,999",Senate,Georgia,MS,Georgia Institute of Technology
-19,SenMikeLee,Mike,Lee,R,L000577,1971-06-04,M,Mike Lee,Methodist,"$208,010","$414,005","$620,000",Senate,Utah,J.D.,Brigham Young University 
-20,Sen_JoeManchin,Joe,Manchin,D,M001183,1947-08-24,M,"Joe Manchin, III",Methodist,"$3,473,070","$7,623,534","$11,773,999",Senate,Georgia,MBA,DePaul University 
-21,SenJeffMerkley,Jeff,Merkley,D,M001176,1956-10-24,M,Jeff Merkley,,"$980,019","$2,603,008","$4,225,998",Senate,Oregon,MPA,Princeton University 
-22,JerryMoran,Jerry,Moran,R,M000934,1954-05-29,M,Jerry Moran,Methodist,"$749,079","$1,759,539","$2,769,999",Senate,Kansas,J.D.,University of Kansas
-23,ChrisMurphyCT,Christopher,Murphy,D,M001169,1973-08-03,M,Christopher Murphy,,"-$1,069,978","-$149,991","$769,996",Senate,Idaho,J.D.,University of Idaho 
-24,PattyMurray,Patty,Murray,D,M001111,1950-10-11,F,Patty Murray,Roman Catholic,"$839,022","$1,687,010","$2,534,999",Senate,Washington,BA,Washington State University 
-25,SenGaryPeters,Gary,Peters,D,P000595,1958-12-01,M,Gary C. Peters,,"$1,750,211","$4,368,105","$6,985,999",Senate,Illinois,J.D.,Georgetown University 
-26,SenatorRisch,James,Risch,R,R000584,1943-05-03,M,James E. Risch,,"$15,174,053","$41,807,024","$68,439,996",Senate,Illinois,PhD,Capella University
-27,SenSchumer,Charles,Schumer,D,S000148,1950-11-23,M,Charles E. Schumer,Jewish,"$370,043","$1,122,521","$1,874,999",Senate,Indiana,MBA,Harvard University
-28,SenatorTimScott,Tim,Scott,R,S001184,1965-09-19,M,Tim Scott,Methodist,"-$1,862,988","-$1,053,997","-$245,007",Senate,South Carolina,BS,Charleston Southern University
-29,SenatorShaheen,Jeanne,Shaheen,D,S001181,1947-01-28,F,Jeanne Shaheen,,"-$344,974","$3,823,005","$7,990,984",Senate,New Hampshire,MSS,University of Mississippi 
-30,SenStabenow,Debbie,Stabenow,D,S000770,1950-04-29,F,Debbie Stabenow,United Methodist,"$15,001","$32,500","$50,000",Senate,Michigan,MSW,Michigan State University
-31,SenDanSullivan,Dan,Sullivan,R,S001198,1964-11-13,M,Daniel Sullivan,,"$986,042","$2,372,519","$3,758,997",Senate,Kansas,BA,Kansas State University 
-32,SenatorTester,Jon,Tester,D,T000464,1956-08-21,M,Jon Tester,,"$1,284,008","$3,672,003","$6,059,999",Senate, Montana,BA,University of Providence (BA)
-33,SenJohnThune,John,Thune,R,T000250,1961-01-07,M,John Thune,Latter Day Saints,"$51,025","$310,512","$569,999",Senate, South Dakota,MBA,University of South Dakota 
-34,MarkWarner,Mark,Warner,D,W000805,1954-12-15,M,Mark R. Warner,Presbyterian,"$80,129,151","$214,092,575","$348,056,000",Senate,Kentucky,MD,Duke University 
-35,SenWarren,Elizabeth,Warren,D,W000817,1949-06-22,F,Elizabeth Warren,,"$4,880,024","$7,977,513","$11,075,002",Senate,Massachusetts,J.D.,Rutgers Law School
-36,SenWhitehouse,Sheldon,Whitehouse,D,W000802,1955-10-20,M,Sheldon Whitehouse,,"$3,064,259","$7,443,628","$11,822,998",Senate,Rhode Island,J.D.,University of Virginia
-37,SenatorWicker,Roger,Wicker,R,W000437,1951-07-05,M,Roger F. Wicker,Southern Baptist,"-$788,986","-$180,995","$426,995",Senate, Maine,J.D.,University of Virginia 
-38,RonWyden,Ron,Wyden,D,W000779,1949-05-03,M,Ron Wyden,Jewish,"$5,370,048","$6,877,025","$8,384,003",Senate,Oregon,J.D.,University of Oregon 
-39,RepAdams,Alma,Adams,D,A000370,1946-05-27,F,Alma S. Adams,Catholic,"$265,002","$407,501","$550,000",House,Maryland,J.D.,"University of Maryland, Baltimore"
-40,Robert_Aderholt,Robert,Aderholt,R,A000055,1965-07-22,M,Robert B. Aderholt,Protestant,"$2,676,022","$6,370,510","$10,064,999",House,Maryland,J.D.,Georgetown University
-41,RepBrianBabin,Brian,Babin,R,B001291,1948-03-23,M,Brian Babin,,"$1,034,102","$2,287,551","$3,541,000",House,Texas,(DDS),University of Texas Health Science Center 
-42,RepAndyBarr,Andy,Barr,R,B001282,1973-07-24,M,Andy Barr,,"$224,013","$429,506","$635,000",House,Kentucky,J.D.,University of Kentucky 
-43,RepKarenBass,Karen,Bass,D,B001270,1953-10-03,F,Karen Bass,,"$266,003","$415,501","$565,000",House,California,MSW,University of Southern California
-44,RepBeatty,Joyce,Beatty,D,B001281,1950-03-12,F,Joyce Beatty,,"$2,655,029","$7,216,014","$11,777,000",House,Ohio,MS,Wright State University 
-45,RepBera,Ami,Bera,D,B001287,1965-03-02,M,Ami Bera,Episcopalian,"$3,454,067","$7,420,029","$11,385,992",House,California,MD,University of California
-46,RepGusBilirakis,Gus,Bilirakis,R,B001257,1963-02-08,M,Gus M. Bilirakis,Methodist,"-$273,965","$96,016","$465,998",House,Minnesota,MBA,Dartmouth College 
-47,SanfordBishop,Sanford,Bishop,D,B000490,1947-02-04,M,"Sanford D. Bishop, Jr.",Baptist,"$87,004","$153,502","$220,000",House,Mississippi,J.D.,University of Mississippi 
-48,RepBonamici,Suzanne,Bonamici,D,B001278,1954-10-14,F,Suzanne Bonamici,Protestant,"$3,491,033","$6,978,016","$10,465,000",House,Oregon,J.D.,University of Oregon 
-49,RepBost,Mike,Bost,R,B001295,1960-12-30,M,Mike Bost,Presbyterian,"-$37,990","$264,004","$565,998",House,Illinois,BA,Murphysboro High School
-50,RepKevinBrady,Kevin,Brady,R,B000755,1955-04-11,M,Kevin Brady,Catholic,"$405,026","$766,513","$1,128,000",House,Texas,BA,University of South Dakota
-51,RepMoBrooks,Mo,Brooks,R,B001274,1954-04-29,M,Mo Brooks,,"$527,059","$1,191,529","$1,856,000",House,Alabama,J.D.,University of Alabama 
-52,RepKenBuck,Ken,Buck,R,B001297,1959-02-16,M,Ken Buck,,"$416,027","$1,053,013","$1,689,999",House,Colorado,J.D.,University of Wyoming
-53,RepLarryBucshon,Larry,Bucshon,R,B001275,1962-05-31,M,Larry Bucshon,,"$960,040","$1,744,520","$2,529,000",House,Indiana,MD,University of Illinois at Chicago 
-54,RepCheri,Cheri,Bustos,D,B001286,1961-10-17,F,Cheri Bustos,Catholic,"$532,020","$956,010","$1,380,000",House,Illinois,MA,University of Illinois at Springfield 
-55,RepBuddyCarter,Buddy,Carter,R,C001103,1957-09-06,M,"Earl L. ""Buddy"" Carter",,"$13,829,062","$33,232,031","$52,635,000",House,Nevada,AAS, Clark County Community College 
-56,JudgeCarter,John,Carter,R,C001051,1941-11-06,M,John R. Carter,Christian,"$1,067,008","$3,373,503","$5,679,999",House,Nevada,J.D.,Gonzaga University
-57,USRepKCastor,Kathy,Castor,D,C001066,1966-08-20,F,Kathy Castor,Roman Catholic,"$3,001,037","$6,296,518","$9,592,000",House,Florida,J.D.,Florida State University 
-58,RepSteveChabot,Steve,Chabot,R,C000266,1953-01-22,M,Steve Chabot,Catholic,"$510,027","$955,513","$1,401,000",House,Ohio,J.D.,Northern Kentucky University 
-59,RepJudyChu,Judy,Chu,D,C001080,1953-07-07,F,Judy Chu,,"$4,383,063","$7,090,031","$9,797,000",House,California,"MA, PhD",Alliant International University
-60,RepKClark,Katherine,Clark,D,C001101,1963-07-17,F,Katherine M. Clark,,"$2,677,119","$6,804,059","$10,930,999",House,New Jersey,J.D.,Yale University 
-61,RepCohen,Steve,Cohen,D,C001068,1949-05-24,M,Steve Cohen,Methodist,"$3,448,116","$6,198,058","$8,948,000",House,Tennessee,J.D.,University of Memphis 
-62,TomColeOK04,Tom,Cole,R,C001053,1949-04-28,M,Tom Cole,Methodist,"$3,186,060","$5,251,030","$7,316,000",House,Oklahoma,PhD,University of Oklahoma
-63,RepJimCosta,Jim,Costa,D,C001059,1952-04-13,M,Jim Costa,Baptist,"$1,894,028","$4,902,513","$7,910,999",House,California,BA,"California State University, Fresno "
-64,RepJoeCourtney,Joe,Courtney,D,C001069,1953-04-06,M,Joe Courtney,Episcopalian,"$442,045","$987,022","$1,532,000",House,Connecticut,J.D.,University of Connecticut 
-65,RodneyDavis,Rodney,Davis,R,D000619,1970-01-05,M,Rodney Davis,,"$140,021","$357,510","$575,000",House,Illinois,BA,Millikin University 
-66,RepPeterDeFazio,Peter,DeFazio,D,D000191,1947-05-27,M,Peter A. DeFazio,Catholic,"$910,020","$1,519,010","$2,128,000",House,North Carolina,BA,Wake Forest University (BA)
-67,RepDianaDeGette,Diana,DeGette,D,D000197,1957-07-29,F,Diana DeGette,Presbyterian,"$1,680,051","$3,095,025","$4,509,999",House,Colorado,J.D.,New York University 
-68,RepDelBene,Suzan,DelBene,D,D000617,1962-02-17,F,Suzan K. DelBene,,"$33,667,084","$79,361,042","$125,055,000",House,North Dakota,MBA,Northwestern University 
-69,MarioDB,Mario,Diaz-Balart,R,D000600,1961-09-25,M,Mario Diaz-Balart,Catholic,"$21,009","$81,504","$142,000",House,Ohio," (MA, MPA)",Ohio State University
-70,RepDebDingell,Debbie,Dingell,D,D000624,1953-11-23,F,Debbie Dingell,Baptist,"$4,820,144","$8,486,072","$12,152,000",House,Michigan,MS,Georgetown University
-71,RepLloydDoggett,Lloyd,Doggett,D,D000399,1946-10-06,M,Lloyd Doggett,Methodist,"$14,295,056","$29,723,027","$45,150,999",House,Texas,J.D.,University of Texas at Austin 
-72,RepJeffDuncan,Jeff,Duncan,R,D000615,1966-01-07,M,Jeff Duncan,Catholic,"$593,015","$1,222,005","$1,850,996",House,South Carolina,BA,Clemson University 
-73,RepTomEmmer,Tom,Emmer,R,E000294,1961-03-03,M,Tom Emmer,Presbyterian,"-$134,998","$32,500","$199,999",House,Minnesota,J.D.,William Mitchell College of Law 
-74,RepAnnaEshoo,Anna,Eshoo,D,E000215,1942-12-13,F,Anna G. Eshoo,Catholic,"$4,806,022","$10,298,011","$15,790,000",House,Oregon,J.D.,University of Oregon 
-75,RepBillFoster,Bill,Foster,D,F000454,1955-10-07,M,Bill Foster,,"$7,246,036","$14,130,518","$21,015,000",House,Pennsylvania,J.D.,Catholic University of America 
-76,RepLoisFrankel,Lois,Frankel,D,F000462,1948-05-16,F,Lois Frankel,,"$939,176","$2,588,088","$4,237,000",House,Florida,J.D.,Georgetown University 
-77,RepRubenGallego,Ruben,Gallego,D,G000574,1979-11-20,M,Ruben Gallego,,"$189,013","$479,505","$769,998",House,Arizona ,BA,Harvard University
-78,RepGaramendi,John,Garamendi,D,G000559,1945-01-24,M,John Garamendi,Catholic,"$2,356,016","$5,168,508","$7,981,000",House,California,MBA,Harvard University
-79,RepBobGibbs,Bob,Gibbs,R,G000563,1954-06-14,M,Bob Gibbs,Methodist,"$1,587,064","$2,947,531","$4,307,999",House,Ohio,AAS,Agricultural Technical Institute (AAS)
-80,RepGosar,Paul,Gosar,R,G000565,1958-11-22,M,Paul A. Gosar,,"$650,002","$1,050,000","$1,449,999",House,South Carolina,BS,Charleston Southern University
-81,RepKayGranger,Kay,Granger,R,G000377,1943-01-18,F,Kay Granger,Methodist,"-$184,995","$157,502","$499,999",House,Texas,BA,Texas Wesleyan University 
-82,RepGarretGraves,Garret,Graves,R,G000577,1972-01-31,M,Garret Graves,,"$156,027","$400,013","$644,000",House,Louisiana,Drop Out,American University
-83,RepAlGreen,Al,Green,D,G000553,1947-09-01,M,Al Green,Unknown,"$2,467,014","$5,373,507","$8,280,000",House,Texas,J.D.,Texas Southern University 
-84,RepMGriffith,Morgan,Griffith,R,G000568,1958-03-15,M,H. Morgan Griffith,Presbyterian,"$1,006","$333,001","$664,997",House,Tennessee,J.D.,New York University
-85,RepGrothman,Glenn,Grothman,R,G000576,1955-07-03,M,Glenn Grothman,,"$635,015","$1,105,007","$1,575,000",House,Wisconsin,J.D.,University of Wisconsin–Madison 
-86,RepGuthrie,Brett,Guthrie,R,G000558,1964-02-18,M,Brett Guthrie,Jewish,"$3,025,020","$7,663,010","$12,301,000",House,Kentucky,MS,Yale University
-87,RepHartzler,Vicky,Hartzler,R,H001053,1960-10-13,F,Vicky Hartzler,Catholic,"$3,165,029","$9,395,012","$15,624,995",House,Missouri,MS,University of Central Missouri 
-88,RepBrianHiggins,Brian,Higgins,D,H001038,1959-10-06,M,Brian Higgins,,"$8,008","$64,004","$120,000",House,New York,MPA,Harvard University
-89,RepFrenchHill,French,Hill,R,H001072,1956-12-05,M,J. French Hill,Latter Day Saints,"$3,224,069","$7,035,033","$10,845,998",House,Vermont,BA,University of Chicago
-90,RepRichHudson,Richard,Hudson,R,H001067,1971-11-04,M,Richard Hudson,,"$14,017","$133,008","$252,000",House,North Carolina,BA,University of North Carolina 
-91,RepHuffman,Jared,Huffman,D,H001068,1964-02-18,M,Jared Huffman,,"$811,045","$1,478,522","$2,146,000",House,California,J.D.,Boston College
-92,RepHuizenga,Bill,Huizenga,R,H001058,1969-01-31,M,Bill Huizenga,,"$926,022","$1,498,511","$2,071,000",House,Michigan,BA,Calvin College 
-93,RepJeffries,Hakeem,Jeffries,D,J000294,1970-08-04,M,Hakeem S. Jeffries,Baptist,"$452,024","$841,012","$1,230,000",House,Washington,BA,Miami University 
-94,RepBillJohnson,Bill,Johnson,R,J000292,1954-11-10,M,Bill Johnson,Episcopalian,"$417,037","$948,518","$1,480,000",House,Ohio,MS,Georgia Institute of Technology
-95,RepEBJ,Eddie,Johnson,D,J000126,1935-12-03,F,Eddie Bernice Johnson,Baptist,"$266,003","$615,501","$964,999",House,Texas, (MPA),Southern Methodist University
-96,Jim_Jordan,Jim,Jordan,R,J000289,1964-02-17,M,Jim Jordan,,"$147,007","$289,003","$431,000",House,West Virginia,MEd,University of Virginia
-97,RepDaveJoyce,David,Joyce,R,J000295,1957-03-17,M,David P. Joyce,,"$1,905,063","$3,415,031","$4,925,000",House,Wisconsin,J.D.,University of Wisconsin–Madison
-98,RepJohnKatko,John,Katko,R,K000386,1962-11-09,M,John Katko,Unknown,"-$98,999","-$67,000","-$35,001",House,New York,J.D.,Syracuse University
-99,MikeKellyPA,Mike,Kelly,R,K000376,1948-05-10,M,Mike Kelly,,"$2,493,113","$12,419,056","$22,344,999",House,Pennsylvania,BA,University of Notre Dame 
-100,RepRobinKelly,Robin,Kelly,D,K000385,1956-04-30,F,Robin L. Kelly,,"$132,006","$231,003","$330,000",House,Wyoming,MBA,University of Denver 
-101,RepDerekKilmer,Derek,Kilmer,D,K000381,1974-01-01,M,Derek Kilmer,Baptist,"$180,043","$596,521","$1,012,999",House,Washington,PhD,"Green Templeton College, Oxford"
-102,RepRonKind,Ron,Kind,D,K000188,1963-03-16,M,Ron Kind,Lutheran,"$1,145,018","$1,835,009","$2,525,000",House,Wisconsin,J.D.,University of Minnesota
-103,RepAnnieKuster,Ann,Kuster,D,K000382,1956-09-05,F,Ann M. Kuster,,"$2,145,625","$2,762,620","$3,379,616",House,Alabama,J.D.,Birmingham School of Law
-104,RepLaHood,Darin,LaHood,R,L000585,1968-07-05,M,Darin LaHood,Unknown,"$108,029","$341,514","$575,000",House,Illinois,J.D.,"John Marshall Law School, Chicago"
-105,RepLaMalfa,Doug,LaMalfa,R,L000578,1960-07-02,M,Doug LaMalfa,Methodist,"$1,281,008","$3,498,504","$5,716,000",House,California,BS,"University, San Luis Obispo "
-106,RepRickLarsen,Rick,Larsen,D,L000560,1965-06-15,M,Rick Larsen,Roman Catholic,"$372,019","$676,509","$981,000",House,Washington,MPA,University of Minnesota 
-107,RepJohnLarson,John,Larson,D,L000557,1948-07-22,M,John B. Larson,,"$91,050","$466,025","$841,000",House,Connecticut,BA,Central Connecticut State University
-108,RepLawrence,Brenda,Lawrence,D,L000581,1954-10-18,F,Brenda L. Lawrence,Roman Catholic,"$621,021","$1,173,010","$1,724,999",House,Alaska,BA,Chico State College 
-109,RepBarbaraLee,Barbara,Lee,D,L000551,1946-07-16,F,Barbara Lee,Baptist,"$154,008","$257,504","$361,000",House,California,MSW,University of California
-110,RepTedLieu,Ted,Lieu,D,L000582,1969-03-29,M,Ted Lieu,,"$1,049,040","$3,533,519","$6,017,999",House,California,J.D.,Georgetown University 
-111,USRepLong,Billy,Long,R,L000576,1955-08-11,M,Billy Long,,"$1,152,045","$2,783,022","$4,413,999",House,Missouri,Drop Out,University of Missouri 
-112,RepLoudermilk,Barry,Loudermilk,R,L000583,1963-12-22,M,Barry Loudermilk,African Methodist Episcopal,"$16,002","$40,501","$65,000",House,Georgia,BS,Wayland Baptist University 
-113,RepLowenthal,Alan,Lowenthal,D,L000579,1941-03-08,M,Alan S. Lowenthal,,"$1,301,143","$3,015,071","$4,729,000",House,Arizona ,MA,"Arizona State University, Phoenix"
-114,RepFrankLucas,Frank,Lucas,R,L000491,1960-01-06,M,Frank D. Lucas,Baptist,"$485,013","$1,352,504","$2,219,995",House,Arizona ,MBA,"Arizona State University, Tempe"
-115,RepMaloney,Carolyn,Maloney,D,M000087,1946-02-19,F,Carolyn B. Maloney,Presbyterian,"$5,128,059","$12,999,029","$20,869,999",House,Arizona ,BA,Harvard University
-116,RepSeanMaloney,Sean,Maloney,D,M001185,1966-07-30,M,Sean Patrick Maloney,,"$754,006","$1,157,003","$1,560,000",House,Arizona ,BA,University of Wisconsin–Madison 
-117,RepThomasMassie,Thomas,Massie,R,M001184,1971-01-13,M,Thomas Massie,,"$703,004","$2,816,501","$4,929,998",House,Kentucky,MS,Massachusetts Institute of Technology 
-118,DorisMatsui,Doris,Matsui,D,M001163,1944-09-25,F,Doris O. Matsui,,"$763,014","$1,279,007","$1,795,000",House,Arkansas,BS,Arkansas State University 
-119,GOPLeader,Kevin,McCarthy,R,M001165,1965-01-26,M,Kevin McCarthy,,"$81,006","$223,002","$364,999",House,California,MBA,California State University
-120,BettyMcCollum04,Betty,McCollum,D,M001143,1954-07-12,F,Betty McCollum,Roman Catholic,"$4,004","$32,002","$60,000",House,Minnesota,BA,St. Catherine University 
-121,RepMcGovern,James,McGovern,D,M000312,1959-11-20,M,James P. McGovern,Catholic,"$381,005","$2,698,001","$5,014,998",House,Arkansas,MS,Yale University
-122,PatrickMcHenry,Patrick,McHenry,R,M001156,1975-10-22,M,Patrick T. McHenry,,"$393,015","$765,007","$1,137,000",House,California,BS,"University, San Luis Obispo "
-123,RepMcKinley,David,McKinley,R,M001180,1947-03-28,M,David B. McKinley,Methodist,"$3,839,113","$6,739,056","$9,639,000",House,California,J.D.,Boston College
-124,RepGraceMeng,Grace,Meng,D,M001188,1975-10-01,F,Grace Meng,,"$139,047","$708,522","$1,277,998",House,New York,J.D.,Yeshiva University 
-125,RepGwenMoore,Gwen,Moore,D,M001160,1951-04-18,F,Gwen Moore,Unknown,$0,$0,$0,House,Wisconsin,BA,Marquette University 
-126,RepJerryNadler,Jerrold,Nadler,D,N000002,1947-06-13,M,Jerrold Nadler,Jewish,"$32,006","$121,003","$210,000",House,California, MPA,"California State University, Chico "
-127,RepRichardNeal,Richard,Neal,D,N000015,1949-02-14,M,Richard E. Neal,Roman Catholic,"$77,010","$180,005","$283,000",House,California,BA,"University of California, Berkeley"
-128,RepNewhouse,Dan,Newhouse,R,N000189,1955-07-10,M,Dan Newhouse,,"$894,040","$13,777,019","$26,659,998",House,Washington,BS,Washington State University 
-129,EleanorNorton,Eleanor,Norton,D,N000147,1937-06-13,F,Eleanor Holmes Norton,Episcopalian,"$1,162,038","$2,084,019","$3,006,000",House,California,MA,University of California
-130,CongPalazzo,Steven,Palazzo,R,P000601,1970-02-21,M,Steven M. Palazzo,,"$172,006","$908,501","$1,644,997",House,California,PhD,University of New Mexico 
-131,USRepGaryPalmer,Gary,Palmer,R,P000609,1954-05-14,M,Gary J. Palmer,,"$796,088","$1,918,044","$3,040,000",House,California,MBA,Harvard University
-132,RepPerlmutter,Ed,Perlmutter,D,P000593,1953-05-01,M,Ed Perlmutter,Roman Catholic,"$117,043","$437,521","$758,000",House,Colorado,J.D.,University of Colorado Boulder 
-133,RepScottPeters,Scott,Peters,D,P000608,1958-06-17,M,Scott H. Peters,Roman Catholic,"$42,982,085","$60,456,054","$77,930,023",House,California,BA,Trinity Washington University 
-134,RepDavidEPrice,David,Price,D,P000523,1940-08-17,M,David E. Price,Baptist,"$1,910,084","$3,568,042","$5,226,000",House,California,MSW,University of California
-135,RepMikeQuigley,Mike,Quigley,D,Q000023,1958-10-17,M,Mike Quigley,,"$35,001","$62,500","$90,000",House,Illinois,J.D.,Loyola University Chicago 
-136,RepKathleenRice,Kathleen,Rice,D,R000602,1965-02-15,F,Kathleen M. Rice,,"-$15,994","$64,502","$144,999",House,California,J.D.,"University of Maryland, Baltimore"
-137,RepTomRice,Tom,Rice,R,R000597,1957-08-04,M,Tom Rice,,"$5,629,020","$14,569,510","$23,510,000",House,South Carolina,J.D.,University of South Carolina
-138,RepMikeRogersAL,Mike,Rogers,R,R000575,1958-07-16,M,Mike Rogers,,"$152,026","$1,601,011","$3,049,996",House,Alabama,J.D.,Birmingham School of Law
-139,RepDavidRouzer,David,Rouzer,R,R000603,1972-02-16,M,David Rouzer,,"$369,023","$703,011","$1,037,000",House,North Carolina,BS,North Carolina State University 
-140,RepRoybalAllard,Lucille,Roybal-Allard,D,R000486,1941-06-12,F,Lucille Roybal-Allard,Roman Catholic,"-$825,992","$357,002","$1,539,996",House,California,BA,California State University
-141,RepBobbyRush,Bobby,Rush,D,R000515,1946-11-23,M,Bobby L. Rush,Protestant,"-$4,499,999","-$2,250,000",-$1,House,California,J.D.,Santa Clara University 
-142,RepTimRyan,Tim,Ryan,D,R000577,1973-07-16,M,Tim Ryan,Roman Catholic,"-$164,991","-$1,997","$160,997",House,Ohio,J.D.,University of New Hampshire
-143,RepSarbanes,John,Sarbanes,D,S001168,1962-05-22,M,John P. Sarbanes,,"$298,010","$521,505","$745,000",House,California,MS,California Polytechnic State University
-144,SteveScalise,Steve,Scalise,R,S001176,1965-10-06,M,Steve Scalise,Jewish,$1,"$42,500","$84,999",House,Louisiana,BS,Louisiana State University 
-145,RepAdamSchiff,Adam,Schiff,D,S001150,1960-06-22,M,Adam B. Schiff,Baptist,"$796,024","$1,436,011","$2,075,999",House,California,MA,Fielding Graduate University 
-146,RepSchrader,Kurt,Schrader,D,S001180,1951-10-19,M,Kurt Schrader,,"$3,443,148","$7,907,573","$12,371,999",House,Oregon,"(BS, DVM)",illionois University
-147,RepDavid,David,Schweikert,R,S001183,1962-03-03,M,David Schweikert,Roman Catholic,"$286,011","$618,004","$949,998",House,Arizona ,MBA,"Arizona State University, Tempe"
-148,AustinScottGA08,Austin,Scott,R,S001189,1969-12-10,M,Austin Scott,,"$1,155,044","$2,397,020","$3,638,997",House,California,MBA,American University 
-149,RepTerriSewell,Terri,Sewell,D,S001185,1965-01-01,F,Terri A. Sewell,Jewish,"$145,013","$330,006","$515,000",House,California,"MA, PhD",Alliant International University
-150,BradSherman,Brad,Sherman,D,S000344,1954-10-24,M,Brad Sherman,Jewish,"$3,400,032","$8,427,016","$13,454,000",House,California,J.D.,Harvard University
-151,RepSires,Albio,Sires,D,S001165,1951-01-26,M,Albio Sires,,"$32,004","$81,002","$130,000",House,New Jersey,MA,Middlebury College
-152,RepAdamSmith,Adam,Smith,D,S000510,1965-06-15,M,Adam Smith,Christian,"$220,012","$393,006","$566,000",House,Washington,J.D.,University of Washington 
-153,RepAdrianSmith,Adrian,Smith,R,S001172,1970-12-19,M,Adrian Smith,Presbyterian,"$256,016","$535,508","$815,000",House,Nebraska,BA,University of Nebraska–Lincoln
-154,RepJasonSmith,Jason,Smith,R,S001195,1980-06-16,M,Jason Smith,Nazarene,"-$1,786,970","-$5,490","$1,775,990",House,Missouri,J.D.,Oklahoma City University 
-155,RepSpeier,Jackie,Speier,D,S001175,1950-05-14,F,Jackie Speier,,"$5,980,059","$11,028,529","$16,077,000",House,California,J.D.,"University of California, Hastings "
-156,RepStefanik,Elise,Stefanik,R,S001196,1984-07-02,F,Elise M. Stefanik,Roman Catholic,"-$71,983","$282,007","$635,998",House,California,MPP,Harvard University
-157,RepChrisStewart,Chris,Stewart,R,S001192,1960-07-15,M,Chris Stewart,,"$251,002","$383,001","$515,000",House,California,BA,National Labor College 
-158,RepSwalwell,Eric,Swalwell,D,S001193,1980-11-16,M,Eric Swalwell,Episcopalian,"-$113,998","-$37,000","$39,998",House,California,J.D.,"University of Maryland, Baltimore"
-159,RepMarkTakano,Mark,Takano,D,T000472,1960-12-10,M,Mark Takano,,"$116,005","$216,502","$317,000",House,California,MFA,University of California
-160,BennieGThompson,Bennie,Thompson,D,T000193,1948-01-28,M,Bennie G. Thompson,Methodist,"$469,023","$889,511","$1,310,000",House,California,J.D.,"University of California, Los Angeles"
-161,RepThompson,Mike,Thompson,D,T000460,1951-01-24,M,Mike Thompson,Catholic,"$3,434,046","$5,672,022","$7,909,999",House,California, MPA,"California State University, Chico "
-162,RepPaulTonko,Paul,Tonko,D,T000469,1949-06-18,M,Paul Tonko,Roman Catholic,"$1,001","$8,000","$15,000",House,New York,BS,Clarkson University
-163,NormaJTorres,Norma,Torres,D,T000474,1965-04-04,F,Norma J. Torres,Catholic,"-$233,995","$41,502","$316,999",House,California,MFA,University of California
-164,RepMikeTurner,Michael,Turner,R,T000463,1960-01-11,M,Michael R. Turner,,"$183,029","$489,514","$796,000",House,California,BA,Chaffey College
-165,RepJuanVargas,Juan,Vargas,D,V000130,1961-03-07,M,Juan Vargas,,"$17,009","$1,591,002","$3,164,995",House,California,J.D.,Harvard University
-166,RepVeasey,Marc,Veasey,D,V000131,1971-01-03,M,Marc A. Veasey,,"-$194,993","-$79,498","$35,997",House,California,J.D.,University of Southern California
-167,RepAnnWagner,Ann,Wagner,R,W000812,1962-09-13,F,Ann Wagner,African Methodist Episcopal,"$6,655,131","$11,055,565","$15,456,000",House,Missouri,BA,University of Missouri 
-168,RepWalberg,Tim,Walberg,R,W000798,1951-04-12,M,Tim Walberg,Unknown,"$101,017","$283,008","$465,000",House,Michigan,MA,"Wheaton College, Illinois "
-169,RepWalorski,Jackie,Walorski,R,W000813,1963-08-17,F,Jackie Walorski,Methodist,"$143,025","$382,012","$621,000",House,Indiana,BA,Taylor University 
-170,RepWebster,Daniel,Webster,R,W000806,1949-04-27,M,Daniel Webster,,"$483,008","$814,004","$1,145,000",House,California,MBA,Ohio State University 
-171,PeterWelch,Peter,Welch,D,W000800,1947-05-02,M,Peter Welch,Roman Catholic,"$3,013,128","$5,567,564","$8,122,000",House,Vermont,J.D.,"University of California, Berkeley "
-172,RepWesterman,Bruce,Westerman,R,W000821,1967-11-18,M,Bruce Westerman,Roman Catholic,"$214,025","$512,012","$810,000",House,Arkansas,MS,Yale University
-173,RepRWilliams,Roger,Williams,R,W000816,1949-09-13,M,Roger Williams,Jewish,"$44,597,061","$66,980,026","$89,362,992",House,Texas,BA,Texas Christian University 
-174,RepWilson,Frederica,Wilson,D,W000808,1942-11-05,F,Frederica S. Wilson,Roman Catholic,"$960,011","$1,555,005","$2,150,000",House,California,J.D.,New York University 
-175,RepJoeWilson,Joe,Wilson,R,W000795,1947-07-31,M,Joe Wilson,Presbyterian,"-$564,992","$337,501","$1,239,994",House,South Carolina,J.D.,University of South Carolina 
-176,RepJohnYarmuth,John,Yarmuth,D,Y000062,1947-11-04,M,John A. Yarmuth,Episcopalian,"$5,439,096","$17,075,547","$28,711,999",House,Colorado,J.D.,New York University 
-177,RepLeeZeldin,Lee,Zeldin,R,Z000017,1980-01-30,M,Lee M. Zeldin,Roman Catholic,$0,$0,$0,House,Colorado,J.D.,University of Colorado Boulder 
-178,RepPeteAguilar,Pete,Aguilar,D,O000168,1962-12-09,M,Pete Aguilar,,"$34,008","$117,504","$201,000",House,California,BS,University of Redlands 
-179,RepArrington,Jodey,Arrington,R,P000603,1963-01-07,M,Jodey Arrington,,"$616,031","$1,190,515","$1,765,000",House,Texas,MPA,Texas Tech University 
-180,RepDonBacon,Don,Bacon,R,P000588,1947-08-24,M,Don Bacon,,"$494,013","$852,006","$1,210,000",House,Nebraska,MA,National Defense University 
-181,RepBalderson,Troy,Balderson,R,P000593,1953-05-01,M,Troy Balderson,,"$17,003","$48,501","$80,000",House,Ohio,Drop Out,Ohio State University
-182,RepJimBanks,Jim,Banks,R,P000595,1958-12-01,M,Jim Banks,,"$168,022","$395,011","$622,000",House,Indiana,MBA,Grace College and Seminary 
-183,RepAndyBiggsAZ,Andy,Biggs,R,P000598,1975-05-12,M,Andy Biggs,,"$1,953,009","$4,512,004","$7,070,999",House,Arizona ,MA,"Arizona State University, Phoenix"
-184,CongBoyle,Brendan,Boyle,D,P000591,1954-10-08,M,Brendan Boyle,,"-$169,994","$295,001","$759,996",House,Pennsylvania,MPP,Harvard University
-185,RepBrownley,Julia,Brownley,D,R000585,1971-11-18,M,Julia Brownley,,"$207,036","$1,569,516","$2,931,997",House,California,MBA,American University 
-186,michaelcburgess,Michael,Burgess,R,R000586,1958-12-03,M,Michael Burgess,,"$1,326,054","$2,328,027","$3,330,000",House,Connecticut,MPhil,"St Edmund Hall, Oxford"
-187,RepCarbajal,Salud,Carbajal,D,R000582,1945-07-21,M,Salud Carbajal,,"-$37,994","$81,002","$199,998",House,California,MA,Fielding Graduate University 
-188,RepYvetteClarke,Yvette,Clarke,D,R000580,1961-09-13,M,Yvette D Clarke,,"$115,002","$207,501","$300,000",House,Delaware,MA,University of Delaware 
-189,repcleaver,Emanuel,Cleaver,D,R000593,1959-10-18,M,Emanuel Cleaver,,"-$4,623,988","-$2,266,995","$89,998",House,Missouri,MDiv,Saint Paul School of Theology 
-190,RepCloudTX,Michael,Cloud,R,R000487,1951-10-12,M,Michael Cloud,Roman Catholic,"$89,012","$212,006","$335,000",House,Texas,BS,Oral Roberts University 
-191,WhipClyburn,James,Clyburn,D,R000595,1971-05-28,M,James E Clyburn,,"$97,008","$189,504","$282,000",House,Florida,DVM,University of Florida
-192,RepJamesComer,James,Comer,R,R000515,1946-11-23,M,James Comer,Protestant,"$1,920,024","$5,285,011","$8,649,998",House,Kentucky,BS,Western Kentucky University 
-193,RepLouCorrea,Lou,Correa,D,R000570,1970-01-29,M,Lou Correa,Roman Catholic,"$3,794,043","$5,940,521","$8,087,000",House,California,"JD, MBA","University of California, Los Angeles "
-194,RepJohnCurtis,John,Curtis,R,S001168,1962-05-22,M,John Curtis,,"-$1,870,893","$7,860,050","$17,590,994",House,Florida,BA,Virginia Military Institute 
-195,WarrenDavidson,Warren,Davidson,R,S001145,1944-05-26,F,Warren Davidson,Jewish,"-$4,003,989","$457,004","$4,917,998",House,Ohio,MBA,University of Notre Dame 
-196,rosadelauro,Rosa,DeLauro,D,S001180,1951-10-19,M,Rosa L DeLauro,,"$131,007","$2,541,002","$4,950,997",House,Florida,AA,Brevard Community College 
-197,DrNealDunnFL2,Neal,Dunn,R,S001183,1962-03-03,M,Neal Dunn,,"$4,874,067","$9,529,533","$14,184,999",House,Florida,MD,George Washington University 
-198,RepEspaillat,Adriano,Espaillat,D,S001157,1945-06-27,M,Adriano Espaillat,Baptist,"$1,001","$8,000","$15,000",House,New York,BA,Queens College
-199,RepRonEstes,Ron,Estes,R,S000185,1947-04-30,M,Ron Estes,Episcopalian,"$489,047","$1,055,023","$1,621,000",House,Kansas,MBA,Tennessee Technological University
-200,RepDwightEvans,Dwight,Evans,D,S001184,1965-09-19,M,Dwight Evans,,"$489,051","$1,354,524","$2,219,998",House,Pennsylvania,BA,La Salle University
-201,RepBrianFitz,Brian,Fitzpatrick,R,S000320,1934-05-06,M,Brian Fitzpatrick,Presbyterian,"-$678,998","-$124,500","$429,997",House,Pennsylvania,J.D.,Pennsylvania State University
-202,virginiafoxx,Virginia,Foxx,R,S000364,1958-02-21,M,Virginia Foxx,Lutheran,"$2,240,032","$3,670,516","$5,101,000",House,North Carolina,"MA, EdD",University of North Carolina at Greensboro 
-203,RepMattGaetz,Matt,Gaetz,R,S001165,1951-01-26,M,Matt Gaetz,,"$104,013","$312,006","$519,999",House,Florida,J.D.,College of William and Mary 
-204,RepGallagher,Mike,Gallagher,R,S000480,1929-08-14,F,Mike Gallagher,Episcopalian,"$466,016","$853,007","$1,239,999",House,Wisconsin,PhD,Georgetown University 
-205,RepJimmyGomez,Jimmy,Gomez,D,S001156,1969-01-28,F,Jimmy Gomez,Roman Catholic,"$75,013","$267,506","$459,999",House,California,MPP,Harvard University
-206,RepGonzalez,Vicente,Gonzalez,D,T000467,1959-07-27,M,Vicente Gonzalez,,"$1,090,921","$1,090,921","$1,090,921",House,Florida,ALB,Harvard University
-207,RepJoshG,Josh,Gottheimer,D,T000250,1961-01-07,M,Josh Gottheimer,,"$3,442,330","$8,935,664","$14,428,999",House,New Jersey,J.D.,Harvard University
-208,repkevinhern,Kevin,Hern,R,V000128,1959-01-10,M,Kevin Hern,Episcopalian,"$34,505,238","$60,979,615","$87,453,992",House,Oklahoma,MBA,University of Arkansas at Little Rock 
-209,RepClayHiggins,Clay,Higgins,R,V000081,1953-03-28,F,Clay Higgins,Roman Catholic,$0,$0,$0,House,Louisiana,BA,Louisiana State University
-210,RepJayapal,Pramila,Jayapal,D,W000806,1949-04-27,M,Pramila Jayapal,,"-$816,963","$214,017","$1,244,998",House,Washington,MBA,Northwestern University
-211,CongressmanRaja,Raja,Krishnamoorthi,D,W000810,1970-02-11,M,Raja Krishnamoorthi,,"$482,030","$1,581,013","$2,679,997",House,Illinois,J.D.,Harvard University
-212,RepDavidKustoff,David,Kustoff,R,W000779,1949-05-03,M,David Kustoff,Jewish,"$1,590,084","$3,048,541","$4,506,999",House,Tennessee,J.D.,University of Memphis 
-213,boblatta,Robert,Latta,R,Y000062,1947-11-04,M,Robert E Latta,,"$3,147,063","$5,188,531","$7,230,000",House,Florida,BA,University of South Florida
-214,RepDLesko,Debbie,Lesko,R,H001041,1960-05-10,M,Debbie Lesko,,"$767,030","$1,348,515","$1,930,000",House,Arizona ,BA,University of Wisconsin–Madison 
-215,RepBlaine,Blaine,Luetkemeyer,R,B001278,1954-10-14,F,Blaine Luetkemeyer,,"$1,466,006","$3,765,503","$6,065,000",House,Missouri,BA,"Lincoln University, Missouri "
-216,RepBrianMast,Brian,Mast,R,S001194,1972-10-20,M,Brian Mast,,"$169,713","$370,702","$571,692",House,Florida,ALB,Harvard University
-217,RepGregoryMeeks,Gregory,Meeks,D,C001095,1977-05-13,M,Gregory W Meeks,,$0,$0,$0,House,Georgia,J.D.,Emory University
-218,RepJoeMorelle,Joseph,Morelle,D,B001285,1952-08-28,F,Joseph D Morelle,,"$98,024","$285,512","$473,000",House,Georgia,BS,University of Georgia
-219,gracenapolitano,Grace,Napolitano,D,R000599,1972-08-25,M,Grace Napolitano,,"$36,012","$913,004","$1,789,996",House,California,Drop Out,Texas Southmost College
-220,RepRalphNorman,Ralph,Norman,R,V000130,1961-03-07,M,Ralph Norman,,"$5,517,147","$43,398,070","$81,278,994",House,South Carolina,BS,Presbyterian College 
-221,RepJimmyPanetta,Jimmy,Panetta,D,D000621,1978-09-14,M,Jimmy Panetta,,"$30,036","$263,517","$496,999",House,California,J.D.,Santa Clara University 
-222,SpeakerPelosi,Nancy,Pelosi,D,C001093,1966-08-16,M,Nancy Pelosi,,"-$12,825,949","$114,662,521","$242,150,991",House,California,BA,Trinity Washington University 
-223,chelliepingree,Chellie,Pingree,D,D000619,1970-01-05,M,Chellie Pingree,,"$3,586,013","$9,938,006","$16,290,000",House,Maine,BS,College of the Atlantic
-224,StaceyPlaskett,Stacey,Plaskett,D,B001286,1961-10-17,F,Stacey Plaskett,,"-$115,000","-$87,500","-$60,001",House,Georgia,J.D.,Atlanta's John Marshall Law School 
-225,repmarkpocan,Mark,Pocan,D,W000813,1963-08-17,F,Mark Pocan,,"$200,002","$385,000","$569,998",House,Wisconsin,BA,University of Wisconsin–Madison 
-226,RepRaskin,Jamie,Raskin,D,B001282,1973-07-24,M,Jamie Raskin,,"$2,314,073","$4,162,036","$6,010,000",House,Maryland,J.D.,Harvard University
-227,cathymcmorris,Cathy,Rodgers,R,K000379,1980-10-04,M,Cathy McMorris Rodgers,,"$985,027","$1,892,513","$2,799,999",House,Washington,MBA,University of Washington 
-228,RepRaulRuizMD,Raul,Ruiz,D,W000812,1962-09-13,F,Raul Ruiz,,"$217,005","$491,001","$764,998",House,Georgia,MBA,University of Pennsylvania 
-229,RepMGS,Mary,Scanlon,D,P000606,1948-08-15,M,Mary Gay Scanlon,,"$2,770,069","$4,924,533","$7,078,998",House,Pennsylvania,J.D.,University of Pennsylvania 
-230,RepSmucker,Lloyd,Smucker,R,F000463,1951-03-01,F,Lloyd Smucker,,"$435,010","$2,810,002","$5,184,995",House,Pennsylvania,Drop Out,Franklin and Marshall College
-231,RepDarrenSoto,Darren,Soto,D,K000382,1956-09-05,F,Darren Soto,,"-$17,990","$641,002","$1,299,995",House,Florida,J.D.,George Washington University
-232,RepSusanWild,Susan,Wild,D,V000132,1963-02-13,M,Susan Wild,,"$839,032","$1,746,015","$2,652,999",House,Pennsylvania,J.D.,George Washington University 
-233,rep_stevewomack,Steve,Womack,R,K000384,1958-02-26,M,Steve Womack,,"$205,008","$365,004","$525,000",House,Arkansas,BA,Arkansas Tech University 
-234,SenDuckworth,Tammy,Duckworth,D,D000622,1968-03-12,F,Tammy Duckworth,,"$139,063","$697,531","$1,255,999",Senate,Illinois,PhD,Capella University
-235,LindseyGrahamSC,Lindsey,Graham,R,G000359,1955-07-09,M,Lindsey Graham,Southern Baptist,"$258,046","$969,022","$1,679,999",Senate,South Carolina,J.D.,University of South Carolina 
-236,maziehirono,Mazie,Hirono,D,H001042,1947-11-03,F,Mazie K. Hirono,,"$2,661,039","$4,339,019","$6,017,000",Senate,Illinois,PhD,Duke University
-237,lisamurkowski,Lisa,Murkowski,R,M001153,1957-05-22,F,Lisa Murkowski,Roman Catholic,"$817,024","$1,499,011","$2,180,999",Senate,Alaska,J.D.,Willamette University 
-238,RandPaul,Rand,Paul,R,P000603,1963-01-07,M,Rand Paul,,"$170,041","$773,520","$1,376,999",Senate,Kentucky,MD,Duke University 
-239,marcorubio,Marco,Rubio,R,R000595,1971-05-28,M,Marco Rubio,,"-$1,896,988","-$1,262,995","-$629,002",Senate,Florida,J.D.,University of Miami 
-240,SenThomTillis,Thom,Tillis,R,T000476,1960-08-30,M,Thom Tillis,,"$4,002,094","$10,966,045","$17,929,996",Senate,North Carolina,BA,University of Maryland
-241,SenToddYoung,Todd,Young,R,Y000064,1972-08-24,M,Todd Young,,"-$1,995,994","-$1,392,999","-$790,005",Senate,Indiana,J.D.,"Indiana University, Indianapolis"
-242,ChrisCoons,Chris,Coons,D,C001088,1963-09-09,M,Christopher A. Coons,,"$6,678,074","$10,126,038","$13,574,003",Senate,Illinois,BS,University of Illinois at Urbana–Champaign
-243,MikeCrapo,Mike,Crapo,R,C000880,1951-05-20,M,Mike Crapo,Latter Day Saints,"$204,044","$944,521","$1,684,999",Senate,Idaho,J.D.,Harvard University
-244,ChuckGrassley,Chuck,Grassley,R,G000386,1933-09-17,M,Chuck Grassley,Baptist,"$4,240,150","$7,550,075","$10,860,000",Senate,Iowa,MA,University of Northern Iowa
-245,SenatorMenendez,Robert,Menendez,D,M000639,1954-01-01,M,Robert Menendez,Roman Catholic,"$303,005","$541,502","$779,999",Senate,Illinois,BA,Murphysboro High School
-246,SenJackReed,Jack,Reed,D,R000122,1949-11-12,M,Jack Reed,Roman Catholic,"-$561,945","$107,026","$775,998",Senate,Rhode Island,"MPP, JD",Harvard University
-247,SenToomey,Pat,Toomey,R,T000461,1961-11-17,M,Pat Toomey,,"$721,060","$2,038,029","$3,354,998",Senate,Pennsylvania,AB,Harvard University
-248,JacksonLeeTX18,Sheila,Lee,D,J000032,1950-01-12,F,Sheila Jackson Lee,Seventh Day Adventist,"-$681,993","-$181,001","$319,991",House,Texas,J.D.,University of Virginia 
-249,RepMullin,Markwayne,Mullin,R,M001190,1977-07-26,M,Markwayne Mullin,Latter Day Saints,"$4,012,026","$11,384,012","$18,755,999",House,Oklahoma,AA,Oklahoma State University 
-250,RepDWStweets,Debbie,Schultz,D,W000797,1966-09-27,F,Debbie Wasserman Schultz,Jewish,"-$240,956","$270,521","$781,998",House,Florida,MA,University of Florida
-251,SenCortezMasto,Catherine,Masto,D,C001113,1964-03-29,F,Catherine Cortez Masto,Latter Day Saints,"$2,350,042","$4,601,020","$6,851,998",Senate,Nevada,J.D.,Gonzaga University
-252,timkaine,Tim,Kaine,D,K000384,1958-02-26,M,Tim Kaine,Baptist,"$409,018","$811,008","$1,212,999",Senate,Virginia,J.D.,Harvard University
-253,senrobportman,Rob,Portman,R,P000449,1955-12-19,M,Rob Portman,Methodist,"$5,725,090","$10,827,545","$15,930,000",Senate,Ohio,J.D.,University of Michigan 
+,Unnamed: 0,twitter,first_name,last_name,party,bioguide_id,birthday_bio,gender_bio,official_full_name,religion_bio,Minimum Net Worth,Average Net Worth,Maximum Net Worth,Chamber,State,Highest Level of Education,Highest Degree School,numeric_id
+0,0,SenatorBaldwin,Tammy,Baldwin,D,B001230,1962-02-11,F,Tammy Baldwin,Lutheran,"$434,008","$1,147,003","$1,859,998",Senate,Wisconsin,J.D.,University of Wisconsin–Madison,0
+1,1,SenJohnBarrasso,John,Barrasso,R,B001261,1952-07-21,M,John Barrasso,Roman Catholic,"$3,533,013","$8,339,006","$13,145,000",Senate,Wyoming,MD,Georgetown University ,1
+2,2,RoyBlunt,Roy,Blunt,R,B000575,1950-01-10,M,Roy Blunt,Baptist,"$2,599,022","$5,704,510","$8,809,999",Senate,Missouri,MA,Missouri State University,5
+3,3,CoryBooker,Cory,Booker,D,B001288,1969-04-27,M,Cory A. Booker,,"$515,006","$807,503","$1,100,000",Senate,Alaska,J.D.,Willamette University ,6
+4,4,SenSherrodBrown,Sherrod,Brown,D,B000944,1952-11-09,M,Sherrod Brown,Lutheran,"-$163,988","$263,005","$689,998",Senate,Ohio," (MA, MPA)",Ohio State University,9
+5,5,SenatorCantwell,Maria,Cantwell,D,C000127,1958-10-13,F,Maria Cantwell,Roman Catholic,"$1,094,022","$5,756,508","$10,418,994",Senate,Washington,BA,Miami University ,10
+6,6,SenCapito,Shelley,Capito,R,C001047,1953-11-26,F,Shelley Moore Capito,Presbyterian,"-$224,830","$2,149,080","$4,522,991",Senate,West Virginia,MEd,University of Virginia,11
+7,7,JohnCornyn,John,Cornyn,R,C001056,1952-02-02,M,John Cornyn,Church of Christ,"$1,074,046","$1,884,522","$2,694,999",Senate,Texas,LLM,University of Virginia ,17
+8,8,SenTomCotton,Tom,Cotton,R,C001095,1977-05-13,M,Tom Cotton,,"$229,017","$498,008","$767,000",Senate,Arkansas,J.D.,Claremont Graduate University,19
+9,9,SenTedCruz,Ted,Cruz,R,C001098,1970-12-22,M,Ted Cruz,,"-$9,027,848","$3,198,068","$15,423,985",Senate,Texas,J.D.,Harvard University,22
+10,10,SenJoniErnst,Joni,Ernst,R,E000295,1970-07-01,F,Joni Ernst,Baptist,"-$783,966","-$196,984","$389,998",Senate,Iowa,MPA,Columbus State University ,26
+11,11,SenFeinstein,Dianne,Feinstein,D,F000062,1933-06-22,F,Dianne Feinstein,Jewish,"$55,027,069","$87,938,540","$120,850,011",Senate,California,BA,Stanford University,27
+12,12,SenatorFischer,Deb,Fischer,R,F000463,1951-03-01,F,Deb Fischer,Church of Christ,"$122,012","$2,776,005","$5,429,998",Senate,Nebraska,BS,University of Nebraska–Lincoln,28
+13,13,SenGillibrand,Kirsten,Gillibrand,D,G000555,1966-12-09,F,Kirsten E. Gillibrand,Roman Catholic,"$162,008","$296,004","$430,000",Senate,Connecticut,J.D.,Yale University ,29
+14,14,MartinHeinrich,Martin,Heinrich,D,H001046,1971-10-17,M,Martin Heinrich,Southern Baptist,"-$361,964","$309,017","$979,998",Senate,New Mexico,BS,University of Missouri ,35
+15,15,SenJohnHoeven,John,Hoeven,R,H001061,1957-03-13,M,John Hoeven,Presbyterian,"$19,263,138","$46,689,569","$74,116,000",Senate,North Dakota,MBA,Northwestern University ,38
+16,16,SenRonJohnson,Ron,Johnson,R,J000293,1955-04-08,M,Ron Johnson,Baptist,"$14,101,014","$39,233,507","$64,366,000",Senate,Wisconsin,BS,University of Minnesota,41
+17,17,SenatorLankford,James,Lankford,R,L000575,1968-03-04,M,James Lankford,Roman Catholic,"-$159,980","$116,509","$392,999",Senate,Oklahoma,(MDiv),Southwestern Baptist Theological Seminary ,47
+18,18,SenatorLeahy,Patrick,Leahy,D,L000174,1940-03-31,M,Patrick J. Leahy,Roman Catholic,"-$330,992","-$85,496","$159,999",Senate,Georgia,MS,Georgia Institute of Technology,48
+19,19,SenMikeLee,Mike,Lee,R,L000577,1971-06-04,M,Mike Lee,Methodist,"$208,010","$414,005","$620,000",Senate,Utah,J.D.,Brigham Young University ,49
+20,20,Sen_JoeManchin,Joe,Manchin,D,M001183,1947-08-24,M,"Joe Manchin, III",Methodist,"$3,473,070","$7,623,534","$11,773,999",Senate,Georgia,MBA,DePaul University ,52
+21,21,SenJeffMerkley,Jeff,Merkley,D,M001176,1956-10-24,M,Jeff Merkley,,"$980,019","$2,603,008","$4,225,998",Senate,Oregon,MPA,Princeton University ,55
+22,22,JerryMoran,Jerry,Moran,R,M000934,1954-05-29,M,Jerry Moran,Methodist,"$749,079","$1,759,539","$2,769,999",Senate,Kansas,J.D.,University of Kansas,56
+23,23,ChrisMurphyCT,Christopher,Murphy,D,M001169,1973-08-03,M,Christopher Murphy,,"-$1,069,978","-$149,991","$769,996",Senate,Idaho,J.D.,University of Idaho ,58
+24,24,PattyMurray,Patty,Murray,D,M001111,1950-10-11,F,Patty Murray,Roman Catholic,"$839,022","$1,687,010","$2,534,999",Senate,Washington,BA,Washington State University ,59
+25,25,SenGaryPeters,Gary,Peters,D,P000595,1958-12-01,M,Gary C. Peters,,"$1,750,211","$4,368,105","$6,985,999",Senate,Illinois,J.D.,Georgetown University ,63
+26,26,SenatorRisch,James,Risch,R,R000584,1943-05-03,M,James E. Risch,,"$15,174,053","$41,807,024","$68,439,996",Senate,Illinois,PhD,Capella University,66
+27,27,SenSchumer,Charles,Schumer,D,S000148,1950-11-23,M,Charles E. Schumer,Jewish,"$370,043","$1,122,521","$1,874,999",Senate,Indiana,MBA,Harvard University,71
+28,28,SenatorTimScott,Tim,Scott,R,S001184,1965-09-19,M,Tim Scott,Methodist,"-$1,862,988","-$1,053,997","-$245,007",Senate,South Carolina,BS,Charleston Southern University,73
+29,29,SenatorShaheen,Jeanne,Shaheen,D,S001181,1947-01-28,F,Jeanne Shaheen,,"-$344,974","$3,823,005","$7,990,984",Senate,New Hampshire,MSS,University of Mississippi ,74
+30,30,SenStabenow,Debbie,Stabenow,D,S000770,1950-04-29,F,Debbie Stabenow,United Methodist,"$15,001","$32,500","$50,000",Senate,Michigan,MSW,Michigan State University,77
+31,31,SenDanSullivan,Dan,Sullivan,R,S001198,1964-11-13,M,Daniel Sullivan,,"$986,042","$2,372,519","$3,758,997",Senate,Kansas,BA,Kansas State University ,78
+32,32,SenatorTester,Jon,Tester,D,T000464,1956-08-21,M,Jon Tester,,"$1,284,008","$3,672,003","$6,059,999",Senate, Montana,BA,University of Providence (BA),79
+33,33,SenJohnThune,John,Thune,R,T000250,1961-01-07,M,John Thune,Latter Day Saints,"$51,025","$310,512","$569,999",Senate, South Dakota,MBA,University of South Dakota ,80
+34,34,MarkWarner,Mark,Warner,D,W000805,1954-12-15,M,Mark R. Warner,Presbyterian,"$80,129,151","$214,092,575","$348,056,000",Senate,Kentucky,MD,Duke University ,85
+35,35,SenWarren,Elizabeth,Warren,D,W000817,1949-06-22,F,Elizabeth Warren,,"$4,880,024","$7,977,513","$11,075,002",Senate,Massachusetts,J.D.,Rutgers Law School,87
+36,36,SenWhitehouse,Sheldon,Whitehouse,D,W000802,1955-10-20,M,Sheldon Whitehouse,,"$3,064,259","$7,443,628","$11,822,998",Senate,Rhode Island,J.D.,University of Virginia,88
+37,37,SenatorWicker,Roger,Wicker,R,W000437,1951-07-05,M,Roger F. Wicker,Southern Baptist,"-$788,986","-$180,995","$426,995",Senate, Maine,J.D.,University of Virginia ,89
+38,38,RonWyden,Ron,Wyden,D,W000779,1949-05-03,M,Ron Wyden,Jewish,"$5,370,048","$6,877,025","$8,384,003",Senate,Oregon,J.D.,University of Oregon ,90
+39,39,RepAdams,Alma,Adams,D,A000370,1946-05-27,F,Alma S. Adams,Catholic,"$265,002","$407,501","$550,000",House,Maryland,J.D.,"University of Maryland, Baltimore",92
+40,40,Robert_Aderholt,Robert,Aderholt,R,A000055,1965-07-22,M,Robert B. Aderholt,Protestant,"$2,676,022","$6,370,510","$10,064,999",House,Maryland,J.D.,Georgetown University,93
+41,41,RepBrianBabin,Brian,Babin,R,B001291,1948-03-23,M,Brian Babin,,"$1,034,102","$2,287,551","$3,541,000",House,Texas,(DDS),University of Texas Health Science Center ,101
+42,42,RepAndyBarr,Andy,Barr,R,B001282,1973-07-24,M,Andy Barr,,"$224,013","$429,506","$635,000",House,Kentucky,J.D.,University of Kentucky ,106
+43,43,RepKarenBass,Karen,Bass,D,B001270,1953-10-03,F,Karen Bass,,"$266,003","$415,501","$565,000",House,California,MSW,University of Southern California,108
+44,44,RepBeatty,Joyce,Beatty,D,B001281,1950-03-12,F,Joyce Beatty,,"$2,655,029","$7,216,014","$11,777,000",House,Ohio,MS,Wright State University ,109
+45,45,RepBera,Ami,Bera,D,B001287,1965-03-02,M,Ami Bera,Episcopalian,"$3,454,067","$7,420,029","$11,385,992",House,California,MD,University of California,110
+46,46,RepGusBilirakis,Gus,Bilirakis,R,B001257,1963-02-08,M,Gus M. Bilirakis,Methodist,"-$273,965","$96,016","$465,998",House,Minnesota,MBA,Dartmouth College ,114
+47,47,SanfordBishop,Sanford,Bishop,D,B000490,1947-02-04,M,"Sanford D. Bishop, Jr.",Baptist,"$87,004","$153,502","$220,000",House,Mississippi,J.D.,University of Mississippi ,115
+48,48,RepBonamici,Suzanne,Bonamici,D,B001278,1954-10-14,F,Suzanne Bonamici,Protestant,"$3,491,033","$6,978,016","$10,465,000",House,Oregon,J.D.,University of Oregon ,119
+49,49,RepBost,Mike,Bost,R,B001295,1960-12-30,M,Mike Bost,Presbyterian,"-$37,990","$264,004","$565,998",House,Illinois,BA,Murphysboro High School,120
+50,50,RepKevinBrady,Kevin,Brady,R,B000755,1955-04-11,M,Kevin Brady,Catholic,"$405,026","$766,513","$1,128,000",House,Texas,BA,University of South Dakota,124
+51,51,RepMoBrooks,Mo,Brooks,R,B001274,1954-04-29,M,Mo Brooks,,"$527,059","$1,191,529","$1,856,000",House,Alabama,J.D.,University of Alabama ,125
+52,52,RepKenBuck,Ken,Buck,R,B001297,1959-02-16,M,Ken Buck,,"$416,027","$1,053,013","$1,689,999",House,Colorado,J.D.,University of Wyoming,130
+53,53,RepLarryBucshon,Larry,Bucshon,R,B001275,1962-05-31,M,Larry Bucshon,,"$960,040","$1,744,520","$2,529,000",House,Indiana,MD,University of Illinois at Chicago ,131
+54,54,RepCheri,Cheri,Bustos,D,B001286,1961-10-17,F,Cheri Bustos,Catholic,"$532,020","$956,010","$1,380,000",House,Illinois,MA,University of Illinois at Springfield ,136
+55,55,RepBuddyCarter,Buddy,Carter,R,C001103,1957-09-06,M,"Earl L. ""Buddy"" Carter",,"$13,829,062","$33,232,031","$52,635,000",House,Nevada,AAS, Clark County Community College ,143
+56,56,JudgeCarter,John,Carter,R,C001051,1941-11-06,M,John R. Carter,Christian,"$1,067,008","$3,373,503","$5,679,999",House,Nevada,J.D.,Gonzaga University,144
+57,57,USRepKCastor,Kathy,Castor,D,C001066,1966-08-20,F,Kathy Castor,Roman Catholic,"$3,001,037","$6,296,518","$9,592,000",House,Florida,J.D.,Florida State University ,148
+58,58,RepSteveChabot,Steve,Chabot,R,C000266,1953-01-22,M,Steve Chabot,Catholic,"$510,027","$955,513","$1,401,000",House,Ohio,J.D.,Northern Kentucky University ,151
+59,59,RepJudyChu,Judy,Chu,D,C001080,1953-07-07,F,Judy Chu,,"$4,383,063","$7,090,031","$9,797,000",House,California,"MA, PhD",Alliant International University,154
+60,60,RepKClark,Katherine,Clark,D,C001101,1963-07-17,F,Katherine M. Clark,,"$2,677,119","$6,804,059","$10,930,999",House,New Jersey,J.D.,Yale University ,155
+61,61,RepCohen,Steve,Cohen,D,C001068,1949-05-24,M,Steve Cohen,Methodist,"$3,448,116","$6,198,058","$8,948,000",House,Tennessee,J.D.,University of Memphis ,162
+62,62,TomColeOK04,Tom,Cole,R,C001053,1949-04-28,M,Tom Cole,Methodist,"$3,186,060","$5,251,030","$7,316,000",House,Oklahoma,PhD,University of Oklahoma,163
+63,63,RepJimCosta,Jim,Costa,D,C001059,1952-04-13,M,Jim Costa,Baptist,"$1,894,028","$4,902,513","$7,910,999",House,California,BA,"California State University, Fresno ",167
+64,64,RepJoeCourtney,Joe,Courtney,D,C001069,1953-04-06,M,Joe Courtney,Episcopalian,"$442,045","$987,022","$1,532,000",House,Connecticut,J.D.,University of Connecticut ,168
+65,65,RodneyDavis,Rodney,Davis,R,D000619,1970-01-05,M,Rodney Davis,,"$140,021","$357,510","$575,000",House,Illinois,BA,Millikin University ,175
+66,66,RepPeterDeFazio,Peter,DeFazio,D,D000191,1947-05-27,M,Peter A. DeFazio,Catholic,"$910,020","$1,519,010","$2,128,000",House,North Carolina,BA,Wake Forest University (BA),177
+67,67,RepDianaDeGette,Diana,DeGette,D,D000197,1957-07-29,F,Diana DeGette,Presbyterian,"$1,680,051","$3,095,025","$4,509,999",House,Colorado,J.D.,New York University ,178
+68,68,RepDelBene,Suzan,DelBene,D,D000617,1962-02-17,F,Suzan K. DelBene,,"$33,667,084","$79,361,042","$125,055,000",House,North Dakota,MBA,Northwestern University ,180
+69,69,MarioDB,Mario,Diaz-Balart,R,D000600,1961-09-25,M,Mario Diaz-Balart,Catholic,"$21,009","$81,504","$142,000",House,Ohio," (MA, MPA)",Ohio State University,185
+70,70,RepDebDingell,Debbie,Dingell,D,D000624,1953-11-23,F,Debbie Dingell,Baptist,"$4,820,144","$8,486,072","$12,152,000",House,Michigan,MS,Georgetown University,186
+71,71,RepLloydDoggett,Lloyd,Doggett,D,D000399,1946-10-06,M,Lloyd Doggett,Methodist,"$14,295,056","$29,723,027","$45,150,999",House,Texas,J.D.,University of Texas at Austin ,187
+72,72,RepJeffDuncan,Jeff,Duncan,R,D000615,1966-01-07,M,Jeff Duncan,Catholic,"$593,015","$1,222,005","$1,850,996",House,South Carolina,BA,Clemson University ,190
+73,73,RepTomEmmer,Tom,Emmer,R,E000294,1961-03-03,M,Tom Emmer,Presbyterian,"-$134,998","$32,500","$199,999",House,Minnesota,J.D.,William Mitchell College of Law ,192
+74,74,RepAnnaEshoo,Anna,Eshoo,D,E000215,1942-12-13,F,Anna G. Eshoo,Catholic,"$4,806,022","$10,298,011","$15,790,000",House,Oregon,J.D.,University of Oregon ,194
+75,75,RepBillFoster,Bill,Foster,D,F000454,1955-10-07,M,Bill Foster,,"$7,246,036","$14,130,518","$21,015,000",House,Pennsylvania,J.D.,Catholic University of America ,205
+76,76,RepLoisFrankel,Lois,Frankel,D,F000462,1948-05-16,F,Lois Frankel,,"$939,176","$2,588,088","$4,237,000",House,Florida,J.D.,Georgetown University ,207
+77,77,RepRubenGallego,Ruben,Gallego,D,G000574,1979-11-20,M,Ruben Gallego,,"$189,013","$479,505","$769,998",House,Arizona ,BA,Harvard University,212
+78,78,RepGaramendi,John,Garamendi,D,G000559,1945-01-24,M,John Garamendi,Catholic,"$2,356,016","$5,168,508","$7,981,000",House,California,MBA,Harvard University,213
+79,79,RepBobGibbs,Bob,Gibbs,R,G000563,1954-06-14,M,Bob Gibbs,Methodist,"$1,587,064","$2,947,531","$4,307,999",House,Ohio,AAS,Agricultural Technical Institute (AAS),218
+80,80,RepGosar,Paul,Gosar,R,G000565,1958-11-22,M,Paul A. Gosar,,"$650,002","$1,050,000","$1,449,999",House,South Carolina,BS,Charleston Southern University,228
+81,81,RepKayGranger,Kay,Granger,R,G000377,1943-01-18,F,Kay Granger,Methodist,"-$184,995","$157,502","$499,999",House,Texas,BA,Texas Wesleyan University ,230
+82,82,RepGarretGraves,Garret,Graves,R,G000577,1972-01-31,M,Garret Graves,,"$156,027","$400,013","$644,000",House,Louisiana,Drop Out,American University,231
+83,83,RepAlGreen,Al,Green,D,G000553,1947-09-01,M,Al Green,Unknown,"$2,467,014","$5,373,507","$8,280,000",House,Texas,J.D.,Texas Southern University ,232
+84,84,RepMGriffith,Morgan,Griffith,R,G000568,1958-03-15,M,H. Morgan Griffith,Presbyterian,"$1,006","$333,001","$664,997",House,Tennessee,J.D.,New York University,235
+85,85,RepGrothman,Glenn,Grothman,R,G000576,1955-07-03,M,Glenn Grothman,,"$635,015","$1,105,007","$1,575,000",House,Wisconsin,J.D.,University of Wisconsin–Madison ,237
+86,86,RepGuthrie,Brett,Guthrie,R,G000558,1964-02-18,M,Brett Guthrie,Jewish,"$3,025,020","$7,663,010","$12,301,000",House,Kentucky,MS,Yale University,239
+87,87,RepHartzler,Vicky,Hartzler,R,H001053,1960-10-13,F,Vicky Hartzler,Catholic,"$3,165,029","$9,395,012","$15,624,995",House,Missouri,MS,University of Central Missouri ,242
+88,88,RepBrianHiggins,Brian,Higgins,D,H001038,1959-10-06,M,Brian Higgins,,"$8,008","$64,004","$120,000",House,New York,MPA,Harvard University,247
+89,89,RepFrenchHill,French,Hill,R,H001072,1956-12-05,M,J. French Hill,Latter Day Saints,"$3,224,069","$7,035,033","$10,845,998",House,Vermont,BA,University of Chicago,249
+90,90,RepRichHudson,Richard,Hudson,R,H001067,1971-11-04,M,Richard Hudson,,"$14,017","$133,008","$252,000",House,North Carolina,BA,University of North Carolina ,255
+91,91,RepHuffman,Jared,Huffman,D,H001068,1964-02-18,M,Jared Huffman,,"$811,045","$1,478,522","$2,146,000",House,California,J.D.,Boston College,256
+92,92,RepHuizenga,Bill,Huizenga,R,H001058,1969-01-31,M,Bill Huizenga,,"$926,022","$1,498,511","$2,071,000",House,Michigan,BA,Calvin College ,257
+93,93,RepJeffries,Hakeem,Jeffries,D,J000294,1970-08-04,M,Hakeem S. Jeffries,Baptist,"$452,024","$841,012","$1,230,000",House,Washington,BA,Miami University ,264
+94,94,RepBillJohnson,Bill,Johnson,R,J000292,1954-11-10,M,Bill Johnson,Episcopalian,"$417,037","$948,518","$1,480,000",House,Ohio,MS,Georgia Institute of Technology,265
+95,95,RepEBJ,Eddie,Johnson,D,J000126,1935-12-03,F,Eddie Bernice Johnson,Baptist,"$266,003","$615,501","$964,999",House,Texas, (MPA),Southern Methodist University,267
+96,96,Jim_Jordan,Jim,Jordan,R,J000289,1964-02-17,M,Jim Jordan,,"$147,007","$289,003","$431,000",House,West Virginia,MEd,University of Virginia,271
+97,97,RepDaveJoyce,David,Joyce,R,J000295,1957-03-17,M,David P. Joyce,,"$1,905,063","$3,415,031","$4,925,000",House,Wisconsin,J.D.,University of Wisconsin–Madison,272
+98,98,RepJohnKatko,John,Katko,R,K000386,1962-11-09,M,John Katko,Unknown,"-$98,999","-$67,000","-$35,001",House,New York,J.D.,Syracuse University,274
+99,99,MikeKellyPA,Mike,Kelly,R,K000376,1948-05-10,M,Mike Kelly,,"$2,493,113","$12,419,056","$22,344,999",House,Pennsylvania,BA,University of Notre Dame ,277
+100,100,RepRobinKelly,Robin,Kelly,D,K000385,1956-04-30,F,Robin L. Kelly,,"$132,006","$231,003","$330,000",House,Wyoming,MBA,University of Denver ,278
+101,101,RepDerekKilmer,Derek,Kilmer,D,K000381,1974-01-01,M,Derek Kilmer,Baptist,"$180,043","$596,521","$1,012,999",House,Washington,PhD,"Green Templeton College, Oxford",281
+102,102,RepRonKind,Ron,Kind,D,K000188,1963-03-16,M,Ron Kind,Lutheran,"$1,145,018","$1,835,009","$2,525,000",House,Wisconsin,J.D.,University of Minnesota,284
+103,103,RepAnnieKuster,Ann,Kuster,D,K000382,1956-09-05,F,Ann M. Kuster,,"$2,145,625","$2,762,620","$3,379,616",House,Alabama,J.D.,Birmingham School of Law,287
+104,104,RepLaHood,Darin,LaHood,R,L000585,1968-07-05,M,Darin LaHood,Unknown,"$108,029","$341,514","$575,000",House,Illinois,J.D.,"John Marshall Law School, Chicago",289
+105,105,RepLaMalfa,Doug,LaMalfa,R,L000578,1960-07-02,M,Doug LaMalfa,Methodist,"$1,281,008","$3,498,504","$5,716,000",House,California,BS,"University, San Luis Obispo ",290
+106,106,RepRickLarsen,Rick,Larsen,D,L000560,1965-06-15,M,Rick Larsen,Roman Catholic,"$372,019","$676,509","$981,000",House,Washington,MPA,University of Minnesota ,292
+107,107,RepJohnLarson,John,Larson,D,L000557,1948-07-22,M,John B. Larson,,"$91,050","$466,025","$841,000",House,Connecticut,BA,Central Connecticut State University,293
+108,108,RepLawrence,Brenda,Lawrence,D,L000581,1954-10-18,F,Brenda L. Lawrence,Roman Catholic,"$621,021","$1,173,010","$1,724,999",House,Alaska,BA,Chico State College ,296
+109,109,RepBarbaraLee,Barbara,Lee,D,L000551,1946-07-16,F,Barbara Lee,Baptist,"$154,008","$257,504","$361,000",House,California,MSW,University of California,298
+110,110,RepTedLieu,Ted,Lieu,D,L000582,1969-03-29,M,Ted Lieu,,"$1,049,040","$3,533,519","$6,017,999",House,California,J.D.,Georgetown University ,305
+111,111,USRepLong,Billy,Long,R,L000576,1955-08-11,M,Billy Long,,"$1,152,045","$2,783,022","$4,413,999",House,Missouri,Drop Out,University of Missouri ,306
+112,112,RepLoudermilk,Barry,Loudermilk,R,L000583,1963-12-22,M,Barry Loudermilk,African Methodist Episcopal,"$16,002","$40,501","$65,000",House,Georgia,BS,Wayland Baptist University ,307
+113,113,RepLowenthal,Alan,Lowenthal,D,L000579,1941-03-08,M,Alan S. Lowenthal,,"$1,301,143","$3,015,071","$4,729,000",House,Arizona ,MA,"Arizona State University, Phoenix",308
+114,114,RepFrankLucas,Frank,Lucas,R,L000491,1960-01-06,M,Frank D. Lucas,Baptist,"$485,013","$1,352,504","$2,219,995",House,Arizona ,MBA,"Arizona State University, Tempe",309
+115,115,RepMaloney,Carolyn,Maloney,D,M000087,1946-02-19,F,Carolyn B. Maloney,Presbyterian,"$5,128,059","$12,999,029","$20,869,999",House,Arizona ,BA,Harvard University,315
+116,116,RepSeanMaloney,Sean,Maloney,D,M001185,1966-07-30,M,Sean Patrick Maloney,,"$754,006","$1,157,003","$1,560,000",House,Arizona ,BA,University of Wisconsin–Madison ,316
+117,117,RepThomasMassie,Thomas,Massie,R,M001184,1971-01-13,M,Thomas Massie,,"$703,004","$2,816,501","$4,929,998",House,Kentucky,MS,Massachusetts Institute of Technology ,318
+118,118,DorisMatsui,Doris,Matsui,D,M001163,1944-09-25,F,Doris O. Matsui,,"$763,014","$1,279,007","$1,795,000",House,Arkansas,BS,Arkansas State University ,320
+119,119,GOPLeader,Kevin,McCarthy,R,M001165,1965-01-26,M,Kevin McCarthy,,"$81,006","$223,002","$364,999",House,California,MBA,California State University,322
+120,120,BettyMcCollum04,Betty,McCollum,D,M001143,1954-07-12,F,Betty McCollum,Roman Catholic,"$4,004","$32,002","$60,000",House,Minnesota,BA,St. Catherine University ,325
+121,121,RepMcGovern,James,McGovern,D,M000312,1959-11-20,M,James P. McGovern,Catholic,"$381,005","$2,698,001","$5,014,998",House,Arkansas,MS,Yale University,327
+122,122,PatrickMcHenry,Patrick,McHenry,R,M001156,1975-10-22,M,Patrick T. McHenry,,"$393,015","$765,007","$1,137,000",House,California,BS,"University, San Luis Obispo ",328
+123,123,RepMcKinley,David,McKinley,R,M001180,1947-03-28,M,David B. McKinley,Methodist,"$3,839,113","$6,739,056","$9,639,000",House,California,J.D.,Boston College,329
+124,124,RepGraceMeng,Grace,Meng,D,M001188,1975-10-01,F,Grace Meng,,"$139,047","$708,522","$1,277,998",House,New York,J.D.,Yeshiva University ,332
+125,125,RepGwenMoore,Gwen,Moore,D,M001160,1951-04-18,F,Gwen Moore,Unknown,$0,$0,$0,House,Wisconsin,BA,Marquette University ,341
+126,126,RepJerryNadler,Jerrold,Nadler,D,N000002,1947-06-13,M,Jerrold Nadler,Jewish,"$32,006","$121,003","$210,000",House,California, MPA,"California State University, Chico ",346
+127,127,RepRichardNeal,Richard,Neal,D,N000015,1949-02-14,M,Richard E. Neal,Roman Catholic,"$77,010","$180,005","$283,000",House,California,BA,"University of California, Berkeley",348
+128,128,RepNewhouse,Dan,Newhouse,R,N000189,1955-07-10,M,Dan Newhouse,,"$894,040","$13,777,019","$26,659,998",House,Washington,BS,Washington State University ,351
+129,129,EleanorNorton,Eleanor,Norton,D,N000147,1937-06-13,F,Eleanor Holmes Norton,Episcopalian,"$1,162,038","$2,084,019","$3,006,000",House,California,MA,University of California,355
+130,130,CongPalazzo,Steven,Palazzo,R,P000601,1970-02-21,M,Steven M. Palazzo,,"$172,006","$908,501","$1,644,997",House,California,PhD,University of New Mexico ,360
+131,131,USRepGaryPalmer,Gary,Palmer,R,P000609,1954-05-14,M,Gary J. Palmer,,"$796,088","$1,918,044","$3,040,000",House,California,MBA,Harvard University,362
+132,132,RepPerlmutter,Ed,Perlmutter,D,P000593,1953-05-01,M,Ed Perlmutter,Roman Catholic,"$117,043","$437,521","$758,000",House,Colorado,J.D.,University of Colorado Boulder ,368
+133,133,RepScottPeters,Scott,Peters,D,P000608,1958-06-17,M,Scott H. Peters,Roman Catholic,"$42,982,085","$60,456,054","$77,930,023",House,California,BA,Trinity Washington University ,369
+134,134,RepDavidEPrice,David,Price,D,P000523,1940-08-17,M,David E. Price,Baptist,"$1,910,084","$3,568,042","$5,226,000",House,California,MSW,University of California,377
+135,135,RepMikeQuigley,Mike,Quigley,D,Q000023,1958-10-17,M,Mike Quigley,,"$35,001","$62,500","$90,000",House,Illinois,J.D.,Loyola University Chicago ,378
+136,136,RepKathleenRice,Kathleen,Rice,D,R000602,1965-02-15,F,Kathleen M. Rice,,"-$15,994","$64,502","$144,999",House,California,J.D.,"University of Maryland, Baltimore",381
+137,137,RepTomRice,Tom,Rice,R,R000597,1957-08-04,M,Tom Rice,,"$5,629,020","$14,569,510","$23,510,000",House,South Carolina,J.D.,University of South Carolina,382
+138,138,RepMikeRogersAL,Mike,Rogers,R,R000575,1958-07-16,M,Mike Rogers,,"$152,026","$1,601,011","$3,049,996",House,Alabama,J.D.,Birmingham School of Law,384
+139,139,RepDavidRouzer,David,Rouzer,R,R000603,1972-02-16,M,David Rouzer,,"$369,023","$703,011","$1,037,000",House,North Carolina,BS,North Carolina State University ,388
+140,140,RepRoybalAllard,Lucille,Roybal-Allard,D,R000486,1941-06-12,F,Lucille Roybal-Allard,Roman Catholic,"-$825,992","$357,002","$1,539,996",House,California,BA,California State University,390
+141,141,RepBobbyRush,Bobby,Rush,D,R000515,1946-11-23,M,Bobby L. Rush,Protestant,"-$4,499,999","-$2,250,000",-$1,House,California,J.D.,Santa Clara University ,393
+142,142,RepTimRyan,Tim,Ryan,D,R000577,1973-07-16,M,Tim Ryan,Roman Catholic,"-$164,991","-$1,997","$160,997",House,Ohio,J.D.,University of New Hampshire,394
+143,143,RepSarbanes,John,Sarbanes,D,S001168,1962-05-22,M,John P. Sarbanes,,"$298,010","$521,505","$745,000",House,California,MS,California Polytechnic State University,398
+144,144,SteveScalise,Steve,Scalise,R,S001176,1965-10-06,M,Steve Scalise,Jewish,$1,"$42,500","$84,999",House,Louisiana,BS,Louisiana State University ,399
+145,145,RepAdamSchiff,Adam,Schiff,D,S001150,1960-06-22,M,Adam B. Schiff,Baptist,"$796,024","$1,436,011","$2,075,999",House,California,MA,Fielding Graduate University ,402
+146,146,RepSchrader,Kurt,Schrader,D,S001180,1951-10-19,M,Kurt Schrader,,"$3,443,148","$7,907,573","$12,371,999",House,Oregon,"(BS, DVM)",illionois University,404
+147,147,RepDavid,David,Schweikert,R,S001183,1962-03-03,M,David Schweikert,Roman Catholic,"$286,011","$618,004","$949,998",House,Arizona ,MBA,"Arizona State University, Tempe",406
+148,148,AustinScottGA08,Austin,Scott,R,S001189,1969-12-10,M,Austin Scott,,"$1,155,044","$2,397,020","$3,638,997",House,California,MBA,American University ,407
+149,149,RepTerriSewell,Terri,Sewell,D,S001185,1965-01-01,F,Terri A. Sewell,Jewish,"$145,013","$330,006","$515,000",House,California,"MA, PhD",Alliant International University,410
+150,150,BradSherman,Brad,Sherman,D,S000344,1954-10-24,M,Brad Sherman,Jewish,"$3,400,032","$8,427,016","$13,454,000",House,California,J.D.,Harvard University,411
+151,151,RepSires,Albio,Sires,D,S001165,1951-01-26,M,Albio Sires,,"$32,004","$81,002","$130,000",House,New Jersey,MA,Middlebury College,414
+152,152,RepAdamSmith,Adam,Smith,D,S000510,1965-06-15,M,Adam Smith,Christian,"$220,012","$393,006","$566,000",House,Washington,J.D.,University of Washington ,416
+153,153,RepAdrianSmith,Adrian,Smith,R,S001172,1970-12-19,M,Adrian Smith,Presbyterian,"$256,016","$535,508","$815,000",House,Nebraska,BA,University of Nebraska–Lincoln,417
+154,154,RepJasonSmith,Jason,Smith,R,S001195,1980-06-16,M,Jason Smith,Nazarene,"-$1,786,970","-$5,490","$1,775,990",House,Missouri,J.D.,Oklahoma City University ,418
+155,155,RepSpeier,Jackie,Speier,D,S001175,1950-05-14,F,Jackie Speier,,"$5,980,059","$11,028,529","$16,077,000",House,California,J.D.,"University of California, Hastings ",423
+156,156,RepStefanik,Elise,Stefanik,R,S001196,1984-07-02,F,Elise M. Stefanik,Roman Catholic,"-$71,983","$282,007","$635,998",House,California,MPP,Harvard University,428
+157,157,RepChrisStewart,Chris,Stewart,R,S001192,1960-07-15,M,Chris Stewart,,"$251,002","$383,001","$515,000",House,California,BA,National Labor College ,432
+158,158,RepSwalwell,Eric,Swalwell,D,S001193,1980-11-16,M,Eric Swalwell,Episcopalian,"-$113,998","-$37,000","$39,998",House,California,J.D.,"University of Maryland, Baltimore",435
+159,159,RepMarkTakano,Mark,Takano,D,T000472,1960-12-10,M,Mark Takano,,"$116,005","$216,502","$317,000",House,California,MFA,University of California,436
+160,160,BennieGThompson,Bennie,Thompson,D,T000193,1948-01-28,M,Bennie G. Thompson,Methodist,"$469,023","$889,511","$1,310,000",House,California,J.D.,"University of California, Los Angeles",438
+161,161,RepThompson,Mike,Thompson,D,T000460,1951-01-24,M,Mike Thompson,Catholic,"$3,434,046","$5,672,022","$7,909,999",House,California, MPA,"California State University, Chico ",439
+162,162,RepPaulTonko,Paul,Tonko,D,T000469,1949-06-18,M,Paul Tonko,Roman Catholic,"$1,001","$8,000","$15,000",House,New York,BS,Clarkson University,444
+163,163,NormaJTorres,Norma,Torres,D,T000474,1965-04-04,F,Norma J. Torres,Catholic,"-$233,995","$41,502","$316,999",House,California,MFA,University of California,445
+164,164,RepMikeTurner,Michael,Turner,R,T000463,1960-01-11,M,Michael R. Turner,,"$183,029","$489,514","$796,000",House,California,BA,Chaffey College,449
+165,165,RepJuanVargas,Juan,Vargas,D,V000130,1961-03-07,M,Juan Vargas,,"$17,009","$1,591,002","$3,164,995",House,California,J.D.,Harvard University,453
+166,166,RepVeasey,Marc,Veasey,D,V000131,1971-01-03,M,Marc A. Veasey,,"-$194,993","-$79,498","$35,997",House,California,J.D.,University of Southern California,454
+167,167,RepAnnWagner,Ann,Wagner,R,W000812,1962-09-13,F,Ann Wagner,African Methodist Episcopal,"$6,655,131","$11,055,565","$15,456,000",House,Missouri,BA,University of Missouri ,456
+168,168,RepWalberg,Tim,Walberg,R,W000798,1951-04-12,M,Tim Walberg,Unknown,"$101,017","$283,008","$465,000",House,Michigan,MA,"Wheaton College, Illinois ",457
+169,169,RepWalorski,Jackie,Walorski,R,W000813,1963-08-17,F,Jackie Walorski,Methodist,"$143,025","$382,012","$621,000",House,Indiana,BA,Taylor University ,458
+170,170,RepWebster,Daniel,Webster,R,W000806,1949-04-27,M,Daniel Webster,,"$483,008","$814,004","$1,145,000",House,California,MBA,Ohio State University ,462
+171,171,PeterWelch,Peter,Welch,D,W000800,1947-05-02,M,Peter Welch,Roman Catholic,"$3,013,128","$5,567,564","$8,122,000",House,Vermont,J.D.,"University of California, Berkeley ",463
+172,172,RepWesterman,Bruce,Westerman,R,W000821,1967-11-18,M,Bruce Westerman,Roman Catholic,"$214,025","$512,012","$810,000",House,Arkansas,MS,Yale University,464
+173,173,RepRWilliams,Roger,Williams,R,W000816,1949-09-13,M,Roger Williams,Jewish,"$44,597,061","$66,980,026","$89,362,992",House,Texas,BA,Texas Christian University ,468
+174,174,RepWilson,Frederica,Wilson,D,W000808,1942-11-05,F,Frederica S. Wilson,Roman Catholic,"$960,011","$1,555,005","$2,150,000",House,California,J.D.,New York University ,469
+175,175,RepJoeWilson,Joe,Wilson,R,W000795,1947-07-31,M,Joe Wilson,Presbyterian,"-$564,992","$337,501","$1,239,994",House,South Carolina,J.D.,University of South Carolina ,470
+176,176,RepJohnYarmuth,John,Yarmuth,D,Y000062,1947-11-04,M,John A. Yarmuth,Episcopalian,"$5,439,096","$17,075,547","$28,711,999",House,Colorado,J.D.,New York University ,473
+177,177,RepLeeZeldin,Lee,Zeldin,R,Z000017,1980-01-30,M,Lee M. Zeldin,Roman Catholic,$0,$0,$0,House,Colorado,J.D.,University of Colorado Boulder ,474
+178,178,RepPeteAguilar,Pete,Aguilar,D,O000168,1962-12-09,M,Pete Aguilar,,"$34,008","$117,504","$201,000",House,California,BS,University of Redlands ,94
+179,179,RepArrington,Jodey,Arrington,R,P000603,1963-01-07,M,Jodey Arrington,,"$616,031","$1,190,515","$1,765,000",House,Texas,MPA,Texas Tech University ,98
+180,180,RepDonBacon,Don,Bacon,R,P000588,1947-08-24,M,Don Bacon,,"$494,013","$852,006","$1,210,000",House,Nebraska,MA,National Defense University ,102
+181,181,RepBalderson,Troy,Balderson,R,P000593,1953-05-01,M,Troy Balderson,,"$17,003","$48,501","$80,000",House,Ohio,Drop Out,Ohio State University,104
+182,182,RepJimBanks,Jim,Banks,R,P000595,1958-12-01,M,Jim Banks,,"$168,022","$395,011","$622,000",House,Indiana,MBA,Grace College and Seminary ,105
+183,183,RepAndyBiggsAZ,Andy,Biggs,R,P000598,1975-05-12,M,Andy Biggs,,"$1,953,009","$4,512,004","$7,070,999",House,Arizona ,MA,"Arizona State University, Phoenix",113
+184,184,CongBoyle,Brendan,Boyle,D,P000591,1954-10-08,M,Brendan Boyle,,"-$169,994","$295,001","$759,996",House,Pennsylvania,MPP,Harvard University,123
+185,185,RepBrownley,Julia,Brownley,D,R000585,1971-11-18,M,Julia Brownley,,"$207,036","$1,569,516","$2,931,997",House,California,MBA,American University ,128
+186,186,michaelcburgess,Michael,Burgess,R,R000586,1958-12-03,M,Michael Burgess,,"$1,326,054","$2,328,027","$3,330,000",House,Connecticut,MPhil,"St Edmund Hall, Oxford",134
+187,187,RepCarbajal,Salud,Carbajal,D,R000582,1945-07-21,M,Salud Carbajal,,"-$37,994","$81,002","$199,998",House,California,MA,Fielding Graduate University ,138
+188,188,RepYvetteClarke,Yvette,Clarke,D,R000580,1961-09-13,M,Yvette D Clarke,,"$115,002","$207,501","$300,000",House,Delaware,MA,University of Delaware ,156
+189,189,repcleaver,Emanuel,Cleaver,D,R000593,1959-10-18,M,Emanuel Cleaver,,"-$4,623,988","-$2,266,995","$89,998",House,Missouri,MDiv,Saint Paul School of Theology ,157
+190,190,RepCloudTX,Michael,Cloud,R,R000487,1951-10-12,M,Michael Cloud,Roman Catholic,"$89,012","$212,006","$335,000",House,Texas,BS,Oral Roberts University ,159
+191,191,WhipClyburn,James,Clyburn,D,R000595,1971-05-28,M,James E Clyburn,,"$97,008","$189,504","$282,000",House,Florida,DVM,University of Florida,160
+192,192,RepJamesComer,James,Comer,R,R000515,1946-11-23,M,James Comer,Protestant,"$1,920,024","$5,285,011","$8,649,998",House,Kentucky,BS,Western Kentucky University ,164
+193,193,RepLouCorrea,Lou,Correa,D,R000570,1970-01-29,M,Lou Correa,Roman Catholic,"$3,794,043","$5,940,521","$8,087,000",House,California,"JD, MBA","University of California, Los Angeles ",166
+194,194,RepJohnCurtis,John,Curtis,R,S001168,1962-05-22,M,John Curtis,,"-$1,870,893","$7,860,050","$17,590,994",House,Florida,BA,Virginia Military Institute ,172
+195,195,WarrenDavidson,Warren,Davidson,R,S001145,1944-05-26,F,Warren Davidson,Jewish,"-$4,003,989","$457,004","$4,917,998",House,Ohio,MBA,University of Notre Dame ,174
+196,196,rosadelauro,Rosa,DeLauro,D,S001180,1951-10-19,M,Rosa L DeLauro,,"$131,007","$2,541,002","$4,950,997",House,Florida,AA,Brevard Community College ,179
+197,197,DrNealDunnFL2,Neal,Dunn,R,S001183,1962-03-03,M,Neal Dunn,,"$4,874,067","$9,529,533","$14,184,999",House,Florida,MD,George Washington University ,191
+198,198,RepEspaillat,Adriano,Espaillat,D,S001157,1945-06-27,M,Adriano Espaillat,Baptist,"$1,001","$8,000","$15,000",House,New York,BA,Queens College,195
+199,199,RepRonEstes,Ron,Estes,R,S000185,1947-04-30,M,Ron Estes,Episcopalian,"$489,047","$1,055,023","$1,621,000",House,Kansas,MBA,Tennessee Technological University,196
+200,200,RepDwightEvans,Dwight,Evans,D,S001184,1965-09-19,M,Dwight Evans,,"$489,051","$1,354,524","$2,219,998",House,Pennsylvania,BA,La Salle University,197
+201,201,RepBrianFitz,Brian,Fitzpatrick,R,S000320,1934-05-06,M,Brian Fitzpatrick,Presbyterian,"-$678,998","-$124,500","$429,997",House,Pennsylvania,J.D.,Pennsylvania State University,202
+202,202,virginiafoxx,Virginia,Foxx,R,S000364,1958-02-21,M,Virginia Foxx,Lutheran,"$2,240,032","$3,670,516","$5,101,000",House,North Carolina,"MA, EdD",University of North Carolina at Greensboro ,206
+203,203,RepMattGaetz,Matt,Gaetz,R,S001165,1951-01-26,M,Matt Gaetz,,"$104,013","$312,006","$519,999",House,Florida,J.D.,College of William and Mary ,210
+204,204,RepGallagher,Mike,Gallagher,R,S000480,1929-08-14,F,Mike Gallagher,Episcopalian,"$466,016","$853,007","$1,239,999",House,Wisconsin,PhD,Georgetown University ,211
+205,205,RepJimmyGomez,Jimmy,Gomez,D,S001156,1969-01-28,F,Jimmy Gomez,Roman Catholic,"$75,013","$267,506","$459,999",House,California,MPP,Harvard University,222
+206,206,RepGonzalez,Vicente,Gonzalez,D,T000467,1959-07-27,M,Vicente Gonzalez,,"$1,090,921","$1,090,921","$1,090,921",House,Florida,ALB,Harvard University,225
+207,207,RepJoshG,Josh,Gottheimer,D,T000250,1961-01-07,M,Josh Gottheimer,,"$3,442,330","$8,935,664","$14,428,999",House,New Jersey,J.D.,Harvard University,229
+208,208,repkevinhern,Kevin,Hern,R,V000128,1959-01-10,M,Kevin Hern,Episcopalian,"$34,505,238","$60,979,615","$87,453,992",House,Oklahoma,MBA,University of Arkansas at Little Rock ,244
+209,209,RepClayHiggins,Clay,Higgins,R,V000081,1953-03-28,F,Clay Higgins,Roman Catholic,$0,$0,$0,House,Louisiana,BA,Louisiana State University,248
+210,210,RepJayapal,Pramila,Jayapal,D,W000806,1949-04-27,M,Pramila Jayapal,,"-$816,963","$214,017","$1,244,998",House,Washington,MBA,Northwestern University,263
+211,211,CongressmanRaja,Raja,Krishnamoorthi,D,W000810,1970-02-11,M,Raja Krishnamoorthi,,"$482,030","$1,581,013","$2,679,997",House,Illinois,J.D.,Harvard University,286
+212,212,RepDavidKustoff,David,Kustoff,R,W000779,1949-05-03,M,David Kustoff,Jewish,"$1,590,084","$3,048,541","$4,506,999",House,Tennessee,J.D.,University of Memphis ,288
+213,213,boblatta,Robert,Latta,R,Y000062,1947-11-04,M,Robert E Latta,,"$3,147,063","$5,188,531","$7,230,000",House,Florida,BA,University of South Florida,294
+214,214,RepDLesko,Debbie,Lesko,R,H001041,1960-05-10,M,Debbie Lesko,,"$767,030","$1,348,515","$1,930,000",House,Arizona ,BA,University of Wisconsin–Madison ,301
+215,215,RepBlaine,Blaine,Luetkemeyer,R,B001278,1954-10-14,F,Blaine Luetkemeyer,,"$1,466,006","$3,765,503","$6,065,000",House,Missouri,BA,"Lincoln University, Missouri ",310
+216,216,RepBrianMast,Brian,Mast,R,S001194,1972-10-20,M,Brian Mast,,"$169,713","$370,702","$571,692",House,Florida,ALB,Harvard University,319
+217,217,RepGregoryMeeks,Gregory,Meeks,D,C001095,1977-05-13,M,Gregory W Meeks,,$0,$0,$0,House,Georgia,J.D.,Emory University,330
+218,218,RepJoeMorelle,Joseph,Morelle,D,B001285,1952-08-28,F,Joseph D Morelle,,"$98,024","$285,512","$473,000",House,Georgia,BS,University of Georgia,342
+219,219,gracenapolitano,Grace,Napolitano,D,R000599,1972-08-25,M,Grace Napolitano,,"$36,012","$913,004","$1,789,996",House,California,Drop Out,Texas Southmost College,347
+220,220,RepRalphNorman,Ralph,Norman,R,V000130,1961-03-07,M,Ralph Norman,,"$5,517,147","$43,398,070","$81,278,994",House,South Carolina,BS,Presbyterian College ,354
+221,221,RepJimmyPanetta,Jimmy,Panetta,D,D000621,1978-09-14,M,Jimmy Panetta,,"$30,036","$263,517","$496,999",House,California,J.D.,Santa Clara University ,363
+222,222,SpeakerPelosi,Nancy,Pelosi,D,C001093,1966-08-16,M,Nancy Pelosi,,"-$12,825,949","$114,662,521","$242,150,991",House,California,BA,Trinity Washington University ,367
+223,223,chelliepingree,Chellie,Pingree,D,D000619,1970-01-05,M,Chellie Pingree,,"$3,586,013","$9,938,006","$16,290,000",House,Maine,BS,College of the Atlantic,372
+224,224,StaceyPlaskett,Stacey,Plaskett,D,B001286,1961-10-17,F,Stacey Plaskett,,"-$115,000","-$87,500","-$60,001",House,Georgia,J.D.,Atlanta's John Marshall Law School ,373
+225,225,repmarkpocan,Mark,Pocan,D,W000813,1963-08-17,F,Mark Pocan,,"$200,002","$385,000","$569,998",House,Wisconsin,BA,University of Wisconsin–Madison ,374
+226,226,RepRaskin,Jamie,Raskin,D,B001282,1973-07-24,M,Jamie Raskin,,"$2,314,073","$4,162,036","$6,010,000",House,Maryland,J.D.,Harvard University,379
+227,227,cathymcmorris,Cathy,Rodgers,R,K000379,1980-10-04,M,Cathy McMorris Rodgers,,"$985,027","$1,892,513","$2,799,999",House,Washington,MBA,University of Washington ,383
+228,228,RepRaulRuizMD,Raul,Ruiz,D,W000812,1962-09-13,F,Raul Ruiz,,"$217,005","$491,001","$764,998",House,Georgia,MBA,University of Pennsylvania ,391
+229,229,RepMGS,Mary,Scanlon,D,P000606,1948-08-15,M,Mary Gay Scanlon,,"$2,770,069","$4,924,533","$7,078,998",House,Pennsylvania,J.D.,University of Pennsylvania ,400
+230,230,RepSmucker,Lloyd,Smucker,R,F000463,1951-03-01,F,Lloyd Smucker,,"$435,010","$2,810,002","$5,184,995",House,Pennsylvania,Drop Out,Franklin and Marshall College,419
+231,231,RepDarrenSoto,Darren,Soto,D,K000382,1956-09-05,F,Darren Soto,,"-$17,990","$641,002","$1,299,995",House,Florida,J.D.,George Washington University,420
+232,232,RepSusanWild,Susan,Wild,D,V000132,1963-02-13,M,Susan Wild,,"$839,032","$1,746,015","$2,652,999",House,Pennsylvania,J.D.,George Washington University ,466
+233,233,rep_stevewomack,Steve,Womack,R,K000384,1958-02-26,M,Steve Womack,,"$205,008","$365,004","$525,000",House,Arkansas,BA,Arkansas Tech University ,472
+234,234,SenDuckworth,Tammy,Duckworth,D,D000622,1968-03-12,F,Tammy Duckworth,,"$139,063","$697,531","$1,255,999",Senate,Illinois,PhD,Capella University,24
+235,235,LindseyGrahamSC,Lindsey,Graham,R,G000359,1955-07-09,M,Lindsey Graham,Southern Baptist,"$258,046","$969,022","$1,679,999",Senate,South Carolina,J.D.,University of South Carolina ,30
+236,236,maziehirono,Mazie,Hirono,D,H001042,1947-11-03,F,Mazie K. Hirono,,"$2,661,039","$4,339,019","$6,017,000",Senate,Illinois,PhD,Duke University,37
+237,237,lisamurkowski,Lisa,Murkowski,R,M001153,1957-05-22,F,Lisa Murkowski,Roman Catholic,"$817,024","$1,499,011","$2,180,999",Senate,Alaska,J.D.,Willamette University ,57
+238,238,RandPaul,Rand,Paul,R,P000603,1963-01-07,M,Rand Paul,,"$170,041","$773,520","$1,376,999",Senate,Kentucky,MD,Duke University ,62
+239,239,marcorubio,Marco,Rubio,R,R000595,1971-05-28,M,Marco Rubio,,"-$1,896,988","-$1,262,995","-$629,002",Senate,Florida,J.D.,University of Miami ,69
+240,240,SenThomTillis,Thom,Tillis,R,T000476,1960-08-30,M,Thom Tillis,,"$4,002,094","$10,966,045","$17,929,996",Senate,North Carolina,BA,University of Maryland,81
+241,241,SenToddYoung,Todd,Young,R,Y000064,1972-08-24,M,Todd Young,,"-$1,995,994","-$1,392,999","-$790,005",Senate,Indiana,J.D.,"Indiana University, Indianapolis",91
+242,242,ChrisCoons,Chris,Coons,D,C001088,1963-09-09,M,Christopher A. Coons,,"$6,678,074","$10,126,038","$13,574,003",Senate,Illinois,BS,University of Illinois at Urbana–Champaign,16
+243,243,MikeCrapo,Mike,Crapo,R,C000880,1951-05-20,M,Mike Crapo,Latter Day Saints,"$204,044","$944,521","$1,684,999",Senate,Idaho,J.D.,Harvard University,21
+244,244,ChuckGrassley,Chuck,Grassley,R,G000386,1933-09-17,M,Chuck Grassley,Baptist,"$4,240,150","$7,550,075","$10,860,000",Senate,Iowa,MA,University of Northern Iowa,31
+245,245,SenatorMenendez,Robert,Menendez,D,M000639,1954-01-01,M,Robert Menendez,Roman Catholic,"$303,005","$541,502","$779,999",Senate,Illinois,BA,Murphysboro High School,54
+246,246,SenJackReed,Jack,Reed,D,R000122,1949-11-12,M,Jack Reed,Roman Catholic,"-$561,945","$107,026","$775,998",Senate,Rhode Island,"MPP, JD",Harvard University,65
+247,247,SenToomey,Pat,Toomey,R,T000461,1961-11-17,M,Pat Toomey,,"$721,060","$2,038,029","$3,354,998",Senate,Pennsylvania,AB,Harvard University,82
+248,248,JacksonLeeTX18,Sheila,Lee,D,J000032,1950-01-12,F,Sheila Jackson Lee,Seventh Day Adventist,"-$681,993","-$181,001","$319,991",House,Texas,J.D.,University of Virginia ,259
+249,249,RepMullin,Markwayne,Mullin,R,M001190,1977-07-26,M,Markwayne Mullin,Latter Day Saints,"$4,012,026","$11,384,012","$18,755,999",House,Oklahoma,AA,Oklahoma State University ,343
+250,250,RepDWStweets,Debbie,Schultz,D,W000797,1966-09-27,F,Debbie Wasserman Schultz,Jewish,"-$240,956","$270,521","$781,998",House,Florida,MA,University of Florida,460
+251,251,SenCortezMasto,Catherine,Masto,D,C001113,1964-03-29,F,Catherine Cortez Masto,Latter Day Saints,"$2,350,042","$4,601,020","$6,851,998",Senate,Nevada,J.D.,Gonzaga University,18
+252,252,timkaine,Tim,Kaine,D,K000384,1958-02-26,M,Tim Kaine,Baptist,"$409,018","$811,008","$1,212,999",Senate,Virginia,J.D.,Harvard University,42
+253,253,senrobportman,Rob,Portman,R,P000449,1955-12-19,M,Rob Portman,Methodist,"$5,725,090","$10,827,545","$15,930,000",Senate,Ohio,J.D.,University of Michigan ,64

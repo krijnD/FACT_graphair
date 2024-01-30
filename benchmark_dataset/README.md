@@ -28,6 +28,7 @@ not be employed in any decision-making based on these attributes.
 
 
 ## Original Datasets
+Found in `original_datafiles`the datasets and files used to create out benchmark dataset.
 
 1. **congress_networth.csv**
    - Contains financial information about members of Congress, specifically their net worth estimations.
@@ -60,6 +61,7 @@ not be employed in any decision-making based on these attributes.
     - 
     - **Source Repository**:
     - **Source Paper**:
+    - For more information on individual files please check the original data repository.
 
 ## Processing non-Graph Information
 To see a rough version of the code used to take the original dataset csv and
@@ -219,12 +221,12 @@ of congress member demographics for machine learning and data analysis purposes.
 ### Feature Dataset: encoded_data.csv
 For utilization in our project (and generally)  we transformed 
 all the categorical variables gathered in `full_with_ed.csv` into various
-numerical or binary values, most are one-hot encoded. 
+numerical or binary values, most are one-hot encoded. In 
 
 #### Overview
 Not in any specific order.
 
-1. **Twitter**
+1. **Twitter** 
    - Type: String
    - Description: The official Twitter handle of the individual.
    - Sample Values: ['SenatorBaldwin', 'SenJohnBarrasso', 'RoyBlunt', 'CoryBooker', 'SenSherrodBrown']
@@ -293,8 +295,25 @@ Not in any specific order.
     - Type: Binary Integer
     - Description: This column was created to examine religion as a sensitive attributes. This encoding was applied to the grouped religious affiliation column. Minority religions in Congress (in this case for this dataset that is Jewish or Other) were encoded with a 1. Majority religious groups which were Unknown and Christianity have value 0. 
 
+13. **numeric_id**
+    - Type: Integer
+    - Description: A numeric identifiers corresponding to member twitter handles. It is used in the Graph node data.
+    - Sample Values: [4, 8, 12]
+
 ## Processing Graph Dataset
-TOFILL 
+To make the `data_merging_and_processing/original_datafiles/CongressionalTwitterNetwork` into a format parsable 
+by `dig\fairgraph` we applied some processing methodology
+
+### connections_weights.json
+`connections_weights.json` is a subset of the original congressional data from the `Congress Twitter Network`. 
+It contains the nodes for the relevant members based on their presence in the biographic data file `full_with_ed.csv`.
+The file is created with `data_merging_and_processing/graph_subset.py`, a rough processing Python script to isolate the relevant members via Twitter handles.
+
+
+### cng_relationship.txt
+This file contains the node relationships relevant for our subset in a format compatible with Graphair.
+Each line is structured as source_id\ttarget_id\n, indicating the relationships between entities using numeric IDs.
+It was created using `data_merging_and_processing/graph_relationship.py` and one can find the username and numeric id mapping in the Python file `data_merging_and_processing/get_mapping.py`
 
 ## References and Acknowledgements 
 
