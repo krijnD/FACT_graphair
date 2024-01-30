@@ -296,18 +296,18 @@ class Congress():
         if self.sens_attr == "religion_sensitivity":
             data_csv = "encoded_data_wo_religions.csv"
         else:
-            data_csv =  "encoded_data.csv"
+            data_csv = "encoded_data.csv"
 
         data_csv
         return [os.path.join(self.data_path, data_csv),
                 os.path.join(self.data_path, "cng_relationship.txt"),
-                os.path.join(self.data_path, "cng.embedding")]
+                ]
 
     def read_graph(self):
         print(f'Loading {self.dataset} dataset from {os.path.abspath(self.raw_paths[0])}')
         idx_features_labels = pd.read_csv(self.raw_paths[0])
         header = list(idx_features_labels.columns)
-        header.remove("twitter")  # Assuming "user_id" column is present and unique identifier does it need to be a number or can we do it by twitter id?
+        header.remove("numeric_id")  # Assuming "user_id" column is present and unique identifier does it need to be a number or can we do it by twitter id?
 
         # Remove sensitive and prediction attribute columns from features
         header.remove(self.sens_attr)
@@ -319,8 +319,8 @@ class Congress():
 
         # If your dataset includes relationships, adjust the following section
         edges_unordered = np.genfromtxt(self.raw_paths[1], dtype=int)
-        edges = np.array(list(map(lambda x: (idx_features_labels.index[idx_features_labels["twitter"] == x[0]].tolist()[0],
-                                             idx_features_labels.index[idx_features_labels["twitter"] == x[1]].tolist()[0]),
+        edges = np.array(list(map(lambda x: (idx_features_labels.index[idx_features_labels["numeric_id"] == x[0]].tolist()[0],
+                                             idx_features_labels.index[idx_features_labels["numeric_id"] == x[1]].tolist()[0]),
                                   edges_unordered)),
                          dtype=int)
         adj = sp.coo_matrix((np.ones(edges.shape[0]), (edges[:, 0], edges[:, 1])),

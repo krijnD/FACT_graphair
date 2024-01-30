@@ -7,9 +7,11 @@ with open('/Users/bellavg/PycharmProjects/DIG_FACT/benchmark_dataset/data_mergin
 
 usernames_of_interest = pd.read_csv("/Users/bellavg/PycharmProjects/DIG_FACT/benchmark_dataset/encoded_data.csv")["twitter"]
 
-
+print(network_data.keys())
 # Prepare a dictionary to hold all the data
+username_to_id_mapping = {username: i for i, username in enumerate(network_data['usernameList'])}
 all_data = {}
+id_to_username_mapping = {i: username for username, i in username_to_id_mapping.items()}
 
 # Find the indices of these usernames
 indices_of_interest = [i for i, username in enumerate(network_data['usernameList']) if username in usernames_of_interest.values]
@@ -39,3 +41,5 @@ for index in indices_of_interest:
 # Write the dictionary to a file as JSON
 with open('/Users/bellavg/PycharmProjects/DIG_FACT/benchmark_dataset/data_merging_and_processing/connections_weights.json', 'w') as outfile:
     json.dump(all_data, outfile, indent=4)
+
+
