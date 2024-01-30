@@ -301,13 +301,13 @@ class Congress():
         else:
             data_csv = "encoded_data.csv"
 
-        return [os.path.join(self.data_path, data_csv),
-                os.path.join(self.data_path, "cng_relationship.txt"),
+        return ["/Users/bellavg/PycharmProjects/DIG_FACT/benchmark_dataset/encoded_data.csv",
+                "/Users/bellavg/PycharmProjects/DIG_FACT/benchmark_dataset/cng_relationship.txt",
                 ]
 
     def preprocess_vectors(self, df):
         # Dropping first and last name vector
-        df = df.drop(['first_name_vector', 'last_name_vector'], axis=1)
+        df = df.drop(['first_name_vector', 'last_name_vector', "Unnamed: 0.1", "Unnamed: 0.2", "twitter", "Unnamed: 0"], axis=1)
         return df
 
     def read_graph(self):
@@ -391,3 +391,4 @@ class Congress():
         self.idx_sens_train = idx_sens_train.to(device).long()
 
         self.adj = adj.to(device)
+
