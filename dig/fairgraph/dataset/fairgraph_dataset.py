@@ -307,14 +307,12 @@ class Congress():
 
     def preprocess_vectors(self, df):
         # Convert JSON strings back to lists or arrays
-        df['first_name_vector'] = df['first_name_vector'].apply(json.loads)
-        df['last_name_vector'] = df['last_name_vector'].apply(json.loads)
+        df = df.drop(['first_name_vector', 'last_name_vector'], axis=1)
         return df
 
     def read_graph(self):
         print(f'Loading {self.dataset} dataset from {os.path.abspath(self.raw_paths[0])}')
         idx_features_labels = pd.read_csv(self.raw_paths[0])
-
 
         # Preprocess 'first_name_vector' and 'last_name_vector' columns
         idx_features_labels = self.preprocess_vectors(idx_features_labels)
