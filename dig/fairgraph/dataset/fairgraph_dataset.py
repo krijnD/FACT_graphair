@@ -301,8 +301,8 @@ class Congress():
         else:
             data_csv = "encoded_data.csv"
 
-        return ["/Users/bellavg/PycharmProjects/DIG_FACT/benchmark_dataset/encoded_data.csv",
-                "/Users/bellavg/PycharmProjects/DIG_FACT/benchmark_dataset/cng_relationship.txt",
+        return [os.path.join(self.data_path, data_csv),
+                os.path.join(self.data_path, "cng_relationship.txt"),
                 ]
 
     def preprocess_vectors(self, df):
