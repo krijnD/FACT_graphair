@@ -277,6 +277,7 @@ Not in any specific order.
 9. **first_name_vector, last_name_vector**
     - Type: pre-trained Word Vector
     - Description: Congress member first and last name were separately encoded as word vectors using gensim "glove-wiki-gigaword-100" GloVe model.
+    - **Please Note**: Not used in our project due to parsing issues and not relevant
 
 10. **Religious Affiliation Grouped**
     - Column Names: ['Christian', 'Jewish', 'Other', 'Unknown']
