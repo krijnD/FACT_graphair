@@ -7,7 +7,7 @@ import scipy.stats as stats
 np.random.seed(42)
 
 # Total members
-total_members = 530
+total_members = 475
 
 # Age Distribution (using given averages and approximating a range)
 rep_age_mean, rep_age_std = 57.9, 10
@@ -74,8 +74,6 @@ data = {
 
 # Create DataFrame
 congress_df = pd.DataFrame(data)
-# Apply function to the 'Age' column to create a new 'Generation' column
-congress_df['Generation'] = congress_df['Age'].apply(determine_generation)
 
 # Define the median net worth based on age from the image provided
 age_net_worth = {
@@ -142,14 +140,16 @@ congress_df['Estimated Net Worth'] = congress_df.apply(estimate_net_worth, axis=
 # Display sample of the dataset
 congress_df.to_csv("./generated_congress.csv")
 
+# One-hot encoding of categorical columns
+categorical_columns = ['LGBTQ+ Status', 'Party', 'Gender', 'Education', 'Occupation', 'Race/Ethnicity', 'Religion', 'Military Service']
+congress_df_encoded = pd.get_dummies(congress_df, columns=categorical_columns)
+congress_df_encoded = congress_df_encoded.astype(float)
+# Function to categorize net worth
+
 # Calculate median net worth from the generated data
 median_net_worth = congress_df['Estimated Net Worth'].median()
-
 # Define the buffer as 25% of the median net worth
 net_worth_buffer = median_net_worth * 0.25
-
-
-# Function to categorize net worth
 def categorize_net_worth(net_worth):
     if net_worth >= median_net_worth + net_worth_buffer:
         return 1
@@ -158,27 +158,8 @@ def categorize_net_worth(net_worth):
     else:
         return -1
 
-
 # Apply the function to create the NET_WORTH category
-congress_df['NET_WORTH'] = congress_df['Estimated Net Worth'].apply(categorize_net_worth)
+congress_df_encoded['NET_WORTH'] = congress_df['Estimated Net Worth'].apply(categorize_net_worth)
+congress_df_encoded = congress_df_encoded.drop('Estimated Net Worth', axis=1)
 
-# One-hot encoding of categorical columns
-categorical_columns = ['LGBTQ+ Status', 'Party', 'Gender', 'Education', 'Occupation', 'Race/Ethnicity', 'Religion',
-                       'Generation']
-
-congress_df_encoded = pd.get_dummies(congress_df, columns=categorical_columns)
-
-
-
-for column in congress_df_encoded.columns:
-    try:
-        # Try to convert to int
-        congress_df_encoded[column] = congress_df_encoded[column].astype(float)
-    except ValueError:
-        # If int conversion fails, convert to float
-        congress_df_encoded[column] = congress_df_encoded[column].astype(int)
-
-print(congress_df_encoded.columns)
-# Save the encoded dataset to a CSV file
-congress_df_encoded = congress_df_encoded.drop("Estimated Net Worth", axis=1)
-congress_df_encoded.to_csv("./encoded_congress.csv", index=True, index_label="numeric_id")
+congress_df_encoded.to_csv("./encoded_congress.csv", index_label="numeric_id")

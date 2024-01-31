@@ -316,25 +316,10 @@ class Congress():
         idx = np.array(idx_features_labels["numeric_id"], dtype=int)
         idx_map = {j: i for i, j in enumerate(idx)}
         # raw_paths[1] will be nba_relationship.txt
-        #edges_unordered = np.genfromtxt(os.path.abspath(self.root + "/" + self.raw_paths[1]), dtype=int)
-        # Use pandas to read the edges file
-        edges_df = pd.read_csv(os.path.abspath(self.root + "/" + self.raw_paths[1]), sep=" ", header=None,
-                               names=["source", "target"], dtype=int)
-        print(edges_df.head())  # Optional: print the first few rows to check the data
+        edges_unordered = np.genfromtxt(os.path.abspath(self.root + "/" + self.raw_paths[1]), dtype=int)
 
-        # Map the edges using idx_map
-        edges_mapped = edges_df.applymap(
-            lambda x: idx_map.get(x, -1))  # Using -1 as default for missing keys; adjust as necessary
-
-        # Check for any -1 values in the mapped edges, which indicate missing keys
-        if (edges_mapped == -1).any().any():
-            print("Warning: Some edges refer to nonexistent nodes.")
-
-        edges = edges_mapped.values
-        print(edges)
-        print(idx_map)
-        #edges = np.array(list(map(idx_map.get, edges_unordered.flatten())),
-        #                 dtype=int).reshape(edges_unordered.shape)
+        edges = np.array(list(map(idx_map.get, edges_unordered.flatten())),
+                         dtype=int).reshape(edges_unordered.shape)
         adj = sp.coo_matrix((np.ones(edges.shape[0]), (edges[:, 0], edges[:, 1])),
                             shape=(labels.shape[0], labels.shape[0]),
                             dtype=np.float32)
