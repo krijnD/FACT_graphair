@@ -323,12 +323,12 @@ class Congress():
         # build graph
         idx = np.array(idx_features_labels["numeric_id"], dtype=int)
 
-        idx_map = {j: i for i, j in enumerate(idx)}
-        edges_unordered = np.genfromtxt(os.path.abspath(self.raw_paths[1]), dtype=int)
-        edges_unordered_flat = edges_unordered.flatten()
+        #idx_map = {j: i for i, j in enumerate(idx)}
+        edges = np.genfromtxt(os.path.abspath(self.raw_paths[1]), dtype=int)
+        #edges_unordered_flat = edges_unordered.flatten()
         #print(list(map(idx_map.get, edges_unordered_flat)))
-        edges = np.array(list(map(idx_map.get, edges_unordered_flat)),
-                         dtype=int).reshape(edges_unordered.shape)
+        #edges = np.array(list(map(idx_map.get, edges_unordered_flat)),
+         #                dtype=int).reshape(edges_unordered.shape)
 
         adj = sp.coo_matrix((np.ones(edges.shape[0]), (edges[:, 0], edges[:, 1])),
                             shape=(labels.shape[0], labels.shape[0]),
@@ -407,3 +407,5 @@ class Congress():
 
         self.adj = adj
 
+c = Congress()
+c.process()
