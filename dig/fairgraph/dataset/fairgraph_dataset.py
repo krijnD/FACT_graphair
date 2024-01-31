@@ -300,6 +300,8 @@ class Congress():
         else:
             data_csv = "encoded_data.csv"
 
+
+
         return [os.path.join(self.data_path, data_csv),
                 os.path.join(self.data_path, "cng_relationship.txt"),
                 ]
@@ -312,7 +314,6 @@ class Congress():
     def read_graph(self):
         print(f'Loading {self.dataset} dataset from {os.path.abspath(self.raw_paths[0])}')
         idx_features_labels = pd.read_csv(self.raw_paths[0])
-
         # We don't use the first and last name
         idx_features_labels = self.preprocess_vectors(idx_features_labels)
 
@@ -392,3 +393,5 @@ class Congress():
 
         self.adj = adj
 
+cng = Congress()
+cng.read_graph()

@@ -147,72 +147,70 @@ class graphair(nn.Module):
 
         best_contras = float("inf")
 
-        # Open a file to write the results
-        with open('./fit_whole_results.txt', 'w') as file:
-            if warmup:
-                for _ in range(warmup):
-                    adj_aug, x_aug, adj_logits = self.aug_model(adj, x, adj_orig=adj_orig.cuda())
-                    edge_loss = norm_w * F.binary_cross_entropy_with_logits(adj_logits, adj_orig.cuda())
 
-                    feat_loss = self.criterion_recons(x_aug, x)
-                    recons_loss = edge_loss + self.beta * feat_loss
-
-                    self.optimizer_aug.zero_grad()
-                    with torch.autograd.set_detect_anomaly(True):
-                        recons_loss.backward(retain_graph=True)
-                    self.optimizer_aug.step()
-
-                    print(
-                        f'edge reconstruction loss: {edge_loss.item():.4f} feature reconstruction loss: {feat_loss.item():.4f}\n')
-
-            for epoch_counter in range(epochs):
-                ### generate fair view
+        if warmup:
+            for _ in range(warmup):
                 adj_aug, x_aug, adj_logits = self.aug_model(adj, x, adj_orig=adj_orig.cuda())
-
-                ### extract node representations
-                h = self.projection(self.f_encoder(adj, x))
-                h_prime = self.projection(self.f_encoder(adj_aug, x_aug))
-                # print("encoder done")
-
-                ## update sens model
-                adj_aug_nograd = adj_aug.detach()
-                x_aug_nograd = x_aug.detach()
-                if (epoch_counter == 0):
-                    sens_epoches = adv_epoches * 10
-                else:
-                    sens_epoches = adv_epoches
-                for _ in range(sens_epoches):
-                    s_pred, _ = self.sens_model(adj_aug_nograd, x_aug_nograd)
-                    senloss = self.criterion_sens(s_pred[idx_sens], sens[idx_sens].unsqueeze(1).float())
-                    self.optimizer_s.zero_grad()
-                    senloss.backward()
-                    self.optimizer_s.step()
-                s_pred, _ = self.sens_model(adj_aug, x_aug)
-                senloss = self.criterion_sens(s_pred[idx_sens], sens[idx_sens].unsqueeze(1).float())
-
-                ## update aug model
-                logits, labels = self.info_nce_loss_2views(torch.cat((h, h_prime), dim=0))
-                contrastive_loss = self.criterion_cont(logits, labels)
-
-                ## update encoder
                 edge_loss = norm_w * F.binary_cross_entropy_with_logits(adj_logits, adj_orig.cuda())
 
                 feat_loss = self.criterion_recons(x_aug, x)
-                recons_loss = edge_loss + self.lam * feat_loss
-                loss = self.beta * contrastive_loss + self.gamma * recons_loss - self.alpha * senloss
-                self.optimizer.zero_grad()
-                loss.backward()
-                self.optimizer.step()
+                recons_loss = edge_loss + self.beta * feat_loss
+
+                self.optimizer_aug.zero_grad()
+                with torch.autograd.set_detect_anomaly(True):
+                    recons_loss.backward(retain_graph=True)
+                self.optimizer_aug.step()
 
                 print(
-                    f'Epoch: {epoch_counter + 1:04d} sens loss: {senloss.item():.4f} contrastive loss: {contrastive_loss.item():.4f} edge reconstruction loss: {edge_loss.item():.4f} feature reconstruction loss: {feat_loss.item():.4f}\n')
+                        f'edge reconstruction loss: {edge_loss.item():.4f} feature reconstruction loss: {feat_loss.item():.4f}')
+
+        for epoch_counter in range(epochs):
+            ### generate fair view
+            adj_aug, x_aug, adj_logits = self.aug_model(adj, x, adj_orig=adj_orig.cuda())
+
+            ### extract node representations
+            h = self.projection(self.f_encoder(adj, x))
+            h_prime = self.projection(self.f_encoder(adj_aug, x_aug))
+            # print("encoder done")
+
+            ## update sens model
+            adj_aug_nograd = adj_aug.detach()
+            x_aug_nograd = x_aug.detach()
+            if (epoch_counter == 0):
+                sens_epoches = adv_epoches * 10
+            else:
+                sens_epoches = adv_epoches
+            for _ in range(sens_epoches):
+                s_pred, _ = self.sens_model(adj_aug_nograd, x_aug_nograd)
+                senloss = self.criterion_sens(s_pred[idx_sens], sens[idx_sens].unsqueeze(1).float())
+                self.optimizer_s.zero_grad()
+                senloss.backward()
+                self.optimizer_s.step()
+            s_pred, _ = self.sens_model(adj_aug, x_aug)
+            senloss = self.criterion_sens(s_pred[idx_sens], sens[idx_sens].unsqueeze(1).float())
+
+            ## update aug model
+            logits, labels = self.info_nce_loss_2views(torch.cat((h, h_prime), dim=0))
+            contrastive_loss = self.criterion_cont(logits, labels)
+
+            ## update encoder
+            edge_loss = norm_w * F.binary_cross_entropy_with_logits(adj_logits, adj_orig.cuda())
+
+            feat_loss = self.criterion_recons(x_aug, x)
+            recons_loss = edge_loss + self.lam * feat_loss
+            loss = self.beta * contrastive_loss + self.gamma * recons_loss - self.alpha * senloss
+            self.optimizer.zero_grad()
+            loss.backward()
+            self.optimizer.step()
+
+            print(
+                    f'Epoch: {epoch_counter + 1:04d} sens loss: {senloss.item():.4f} contrastive loss: {contrastive_loss.item():.4f} edge reconstruction loss: {edge_loss.item():.4f} feature reconstruction loss: {feat_loss.item():.4f}')
         self.save_path = "./checkpoint/graphair_{}_alpha{}_beta{}_gamma{}_lambda{}".format(self.dataset, self.alpha,
                                                                                            self.beta, self.gamma,
                                                                                            self.lam)
         torch.save(self.state_dict(), self.save_path)
 
     def test(self, adj, features, labels, epochs, idx_train, idx_val, idx_test, sens):
-        print("updated version used!")
         h = self.forward(adj, features)
         h = h.detach()
 
@@ -221,54 +219,52 @@ class graphair(nn.Module):
         eo_list = []
 
         # Open a file to write the results
-        with open('./results.txt', 'w') as file:
+        for i in range(5):
+            print(
+                    f"Experiment {i + 1} \n")
+            torch.manual_seed(i * 10)
+            np.random.seed(i * 10)
 
-            for i in range(5):
-                print(
-                    f"Experiment [{i + 1}] \n")
-                torch.manual_seed(i * 10)
-                np.random.seed(i * 10)
+            # train classifier
+            best_acc = 0.0
+            best_test = 0.0
+            for epoch in range(epochs):
 
-                # train classifier
-                best_acc = 0.0
-                best_test = 0.0
-                for epoch in range(epochs):
-
-                    self.classifier.train()
-                    self.optimizer_classifier.zero_grad()
-                    output = self.classifier(h)
-                    loss_train = F.binary_cross_entropy_with_logits(output[idx_train],
+                self.classifier.train()
+                self.optimizer_classifier.zero_grad()
+                output = self.classifier(h)
+                loss_train = F.binary_cross_entropy_with_logits(output[idx_train],
                                                                     labels[idx_train].unsqueeze(1).float())
-                    acc_train = accuracy(output[idx_train], labels[idx_train])
-                    loss_train.backward()
-                    self.optimizer_classifier.step()
+                acc_train = accuracy(output[idx_train], labels[idx_train])
+                loss_train.backward()
+                self.optimizer_classifier.step()
 
-                    self.classifier.eval()
-                    output = self.classifier(h)
-                    acc_val = accuracy(output[idx_val], labels[idx_val])
-                    acc_test = accuracy(output[idx_test], labels[idx_test])
+                self.classifier.eval()
+                output = self.classifier(h)
+                acc_val = accuracy(output[idx_val], labels[idx_val])
+                acc_test = accuracy(output[idx_test], labels[idx_test])
 
-                    parity_val, equality_val = fair_metric(output, idx_val, labels, sens)
-                    parity_test, equality_test = fair_metric(output, idx_test, labels, sens)
-                    if epoch % 10 == 0:
-                        print(
-                            f"Epoch [{epoch}] Test set results: acc_test= {acc_test.item():.4f} acc_val: {acc_val.item():.4f} dp_val: {parity_val:.4f} dp_test: {parity_test:.4f} eo_val: {equality_val:.4f} eo_test: {equality_test:.4f}\n")
+                parity_val, equality_val = fair_metric(output, idx_val, labels, sens)
+                parity_test, equality_test = fair_metric(output, idx_test, labels, sens)
+                if epoch % 10 == 0:
+                    print(
+                            f"Epoch [{epoch}] Test set results: acc_test= {acc_test.item():.4f} acc_val: {acc_val.item():.4f} dp_val: {parity_val:.4f} dp_test: {parity_test:.4f} eo_val: {equality_val:.4f} eo_test: {equality_test:.4f}")
 
-                    if acc_val > best_acc:
-                        best_acc = acc_val
-                        best_test = acc_test
-                        best_dp = parity_val
-                        best_dp_test = parity_test
-                        best_eo = equality_val
-                        best_eo_test = equality_test
-
-                print(
-                    f"Optimization Finished!\nTest results: acc_test= {best_test.item():.4f} acc_val: {best_acc.item():.4f} dp_val: {best_dp:.4f} dp_test: {best_dp_test:.4f} eo_val: {best_eo:.4f} eo_test: {best_eo_test:.4f}\n")
-
-                acc_list.append(best_test.item())
-                dp_list.append(best_dp_test)
-                eo_list.append(best_eo_test)
+                if acc_val > best_acc:
+                    best_acc = acc_val
+                    best_test = acc_test
+                    best_dp = parity_val
+                    best_dp_test = parity_test
+                    best_eo = equality_val
+                    best_eo_test = equality_test
 
             print(
-                f"Avg results: acc: {np.mean(acc_list):.4f} std: {np.std(acc_list):.4f} dp: {np.mean(dp_list):.4f} std: {np.std(dp_list):.4f} eo: {np.mean(eo_list):.4f} std: {np.std(eo_list):.4f}\n")
+                    f"Optimization Finished!\nTest results: acc_test= {best_test.item():.4f} acc_val: {best_acc.item():.4f} dp_val: {best_dp:.4f} dp_test: {best_dp_test:.4f} eo_val: {best_eo:.4f} eo_test: {best_eo_test:.4f}\n")
+
+            acc_list.append(best_test.item())
+            dp_list.append(best_dp_test)
+            eo_list.append(best_eo_test)
+
+        print(
+                f"Avg results: acc: {np.mean(acc_list):.4f} std: {np.std(acc_list):.4f} dp: {np.mean(dp_list):.4f} std: {np.std(dp_list):.4f} eo: {np.mean(eo_list):.4f} std: {np.std(eo_list):.4f}")
         return np.mean(acc_list)
