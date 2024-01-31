@@ -6,9 +6,10 @@ import numpy as np
 import optuna
 import pickle
 
+
 def hpo(trial):
     # Train and evaluate
-    run_fair = run()
+    run_fair = Run()
     # Load the dataset
     nba = NBA()
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -20,7 +21,7 @@ def hpo(trial):
     return acc
 
 
-class run():
+class Run():
     r"""
     This class instantiates Graphair model and implements method to train and evaluate.
     """
@@ -94,8 +95,6 @@ class run():
                          idx_val=dataset.idx_val, idx_test=dataset.idx_test, sens=sens)
         print(f'alpha = {alpha}, gamma = {gamma}, lambda = {lam}')
         return acc
-
-
 
 
 print("Running hpo")
