@@ -271,3 +271,4 @@ class graphair(nn.Module):
 
             print(
                 f"Avg results: acc: {np.mean(acc_list):.4f} std: {np.std(acc_list):.4f} dp: {np.mean(dp_list):.4f} std: {np.std(dp_list):.4f} eo: {np.mean(eo_list):.4f} std: {np.std(eo_list):.4f}\n")
+        return np.mean(acc_list)
