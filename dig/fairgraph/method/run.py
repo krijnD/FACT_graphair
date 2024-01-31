@@ -101,5 +101,5 @@ congress = Congress()
 # Train and evaluate
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 run_fairgraph = run()
-run_fairgraph.run(device, dataset=congress, model='Graphair', epochs=500, test_epochs=500,
+run_fairgraph.run(device, dataset=congress, model='Graphair', epochs=1000, test_epochs=1000,
                   lr=1e-3, weight_decay=1e-5)
