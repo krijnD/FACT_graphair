@@ -1,5 +1,5 @@
 from dig.fairgraph.method.Graphair import graphair, aug_module, GCN, GCN_Body, Classifier
-from dig.fairgraph.dataset import POKEC, NBA, Congress
+from dig.fairgraph.dataset import POKEC, NBA, CNG
 import torch
 import time
 import numpy as np
@@ -11,7 +11,7 @@ import argparse
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Run Graphair model with HPO")
-    parser.add_argument('--dataset', type=str, default='NBA', choices=['NBA', 'POKEC', 'Congress'],
+    parser.add_argument('--dataset', type=str, default='NBA', choices=['NBA', 'POKEC', 'CNG'],
                         help='Dataset to use for training and evaluation.')
     args = parser.parse_args()
     return args
@@ -23,8 +23,8 @@ def hpo(trial, dataset_name, run_fair):
         dataset = NBA()
     elif dataset_name == 'POKEC':
         dataset = POKEC()
-    elif dataset_name == 'Congress':
-        dataset = Congress()
+    elif dataset_name == 'CNG':
+        dataset = CNG()
     else:
         raise ValueError("Unsupported dataset")
 

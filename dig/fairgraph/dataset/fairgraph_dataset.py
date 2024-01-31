@@ -266,7 +266,7 @@ class NBA():
         self.adj = adj
 
 
-class Congress():
+class CNG():
     '''
     Congress dataset class for handling data operations.
 
@@ -280,7 +280,7 @@ class Congress():
     def __init__(self, root='./benchmark_dataset/', sens="Gender_Female"):
         self.name = "CNG"
         self.root = root
-        self.dataset = 'Congress'
+        self.dataset = 'CNG'
         self.sens_attr = sens
         self.predict_attr = "NET_WORTH"
         self.label_number = 100
@@ -401,5 +401,3 @@ class Congress():
         self.idx_sens_train = idx_sens_train.to(device).long()
 
         self.adj = adj
-
-c = Congress()
