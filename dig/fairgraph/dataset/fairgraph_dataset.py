@@ -368,18 +368,32 @@ class Congress():
         return adj, features, labels, idx_train, idx_val, idx_test, sens, idx_sens_train
 
     def feature_norm(self, features):
-        # Normalize features
-        min_values = features.min(axis=0)[0]
-        max_values = features.max(axis=0)[0]
-        return 2 * (features - min_values).div(max_values - min_values) - 1
+
+        # Assuming 'features' is your tensor
+        # Identify the index of the non-binary column, which appears to be index 1
+        non_binary_index = 1
+
+        # Extract the non-binary column
+        non_binary_column = features[:, non_binary_index]
+
+        # Calculate the min and max values of the non-binary column
+        min_value = non_binary_column.min()
+        max_value = non_binary_column.max()
+
+        # Normalize the non-binary column
+        normalized_column = (non_binary_column - min_value) / (max_value - min_value)
+
+        # Replace the original non-binary column with the normalized one
+        features[:, non_binary_index] = normalized_column
+        return features
 
     def process(self):
         # Main processing function
         adj, features, labels, idx_train, idx_val, idx_test, sens, idx_sens_train = self.read_graph()
         features = self.feature_norm(features)
 
-        labels[labels > 1] = 1  # Assuming binary classification, adjust if necessary
-        sens[sens > 0] = 1  # Assuming binary sensitive attribute, adjust if necessary
+        labels[labels > 1] = 1
+        sens[sens > 0] = 1 # Assuming binary sensitive attribute, adjust if necessary
 
         # Move data to GPU if available
         device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -392,6 +406,3 @@ class Congress():
         self.idx_sens_train = idx_sens_train.to(device).long()
 
         self.adj = adj
-
-cng = Congress()
-cng.read_graph()
