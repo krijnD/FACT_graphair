@@ -9,27 +9,18 @@ import pickle
 
 def hpo(trial):
     # Train and evaluate
-    run_fair = Run()
     # Load the dataset
     nba = NBA()
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     alpha = trial.suggest_float('alpha', 0.1, 10, step=0.5)
     gamma = trial.suggest_float('gamma', 0.1, 10, step=0.5)
     lam = trial.suggest_float('lambda', 0.1, 10, step=0.5)
-    acc = run_fair.run(alpha, gamma, lam, device, dataset=nba, epochs=50, test_epochs=50,
+    acc = run(alpha, gamma, lam, device, dataset=nba, epochs=50, test_epochs=50,
                        lr=1e-4, weight_decay=1e-5)
     return acc
 
 
-class Run():
-    r"""
-    This class instantiates Graphair model and implements method to train and evaluate.
-    """
-
-    def __init__(self):
-        pass
-
-    def run(self, alpha, gamma, lam, device, dataset, epochs=10_000, test_epochs=1_000,
+def run(alpha, gamma, lam, device, dataset, epochs=10_000, test_epochs=1_000,
             lr=1e-4, weight_decay=1e-5):
         r""" This method runs training and evaluation for a fairgraph model on the given dataset.
         Check :obj:`examples.fairgraph.Graphair.run_graphair_nba.py` for examples on how to run the Graphair model.
@@ -95,6 +86,7 @@ class Run():
                          idx_val=dataset.idx_val, idx_test=dataset.idx_test, sens=sens)
         print(f'alpha = {alpha}, gamma = {gamma}, lambda = {lam}')
         return acc
+
 
 
 print("Running hpo")

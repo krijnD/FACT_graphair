@@ -64,7 +64,6 @@ class graphair(nn.Module):
         self.gamma = 0.1
         self.dataset = dataset
         self.lam = 0.5
-        print("with email values")
 
         self.criterion_sens = nn.BCEWithLogitsLoss()
         self.criterion_cont = nn.CrossEntropyLoss()
