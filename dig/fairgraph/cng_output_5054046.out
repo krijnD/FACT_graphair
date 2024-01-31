@@ -13,9 +13,9 @@ the 'module load <package__name>' command. If you are uncertain if a package is
 already available 
 on the system, please use 'module avail' or 'module spider' to search for it.
 ============================================================================================== 
-Loading cng dataset from /gpfs/home5/igardner/DIG_FACT/dig/fairgraph/method/benchmark_dataset/encoded_data.csv
+Loading cng dataset from /gpfs/home5/igardner/DIG_FACT/dig/fairgraph/home/igardner/DIG_FACT/dig/fairgraph/dataset/encoded_data.csv
 Traceback (most recent call last):
-  File "run.py", line 1, in <module>
+  File "method/run.py", line 1, in <module>
     from dig.fairgraph.method.Graphair.aug_module import *
   File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/dig/fairgraph/method/__init__.py", line 1, in <module>
     from .run import run
@@ -23,25 +23,35 @@ Traceback (most recent call last):
     congress = Congress()
   File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/dig/fairgraph/dataset/fairgraph_dataset.py", line 294, in __init__
     self.process()
-  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/dig/fairgraph/dataset/fairgraph_dataset.py", line 377, in process
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/dig/fairgraph/dataset/fairgraph_dataset.py", line 378, in process
     adj, features, labels, idx_train, idx_val, idx_test, sens, idx_sens_train = self.read_graph()
-  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/dig/fairgraph/dataset/fairgraph_dataset.py", line 335, in read_graph
-    edges = np.array(list(map(idx_map.get, edges_unordered.flatten())),
-TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
-srun: error: gcn23: task 0: Exited with exit code 1
-srun: Terminating StepId=5050578.0
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/dig/fairgraph/dataset/fairgraph_dataset.py", line 315, in read_graph
+    idx_features_labels = pd.read_csv(self.raw_paths[0])
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 912, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 577, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1407, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1661, in _make_engine
+    self.handles = get_handle(
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/pandas/io/common.py", line 859, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: './home/igardner/DIG_FACT/dig/fairgraph/dataset/encoded_data.csv'
+srun: error: gcn18: task 0: Exited with exit code 1
+srun: Terminating StepId=5054046.0
 
 JOB STATISTICS
 ==============
-Job ID: 5050578
+Job ID: 5054046
 Cluster: snellius
 User/Group: igardner/igardner
 State: RUNNING
 Nodes: 1
 Cores per node: 18
-CPU Utilized: 00:00:00
-CPU Efficiency: 0.00% of 00:03:54 core-walltime
-Job Wall-clock time: 00:00:13
-Memory Utilized: 0.00 MB (estimated maximum)
-Memory Efficiency: 0.00% of 120.00 GB (120.00 GB/node)
+CPU Utilized: 00:00:07
+CPU Efficiency: 2.59% of 00:04:30 core-walltime
+Job Wall-clock time: 00:00:15
+Memory Utilized: 1.21 MB
+Memory Efficiency: 0.00% of 120.00 GB
 WARNING: Efficiency statistics may be misleading for RUNNING jobs.
