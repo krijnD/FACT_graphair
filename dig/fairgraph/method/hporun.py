@@ -6,6 +6,19 @@ import numpy as np
 import optuna
 import pickle
 
+def hpo(trial):
+    # Train and evaluate
+    run_fair = run()
+    # Load the dataset
+    nba = NBA()
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    alpha = trial.suggest_float('alpha', 0.1, 10, step=0.5)
+    gamma = trial.suggest_float('gamma', 0.1, 10, step=0.5)
+    lam = trial.suggest_float('lambda', 0.1, 10, step=0.5)
+    acc = run_fair.run(alpha, gamma, lam, device, dataset=nba, epochs=100, test_epochs=100,
+                       lr=1e-4, weight_decay=1e-5)
+    return acc
+
 
 class run():
     r"""
@@ -83,20 +96,9 @@ class run():
         return acc
 
 
-def hpo(trial):
-    # Train and evaluate
-    run_fair = run()
-    # Load the dataset
-    nba = NBA()
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    alpha = trial.suggest_float('alpha', 0.1, 10, step=0.5)
-    gamma = trial.suggest_float('gamma', 0.1, 10, step=0.5)
-    lam = trial.suggest_float('lambda', 0.1, 10, step=0.5)
-    acc = run_fair.run(alpha, gamma, lam, device, dataset=nba, epochs=100, test_epochs=100,
-                       lr=1e-4, weight_decay=1e-5)
-    return acc
 
 
+print("Running hpo")
 study = optuna.create_study(direction='maximize')  # or 'minimize' if you are minimizing a metric
 study.optimize(hpo, n_trials=250)
 
