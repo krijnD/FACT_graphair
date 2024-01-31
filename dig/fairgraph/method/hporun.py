@@ -7,6 +7,7 @@ import optuna
 import pickle
 import argparse
 
+
 def parse_args():
     parser = argparse.ArgumentParser(description="Run Graphair model with HPO")
     parser.add_argument('--dataset', type=str, default='NBA', choices=['NBA', 'POKEC', 'Congress'],
@@ -14,7 +15,8 @@ def parse_args():
     args = parser.parse_args()
     return args
 
-def hpo(trial, dataset_name):
+
+def hpo(trial, dataset_name, run_fair):
     # Load the dataset based on command line argument
     if dataset_name == 'NBA':
         dataset = NBA()
@@ -29,43 +31,49 @@ def hpo(trial, dataset_name):
     alpha = trial.suggest_float('alpha', 0.1, 10, step=0.5)
     gamma = trial.suggest_float('gamma', 0.1, 10, step=0.5)
     lam = trial.suggest_float('lambda', 0.1, 10, step=0.5)
-    acc = run(alpha, gamma, lam, device, dataset=dataset, epochs=100, test_epochs=100,
-                       lr=1e-4, weight_decay=1e-5)
+    acc = run_fair.run(alpha, gamma, lam, device, dataset=dataset, epochs=100, test_epochs=100,
+              lr=1e-4, weight_decay=1e-5)
     return acc
 
 
+class run():
+    r"""
+    This class instantiates Graphair model and implements method to train and evaluate.
+    """
 
+    def __init__(self):
+        pass
 
-def run(alpha, gamma, lam, device, dataset, epochs=10_000, test_epochs=1_000,
+    def run(alpha, gamma, lam, device, dataset, epochs=10_000, test_epochs=1_000,
             lr=1e-4, weight_decay=1e-5):
         r""" This method runs training and evaluation for a fairgraph model on the given dataset.
-        Check :obj:`examples.fairgraph.Graphair.run_graphair_nba.py` for examples on how to run the Graphair model.
+            Check :obj:`examples.fairgraph.Graphair.run_graphair_nba.py` for examples on how to run the Graphair model.
 
 
-        :param device: Device for computation.
-        :type device: :obj:`torch.device`
+            :param device: Device for computation.
+            :type device: :obj:`torch.device`
 
-        :param model: Defaults to `Graphair`. (Note that at this moment, only `Graphair` is supported)
-        :type model: str, optional
+            :param model: Defaults to `Graphair`. (Note that at this moment, only `Graphair` is supported)
+            :type model: str, optional
 
-        :param dataset: The dataset to train on. Should be one of :obj:`dig.fairgraph.dataset.fairgraph_dataset.POKEC` or :obj:`dig.fairgraph.dataset.fairgraph_dataset.NBA`.
-        :type dataset: :obj:`object`
+            :param dataset: The dataset to train on. Should be one of :obj:`dig.fairgraph.dataset.fairgraph_dataset.POKEC` or :obj:`dig.fairgraph.dataset.fairgraph_dataset.NBA`.
+            :type dataset: :obj:`object`
 
-        :param epochs: Number of epochs to train on. Defaults to 10_000.
-        :type epochs: int, optional
+            :param epochs: Number of epochs to train on. Defaults to 10_000.
+            :type epochs: int, optional
 
-        :param test_epochs: Number of epochs to train the classifier while running evaluation. Defaults to 1_000.
-        :type test_epochs: int,optional
+            :param test_epochs: Number of epochs to train the classifier while running evaluation. Defaults to 1_000.
+            :type test_epochs: int,optional
 
-        :param lr: Learning rate. Defaults to 1e-4.
-        :type lr: float,optional
+            :param lr: Learning rate. Defaults to 1e-4.
+            :type lr: float,optional
 
-        :param weight_decay: Weight decay factor for regularization. Defaults to 1e-5.
-        :type weight_decay: float, optional
+            :param weight_decay: Weight decay factor for regularization. Defaults to 1e-5.
+            :type weight_decay: float, optional
 
-        :raise:
-            :obj:`Exception` when model is not Graphair. At this moment, only Graphair is supported.
-        """
+            :raise:
+                :obj:`Exception` when model is not Graphair. At this moment, only Graphair is supported.
+            """
 
         # Train script
 
@@ -104,12 +112,13 @@ def run(alpha, gamma, lam, device, dataset, epochs=10_000, test_epochs=1_000,
         return acc
 
 
-
 if __name__ == '__main__':
     args = parse_args()
 
+
     def objective(trial):
-        return hpo(trial, args.dataset)
+        run_fair = run()
+        return hpo(trial, args.dataset, run_fair)
 
     study = optuna.create_study(direction='maximize')
     study.optimize(objective, n_trials=250)
