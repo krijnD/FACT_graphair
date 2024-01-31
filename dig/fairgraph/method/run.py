@@ -5,7 +5,14 @@ from dig.fairgraph.method.Graphair.graphair import graphair
 from dig.fairgraph.method.Graphair.GCN import GCN, GCN_Body
 import torch
 import time
+import argparse
 
+def parse_args():
+    parser = argparse.ArgumentParser(description="Run Graphair model with HPO")
+    parser.add_argument('--dataset', type=str, default='NBA', choices=['NBA', 'POKEC', 'Congress'],
+                        help='Dataset to use for training and evaluation.')
+    args = parser.parse_args()
+    return args
 
 def log_gpu_usage():
     if torch.cuda.is_available():
@@ -73,7 +80,7 @@ class run():
             classifier_model = Classifier(input_dim=64, hidden_dim=128)
             model = graphair(aug_model=aug_model, f_encoder=f_encoder, sens_model=sens_model,
                              classifier_model=classifier_model, lr=lr, weight_decay=weight_decay,
-                             dataset=dataset_name).to(device)
+                             dataset=dataset_name, alpha=1, beta=1, gamma=0.7, lam=1).to(device)
         else:
             raise Exception('At this moment, only Graphair is supported!')
 
@@ -94,6 +101,15 @@ class run():
         log_gpu_usage()
 
 
+# Load the dataset based on command line argument
+if dataset_name == 'NBA':
+    dataset = NBA()
+elif dataset_name == 'POKEC':
+    dataset = POKEC()
+    elif dataset_name == 'Congress':
+        dataset = Congress()
+    else:
+        raise ValueError("Unsupported dataset")
 # Train and evaluate
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print("Running Congress with Gender Sensitive Attribute")

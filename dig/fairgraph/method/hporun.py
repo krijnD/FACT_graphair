@@ -5,19 +5,35 @@ import time
 import numpy as np
 import optuna
 import pickle
+import argparse
 
+def parse_args():
+    parser = argparse.ArgumentParser(description="Run Graphair model with HPO")
+    parser.add_argument('--dataset', type=str, default='NBA', choices=['NBA', 'POKEC', 'Congress'],
+                        help='Dataset to use for training and evaluation.')
+    args = parser.parse_args()
+    return args
 
-def hpo(trial):
-    # Train and evaluate
-    # Load the dataset
-    nba = NBA()
+def hpo(trial, dataset_name):
+    # Load the dataset based on command line argument
+    if dataset_name == 'NBA':
+        dataset = NBA()
+    elif dataset_name == 'POKEC':
+        dataset = POKEC()
+    elif dataset_name == 'Congress':
+        dataset = Congress()
+    else:
+        raise ValueError("Unsupported dataset")
+
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     alpha = trial.suggest_float('alpha', 0.1, 10, step=0.5)
     gamma = trial.suggest_float('gamma', 0.1, 10, step=0.5)
     lam = trial.suggest_float('lambda', 0.1, 10, step=0.5)
-    acc = run(alpha, gamma, lam, device, dataset=nba, epochs=50, test_epochs=50,
+    acc = run(alpha, gamma, lam, device, dataset=dataset, epochs=100, test_epochs=100,
                        lr=1e-4, weight_decay=1e-5)
     return acc
+
+
 
 
 def run(alpha, gamma, lam, device, dataset, epochs=10_000, test_epochs=1_000,
@@ -89,10 +105,15 @@ def run(alpha, gamma, lam, device, dataset, epochs=10_000, test_epochs=1_000,
 
 
 
-print("Running hpo")
-study = optuna.create_study(direction='maximize')  # or 'minimize' if you are minimizing a metric
-study.optimize(hpo, n_trials=250)
+if __name__ == '__main__':
+    args = parse_args()
 
-# After optimization, save the study object
-with open('nba_hpo_study.pkl', 'wb') as f:
-    pickle.dump(study, f)
+    def objective(trial):
+        return hpo(trial, args.dataset)
+
+    study = optuna.create_study(direction='maximize')
+    study.optimize(objective, n_trials=250)
+
+    # After optimization, save the study object
+    with open(f'{args.dataset.lower()}_hpo_study.pkl', 'wb') as f:
+        pickle.dump(study, f)
