@@ -7,12 +7,16 @@ import torch
 import time
 import argparse
 
+
 def parse_args():
     parser = argparse.ArgumentParser(description="Run Graphair model with HPO")
     parser.add_argument('--dataset', type=str, default='NBA', choices=['NBA', 'POKEC', 'Congress'],
                         help='Dataset to use for training and evaluation.')
+    parser.add_argument('--sens_att', type=str, default=None,
+                        help='For Congress which attribute to focus on')
     args = parser.parse_args()
     return args
+
 
 def log_gpu_usage():
     if torch.cuda.is_available():
@@ -101,32 +105,22 @@ class run():
         log_gpu_usage()
 
 
-# Load the dataset based on command line argument
-if dataset_name == 'NBA':
-    dataset = NBA()
-elif dataset_name == 'POKEC':
-    dataset = POKEC()
-    elif dataset_name == 'Congress':
-        dataset = Congress()
+if __name__ == '__main__':
+    args = parse_args()
+    if args.dataset == 'NBA':
+        dataset = NBA()
+    elif args.dataset == 'POKEC':
+        dataset = POKEC()
+    elif args.dataset == 'Congress':
+        if args.sens_att:
+            dataset = Congress(sens_attr=args.sens_att)
+        else:
+            dataset = Congress()
     else:
         raise ValueError("Unsupported dataset")
-# Train and evaluate
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-print("Running Congress with Gender Sensitive Attribute")
-# Load the dataset
-congress = Congress()
-run_fairgraph = run()
-run_fairgraph.run(device, dataset=congress, model='Graphair', epochs=1000, test_epochs=1000,
-                  lr=1e-3, weight_decay=1e-5)
 
-print("Running Congress with Religion Sensitive Attribute")
-congress = Congress(sens_attr="religion_sensitivity")
-run_fairgraph = run()
-run_fairgraph.run(device, dataset=congress, model='Graphair', epochs=1000, test_epochs=1000,
-                  lr=1e-3, weight_decay=1e-5)
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    run_fairgraph = run()
 
-print("Running Congress with Party Sensitive Attribute")
-congress = Congress(sens_attr="feat_party")
-run_fairgraph = run()
-run_fairgraph.run(device, dataset=congress, model='Graphair', epochs=1000, test_epochs=1000,
-                  lr=1e-3, weight_decay=1e-5)
+    run_fairgraph.run(device, dataset=dataset, model='Graphair', epochs=1000, test_epochs=1000,
+                      lr=1e-3, weight_decay=1e-5)
