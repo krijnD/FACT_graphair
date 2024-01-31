@@ -15,7 +15,7 @@ def hpo(trial):
     alpha = trial.suggest_float('alpha', 0.1, 10, step=0.5)
     gamma = trial.suggest_float('gamma', 0.1, 10, step=0.5)
     lam = trial.suggest_float('lambda', 0.1, 10, step=0.5)
-    acc = run_fair.run(alpha, gamma, lam, device, dataset=nba, epochs=100, test_epochs=100,
+    acc = run_fair.run(alpha, gamma, lam, device, dataset=nba, epochs=50, test_epochs=50,
                        lr=1e-4, weight_decay=1e-5)
     return acc
 
