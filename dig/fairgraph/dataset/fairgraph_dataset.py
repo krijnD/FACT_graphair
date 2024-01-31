@@ -280,12 +280,7 @@ class Congress():
     :param root: The path to root directory where the dataset is processed and saved, defaults to './dataset/cng'
     :type root: str, optional
     '''
-
-<<<<<<< HEAD
-    def __init__(self, data_path='./home/igardner/DIG_FACT/dig/fairgraph/dataset/', root='./dataset/cng', sens_attr="gender_feat"):
-=======
-    def __init__(self, data_path='./benchmark_dataset/', root='./dataset/cng', sens_attr="gender_feat"):
->>>>>>> 6f374878b73d5bcedab7decc349b12a7c2ff1901
+    def __init__(self, data_path='benchmark_dataset/', root='./dataset/cng', sens_attr="gender_feat"):
         self.name = "CNG"
         self.root = root
         self.dataset = 'cng'

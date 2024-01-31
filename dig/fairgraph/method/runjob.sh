@@ -15,4 +15,4 @@ module load CUDA/11.8.0
 # Activate your environment
 source activate dig
 
-srun python -u method/run.py
+srun python -u run.py
