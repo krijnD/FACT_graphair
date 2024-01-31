@@ -317,7 +317,8 @@ class Congress():
         idx_map = {j: i for i, j in enumerate(idx)}
         # raw_paths[1] will be nba_relationship.txt
         edges_unordered = np.genfromtxt(os.path.abspath(self.root + "/" + self.raw_paths[1]), dtype=int)
-
+        print(edges_unordered)
+        print(idx_map)
         edges = np.array(list(map(idx_map.get, edges_unordered.flatten())),
                          dtype=int).reshape(edges_unordered.shape)
         adj = sp.coo_matrix((np.ones(edges.shape[0]), (edges[:, 0], edges[:, 1])),
