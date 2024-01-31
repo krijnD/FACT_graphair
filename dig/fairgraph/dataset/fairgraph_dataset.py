@@ -391,13 +391,14 @@ class CNG():
         sens[sens > 0] = 1  # Assuming binary sensitive attribute, adjust if necessary
 
         # Move data to GPU if available
-        device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-        self.features = features.to(device)
-        self.labels = labels.to(device)
-        self.idx_train = torch.tensor(idx_train, dtype=torch.long).to(device)
-        self.idx_val = torch.tensor(idx_val, dtype=torch.long).to(device)
-        self.idx_test = torch.tensor(idx_test, dtype=torch.long).to(device)
-        self.sens = sens.to(device)
-        self.idx_sens_train = idx_sens_train.to(device).long()
+        self.features = features.cuda()
+        self.labels = labels.cuda()
+        self.idx_train = idx_train.cuda()
+        self.idx_val = idx_val.cuda()
+        self.idx_test = idx_test.cuda()
+        self.sens = sens.cuda()
+        self.idx_sens_train = idx_sens_train.long().cuda()
+
+        self.adj = adj
 
         self.adj = adj
