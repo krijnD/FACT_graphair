@@ -1,0 +1,290 @@
+============================================================================================== 
+Warning! Mixing Conda and module environments may lead to corruption of the
+user environment. 
+We do not recommend users mixing those two environments unless absolutely
+necessary. Note that 
+SURF does not provide any support for Conda environment.
+For more information, please refer to our software policy page:
+https://servicedesk.surf.nl/wiki/display/WIKI/Software+policy+Snellius#SoftwarepolicySnelliusandLisa-UseofAnacondaandMinicondaenvironmentsonSnellius 
+
+Remember that many packages have already been installed on the system and can
+be loaded using 
+the 'module load <package__name>' command. If you are uncertain if a package is
+already available 
+on the system, please use 'module avail' or 'module spider' to search for it.
+============================================================================================== 
+Processing /gpfs/home5/igardner/DIG_FACT
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: scipy in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (1.10.1)
+Requirement already satisfied: cilog in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (1.3.0)
+Requirement already satisfied: typed-argument-parser==1.7.2 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (1.7.2)
+Requirement already satisfied: captum==0.2.0 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (0.2.0)
+Requirement already satisfied: munch in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (4.0.0)
+Requirement already satisfied: gdown in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (4.7.1)
+Requirement already satisfied: shap in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (0.44.0)
+Requirement already satisfied: IPython in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (8.12.3)
+Requirement already satisfied: tqdm in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (4.66.1)
+Requirement already satisfied: rdkit-pypi in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (2022.9.5)
+Requirement already satisfied: pandas in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (2.0.3)
+Requirement already satisfied: sympy in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (1.12)
+Requirement already satisfied: pyscf>=1.7.6 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (2.4.0)
+Requirement already satisfied: hydra-core in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (1.3.2)
+Requirement already satisfied: matplotlib in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from captum==0.2.0->dive-into-graphs==1.0.0) (3.7.4)
+Requirement already satisfied: numpy in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from captum==0.2.0->dive-into-graphs==1.0.0) (1.24.4)
+Requirement already satisfied: torch>=1.2 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from captum==0.2.0->dive-into-graphs==1.0.0) (2.1.2)
+Requirement already satisfied: typing-extensions>=3.7.4 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from typed-argument-parser==1.7.2->dive-into-graphs==1.0.0) (4.9.0)
+Requirement already satisfied: typing-inspect>=0.7.1 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from typed-argument-parser==1.7.2->dive-into-graphs==1.0.0) (0.9.0)
+Requirement already satisfied: h5py>=2.7 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from pyscf>=1.7.6->dive-into-graphs==1.0.0) (3.10.0)
+Requirement already satisfied: setuptools in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from pyscf>=1.7.6->dive-into-graphs==1.0.0) (68.2.2)
+Requirement already satisfied: tabulate in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from cilog->dive-into-graphs==1.0.0) (0.9.0)
+Requirement already satisfied: openpyxl in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from cilog->dive-into-graphs==1.0.0) (3.1.2)
+Requirement already satisfied: filelock in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from gdown->dive-into-graphs==1.0.0) (3.13.1)
+Requirement already satisfied: requests[socks] in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from gdown->dive-into-graphs==1.0.0) (2.31.0)
+Requirement already satisfied: six in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from gdown->dive-into-graphs==1.0.0) (1.16.0)
+Requirement already satisfied: beautifulsoup4 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from gdown->dive-into-graphs==1.0.0) (4.12.2)
+Requirement already satisfied: omegaconf<2.4,>=2.2 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from hydra-core->dive-into-graphs==1.0.0) (2.3.0)
+Requirement already satisfied: antlr4-python3-runtime==4.9.* in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from hydra-core->dive-into-graphs==1.0.0) (4.9.3)
+Requirement already satisfied: packaging in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from hydra-core->dive-into-graphs==1.0.0) (23.2)
+Requirement already satisfied: importlib-resources in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from hydra-core->dive-into-graphs==1.0.0) (6.1.1)
+Requirement already satisfied: backcall in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from IPython->dive-into-graphs==1.0.0) (0.2.0)
+Requirement already satisfied: decorator in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from IPython->dive-into-graphs==1.0.0) (5.1.1)
+Requirement already satisfied: jedi>=0.16 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from IPython->dive-into-graphs==1.0.0) (0.19.1)
+Requirement already satisfied: matplotlib-inline in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from IPython->dive-into-graphs==1.0.0) (0.1.6)
+Requirement already satisfied: pickleshare in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from IPython->dive-into-graphs==1.0.0) (0.7.5)
+Requirement already satisfied: prompt-toolkit!=3.0.37,<3.1.0,>=3.0.30 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from IPython->dive-into-graphs==1.0.0) (3.0.43)
+Requirement already satisfied: pygments>=2.4.0 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from IPython->dive-into-graphs==1.0.0) (2.17.2)
+Requirement already satisfied: stack-data in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from IPython->dive-into-graphs==1.0.0) (0.6.3)
+Requirement already satisfied: traitlets>=5 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from IPython->dive-into-graphs==1.0.0) (5.14.1)
+Requirement already satisfied: pexpect>4.3 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from IPython->dive-into-graphs==1.0.0) (4.9.0)
+Requirement already satisfied: python-dateutil>=2.8.2 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from pandas->dive-into-graphs==1.0.0) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from pandas->dive-into-graphs==1.0.0) (2023.3.post1)
+Requirement already satisfied: tzdata>=2022.1 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from pandas->dive-into-graphs==1.0.0) (2023.4)
+Requirement already satisfied: Pillow in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from rdkit-pypi->dive-into-graphs==1.0.0) (8.3.2)
+Requirement already satisfied: scikit-learn in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from shap->dive-into-graphs==1.0.0) (1.3.2)
+Requirement already satisfied: slicer==0.0.7 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from shap->dive-into-graphs==1.0.0) (0.0.7)
+Requirement already satisfied: numba in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from shap->dive-into-graphs==1.0.0) (0.58.1)
+Requirement already satisfied: cloudpickle in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from shap->dive-into-graphs==1.0.0) (3.0.0)
+Requirement already satisfied: mpmath>=0.19 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from sympy->dive-into-graphs==1.0.0) (1.3.0)
+Requirement already satisfied: parso<0.9.0,>=0.8.3 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from jedi>=0.16->IPython->dive-into-graphs==1.0.0) (0.8.3)
+Requirement already satisfied: PyYAML>=5.1.0 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from omegaconf<2.4,>=2.2->hydra-core->dive-into-graphs==1.0.0) (6.0.1)
+Requirement already satisfied: ptyprocess>=0.5 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from pexpect>4.3->IPython->dive-into-graphs==1.0.0) (0.7.0)
+Requirement already satisfied: wcwidth in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from prompt-toolkit!=3.0.37,<3.1.0,>=3.0.30->IPython->dive-into-graphs==1.0.0) (0.2.13)
+Requirement already satisfied: networkx in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (3.1)
+Requirement already satisfied: jinja2 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (3.1.3)
+Requirement already satisfied: fsspec in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (2023.12.2)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.1.105 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (12.1.105)
+Requirement already satisfied: nvidia-cuda-runtime-cu12==12.1.105 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (12.1.105)
+Requirement already satisfied: nvidia-cuda-cupti-cu12==12.1.105 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (12.1.105)
+Requirement already satisfied: nvidia-cudnn-cu12==8.9.2.26 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (8.9.2.26)
+Requirement already satisfied: nvidia-cublas-cu12==12.1.3.1 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (12.1.3.1)
+Requirement already satisfied: nvidia-cufft-cu12==11.0.2.54 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (11.0.2.54)
+Requirement already satisfied: nvidia-curand-cu12==10.3.2.106 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (10.3.2.106)
+Requirement already satisfied: nvidia-cusolver-cu12==11.4.5.107 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (11.4.5.107)
+Requirement already satisfied: nvidia-cusparse-cu12==12.1.0.106 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (12.1.0.106)
+Requirement already satisfied: nvidia-nccl-cu12==2.18.1 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (2.18.1)
+Requirement already satisfied: nvidia-nvtx-cu12==12.1.105 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (12.1.105)
+Requirement already satisfied: triton==2.1.0 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (2.1.0)
+Requirement already satisfied: nvidia-nvjitlink-cu12 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from nvidia-cusolver-cu12==11.4.5.107->torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (12.3.101)
+Requirement already satisfied: mypy-extensions>=0.3.0 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from typing-inspect>=0.7.1->typed-argument-parser==1.7.2->dive-into-graphs==1.0.0) (1.0.0)
+Requirement already satisfied: soupsieve>1.2 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from beautifulsoup4->gdown->dive-into-graphs==1.0.0) (2.5)
+Requirement already satisfied: zipp>=3.1.0 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from importlib-resources->hydra-core->dive-into-graphs==1.0.0) (3.17.0)
+Requirement already satisfied: contourpy>=1.0.1 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from matplotlib->captum==0.2.0->dive-into-graphs==1.0.0) (1.1.1)
+Requirement already satisfied: cycler>=0.10 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from matplotlib->captum==0.2.0->dive-into-graphs==1.0.0) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from matplotlib->captum==0.2.0->dive-into-graphs==1.0.0) (4.47.2)
+Requirement already satisfied: kiwisolver>=1.0.1 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from matplotlib->captum==0.2.0->dive-into-graphs==1.0.0) (1.4.5)
+Requirement already satisfied: pyparsing>=2.3.1 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from matplotlib->captum==0.2.0->dive-into-graphs==1.0.0) (3.1.1)
+Requirement already satisfied: llvmlite<0.42,>=0.41.0dev0 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from numba->shap->dive-into-graphs==1.0.0) (0.41.1)
+Requirement already satisfied: importlib-metadata in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from numba->shap->dive-into-graphs==1.0.0) (7.0.1)
+Requirement already satisfied: et-xmlfile in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from openpyxl->cilog->dive-into-graphs==1.0.0) (1.1.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from requests[socks]->gdown->dive-into-graphs==1.0.0) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from requests[socks]->gdown->dive-into-graphs==1.0.0) (3.6)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from requests[socks]->gdown->dive-into-graphs==1.0.0) (2.1.0)
+Requirement already satisfied: certifi>=2017.4.17 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from requests[socks]->gdown->dive-into-graphs==1.0.0) (2023.11.17)
+Requirement already satisfied: PySocks!=1.5.7,>=1.5.6 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from requests[socks]->gdown->dive-into-graphs==1.0.0) (1.7.1)
+Requirement already satisfied: joblib>=1.1.1 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from scikit-learn->shap->dive-into-graphs==1.0.0) (1.3.2)
+Requirement already satisfied: threadpoolctl>=2.0.0 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from scikit-learn->shap->dive-into-graphs==1.0.0) (3.2.0)
+Requirement already satisfied: executing>=1.2.0 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from stack-data->IPython->dive-into-graphs==1.0.0) (2.0.1)
+Requirement already satisfied: asttokens>=2.1.0 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from stack-data->IPython->dive-into-graphs==1.0.0) (2.4.1)
+Requirement already satisfied: pure-eval in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from stack-data->IPython->dive-into-graphs==1.0.0) (0.2.2)
+Requirement already satisfied: MarkupSafe>=2.0 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from jinja2->torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (2.1.3)
+Building wheels for collected packages: dive-into-graphs
+  Building wheel for dive-into-graphs (setup.py): started
+  Building wheel for dive-into-graphs (setup.py): finished with status 'done'
+  Created wheel for dive-into-graphs: filename=dive_into_graphs-1.0.0-py3-none-any.whl size=4289239 sha256=e5924cfacb27c2b6b3efecb33586d2b8ac27a5d47651c9f06ec975d50bb0c7ba
+  Stored in directory: /gpfs/scratch1/nodespecific/gcn29/igardner.5071478/pip-ephem-wheel-cache-t8fueou9/wheels/f2/a5/44/8e74a178bc5e0574bbc1a498340d5eabccec7f25ee69384396
+Successfully built dive-into-graphs
+Installing collected packages: dive-into-graphs
+  Attempting uninstall: dive-into-graphs
+    Found existing installation: dive-into-graphs 1.0.0
+    Uninstalling dive-into-graphs-1.0.0:
+      Successfully uninstalled dive-into-graphs-1.0.0
+Successfully installed dive-into-graphs-1.0.0
+[I 2024-01-31 20:17:01,363] A new study created in memory with name: no-name-18eb52fa-9ddf-42db-ab4d-9fdc501920dc
+Loading cng dataset from /gpfs/home5/igardner/DIG_FACT/dig/fairgraph/method/benchmark_dataset/encoded_data.csv
+Doing Hyperparameter Search
+Test for alpha, gamma, lam as 2.1 7.6 4.6
+/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/dig/fairgraph/utils/utils.py:12: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:605.)
+  pyt_sp_mx = torch.sparse.FloatTensor(torch.LongTensor(coords.T),
+Epoch: 0001 sens loss: 0.6844 contrastive loss: 6.5422 edge reconstruction loss: 0.8289 feature reconstruction loss: 0.4943
+Epoch: 0002 sens loss: 0.6834 contrastive loss: 6.5173 edge reconstruction loss: 0.8112 feature reconstruction loss: 0.4969
+Epoch: 0003 sens loss: 0.6828 contrastive loss: 6.4746 edge reconstruction loss: 0.7866 feature reconstruction loss: 0.4976
+Epoch: 0004 sens loss: 0.6821 contrastive loss: 6.5343 edge reconstruction loss: 0.7816 feature reconstruction loss: 0.4947
+Epoch: 0005 sens loss: 0.6811 contrastive loss: 6.4365 edge reconstruction loss: 0.7597 feature reconstruction loss: 0.4991
+Epoch: 0006 sens loss: 0.6803 contrastive loss: 6.4516 edge reconstruction loss: 0.7408 feature reconstruction loss: 0.4918
+Epoch: 0007 sens loss: 0.6787 contrastive loss: 6.4617 edge reconstruction loss: 0.7362 feature reconstruction loss: 0.4906
+Epoch: 0008 sens loss: 0.6794 contrastive loss: 6.4527 edge reconstruction loss: 0.7121 feature reconstruction loss: 0.4917
+Epoch: 0009 sens loss: 0.6781 contrastive loss: 6.4261 edge reconstruction loss: 0.7071 feature reconstruction loss: 0.4919
+Epoch: 0010 sens loss: 0.6778 contrastive loss: 6.4179 edge reconstruction loss: 0.6916 feature reconstruction loss: 0.4999
+Epoch: 0011 sens loss: 0.6772 contrastive loss: 6.4162 edge reconstruction loss: 0.6820 feature reconstruction loss: 0.4939
+Epoch: 0012 sens loss: 0.6754 contrastive loss: 6.4609 edge reconstruction loss: 0.6676 feature reconstruction loss: 0.4924
+Epoch: 0013 sens loss: 0.6752 contrastive loss: 6.4141 edge reconstruction loss: 0.6573 feature reconstruction loss: 0.4943
+Epoch: 0014 sens loss: 0.6745 contrastive loss: 6.4638 edge reconstruction loss: 0.6519 feature reconstruction loss: 0.4926
+Epoch: 0015 sens loss: 0.6740 contrastive loss: 6.4014 edge reconstruction loss: 0.6421 feature reconstruction loss: 0.4946
+Epoch: 0016 sens loss: 0.6735 contrastive loss: 6.4349 edge reconstruction loss: 0.6305 feature reconstruction loss: 0.4939
+Epoch: 0017 sens loss: 0.6725 contrastive loss: 6.3950 edge reconstruction loss: 0.6265 feature reconstruction loss: 0.4921
+Epoch: 0018 sens loss: 0.6713 contrastive loss: 6.3662 edge reconstruction loss: 0.6129 feature reconstruction loss: 0.4917
+Epoch: 0019 sens loss: 0.6708 contrastive loss: 6.3865 edge reconstruction loss: 0.6083 feature reconstruction loss: 0.4878
+Epoch: 0020 sens loss: 0.6700 contrastive loss: 6.3608 edge reconstruction loss: 0.6005 feature reconstruction loss: 0.4911
+Epoch: 0021 sens loss: 0.6694 contrastive loss: 6.3906 edge reconstruction loss: 0.5936 feature reconstruction loss: 0.4887
+Epoch: 0022 sens loss: 0.6682 contrastive loss: 6.3671 edge reconstruction loss: 0.5902 feature reconstruction loss: 0.4849
+Epoch: 0023 sens loss: 0.6687 contrastive loss: 6.3492 edge reconstruction loss: 0.5834 feature reconstruction loss: 0.4974
+Epoch: 0024 sens loss: 0.6680 contrastive loss: 6.3692 edge reconstruction loss: 0.5772 feature reconstruction loss: 0.4895
+Epoch: 0025 sens loss: 0.6667 contrastive loss: 6.3548 edge reconstruction loss: 0.5777 feature reconstruction loss: 0.4898
+Epoch: 0026 sens loss: 0.6656 contrastive loss: 6.3520 edge reconstruction loss: 0.5718 feature reconstruction loss: 0.4908
+Epoch: 0027 sens loss: 0.6648 contrastive loss: 6.3771 edge reconstruction loss: 0.5645 feature reconstruction loss: 0.4904
+Epoch: 0028 sens loss: 0.6650 contrastive loss: 6.3368 edge reconstruction loss: 0.5601 feature reconstruction loss: 0.4876
+Epoch: 0029 sens loss: 0.6648 contrastive loss: 6.3455 edge reconstruction loss: 0.5558 feature reconstruction loss: 0.4945
+Epoch: 0030 sens loss: 0.6632 contrastive loss: 6.3423 edge reconstruction loss: 0.5511 feature reconstruction loss: 0.4904
+Epoch: 0031 sens loss: 0.6627 contrastive loss: 6.3510 edge reconstruction loss: 0.5479 feature reconstruction loss: 0.4912
+Epoch: 0032 sens loss: 0.6617 contrastive loss: 6.3375 edge reconstruction loss: 0.5443 feature reconstruction loss: 0.4857
+Epoch: 0033 sens loss: 0.6614 contrastive loss: 6.3274 edge reconstruction loss: 0.5412 feature reconstruction loss: 0.4899
+Epoch: 0034 sens loss: 0.6599 contrastive loss: 6.3258 edge reconstruction loss: 0.5349 feature reconstruction loss: 0.4895
+Epoch: 0035 sens loss: 0.6595 contrastive loss: 6.3202 edge reconstruction loss: 0.5317 feature reconstruction loss: 0.4888
+Epoch: 0036 sens loss: 0.6596 contrastive loss: 6.3262 edge reconstruction loss: 0.5289 feature reconstruction loss: 0.4930
+Epoch: 0037 sens loss: 0.6585 contrastive loss: 6.3322 edge reconstruction loss: 0.5261 feature reconstruction loss: 0.4819
+Epoch: 0038 sens loss: 0.6580 contrastive loss: 6.3150 edge reconstruction loss: 0.5242 feature reconstruction loss: 0.4853
+Epoch: 0039 sens loss: 0.6574 contrastive loss: 6.3063 edge reconstruction loss: 0.5197 feature reconstruction loss: 0.4812
+Epoch: 0040 sens loss: 0.6562 contrastive loss: 6.3255 edge reconstruction loss: 0.5188 feature reconstruction loss: 0.4874
+Epoch: 0041 sens loss: 0.6559 contrastive loss: 6.3357 edge reconstruction loss: 0.5155 feature reconstruction loss: 0.4903
+Epoch: 0042 sens loss: 0.6555 contrastive loss: 6.3095 edge reconstruction loss: 0.5124 feature reconstruction loss: 0.4870
+Epoch: 0043 sens loss: 0.6543 contrastive loss: 6.3221 edge reconstruction loss: 0.5103 feature reconstruction loss: 0.4891
+Epoch: 0044 sens loss: 0.6530 contrastive loss: 6.3059 edge reconstruction loss: 0.5055 feature reconstruction loss: 0.4853
+Epoch: 0045 sens loss: 0.6528 contrastive loss: 6.2971 edge reconstruction loss: 0.5047 feature reconstruction loss: 0.4898
+Epoch: 0046 sens loss: 0.6517 contrastive loss: 6.3025 edge reconstruction loss: 0.5006 feature reconstruction loss: 0.4795
+Epoch: 0047 sens loss: 0.6520 contrastive loss: 6.3140 edge reconstruction loss: 0.4994 feature reconstruction loss: 0.4854
+Epoch: 0048 sens loss: 0.6511 contrastive loss: 6.3022 edge reconstruction loss: 0.4976 feature reconstruction loss: 0.4836
+Epoch: 0049 sens loss: 0.6484 contrastive loss: 6.3032 edge reconstruction loss: 0.4951 feature reconstruction loss: 0.4831
+Epoch: 0050 sens loss: 0.6493 contrastive loss: 6.3058 edge reconstruction loss: 0.4917 feature reconstruction loss: 0.4840
+Epoch: 0051 sens loss: 0.6480 contrastive loss: 6.3091 edge reconstruction loss: 0.4892 feature reconstruction loss: 0.4817
+Epoch: 0052 sens loss: 0.6482 contrastive loss: 6.2958 edge reconstruction loss: 0.4880 feature reconstruction loss: 0.4867
+Epoch: 0053 sens loss: 0.6477 contrastive loss: 6.2877 edge reconstruction loss: 0.4851 feature reconstruction loss: 0.4806
+Epoch: 0054 sens loss: 0.6464 contrastive loss: 6.2944 edge reconstruction loss: 0.4834 feature reconstruction loss: 0.4816
+Epoch: 0055 sens loss: 0.6445 contrastive loss: 6.2943 edge reconstruction loss: 0.4804 feature reconstruction loss: 0.4761
+Epoch: 0056 sens loss: 0.6444 contrastive loss: 6.2829 edge reconstruction loss: 0.4792 feature reconstruction loss: 0.4788
+Epoch: 0057 sens loss: 0.6429 contrastive loss: 6.2908 edge reconstruction loss: 0.4771 feature reconstruction loss: 0.4813
+Epoch: 0058 sens loss: 0.6433 contrastive loss: 6.2907 edge reconstruction loss: 0.4751 feature reconstruction loss: 0.4806
+Epoch: 0059 sens loss: 0.6422 contrastive loss: 6.2911 edge reconstruction loss: 0.4718 feature reconstruction loss: 0.4804
+Epoch: 0060 sens loss: 0.6412 contrastive loss: 6.2907 edge reconstruction loss: 0.4700 feature reconstruction loss: 0.4830
+Epoch: 0061 sens loss: 0.6397 contrastive loss: 6.2857 edge reconstruction loss: 0.4685 feature reconstruction loss: 0.4791
+Epoch: 0062 sens loss: 0.6392 contrastive loss: 6.2707 edge reconstruction loss: 0.4666 feature reconstruction loss: 0.4789
+Epoch: 0063 sens loss: 0.6385 contrastive loss: 6.2748 edge reconstruction loss: 0.4635 feature reconstruction loss: 0.4787
+Epoch: 0064 sens loss: 0.6375 contrastive loss: 6.2763 edge reconstruction loss: 0.4611 feature reconstruction loss: 0.4785
+Epoch: 0065 sens loss: 0.6378 contrastive loss: 6.2790 edge reconstruction loss: 0.4592 feature reconstruction loss: 0.4815
+Epoch: 0066 sens loss: 0.6362 contrastive loss: 6.2791 edge reconstruction loss: 0.4574 feature reconstruction loss: 0.4835
+Epoch: 0067 sens loss: 0.6353 contrastive loss: 6.2779 edge reconstruction loss: 0.4563 feature reconstruction loss: 0.4733
+Epoch: 0068 sens loss: 0.6360 contrastive loss: 6.2767 edge reconstruction loss: 0.4546 feature reconstruction loss: 0.4833
+Epoch: 0069 sens loss: 0.6342 contrastive loss: 6.2776 edge reconstruction loss: 0.4531 feature reconstruction loss: 0.4791
+Epoch: 0070 sens loss: 0.6343 contrastive loss: 6.2661 edge reconstruction loss: 0.4504 feature reconstruction loss: 0.4786
+Epoch: 0071 sens loss: 0.6322 contrastive loss: 6.2738 edge reconstruction loss: 0.4488 feature reconstruction loss: 0.4744
+Epoch: 0072 sens loss: 0.6316 contrastive loss: 6.2822 edge reconstruction loss: 0.4468 feature reconstruction loss: 0.4796
+Epoch: 0073 sens loss: 0.6303 contrastive loss: 6.2690 edge reconstruction loss: 0.4456 feature reconstruction loss: 0.4774
+Epoch: 0074 sens loss: 0.6298 contrastive loss: 6.2844 edge reconstruction loss: 0.4437 feature reconstruction loss: 0.4767
+Epoch: 0075 sens loss: 0.6285 contrastive loss: 6.2756 edge reconstruction loss: 0.4433 feature reconstruction loss: 0.4760
+Epoch: 0076 sens loss: 0.6288 contrastive loss: 6.2708 edge reconstruction loss: 0.4412 feature reconstruction loss: 0.4826
+Epoch: 0077 sens loss: 0.6282 contrastive loss: 6.2640 edge reconstruction loss: 0.4392 feature reconstruction loss: 0.4754
+Epoch: 0078 sens loss: 0.6263 contrastive loss: 6.2592 edge reconstruction loss: 0.4384 feature reconstruction loss: 0.4726
+Epoch: 0079 sens loss: 0.6229 contrastive loss: 6.2753 edge reconstruction loss: 0.4363 feature reconstruction loss: 0.4703
+Epoch: 0080 sens loss: 0.6261 contrastive loss: 6.2630 edge reconstruction loss: 0.4344 feature reconstruction loss: 0.4752
+Epoch: 0081 sens loss: 0.6245 contrastive loss: 6.2601 edge reconstruction loss: 0.4334 feature reconstruction loss: 0.4699
+Epoch: 0082 sens loss: 0.6234 contrastive loss: 6.2627 edge reconstruction loss: 0.4322 feature reconstruction loss: 0.4727
+Epoch: 0083 sens loss: 0.6227 contrastive loss: 6.2721 edge reconstruction loss: 0.4310 feature reconstruction loss: 0.4678
+Epoch: 0084 sens loss: 0.6211 contrastive loss: 6.2662 edge reconstruction loss: 0.4289 feature reconstruction loss: 0.4653
+Epoch: 0085 sens loss: 0.6211 contrastive loss: 6.2562 edge reconstruction loss: 0.4282 feature reconstruction loss: 0.4708
+Epoch: 0086 sens loss: 0.6179 contrastive loss: 6.2639 edge reconstruction loss: 0.4261 feature reconstruction loss: 0.4671
+Epoch: 0087 sens loss: 0.6187 contrastive loss: 6.2662 edge reconstruction loss: 0.4253 feature reconstruction loss: 0.4641
+Epoch: 0088 sens loss: 0.6177 contrastive loss: 6.2518 edge reconstruction loss: 0.4243 feature reconstruction loss: 0.4640
+Epoch: 0089 sens loss: 0.6158 contrastive loss: 6.2536 edge reconstruction loss: 0.4231 feature reconstruction loss: 0.4665
+Epoch: 0090 sens loss: 0.6151 contrastive loss: 6.2641 edge reconstruction loss: 0.4219 feature reconstruction loss: 0.4677
+Epoch: 0091 sens loss: 0.6133 contrastive loss: 6.2558 edge reconstruction loss: 0.4207 feature reconstruction loss: 0.4681
+Epoch: 0092 sens loss: 0.6134 contrastive loss: 6.2593 edge reconstruction loss: 0.4201 feature reconstruction loss: 0.4633
+Epoch: 0093 sens loss: 0.6129 contrastive loss: 6.2591 edge reconstruction loss: 0.4187 feature reconstruction loss: 0.4698
+Epoch: 0094 sens loss: 0.6114 contrastive loss: 6.2525 edge reconstruction loss: 0.4178 feature reconstruction loss: 0.4631
+Epoch: 0095 sens loss: 0.6101 contrastive loss: 6.2473 edge reconstruction loss: 0.4172 feature reconstruction loss: 0.4630
+Epoch: 0096 sens loss: 0.6097 contrastive loss: 6.2507 edge reconstruction loss: 0.4163 feature reconstruction loss: 0.4621
+Epoch: 0097 sens loss: 0.6073 contrastive loss: 6.2523 edge reconstruction loss: 0.4150 feature reconstruction loss: 0.4566
+Epoch: 0098 sens loss: 0.6086 contrastive loss: 6.2487 edge reconstruction loss: 0.4143 feature reconstruction loss: 0.4602
+Epoch: 0099 sens loss: 0.6058 contrastive loss: 6.2679 edge reconstruction loss: 0.4140 feature reconstruction loss: 0.4554
+Epoch: 0100 sens loss: 0.6064 contrastive loss: 6.2450 edge reconstruction loss: 0.4133 feature reconstruction loss: 0.4592
+Training time:  3.2366604804992676
+alpha and lambda 2.1 4.6
+email updated version used!
+Experiment 1 
+
+[W 2024-01-31 20:17:05,522] Trial 0 failed with parameters: {'alpha': 2.1, 'gamma': 7.6, 'lambda': 4.6} because of the following error: ZeroDivisionError('division by zero').
+Traceback (most recent call last):
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/optuna/study/_optimize.py", line 200, in _run_trial
+    value_or_values = func(trial)
+  File "run.py", line 122, in objective
+    return hpo(trial, args.dataset, run_fair)
+  File "run.py", line 35, in hpo
+    acc = run_fair.run(alpha, gamma, lam, device, dataset=dataset, epochs=100, test_epochs=100,
+  File "run.py", line 109, in run
+    acc = model.test(adj=adj, features=features, labels=dataset.labels, epochs=test_epochs,
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/dig/fairgraph/method/Graphair/graphair.py", line 246, in test
+    parity_val, equality_val = fair_metric(output, idx_val, labels, sens)
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/dig/fairgraph/utils/utils.py", line 33, in fair_metric
+    parity = abs(sum(pred_y[idx_s0])/sum(idx_s0)-sum(pred_y[idx_s1])/sum(idx_s1))
+ZeroDivisionError: division by zero
+[W 2024-01-31 20:17:05,533] Trial 0 failed with value None.
+Traceback (most recent call last):
+  File "run.py", line 125, in <module>
+    study.optimize(objective, n_trials=500)
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/optuna/study/study.py", line 451, in optimize
+    _optimize(
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/optuna/study/_optimize.py", line 66, in _optimize
+    _optimize_sequential(
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/optuna/study/_optimize.py", line 163, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/optuna/study/_optimize.py", line 251, in _run_trial
+    raise func_err
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/optuna/study/_optimize.py", line 200, in _run_trial
+    value_or_values = func(trial)
+  File "run.py", line 122, in objective
+    return hpo(trial, args.dataset, run_fair)
+  File "run.py", line 35, in hpo
+    acc = run_fair.run(alpha, gamma, lam, device, dataset=dataset, epochs=100, test_epochs=100,
+  File "run.py", line 109, in run
+    acc = model.test(adj=adj, features=features, labels=dataset.labels, epochs=test_epochs,
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/dig/fairgraph/method/Graphair/graphair.py", line 246, in test
+    parity_val, equality_val = fair_metric(output, idx_val, labels, sens)
+  File "/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/dig/fairgraph/utils/utils.py", line 33, in fair_metric
+    parity = abs(sum(pred_y[idx_s0])/sum(idx_s0)-sum(pred_y[idx_s1])/sum(idx_s1))
+ZeroDivisionError: division by zero
+srun: error: gcn29: task 0: Exited with exit code 1
+srun: Terminating StepId=5071478.0
+
+JOB STATISTICS
+==============
+Job ID: 5071478
+Cluster: snellius
+User/Group: igardner/igardner
+State: RUNNING
+Nodes: 1
+Cores per node: 18
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 00:07:12 core-walltime
+Job Wall-clock time: 00:00:24
+Memory Utilized: 0.00 MB (estimated maximum)
+Memory Efficiency: 0.00% of 120.00 GB (120.00 GB/node)
+WARNING: Efficiency statistics may be misleading for RUNNING jobs.
