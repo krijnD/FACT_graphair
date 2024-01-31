@@ -11,6 +11,7 @@ class Classifier(nn.Module):
         )
     
     def forward(self,h):
+        print("before classifier", h)
         return self.model(h)
 
     def reset_parameters(self) -> None:

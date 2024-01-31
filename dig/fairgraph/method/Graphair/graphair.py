@@ -127,6 +127,7 @@ class graphair(nn.Module):
         adj_norm = scipysp_to_pytorchsp(adj_norm)
     
         adj = adj_norm.cuda()
+        print("adj", adj)
         return self.f_encoder(adj,x)
 
     def fit_whole(self, epochs, adj, x,sens,idx_sens,warmup=None, adv_epoches=1):
@@ -364,6 +365,7 @@ class graphair(nn.Module):
                 self.optimizer_classifier.zero_grad()
                 output = self.classifier(h)
                 loss_train = F.binary_cross_entropy_with_logits(output[idx_train], labels[idx_train].unsqueeze(1).float())
+                print("loss train", loss_train)
                 acc_train = accuracy(output[idx_train], labels[idx_train])
                 loss_train.backward()
                 self.optimizer_classifier.step()
