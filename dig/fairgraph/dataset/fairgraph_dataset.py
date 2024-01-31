@@ -281,7 +281,11 @@ class Congress():
     :type root: str, optional
     '''
 
+<<<<<<< HEAD
     def __init__(self, data_path='./home/igardner/DIG_FACT/dig/fairgraph/dataset/', root='./dataset/cng', sens_attr="gender_feat"):
+=======
+    def __init__(self, data_path='./benchmark_dataset/', root='./dataset/cng', sens_attr="gender_feat"):
+>>>>>>> 6f374878b73d5bcedab7decc349b12a7c2ff1901
         self.name = "CNG"
         self.root = root
         self.dataset = 'cng'
