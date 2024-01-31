@@ -14,5 +14,5 @@ module load CUDA/11.8.0
 
 # Activate your environment
 source activate dig
-
-srun python -u run.py --dataset NBA
+pip install .
+srun python -u dig/farigraph/method/run.py --dataset NBA

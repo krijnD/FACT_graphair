@@ -281,43 +281,36 @@ class Congress():
     :param root: The path to root directory where the dataset is processed and saved, defaults to './dataset/cng'
     :type root: str, optional
     '''
-    def __init__(self, data_path='benchmark_dataset/', root='./dataset/cng', sens_attr="gender_feat"):
+    def __init__(self, data_path='benchmark_dataset/', root='./dataset/cng', sens_attr="Gender_Female"):
         self.name = "CNG"
         self.root = root
         self.dataset = 'cng'
         self.sens_attr = sens_attr
-        self.predict_attr = "class_net_worth"
-        self.label_number = 150
+        self.predict_attr = "NET_WORTH"
+        self.label_number = 100
+        self.sens_number = 500
         self.seed = 20
-        self.test_idx = True
+        self.test_idx=False
         self.data_path = data_path
         self.process()
 
     @property
     def raw_paths(self):
         # Paths to the raw data files relative to `self.root`
-        if self.sens_attr == "religion_sensitivity":
-            data_csv = "encoded_data_wo_religions.csv"
-        else:
-            data_csv = "encoded_data.csv"
-
-
-
-        return [os.path.join(self.data_path, data_csv),
-                os.path.join(self.data_path, "cng_relationship.txt"),
+        return [os.path.join(self.data_path,"encoded_congress.csv"),
+                os.path.join(self.data_path, "congress.edgelist"),
                 ]
 
-    def preprocess_vectors(self, df):
-        # Dropping first and last name vector
-        df = df.drop(['first_name_vector', 'last_name_vector',  "Unnamed: 0"], axis=1)
-        return df
+    # def preprocess_vectors(self, df):
+    #     # Dropping first and last name vector
+    #     df = df.drop(['first_name_vector', 'last_name_vector',  "Unnamed: 0"], axis=1)
+    #     return df
 
     def read_graph(self):
         print(f'Loading {self.dataset} dataset from {os.path.abspath(self.raw_paths[0])}')
         idx_features_labels = pd.read_csv(self.raw_paths[0])
         # We don't use the first and last name
-        idx_features_labels = self.preprocess_vectors(idx_features_labels)
-
+        #idx_features_labels = self.preprocess_vectors(idx_features_labels)
         header = list(idx_features_labels.columns)
         header.remove("numeric_id")
 
@@ -413,3 +406,4 @@ class Congress():
         self.idx_sens_train = idx_sens_train.to(device).long()
 
         self.adj = adj
+

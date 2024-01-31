@@ -21,49 +21,17 @@ def accuracy(output, labels):
     correct = correct.sum()
     return correct / len(labels)
 
-# def fair_metric(output,idx, labels, sens):
-#     val_y = labels[idx].cpu().numpy()
-#     idx_s0 = sens.cpu().numpy()[idx.cpu().numpy()]==0
-#     idx_s1 = sens.cpu().numpy()[idx.cpu().numpy()]==1
-#
-#     idx_s0_y1 = np.bitwise_and(idx_s0,val_y==1)
-#     idx_s1_y1 = np.bitwise_and(idx_s1,val_y==1)
-#
-#     pred_y = (output[idx].squeeze()>0).type_as(labels).cpu().numpy()
-#     parity = abs(sum(pred_y[idx_s0])/sum(idx_s0)-sum(pred_y[idx_s1])/sum(idx_s1))
-#     equality = abs(sum(pred_y[idx_s0_y1])/sum(idx_s0_y1)-sum(pred_y[idx_s1_y1])/sum(idx_s1_y1))
-#
-#     return parity,equality
-
-def fair_metric(output, idx, labels, sens):
+def fair_metric(output,idx, labels, sens):
     val_y = labels[idx].cpu().numpy()
-    print("val_y:", val_y)  # Print the labels for the selected indices
+    idx_s0 = sens.cpu().numpy()[idx.cpu().numpy()]==0
+    idx_s1 = sens.cpu().numpy()[idx.cpu().numpy()]==1
 
-    idx_s0 = sens.cpu().numpy()[idx.cpu().numpy()] == 0
-    idx_s1 = sens.cpu().numpy()[idx.cpu().numpy()] == 1
-    print("idx_s0 count:", sum(idx_s0), "idx_s1 count:", sum(idx_s1))  # Print counts of idx_s0 and idx_s1
+    idx_s0_y1 = np.bitwise_and(idx_s0,val_y==1)
+    idx_s1_y1 = np.bitwise_and(idx_s1,val_y==1)
 
-    idx_s0_y1 = np.bitwise_and(idx_s0, val_y == 1)
-    idx_s1_y1 = np.bitwise_and(idx_s1, val_y == 1)
-    print("idx_s0_y1 count:", sum(idx_s0_y1), "idx_s1_y1 count:", sum(idx_s1_y1))  # Print counts of idx_s0_y1 and idx_s1_y1
+    pred_y = (output[idx].squeeze()>0).type_as(labels).cpu().numpy()
+    parity = abs(sum(pred_y[idx_s0])/sum(idx_s0)-sum(pred_y[idx_s1])/sum(idx_s1))
+    equality = abs(sum(pred_y[idx_s0_y1])/sum(idx_s0_y1)-sum(pred_y[idx_s1_y1])/sum(idx_s1_y1))
 
-    pred_y = (output[idx].squeeze() > 0).type_as(labels).cpu().numpy()
-    print("pred_y:", pred_y)  # Print the predicted labels for the selected indices
+    return parity,equality
 
-    # Check and handle division by zero for parity
-    if sum(idx_s0) == 0 or sum(idx_s1) == 0:
-        print("Division by zero in parity calculation")
-        parity = np.nan  # or a default value indicating error or missing data
-    else:
-        parity = abs(sum(pred_y[idx_s0]) / sum(idx_s0) - sum(pred_y[idx_s1]) / sum(idx_s1))
-    print("parity:", parity)
-
-    # Check and handle division by zero for equality
-    if sum(idx_s0_y1) == 0 or sum(idx_s1_y1) == 0:
-        print("Division by zero in equality calculation")
-        equality = np.nan  # or a default value
-    else:
-        equality = abs(sum(pred_y[idx_s0_y1]) / sum(idx_s0_y1) - sum(pred_y[idx_s1_y1]) / sum(idx_s1_y1))
-    print("equality:", equality)
-
-    return parity, equality
