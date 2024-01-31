@@ -59,11 +59,11 @@ class graphair(nn.Module):
         self.f_encoder = f_encoder
         self.sens_model = sens_model
         self.classifier = classifier_model
-        self.alpha = 10
-        self.beta = 0.1
-        self.gamma = 0.1
+        self.alpha = alpha
+        self.beta = beta
+        self.gamma = gamma
         self.dataset = dataset
-        self.lam = 0.5
+        self.lam = lam
 
         self.criterion_sens = nn.BCEWithLogitsLoss()
         self.criterion_cont = nn.CrossEntropyLoss()
