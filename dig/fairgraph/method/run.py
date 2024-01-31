@@ -95,11 +95,23 @@ class run():
         log_gpu_usage()
 
 
-# Load the dataset
-congress = Congress()
-
 # Train and evaluate
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print("Running Congress with Gender Sensitive Attribute")
+# Load the dataset
+congress = Congress()
+run_fairgraph = run()
+run_fairgraph.run(device, dataset=congress, model='Graphair', epochs=1000, test_epochs=1000,
+                  lr=1e-3, weight_decay=1e-5)
+
+print("Running Congress with Religion Sensitive Attribute")
+congress = Congress(sens_attr="religion_sensitivity")
+run_fairgraph = run()
+run_fairgraph.run(device, dataset=congress, model='Graphair', epochs=1000, test_epochs=1000,
+                  lr=1e-3, weight_decay=1e-5)
+
+print("Running Congress with Party Sensitive Attribute")
+congress = Congress(sens_attr="feat_party")
 run_fairgraph = run()
 run_fairgraph.run(device, dataset=congress, model='Graphair', epochs=1000, test_epochs=1000,
                   lr=1e-3, weight_decay=1e-5)
