@@ -76,9 +76,10 @@ class run():
         idx_sens = dataset.idx_sens_train
 
         if dataset.name == "CNG":
-            alpha = 10
-            lama = 0.5 #change with hpo results
-            gamma = 0.5
+            # : {'alpha': 2.6, 'gamma': 3.1, 'lambda': 1.1}
+            alpha = 2.6
+            lama = 1.1 #change with hpo results
+            gamma = 3.1
         elif dataset.name == "NBA":
             #alpha': 10.1, 'gamma': 5.1, 'lambda': 4.6
             alpha = 10
