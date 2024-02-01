@@ -15,4 +15,5 @@ module load CUDA/11.8.0
 # Activate your environment
 source activate dig
 pip install .
-srun python -u dig/fairgraph/method/run.py --dataset CNG
+cd dig/fairgraph/method/
+srun python -u run.py --dataset CNG
