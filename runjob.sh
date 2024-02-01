@@ -17,14 +17,8 @@ source activate dig
 
 pip install .
 cd dig/fairgraph/method/
-echo "LGBTQ"
-srun python -u run.py --dataset CNG --sens_att "LGBTQ+ Status_LGBTQ+"
+echo "NBA"
+srun python -u run.py
 
-echo "Party_Democrat"
-srun python -u run.py --dataset CNG --sens_att "Party_Democrat+"
-
-echo "Race/Ethnicity_White"
-srun python -u run.py --dataset CNG --sens_att "Race/Ethnicity_White"
-
-echo "Religion_Christianity"
-srun python -u run.py --dataset CNG --sens_att "Religion_Christianity"
+echo "CNG"
+srun python -u run.py --dataset CNG
