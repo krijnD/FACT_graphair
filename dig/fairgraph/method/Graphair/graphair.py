@@ -365,7 +365,6 @@ class graphair(nn.Module):
                 self.optimizer_classifier.zero_grad()
                 output = self.classifier(h)
                 loss_train = F.binary_cross_entropy_with_logits(output[idx_train], labels[idx_train].unsqueeze(1).float())
-                print("loss train", loss_train)
                 acc_train = accuracy(output[idx_train], labels[idx_train])
                 loss_train.backward()
                 self.optimizer_classifier.step()
