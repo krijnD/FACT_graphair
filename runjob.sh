@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --partition=gpu
 #SBATCH --gpus=1
-#SBATCH --job-name=cng_hpo
+#SBATCH --job-name=final_run
 #SBATCH --time=02:00:00
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=18
@@ -17,4 +17,4 @@ source activate dig
 
 pip install .
 cd dig/fairgraph/method/
-srun python -u run.py
+srun python -u run.py --dataset CNG
