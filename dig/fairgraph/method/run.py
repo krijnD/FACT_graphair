@@ -121,7 +121,7 @@ if __name__ == '__main__':
         run_fair = run()
         return hpo(trial, args.dataset, run_fair)
 
-    study = optuna.create_study(direction=['maximize', 'minimize', 'minimize'])
+    study = optuna.create_study(directions=["maximize", "minimize", "minimize"])
     study.optimize(objective, n_trials=500)
 
     # After optimization, save the study object
