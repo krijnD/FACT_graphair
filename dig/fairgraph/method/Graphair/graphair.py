@@ -9,6 +9,7 @@ from torch_geometric.loader import GraphSAINTRandomWalkSampler
 from torch_geometric.data import Data
 from torch_geometric.utils import from_scipy_sparse_matrix, to_dense_adj, to_torch_sparse_tensor, to_edge_index, add_remaining_self_loops, to_undirected
 
+
 class graphair(nn.Module):
     r'''
         This class implements the Graphair model
@@ -374,8 +375,9 @@ class graphair(nn.Module):
                 acc_val = accuracy(output[idx_val], labels[idx_val])
                 acc_test = accuracy(output[idx_test], labels[idx_test])
 
-                parity_val, equality_val = fair_metric(output,idx_val, labels, sens)
-                parity_test, equality_test = fair_metric(output,idx_test, labels, sens)
+                parity_val, equality_val, _ = fair_metric(output,idx_val, labels, sens)
+                parity_test, equality_test, cr = fair_metric(output,idx_test, labels, sens)
+                print(cr)
                 if epoch%10==0:
                     print("Epoch [{}] Test set results:".format(epoch),
                         "acc_test= {:.4f}".format(acc_test.item()),
