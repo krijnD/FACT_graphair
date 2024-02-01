@@ -277,11 +277,11 @@ class CNG():
     :type root: str, optional
     '''
 
-    def __init__(self, root='./benchmark_dataset/', sens="Gender_Female"):
+    def __init__(self, root='./benchmark_dataset/', sens_attr="Gender_Female"):
         self.name = "CNG"
         self.root = root
         self.dataset = 'CNG'
-        self.sens_attr = sens
+        self.sens_attr = sens_attr
         self.predict_attr = "NET_WORTH"
         self.label_number = 100
         self.sens_number = 500
