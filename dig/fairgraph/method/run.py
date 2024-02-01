@@ -110,7 +110,7 @@ class run():
                          idx_train=dataset.idx_train,
                          idx_val=dataset.idx_val, idx_test=dataset.idx_test, sens=sens)
         print(f'alpha = {alpha}, gamma = {gamma}, lambda = {lam}')
-        return acc, dp, eo
+        return acc
 
 
 if __name__ == '__main__':
@@ -121,7 +121,7 @@ if __name__ == '__main__':
         run_fair = run()
         return hpo(trial, args.dataset, run_fair)
 
-    study = optuna.create_study(directions=["maximize", "minimize", "minimize"])
+    study = optuna.create_study(directions=["maximize"])
     study.optimize(objective, n_trials=500)
 
     # After optimization, save the study object

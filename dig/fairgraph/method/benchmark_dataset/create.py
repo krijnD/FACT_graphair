@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 # Change to numerical features
 import scipy.stats as stats
+from calcl_networth import estimate_net_worth
 
 # Seed for reproducibility
 np.random.seed(42)
@@ -94,68 +95,10 @@ np.random.shuffle(chamber)
 
 # Add the 'Chamber' column to the DataFrame
 congress_df['Chamber'] = chamber
-# Define the median net worth based on age from the image provided
-age_net_worth = {
-    (0, 34): 39000,
-    (35, 44): 135600,
-    (45, 54): 247200,
-    (55, 64): 364500,
-    (65, 74): 409900,
-    (75, float('inf')): 335600,
-}
-
-
-# Helper function to get the median net worth based on age
-def get_age_based_net_worth(age):
-    for age_range, median in age_net_worth.items():
-        if age_range[0] <= age <= age_range[1]:
-            return median
-    return 0
-
-
-# Define the adjustment multipliers for race and gender
-race_gender_multiplier = {
-    'White Male': 78200 / 1000000,
-    'White Female': 81200 / 1000000,
-    'African American Male': 10100 / 1000000,
-    'African American Female': 1700 / 1000000,
-    'Hispanic Male': 4200 / 1000000,
-    'Hispanic Female': 1000 / 1000000,
-    'Other Male': 43800 / 1000000,
-    'Other Female': 36000 / 1000000,
-}
-
-# Define the additional wealth adjustment for LGBTQ+ status
-lgbtq_wealth_adjustment = 0.82  # 82% of the median wealth compared to non-LGBTQ+
-
-
-# Function to estimate net worth based on member characteristics
-def estimate_net_worth(row):
-    # Get the base median net worth based on age
-    base_net_worth = get_age_based_net_worth(row['Age'])
-
-    # Determine the race and gender key
-    race_gender_key = f"{row['Race/Ethnicity']} {'Male' if row['Gender'] == 'Male' else 'Female'}"
-
-    # Adjust the base net worth for race and gender
-    adjusted_net_worth = base_net_worth * race_gender_multiplier.get(race_gender_key, 1)
-
-    # Further adjust for LGBTQ+ status if applicable
-    if row.get('LGBTQ+ Status', 'Non-LGBTQ+') == 'LGBTQ+':
-        adjusted_net_worth *= lgbtq_wealth_adjustment
-
-    # Congress members are generally wealthier, set minimum at $500,000
-    adjusted_net_worth = max(adjusted_net_worth, 500000)
-
-    # Assuming a skewed distribution, we use lognormal to represent high wealth inequality
-    # We scale the median net worth and use a small sigma to have a tight distribution around the median
-    distribution = stats.lognorm(s=0.5, scale=adjusted_net_worth)
-    return distribution.rvs()
 
 
 
-# Apply the function to estimate net worth for each row in the dataframe
-congress_df['Estimated Net Worth'] = congress_df.apply(estimate_net_worth, axis=1)
+
 
 # Example function to generate "Experience in Congress Years"
 # Assuming an average of 8.5 years for representatives and 11.2 years for senators
@@ -212,6 +155,8 @@ def generate_campaign_expenditure(member_party, chamber):
 congress_df['Campaign_Expenditure'] = congress_df.apply(
     lambda row: generate_campaign_expenditure(row['Party'], row['Chamber']), axis=1
 )
+# Apply the function to estimate net worth for each row in the dataframe
+congress_df['Estimated Net Worth'] = congress_df.apply(estimate_net_worth, axis=1)
 
 # LES values for a subset of Democrats and Republicans from the provided data
 les_values_democrats = [

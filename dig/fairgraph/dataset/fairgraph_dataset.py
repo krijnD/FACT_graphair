@@ -305,6 +305,7 @@ class CNG():
         idx_features_labels = pd.read_csv(os.path.abspath(self.root + "/" + self.raw_paths[0]))
         header = list(idx_features_labels.columns)
         header.remove("numeric_id")
+        idx_features_labels = idx_features_labels.sort_values(by="numeric_id")
 
         header.remove(self.sens_attr)
         header.remove(self.predict_attr)
@@ -316,6 +317,7 @@ class CNG():
         idx = np.array(idx_features_labels["numeric_id"], dtype=int)
         idx_map = {j: i for i, j in enumerate(idx)}
         # raw_paths[1] will be nba_relationship.txt
+
         edges_unordered = np.genfromtxt(os.path.abspath(self.root + "/" + self.raw_paths[1]), dtype=int)
 
         edges = np.array(list(map(idx_map.get, edges_unordered.flatten())),
@@ -402,3 +404,4 @@ class CNG():
         self.adj = adj
 
         self.adj = adj
+
