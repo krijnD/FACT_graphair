@@ -1,476 +1,476 @@
-,LGBTQ+ Status,Party,Gender,Age,Education,Occupation,Race/Ethnicity,Religion,Military Service,Estimated Net Worth
-0,Non-LGBTQ+,Republican,Male,59,Bachelor,Public Service/Politics,African American,Christianity,False,284034.27078985656
-1,Non-LGBTQ+,Democrat,Male,62,Bachelor,Public Service/Politics,Hispanic or Latino,Christianity,False,545799.3884941634
-2,Non-LGBTQ+,Republican,Male,56,Law,Education,White,Christianity,False,256273.53726713985
-3,Non-LGBTQ+,Republican,Female,68,Bachelor,Business,Other,Non-Affiliated/Other,False,406952.4767733249
-4,Non-LGBTQ+,Republican,Male,36,Master,Business,White,Non-Affiliated/Other,False,534094.1219747377
-5,Non-LGBTQ+,Republican,Male,87,Doctorate,Business,White,Christianity,False,398351.2839733874
-6,Non-LGBTQ+,Republican,Male,49,Bachelor,Law,White,Non-Affiliated/Other,False,448218.77922842954
-7,Non-LGBTQ+,Democrat,Male,61,Law,Healthcare,Hispanic or Latino,Judaism,False,477664.36456133105
-8,Non-LGBTQ+,Republican,Male,48,Bachelor,Other,Hispanic or Latino,Christianity,False,480183.75304510194
-9,Non-LGBTQ+,Republican,Female,64,Bachelor,Business,White,Christianity,False,513236.80336858094
-10,Non-LGBTQ+,Republican,Male,60,Bachelor,Education,White,Christianity,True,294213.46203402744
-11,Non-LGBTQ+,Democrat,Male,51,Master,Education,Asian American/Pacific Islander,Christianity,False,349358.9919863798
-12,Non-LGBTQ+,Democrat,Male,68,Doctorate,Law,White,Christianity,False,263042.5919311733
-13,Non-LGBTQ+,Republican,Male,56,Bachelor,Other,African American,Christianity,False,815267.1682010461
-14,Non-LGBTQ+,Republican,Male,63,Master,Public Service/Politics,Other,Non-Affiliated/Other,True,174475.55179530068
-15,Non-LGBTQ+,Democrat,Male,48,Bachelor,Public Service/Politics,White,Christianity,False,890161.8232553607
-16,Non-LGBTQ+,Republican,Female,57,Bachelor,Healthcare,White,Christianity,False,1000027.5184501022
-17,Non-LGBTQ+,Democrat,Male,77,Bachelor,Business,African American,Christianity,False,429885.03175676253
-18,Non-LGBTQ+,Democrat,Male,67,Doctorate,Education,Hispanic or Latino,Christianity,False,136052.3250163134
-19,Non-LGBTQ+,Democrat,Male,60,Master,Healthcare,White,Christianity,False,417361.52700801287
-20,Non-LGBTQ+,Democrat,Male,53,Bachelor,Public Service/Politics,Other,Christianity,False,484208.7027373937
-21,Non-LGBTQ+,Republican,Female,58,Bachelor,Healthcare,White,Christianity,False,301662.54394499055
-22,Non-LGBTQ+,Democrat,Female,59,Bachelor,Business,White,Christianity,True,386448.6118606409
-23,Non-LGBTQ+,Republican,Male,62,Bachelor,Business,Hispanic or Latino,Christianity,True,1074602.0627602383
-24,Non-LGBTQ+,Republican,Male,47,Bachelor,Law,Asian American/Pacific Islander,Christianity,False,697199.5579245815
-25,Non-LGBTQ+,Republican,Male,64,Law,Military,White,Judaism,False,314922.33133521175
-26,Non-LGBTQ+,Republican,Male,47,Bachelor,Public Service/Politics,Hispanic or Latino,Christianity,False,224934.3346534611
-27,Non-LGBTQ+,Democrat,Male,74,Bachelor,Business,White,Christianity,True,424579.57313319336
-28,Non-LGBTQ+,Republican,Male,50,Bachelor,Law,White,Non-Affiliated/Other,False,449384.8774931325
-29,Non-LGBTQ+,Republican,Male,60,Law,Law,White,Christianity,True,640793.7819310571
-30,Non-LGBTQ+,Democrat,Male,67,Master,Law,Asian American/Pacific Islander,Christianity,True,382584.57584249694
-31,Non-LGBTQ+,Republican,Female,55,Bachelor,Public Service/Politics,White,Islam,False,645714.7779632388
-32,Non-LGBTQ+,Republican,Male,61,Master,Public Service/Politics,White,Christianity,False,1315780.254990727
-33,Non-LGBTQ+,Republican,Male,72,Bachelor,Business,White,Christianity,True,751716.0124787024
-34,Non-LGBTQ+,Republican,Female,63,Bachelor,Education,Native American,Non-Affiliated/Other,False,488121.2532463733
-35,Non-LGBTQ+,Republican,Male,61,Bachelor,Public Service/Politics,African American,Non-Affiliated/Other,True,456246.3308517258
-36,Non-LGBTQ+,Democrat,Male,41,Bachelor,Public Service/Politics,Hispanic or Latino,Non-Affiliated/Other,False,418330.39180543326
-37,Non-LGBTQ+,Republican,Male,48,Bachelor,Other,White,Christianity,False,902283.3036774958
-38,Non-LGBTQ+,Republican,Male,68,Law,Public Service/Politics,African American,Christianity,True,365384.9208022125
-39,Non-LGBTQ+,Democrat,Female,63,Law,Other,White,Christianity,False,511434.4644405579
-40,Non-LGBTQ+,Democrat,Female,65,Master,Law,Asian American/Pacific Islander,Christianity,False,512964.70896442956
-41,Non-LGBTQ+,Democrat,Male,64,Bachelor,Education,Other,Christianity,False,389053.16374936764
-42,Non-LGBTQ+,Republican,Male,70,Bachelor,Public Service/Politics,White,Christianity,False,251734.59157946726
-43,Non-LGBTQ+,Republican,Male,55,Master,Public Service/Politics,African American,Non-Affiliated/Other,True,587628.7378279534
-44,Non-LGBTQ+,Democrat,Male,59,Bachelor,Law,White,Christianity,True,484979.2528989206
-45,Non-LGBTQ+,Republican,Male,47,Bachelor,Education,White,Christianity,False,642089.905201772
-46,Non-LGBTQ+,Democrat,Female,45,Bachelor,Law,White,Christianity,False,382913.05202729185
-47,Non-LGBTQ+,Republican,Male,41,Law,Public Service/Politics,White,Christianity,True,920593.6630216065
-48,Non-LGBTQ+,Republican,Female,49,Bachelor,Education,White,Christianity,False,322538.08033275086
-49,Non-LGBTQ+,Republican,Male,73,Bachelor,Education,African American,Christianity,True,1176887.17015051
-50,Non-LGBTQ+,Democrat,Male,42,Master,Law,White,Christianity,False,208677.46775740932
-51,Non-LGBTQ+,Democrat,Male,54,Bachelor,Education,Hispanic or Latino,Christianity,False,621411.2684092552
-52,Non-LGBTQ+,Democrat,Female,44,Bachelor,Education,White,Non-Affiliated/Other,True,634174.0475330554
-53,Non-LGBTQ+,Democrat,Female,51,Bachelor,Law,White,Non-Affiliated/Other,False,335905.3972286346
-54,Non-LGBTQ+,Republican,Female,59,Bachelor,Public Service/Politics,Hispanic or Latino,Christianity,False,618195.6958931078
-55,Non-LGBTQ+,Republican,Male,50,Master,Business,White,Christianity,False,948012.2587120512
-56,Non-LGBTQ+,Republican,Male,68,Bachelor,Public Service/Politics,White,Non-Affiliated/Other,False,165041.78408909918
-57,Non-LGBTQ+,Republican,Female,73,Bachelor,Business,African American,Non-Affiliated/Other,False,642894.4138789999
-58,Non-LGBTQ+,Republican,Male,35,Law,Business,White,Christianity,False,143735.19574569957
-59,Non-LGBTQ+,Republican,Male,51,Law,Public Service/Politics,White,Judaism,False,308516.61419508304
-60,Non-LGBTQ+,Republican,Male,58,Law,Business,White,Christianity,False,1129117.1022528957
-61,Non-LGBTQ+,Republican,Female,69,Bachelor,Public Service/Politics,Other,Non-Affiliated/Other,False,373798.57459293545
-62,Non-LGBTQ+,Democrat,Female,53,Bachelor,Education,African American,Non-Affiliated/Other,False,278013.06700961385
-63,Non-LGBTQ+,Democrat,Male,57,Doctorate,Military,African American,Christianity,True,452885.45461079915
-64,Non-LGBTQ+,Democrat,Male,46,Master,Public Service/Politics,African American,Non-Affiliated/Other,False,1406080.4186572565
-65,Non-LGBTQ+,Republican,Female,42,Bachelor,Other,White,Christianity,False,200089.94187201807
-66,Non-LGBTQ+,Republican,Male,72,Bachelor,Business,White,Non-Affiliated/Other,False,295584.0242947357
-67,Non-LGBTQ+,Democrat,Male,39,Bachelor,Public Service/Politics,Hispanic or Latino,Christianity,False,1057141.5990115234
-68,Non-LGBTQ+,Republican,Female,81,Law,Public Service/Politics,White,Non-Affiliated/Other,False,1265799.566906418
-69,Non-LGBTQ+,Republican,Male,65,Bachelor,Business,White,Christianity,False,474799.44141785026
-70,Non-LGBTQ+,Democrat,Male,64,Bachelor,Education,White,Christianity,False,269099.6473247705
-71,Non-LGBTQ+,Democrat,Male,63,Bachelor,Law,White,Christianity,True,1425859.187103575
-72,LGBTQ+,Republican,Female,55,Master,Public Service/Politics,Other,Non-Affiliated/Other,False,1109682.585381811
-73,Non-LGBTQ+,Republican,Female,61,Law,Public Service/Politics,White,Non-Affiliated/Other,False,702104.0358790614
-74,Non-LGBTQ+,Republican,Female,56,Bachelor,Business,White,Non-Affiliated/Other,False,333088.0681566147
-75,Non-LGBTQ+,Republican,Male,63,Master,Public Service/Politics,White,Non-Affiliated/Other,True,487891.68683121976
-76,Non-LGBTQ+,Republican,Female,57,Doctorate,Public Service/Politics,Other,Christianity,False,461475.0814988517
-77,Non-LGBTQ+,Republican,Female,48,Bachelor,Public Service/Politics,White,Christianity,False,589947.6184852386
-78,Non-LGBTQ+,Republican,Male,49,Bachelor,Education,White,Christianity,True,1032882.6045355919
-79,Non-LGBTQ+,Republican,Female,48,Bachelor,Military,Hispanic or Latino,Christianity,False,776127.3511235535
-80,Non-LGBTQ+,Democrat,Male,67,Master,Business,African American,Christianity,False,291756.6486974057
-81,Non-LGBTQ+,Democrat,Male,51,Bachelor,Military,White,Christianity,False,995113.0247609102
-82,Non-LGBTQ+,Democrat,Male,38,Master,Business,White,Christianity,False,584744.0139241201
-83,Non-LGBTQ+,Republican,Male,61,Master,Business,White,Christianity,False,704959.9525827506
-84,Non-LGBTQ+,Republican,Male,73,Bachelor,Public Service/Politics,White,Christianity,True,1040939.0610675486
-85,Non-LGBTQ+,Republican,Male,65,Law,Law,White,Christianity,False,286809.4258196666
-86,Non-LGBTQ+,Democrat,Male,51,Bachelor,Other,White,Non-Affiliated/Other,False,491123.3454961408
-87,Non-LGBTQ+,Democrat,Female,42,Bachelor,Law,White,Judaism,False,383324.0912985489
-88,Non-LGBTQ+,Democrat,Male,56,Master,Business,White,Non-Affiliated/Other,True,228304.0711284064
-89,Non-LGBTQ+,Democrat,Male,56,Master,Law,African American,Christianity,True,594644.1070782627
-90,Non-LGBTQ+,Republican,Male,48,Bachelor,Public Service/Politics,Other,Christianity,False,1755284.7513400016
-91,Non-LGBTQ+,Democrat,Female,63,Law,Healthcare,African American,Hinduism,False,199251.77502633035
-92,Non-LGBTQ+,Democrat,Male,76,Law,Business,White,Christianity,False,491994.62562068686
-93,Non-LGBTQ+,Republican,Male,60,Bachelor,Business,White,Christianity,False,688750.8302834283
-94,Non-LGBTQ+,Democrat,Female,59,Doctorate,Law,Other,Christianity,True,531736.0391773836
-95,Non-LGBTQ+,Republican,Male,48,Bachelor,Law,White,Christianity,True,472502.98868087464
-96,Non-LGBTQ+,Republican,Male,71,Bachelor,Public Service/Politics,White,Christianity,False,261125.18195785172
-97,Non-LGBTQ+,Democrat,Male,57,Bachelor,Law,White,Christianity,False,561718.8567842908
-98,Non-LGBTQ+,Republican,Female,52,Law,Public Service/Politics,African American,Christianity,False,342484.4002378624
-99,Non-LGBTQ+,Republican,Male,58,Master,Law,African American,Christianity,False,167276.3517989035
-100,Non-LGBTQ+,Republican,Female,62,Bachelor,Education,White,Christianity,False,908599.323414673
-101,Non-LGBTQ+,Democrat,Male,59,Bachelor,Education,White,Non-Affiliated/Other,False,807385.3053926603
-102,Non-LGBTQ+,Republican,Female,69,Master,Law,Other,Christianity,False,513083.493274015
-103,Non-LGBTQ+,Democrat,Female,61,Bachelor,Business,White,Christianity,False,560677.258130225
-104,Non-LGBTQ+,Democrat,Female,55,Law,Public Service/Politics,African American,Non-Affiliated/Other,False,855569.3081008652
-105,Non-LGBTQ+,Democrat,Male,61,Law,Education,African American,Christianity,False,559351.4160065498
-106,Non-LGBTQ+,Republican,Female,62,Bachelor,Public Service/Politics,African American,Christianity,False,785732.8709350603
-107,Non-LGBTQ+,Democrat,Male,44,Doctorate,Business,White,Christianity,False,430896.10182195384
-108,Non-LGBTQ+,Democrat,Male,69,Bachelor,Public Service/Politics,White,Christianity,False,963526.477203839
-109,Non-LGBTQ+,Republican,Male,54,Doctorate,Public Service/Politics,White,Christianity,False,586985.995263043
-110,Non-LGBTQ+,Democrat,Female,55,Master,Law,Asian American/Pacific Islander,Non-Affiliated/Other,False,550944.4956465616
-111,Non-LGBTQ+,Democrat,Female,65,Master,Public Service/Politics,Other,Christianity,False,264959.6510132745
-112,Non-LGBTQ+,Democrat,Female,65,Bachelor,Law,White,Christianity,True,577140.666124099
-113,Non-LGBTQ+,Democrat,Male,50,Law,Business,White,Christianity,False,329847.570335856
-114,Non-LGBTQ+,Democrat,Male,65,Bachelor,Public Service/Politics,Other,Christianity,False,363386.4015342149
-115,Non-LGBTQ+,Democrat,Female,52,Bachelor,Business,Hispanic or Latino,Christianity,False,332593.254110676
-116,Non-LGBTQ+,Republican,Male,76,Bachelor,Public Service/Politics,Other,Christianity,False,293386.43548203714
-117,Non-LGBTQ+,Democrat,Male,49,Bachelor,Public Service/Politics,White,Christianity,True,1446632.6147103673
-118,Non-LGBTQ+,Democrat,Male,60,Bachelor,Law,White,Christianity,False,972896.4269680836
-119,Non-LGBTQ+,Republican,Male,50,Master,Public Service/Politics,African American,Christianity,True,1306088.2097720727
-120,Non-LGBTQ+,Democrat,Male,80,Law,Education,African American,Christianity,False,271282.4661707655
-121,Non-LGBTQ+,Republican,Male,45,Bachelor,Public Service/Politics,White,Non-Affiliated/Other,False,518134.55819292273
-122,Non-LGBTQ+,Democrat,Male,63,Master,Public Service/Politics,White,Christianity,False,261871.59437541224
-123,Non-LGBTQ+,Democrat,Male,50,Bachelor,Law,White,Christianity,False,353103.30393307575
-124,Non-LGBTQ+,Democrat,Female,54,Law,Business,White,Christianity,False,315937.5623973824
-125,Non-LGBTQ+,Democrat,Male,62,Law,Public Service/Politics,White,Judaism,False,929270.715504568
-126,Non-LGBTQ+,Democrat,Male,70,Bachelor,Business,Other,Christianity,False,410137.82402592053
-127,Non-LGBTQ+,Democrat,Male,74,Master,Public Service/Politics,White,Christianity,False,853032.6003871785
-128,LGBTQ+,Democrat,Male,42,Bachelor,Education,Asian American/Pacific Islander,Islam,False,676321.492232722
-129,Non-LGBTQ+,Democrat,Female,60,Bachelor,Business,White,Non-Affiliated/Other,False,1581972.0402116128
-130,Non-LGBTQ+,Democrat,Female,72,Law,Education,African American,Christianity,False,238623.25919078127
-131,Non-LGBTQ+,Democrat,Male,41,Bachelor,Healthcare,Other,Christianity,False,938445.4393442837
-132,Non-LGBTQ+,Democrat,Male,61,Bachelor,Business,White,Non-Affiliated/Other,False,886985.4101346022
-133,Non-LGBTQ+,Republican,Female,57,Bachelor,Military,White,Non-Affiliated/Other,False,307328.9521804329
-134,Non-LGBTQ+,Republican,Female,62,Law,Business,White,Non-Affiliated/Other,False,827306.1058792694
-135,Non-LGBTQ+,Democrat,Male,50,Bachelor,Other,White,Christianity,False,591511.1773953321
-136,Non-LGBTQ+,Republican,Male,43,Bachelor,Public Service/Politics,Hispanic or Latino,Christianity,False,446245.8210452362
-137,Non-LGBTQ+,Republican,Male,38,Master,Law,Other,Christianity,False,331172.82033448876
-138,Non-LGBTQ+,Democrat,Female,67,Law,Business,White,Judaism,False,348993.5262828572
-139,Non-LGBTQ+,Republican,Male,68,Bachelor,Business,White,Christianity,False,1393416.8096876377
-140,Non-LGBTQ+,Republican,Female,60,Bachelor,Law,White,Christianity,True,500170.7338827952
-141,Non-LGBTQ+,Democrat,Male,52,Bachelor,Law,Hispanic or Latino,Non-Affiliated/Other,False,739277.3087360016
-142,Non-LGBTQ+,Democrat,Male,41,Bachelor,Public Service/Politics,White,Christianity,True,336688.5798082602
-143,Non-LGBTQ+,Republican,Male,63,Bachelor,Public Service/Politics,White,Non-Affiliated/Other,False,338553.3291070716
-144,Non-LGBTQ+,Republican,Male,46,Master,Law,African American,Christianity,False,858855.3403150947
-145,Non-LGBTQ+,Democrat,Male,50,Master,Law,African American,Christianity,False,254632.15967173164
-146,Non-LGBTQ+,Democrat,Male,52,Master,Other,White,Christianity,False,406263.1955497036
-147,Non-LGBTQ+,Democrat,Male,55,Bachelor,Education,African American,Islam,False,508579.6314713613
-148,Non-LGBTQ+,Democrat,Female,50,Law,Other,White,Christianity,False,528632.9841741835
-149,Non-LGBTQ+,Republican,Male,58,Bachelor,Law,White,Christianity,False,457172.80837844155
-150,Non-LGBTQ+,Democrat,Male,51,Doctorate,Public Service/Politics,Native American,Non-Affiliated/Other,True,609426.279368472
-151,Non-LGBTQ+,Democrat,Female,64,Master,Public Service/Politics,Hispanic or Latino,Christianity,True,707003.754487178
-152,Non-LGBTQ+,Republican,Female,68,Bachelor,Education,White,Christianity,False,721929.05417692
-153,Non-LGBTQ+,Democrat,Female,58,Master,Law,White,Christianity,False,305425.59399055404
-154,Non-LGBTQ+,Democrat,Female,62,Bachelor,Public Service/Politics,White,Christianity,False,433776.98798239225
-155,Non-LGBTQ+,Republican,Male,79,Master,Business,White,Christianity,False,908676.8490354735
-156,Non-LGBTQ+,Republican,Male,46,Bachelor,Other,White,Christianity,False,782060.1785164935
-157,Non-LGBTQ+,Republican,Female,45,Bachelor,Business,White,Christianity,False,251685.016880989
-158,Non-LGBTQ+,Republican,Male,64,Law,Business,White,Christianity,False,596064.0028299334
-159,Non-LGBTQ+,Democrat,Male,77,Bachelor,Business,Hispanic or Latino,Christianity,False,185953.28267195643
-160,Non-LGBTQ+,Democrat,Female,55,Law,Public Service/Politics,African American,Christianity,False,511872.4891799642
-161,Non-LGBTQ+,Republican,Male,75,Bachelor,Business,African American,Christianity,False,1291412.1735722513
-162,Non-LGBTQ+,Democrat,Male,58,Master,Business,White,Christianity,False,311270.3228011842
-163,Non-LGBTQ+,Democrat,Male,51,Master,Public Service/Politics,Other,Christianity,False,329457.240835965
-164,Non-LGBTQ+,Democrat,Male,47,Bachelor,Education,Asian American/Pacific Islander,Christianity,False,732616.9517278197
-165,Non-LGBTQ+,Democrat,Male,64,Bachelor,Business,Hispanic or Latino,Christianity,False,231182.4766333354
-166,Non-LGBTQ+,Democrat,Male,48,Bachelor,Education,Hispanic or Latino,Non-Affiliated/Other,False,364392.1356382701
-167,Non-LGBTQ+,Democrat,Female,58,Bachelor,Healthcare,Other,Christianity,False,673729.4812493699
-168,Non-LGBTQ+,Democrat,Male,73,Bachelor,Public Service/Politics,White,Non-Affiliated/Other,False,364113.3333662493
-169,Non-LGBTQ+,Democrat,Male,54,Master,Law,White,Non-Affiliated/Other,False,444354.69441912504
-170,Non-LGBTQ+,Republican,Female,71,Law,Business,African American,Christianity,True,725383.8431505335
-171,LGBTQ+,Republican,Female,45,Law,Healthcare,Hispanic or Latino,Christianity,True,617316.0566698735
-172,Non-LGBTQ+,Republican,Female,52,Master,Public Service/Politics,Hispanic or Latino,Christianity,False,571358.750279211
-173,Non-LGBTQ+,Republican,Female,43,Master,Law,White,Hinduism,False,422017.57445092895
-174,Non-LGBTQ+,Republican,Male,58,Master,Law,White,Christianity,True,601627.6040993778
-175,Non-LGBTQ+,Democrat,Male,65,Bachelor,Public Service/Politics,White,Christianity,False,470004.2599433636
-176,Non-LGBTQ+,Republican,Male,58,Law,Public Service/Politics,Other,Christianity,False,628609.9187712425
-177,Non-LGBTQ+,Republican,Male,70,Master,Law,White,Non-Affiliated/Other,False,389998.1852326314
-178,Non-LGBTQ+,Republican,Male,50,Bachelor,Law,White,Hinduism,False,456379.0029997957
-179,Non-LGBTQ+,Democrat,Male,60,Bachelor,Business,White,Christianity,False,304791.8858241167
-180,Non-LGBTQ+,Democrat,Female,52,Bachelor,Law,White,Christianity,False,491324.248338683
-181,Non-LGBTQ+,Democrat,Male,61,Bachelor,Business,Other,Christianity,True,333321.558972539
-182,Non-LGBTQ+,Democrat,Male,62,Law,Law,African American,Christianity,True,286455.9789861869
-183,Non-LGBTQ+,Republican,Male,63,Bachelor,Public Service/Politics,Hispanic or Latino,Non-Affiliated/Other,False,569033.1385141575
-184,Non-LGBTQ+,Republican,Male,47,Bachelor,Healthcare,White,Christianity,True,556116.6010325749
-185,Non-LGBTQ+,Democrat,Male,49,Doctorate,Public Service/Politics,African American,Christianity,False,739552.2724772741
-186,Non-LGBTQ+,Republican,Female,50,Bachelor,Business,White,Christianity,False,403043.8293134603
-187,Non-LGBTQ+,Republican,Male,55,Bachelor,Public Service/Politics,African American,Non-Affiliated/Other,False,613165.2784367391
-188,Non-LGBTQ+,Democrat,Male,58,Bachelor,Public Service/Politics,White,Hinduism,True,658527.896873789
-189,Non-LGBTQ+,Democrat,Male,64,Master,Business,White,Christianity,False,624527.2742419033
-190,Non-LGBTQ+,Democrat,Female,49,Law,Public Service/Politics,African American,Judaism,False,330888.4326309438
-191,Non-LGBTQ+,Democrat,Male,41,Bachelor,Education,Other,Christianity,False,538770.5796408822
-192,Non-LGBTQ+,Democrat,Male,79,Law,Public Service/Politics,White,Christianity,True,599849.1737003471
-193,Non-LGBTQ+,Democrat,Male,46,Bachelor,Business,Hispanic or Latino,Christianity,False,501797.84123286285
-194,Non-LGBTQ+,Democrat,Male,66,Law,Business,White,Christianity,False,176155.8772458073
-195,Non-LGBTQ+,Democrat,Female,58,Master,Public Service/Politics,White,Christianity,False,541776.1508995638
-196,Non-LGBTQ+,Republican,Female,60,Law,Public Service/Politics,White,Non-Affiliated/Other,False,1511523.8877855751
-197,Non-LGBTQ+,Democrat,Male,57,Bachelor,Business,White,Christianity,True,417626.9057803998
-198,Non-LGBTQ+,Republican,Female,54,Doctorate,Business,White,Christianity,True,347432.20397440845
-199,Non-LGBTQ+,Democrat,Female,62,Master,Business,White,Christianity,False,602617.3259521994
-200,Non-LGBTQ+,Republican,Male,53,Bachelor,Business,White,Christianity,False,584523.6275710332
-201,Non-LGBTQ+,Democrat,Female,69,Law,Law,Other,Non-Affiliated/Other,False,907756.0554715347
-202,Non-LGBTQ+,Democrat,Male,63,Bachelor,Public Service/Politics,White,Christianity,False,266579.902509546
-203,Non-LGBTQ+,Republican,Male,63,Law,Business,Hispanic or Latino,Christianity,True,720754.2439262848
-204,Non-LGBTQ+,Republican,Male,52,Bachelor,Other,White,Islam,False,671704.9146958176
-205,LGBTQ+,Republican,Female,55,Master,Business,African American,Christianity,False,465696.8239198731
-206,Non-LGBTQ+,Democrat,Male,46,Bachelor,Law,White,Christianity,False,592263.5711758046
-207,Non-LGBTQ+,Democrat,Female,54,Bachelor,Business,White,Christianity,False,836592.2867619809
-208,LGBTQ+,Republican,Female,47,Bachelor,Education,White,Christianity,False,773376.341486042
-209,Non-LGBTQ+,Republican,Male,71,Bachelor,Education,White,Non-Affiliated/Other,False,282336.16695821006
-210,Non-LGBTQ+,Republican,Female,58,Bachelor,Business,White,Islam,False,753468.4845671958
-211,Non-LGBTQ+,Republican,Male,59,Bachelor,Other,African American,Christianity,False,484086.59011240833
-212,Non-LGBTQ+,Democrat,Male,55,Bachelor,Public Service/Politics,Other,Non-Affiliated/Other,False,518554.5074606057
-213,Non-LGBTQ+,Republican,Female,59,Bachelor,Public Service/Politics,Hispanic or Latino,Christianity,False,518638.2330257288
-214,Non-LGBTQ+,Democrat,Male,82,Bachelor,Education,African American,Christianity,True,463815.38876900845
-215,Non-LGBTQ+,Democrat,Female,54,Master,Education,White,Christianity,False,907289.7392209887
-216,Non-LGBTQ+,Democrat,Female,51,Bachelor,Public Service/Politics,White,Christianity,False,479502.50499802077
-217,Non-LGBTQ+,Republican,Male,63,Law,Public Service/Politics,White,Christianity,False,285669.3531746001
-218,Non-LGBTQ+,Democrat,Male,32,Law,Public Service/Politics,White,Christianity,False,410691.8474702225
-219,Non-LGBTQ+,Democrat,Male,58,Master,Public Service/Politics,White,Non-Affiliated/Other,False,546730.2065159658
-220,Non-LGBTQ+,Republican,Male,54,Bachelor,Education,White,Christianity,True,924465.2761950219
-221,Non-LGBTQ+,Democrat,Female,47,Law,Business,White,Christianity,False,675974.5591198023
-222,Non-LGBTQ+,Republican,Male,62,Bachelor,Business,White,Christianity,False,326797.41700353817
-223,Non-LGBTQ+,Democrat,Male,58,Bachelor,Business,Hispanic or Latino,Christianity,False,1732296.1412657585
-224,Non-LGBTQ+,Democrat,Male,39,Bachelor,Public Service/Politics,Hispanic or Latino,Christianity,False,570775.3809614261
-225,Non-LGBTQ+,Republican,Male,51,Master,Public Service/Politics,White,Christianity,False,946057.6116120594
-226,Non-LGBTQ+,Democrat,Female,29,Bachelor,Law,Other,Non-Affiliated/Other,True,463474.2749008453
-227,Non-LGBTQ+,Democrat,Male,60,Bachelor,Other,Other,Christianity,True,652811.0435926252
-228,Non-LGBTQ+,Democrat,Female,60,No College,Education,White,Christianity,False,760778.5757553831
-229,Non-LGBTQ+,Democrat,Male,49,Law,Public Service/Politics,White,Christianity,False,919385.4468656421
-230,Non-LGBTQ+,Republican,Female,63,Bachelor,Healthcare,White,Christianity,False,848349.1216378302
-231,Non-LGBTQ+,Democrat,Male,45,Bachelor,Education,Other,Christianity,True,773330.566712325
-232,Non-LGBTQ+,Republican,Male,48,Law,Education,Native American,Judaism,False,427119.88409383094
-233,Non-LGBTQ+,Democrat,Female,62,Bachelor,Business,White,Christianity,False,375679.0082979567
-234,Non-LGBTQ+,Republican,Male,51,Bachelor,Business,White,Christianity,False,590465.8806833804
-235,Non-LGBTQ+,Republican,Female,57,Bachelor,Business,White,Christianity,True,797253.0524389589
-236,Non-LGBTQ+,Republican,Male,52,Law,Public Service/Politics,White,Christianity,True,447308.1577506705
-237,Non-LGBTQ+,Democrat,Male,53,Master,Public Service/Politics,White,Christianity,False,851665.7019926322
-238,Non-LGBTQ+,Democrat,Male,54,Law,Public Service/Politics,Asian American/Pacific Islander,Non-Affiliated/Other,False,1033717.1529371678
-239,Non-LGBTQ+,Democrat,Male,50,Law,Business,African American,Christianity,False,316222.99303756584
-240,Non-LGBTQ+,Republican,Male,60,Bachelor,Law,Asian American/Pacific Islander,Judaism,True,329029.60993697005
-241,Non-LGBTQ+,Republican,Male,51,Bachelor,Business,Asian American/Pacific Islander,Christianity,False,466109.4924985449
-242,Non-LGBTQ+,Republican,Male,58,Bachelor,Public Service/Politics,Hispanic or Latino,Islam,False,583132.4995693908
-243,Non-LGBTQ+,Democrat,Male,50,Bachelor,Other,White,Christianity,False,384646.44647882576
-244,LGBTQ+,Republican,Male,42,Bachelor,Military,African American,Christianity,False,983098.617253997
-245,Non-LGBTQ+,Republican,Female,67,Master,Education,White,Christianity,False,618094.6055657967
-246,Non-LGBTQ+,Democrat,Female,62,Master,Other,African American,Non-Affiliated/Other,True,509959.6589759096
-247,Non-LGBTQ+,Democrat,Female,80,Law,Business,White,Christianity,False,243874.3994694416
-248,Non-LGBTQ+,Republican,Female,47,Bachelor,Other,African American,Christianity,False,258966.88340118478
-249,Non-LGBTQ+,Republican,Male,55,Master,Public Service/Politics,White,Christianity,False,575427.2012081543
-250,Non-LGBTQ+,Republican,Female,56,Master,Business,White,Non-Affiliated/Other,False,172140.3763197012
-251,Non-LGBTQ+,Democrat,Male,67,Bachelor,Public Service/Politics,White,Christianity,False,829586.0183122855
-252,Non-LGBTQ+,Republican,Male,52,Master,Public Service/Politics,White,Islam,True,461984.42400385585
-253,Non-LGBTQ+,Democrat,Male,46,Bachelor,Public Service/Politics,Hispanic or Latino,Christianity,False,2530455.4447790617
-254,Non-LGBTQ+,Democrat,Male,69,Bachelor,Law,Hispanic or Latino,Christianity,True,1585359.1024824413
-255,Non-LGBTQ+,Democrat,Female,54,Bachelor,Education,White,Christianity,True,456634.62515506125
-256,Non-LGBTQ+,Republican,Male,66,Bachelor,Law,White,Non-Affiliated/Other,False,474110.111356319
-257,Non-LGBTQ+,Republican,Male,65,Bachelor,Public Service/Politics,White,Christianity,False,822541.432658107
-258,Non-LGBTQ+,Republican,Male,57,Master,Education,White,Non-Affiliated/Other,False,1171680.5952937938
-259,Non-LGBTQ+,Democrat,Female,56,Doctorate,Law,White,Christianity,False,220432.95059343413
-260,Non-LGBTQ+,Republican,Male,53,Master,Business,Other,Christianity,False,204674.38812138684
-261,Non-LGBTQ+,Democrat,Male,57,Master,Law,White,Christianity,False,366350.5623619796
-262,Non-LGBTQ+,Republican,Male,66,Bachelor,Public Service/Politics,White,Christianity,False,669129.0156289535
-263,Non-LGBTQ+,Democrat,Female,49,Master,Business,White,Non-Affiliated/Other,False,641009.8950365337
-264,Non-LGBTQ+,Democrat,Male,58,Bachelor,Military,White,Non-Affiliated/Other,False,853626.569504421
-265,Non-LGBTQ+,Democrat,Male,46,Bachelor,Public Service/Politics,White,Non-Affiliated/Other,False,274447.32117349055
-266,Non-LGBTQ+,Democrat,Male,47,Bachelor,Business,African American,Judaism,False,157045.59338850697
-267,Non-LGBTQ+,Republican,Male,57,Bachelor,Healthcare,White,Christianity,False,767865.9672240395
-268,Non-LGBTQ+,Republican,Male,38,Bachelor,Law,White,Christianity,False,330468.0430702091
-269,Non-LGBTQ+,Democrat,Male,78,Bachelor,Public Service/Politics,White,Non-Affiliated/Other,True,182247.22897161826
-270,Non-LGBTQ+,Republican,Female,45,Bachelor,Public Service/Politics,White,Christianity,False,537613.5381173851
-271,Non-LGBTQ+,Democrat,Male,57,Doctorate,Public Service/Politics,White,Judaism,True,743371.5169281453
-272,Non-LGBTQ+,Republican,Male,69,Bachelor,Law,Other,Judaism,False,470398.1822730768
-273,Non-LGBTQ+,Republican,Female,49,Bachelor,Business,African American,Christianity,False,397694.41359398694
-274,Non-LGBTQ+,Republican,Male,34,Bachelor,Public Service/Politics,White,Non-Affiliated/Other,False,461705.38014586444
-275,Non-LGBTQ+,Democrat,Male,53,Master,Other,White,Christianity,False,415431.0754832225
-276,Non-LGBTQ+,Republican,Male,49,Bachelor,Business,White,Christianity,False,254826.91307978262
-277,Non-LGBTQ+,Republican,Male,35,Bachelor,Public Service/Politics,White,Christianity,False,349767.1893692837
-278,Non-LGBTQ+,Democrat,Female,60,Bachelor,Business,African American,Christianity,False,648880.1629772697
-279,Non-LGBTQ+,Democrat,Male,59,Bachelor,Law,African American,Christianity,False,587248.0888399261
-280,Non-LGBTQ+,Republican,Female,69,Bachelor,Public Service/Politics,White,Christianity,False,543830.7088219357
-281,Non-LGBTQ+,Republican,Male,46,Bachelor,Public Service/Politics,White,Non-Affiliated/Other,True,304001.87145690166
-282,Non-LGBTQ+,Republican,Male,41,Bachelor,Education,White,Non-Affiliated/Other,False,456622.27497922414
-283,Non-LGBTQ+,Republican,Male,53,Bachelor,Business,Native American,Christianity,False,168355.12290003969
-284,Non-LGBTQ+,Republican,Male,57,Bachelor,Business,African American,Christianity,False,546670.6017048938
-285,Non-LGBTQ+,Democrat,Male,67,Law,Business,White,Non-Affiliated/Other,False,1021509.7431862971
-286,Non-LGBTQ+,Democrat,Female,72,Bachelor,Public Service/Politics,White,Christianity,False,239257.89587507638
-287,Non-LGBTQ+,Democrat,Male,70,Bachelor,Public Service/Politics,African American,Christianity,True,373024.55991910264
-288,Non-LGBTQ+,Republican,Female,60,Bachelor,Business,White,Christianity,False,589433.253397004
-289,Non-LGBTQ+,Democrat,Male,65,Law,Public Service/Politics,White,Christianity,True,935451.6077635118
-290,Non-LGBTQ+,Republican,Female,51,Bachelor,Public Service/Politics,White,Christianity,False,399612.6849030189
-291,Non-LGBTQ+,Republican,Female,59,Bachelor,Education,African American,Non-Affiliated/Other,False,353711.9685537632
-292,Non-LGBTQ+,Republican,Female,45,Master,Other,White,Christianity,False,186820.17575463085
-293,Non-LGBTQ+,Democrat,Female,58,Bachelor,Education,White,Christianity,True,526539.9267997515
-294,Non-LGBTQ+,Republican,Female,58,Bachelor,Healthcare,Other,Christianity,True,1388037.4451741967
-295,Non-LGBTQ+,Democrat,Male,75,Bachelor,Public Service/Politics,White,Christianity,True,574377.7778534156
-296,Non-LGBTQ+,Republican,Male,55,Law,Other,White,Christianity,False,494461.1623912787
-297,Non-LGBTQ+,Democrat,Male,58,Bachelor,Public Service/Politics,White,Judaism,False,587366.6572095401
-298,Non-LGBTQ+,Democrat,Female,60,Master,Other,White,Judaism,False,497234.6743516209
-299,Non-LGBTQ+,Republican,Male,53,No College,Other,Hispanic or Latino,Christianity,False,332986.1549176157
-300,Non-LGBTQ+,Democrat,Female,49,Bachelor,Law,White,Non-Affiliated/Other,False,754645.46506188
-301,Non-LGBTQ+,Democrat,Male,70,Bachelor,Other,White,Non-Affiliated/Other,True,559749.2188689748
-302,Non-LGBTQ+,Republican,Male,48,Bachelor,Law,White,Judaism,False,504422.75919188716
-303,Non-LGBTQ+,Republican,Male,44,Bachelor,Public Service/Politics,African American,Christianity,False,307023.7434372456
-304,Non-LGBTQ+,Republican,Male,64,Bachelor,Business,African American,Christianity,False,959451.7853211025
-305,Non-LGBTQ+,Republican,Male,69,Law,Law,White,Christianity,False,697121.3306078877
-306,Non-LGBTQ+,Republican,Male,53,Master,Public Service/Politics,White,Christianity,False,379231.81976339925
-307,Non-LGBTQ+,Democrat,Male,53,Master,Law,Hispanic or Latino,Christianity,False,825113.147374273
-308,Non-LGBTQ+,Democrat,Male,60,Bachelor,Other,White,Christianity,False,389873.63711697655
-309,Non-LGBTQ+,Democrat,Male,50,Law,Public Service/Politics,Asian American/Pacific Islander,Non-Affiliated/Other,False,338189.4874538702
-310,Non-LGBTQ+,Republican,Male,50,Doctorate,Education,Hispanic or Latino,Non-Affiliated/Other,False,341981.4649981283
-311,Non-LGBTQ+,Republican,Female,66,Law,Military,Asian American/Pacific Islander,Non-Affiliated/Other,False,206246.8643356535
-312,Non-LGBTQ+,Democrat,Male,63,Bachelor,Military,White,Christianity,False,632942.315114899
-313,Non-LGBTQ+,Democrat,Male,71,Master,Other,White,Christianity,False,200143.71014779253
-314,Non-LGBTQ+,Republican,Male,45,Bachelor,Business,Hispanic or Latino,Christianity,False,270530.86161838315
-315,Non-LGBTQ+,Democrat,Male,52,Bachelor,Other,White,Christianity,False,177117.63102213328
-316,Non-LGBTQ+,Republican,Male,60,Bachelor,Education,White,Christianity,False,478939.0054447525
-317,Non-LGBTQ+,Republican,Male,48,Master,Public Service/Politics,Asian American/Pacific Islander,Christianity,False,463797.42288614553
-318,Non-LGBTQ+,Republican,Male,64,Master,Business,Other,Christianity,False,424647.7457951934
-319,Non-LGBTQ+,Democrat,Male,70,Bachelor,Law,White,Non-Affiliated/Other,True,296877.39766065025
-320,Non-LGBTQ+,Republican,Male,52,Bachelor,Public Service/Politics,White,Christianity,False,278241.9952934336
-321,Non-LGBTQ+,Republican,Female,58,Bachelor,Law,White,Judaism,True,630676.4857512175
-322,Non-LGBTQ+,Republican,Female,72,Bachelor,Law,Hispanic or Latino,Christianity,False,379681.2680879438
-323,Non-LGBTQ+,Republican,Male,75,Bachelor,Public Service/Politics,Other,Christianity,False,585688.0202700812
-324,Non-LGBTQ+,Republican,Male,65,Bachelor,Law,White,Christianity,False,321174.23221358284
-325,Non-LGBTQ+,Republican,Male,63,Master,Education,White,Christianity,False,547377.9255554107
-326,Non-LGBTQ+,Democrat,Male,49,Bachelor,Business,Native American,Christianity,False,959341.5052582507
-327,Non-LGBTQ+,Republican,Female,61,Bachelor,Public Service/Politics,White,Christianity,False,670276.9590042226
-328,Non-LGBTQ+,Republican,Male,63,Bachelor,Public Service/Politics,White,Christianity,False,406832.3521131537
-329,Non-LGBTQ+,Democrat,Male,55,Law,Business,Other,Christianity,False,568617.2768227909
-330,Non-LGBTQ+,Republican,Male,51,Master,Military,White,Christianity,False,443312.75366117083
-331,Non-LGBTQ+,Republican,Male,45,Master,Public Service/Politics,African American,Non-Affiliated/Other,False,501973.9323579071
-332,LGBTQ+,Republican,Male,40,Bachelor,Law,White,Christianity,True,424878.2139075694
-333,Non-LGBTQ+,Democrat,Male,38,Bachelor,Public Service/Politics,White,Judaism,False,460558.78187196684
-334,Non-LGBTQ+,Democrat,Male,63,Bachelor,Business,Hispanic or Latino,Christianity,False,555936.8868563831
-335,Non-LGBTQ+,Republican,Male,59,Master,Education,White,Non-Affiliated/Other,False,304274.04180015926
-336,Non-LGBTQ+,Republican,Male,53,Law,Law,Other,Non-Affiliated/Other,True,300867.1138157645
-337,Non-LGBTQ+,Democrat,Male,54,Master,Public Service/Politics,White,Christianity,False,249719.13380099533
-338,Non-LGBTQ+,Republican,Male,60,Law,Business,White,Christianity,False,224634.03034610167
-339,Non-LGBTQ+,Republican,Male,56,Master,Public Service/Politics,White,Non-Affiliated/Other,True,272044.798285064
-340,Non-LGBTQ+,Republican,Male,44,Bachelor,Business,White,Christianity,False,541497.9885387446
-341,Non-LGBTQ+,Republican,Male,67,Law,Law,White,Christianity,False,319965.8721823783
-342,Non-LGBTQ+,Democrat,Male,60,Bachelor,Public Service/Politics,White,Christianity,False,646397.9466043257
-343,Non-LGBTQ+,Democrat,Male,60,Bachelor,Public Service/Politics,White,Non-Affiliated/Other,False,508754.19010345347
-344,Non-LGBTQ+,Democrat,Female,66,Bachelor,Business,White,Non-Affiliated/Other,False,186859.31204597148
-345,Non-LGBTQ+,Republican,Male,49,Bachelor,Military,Hispanic or Latino,Christianity,True,693739.0565077866
-346,Non-LGBTQ+,Democrat,Male,70,Bachelor,Other,African American,Christianity,False,749950.6626386226
-347,Non-LGBTQ+,Democrat,Male,56,Bachelor,Public Service/Politics,African American,Christianity,False,304197.3781661246
-348,Non-LGBTQ+,Democrat,Male,66,Bachelor,Education,White,Christianity,False,616898.1083741112
-349,Non-LGBTQ+,Republican,Male,65,Bachelor,Business,White,Non-Affiliated/Other,False,325824.5283037525
-350,Non-LGBTQ+,Republican,Male,47,Bachelor,Business,African American,Christianity,False,525023.6382396288
-351,Non-LGBTQ+,Democrat,Female,62,Bachelor,Education,White,Christianity,False,265697.61991760484
-352,Non-LGBTQ+,Democrat,Male,61,Bachelor,Military,White,Christianity,True,203986.71560793585
-353,Non-LGBTQ+,Republican,Male,58,Bachelor,Other,Hispanic or Latino,Judaism,False,412897.5518090584
-354,Non-LGBTQ+,Democrat,Male,56,Master,Law,Hispanic or Latino,Christianity,False,470005.137400992
-355,Non-LGBTQ+,Democrat,Female,57,Master,Business,White,Christianity,False,409840.57868790766
-356,Non-LGBTQ+,Democrat,Female,66,Law,Education,White,Christianity,False,276605.6427197541
-357,Non-LGBTQ+,Democrat,Female,63,Master,Public Service/Politics,Hispanic or Latino,Christianity,True,409386.0372946967
-358,Non-LGBTQ+,Democrat,Male,58,Bachelor,Law,White,Christianity,False,572066.6323470428
-359,Non-LGBTQ+,Republican,Female,42,Master,Business,Hispanic or Latino,Christianity,False,488901.7667784369
-360,Non-LGBTQ+,Democrat,Male,62,Bachelor,Law,Hispanic or Latino,Christianity,False,547771.7106363687
-361,Non-LGBTQ+,Republican,Female,65,Bachelor,Public Service/Politics,Hispanic or Latino,Non-Affiliated/Other,False,357648.4419514838
-362,Non-LGBTQ+,Democrat,Male,80,Master,Public Service/Politics,White,Non-Affiliated/Other,False,898266.7343617309
-363,Non-LGBTQ+,Republican,Female,68,Bachelor,Military,White,Non-Affiliated/Other,True,277694.4560059004
-364,Non-LGBTQ+,Republican,Male,38,Master,Public Service/Politics,African American,Christianity,False,638031.8775863987
-365,Non-LGBTQ+,Democrat,Male,58,Law,Business,African American,Non-Affiliated/Other,True,902847.4884917327
-366,Non-LGBTQ+,Republican,Male,76,Law,Public Service/Politics,Hispanic or Latino,Christianity,False,635913.243724062
-367,Non-LGBTQ+,Democrat,Female,64,Law,Public Service/Politics,White,Christianity,False,451848.06542725913
-368,Non-LGBTQ+,Republican,Male,61,Bachelor,Public Service/Politics,White,Christianity,True,383929.74306905724
-369,Non-LGBTQ+,Democrat,Male,66,Bachelor,Public Service/Politics,Other,Christianity,False,839370.2631414154
-370,Non-LGBTQ+,Democrat,Male,51,Bachelor,Healthcare,Hispanic or Latino,Christianity,False,245456.71935623797
-371,LGBTQ+,Democrat,Male,62,Bachelor,Public Service/Politics,Other,Christianity,False,307829.4722844489
-372,Non-LGBTQ+,Republican,Female,55,Master,Other,Hispanic or Latino,Christianity,False,409865.56499575364
-373,Non-LGBTQ+,Republican,Male,57,Master,Law,White,Christianity,False,928374.2862551119
-374,Non-LGBTQ+,Republican,Female,66,Master,Business,African American,Christianity,False,604554.5564031426
-375,Non-LGBTQ+,Democrat,Male,54,Bachelor,Law,Other,Christianity,False,308149.55064330704
-376,Non-LGBTQ+,Republican,Male,76,Bachelor,Business,White,Christianity,True,428141.71291906683
-377,Non-LGBTQ+,Democrat,Female,59,Bachelor,Education,African American,Non-Affiliated/Other,False,367765.87496735004
-378,Non-LGBTQ+,Republican,Male,66,Bachelor,Public Service/Politics,White,Non-Affiliated/Other,False,350623.7118160964
-379,Non-LGBTQ+,Democrat,Male,49,Law,Business,White,Christianity,False,815705.0878581913
-380,Non-LGBTQ+,Democrat,Male,71,Bachelor,Healthcare,Hispanic or Latino,Christianity,False,251825.53688182597
-381,Non-LGBTQ+,Democrat,Female,78,Bachelor,Military,White,Christianity,True,1117666.743217067
-382,Non-LGBTQ+,Democrat,Male,58,Bachelor,Healthcare,White,Non-Affiliated/Other,True,756515.4405390014
-383,Non-LGBTQ+,Republican,Female,52,Master,Business,White,Christianity,False,862675.782316254
-384,Non-LGBTQ+,Democrat,Female,66,Master,Education,White,Christianity,False,396683.3448562131
-385,Non-LGBTQ+,Republican,Male,78,Bachelor,Business,White,Christianity,True,463885.4927401023
-386,Non-LGBTQ+,Democrat,Male,49,Bachelor,Business,White,Christianity,False,244210.89876300635
-387,Non-LGBTQ+,Republican,Male,52,Bachelor,Public Service/Politics,Other,Christianity,False,384628.10056946473
-388,Non-LGBTQ+,Democrat,Male,59,Bachelor,Law,White,Non-Affiliated/Other,False,639979.1017108412
-389,Non-LGBTQ+,Democrat,Male,55,Master,Public Service/Politics,White,Christianity,False,955886.9274334378
-390,Non-LGBTQ+,Republican,Male,55,Master,Business,White,Christianity,True,287444.4689264212
-391,Non-LGBTQ+,Democrat,Male,43,Bachelor,Healthcare,African American,Non-Affiliated/Other,False,416486.95056081994
-392,Non-LGBTQ+,Democrat,Female,69,Bachelor,Public Service/Politics,White,Non-Affiliated/Other,False,463570.50524146366
-393,Non-LGBTQ+,Republican,Female,67,Doctorate,Public Service/Politics,Hispanic or Latino,Christianity,False,248815.95766320665
-394,Non-LGBTQ+,Republican,Female,47,Bachelor,Public Service/Politics,African American,Christianity,False,672016.3827386736
-395,Non-LGBTQ+,Democrat,Male,78,Master,Military,Hispanic or Latino,Christianity,False,348142.8668842406
-396,Non-LGBTQ+,Democrat,Male,80,Bachelor,Business,White,Non-Affiliated/Other,False,453462.6572993401
-397,Non-LGBTQ+,Republican,Male,56,Bachelor,Business,African American,Christianity,True,398869.1476962198
-398,Non-LGBTQ+,Democrat,Female,75,Bachelor,Education,White,Non-Affiliated/Other,False,336951.4469237315
-399,Non-LGBTQ+,Democrat,Male,58,Bachelor,Education,Other,Christianity,False,498241.8519795985
-400,Non-LGBTQ+,Democrat,Female,65,Doctorate,Business,African American,Christianity,True,448901.42003019305
-401,Non-LGBTQ+,Republican,Male,55,Bachelor,Law,White,Christianity,False,415166.2976869299
-402,Non-LGBTQ+,Republican,Male,86,Bachelor,Education,White,Christianity,True,347365.4124153467
-403,Non-LGBTQ+,Democrat,Female,61,Bachelor,Law,White,Christianity,False,586616.0010650007
-404,Non-LGBTQ+,Democrat,Male,65,Bachelor,Public Service/Politics,African American,Christianity,False,1143005.7937371212
-405,Non-LGBTQ+,Democrat,Female,57,Bachelor,Healthcare,White,Christianity,False,536223.8555538439
-406,Non-LGBTQ+,Republican,Female,82,Bachelor,Business,White,Non-Affiliated/Other,False,822762.1916445091
-407,LGBTQ+,Democrat,Male,82,Master,Public Service/Politics,White,Christianity,False,249509.53623538424
-408,Non-LGBTQ+,Democrat,Male,80,Bachelor,Business,African American,Judaism,False,541037.6220275119
-409,Non-LGBTQ+,Republican,Male,73,Bachelor,Public Service/Politics,Hispanic or Latino,Christianity,False,288854.74200542946
-410,Non-LGBTQ+,Democrat,Female,57,Law,Public Service/Politics,Hispanic or Latino,Christianity,False,238924.0298479623
-411,Non-LGBTQ+,Republican,Male,72,Bachelor,Education,Hispanic or Latino,Christianity,True,345475.7299905259
-412,Non-LGBTQ+,Democrat,Male,63,Doctorate,Public Service/Politics,White,Christianity,False,907376.769404728
-413,Non-LGBTQ+,Democrat,Male,77,Bachelor,Business,White,Non-Affiliated/Other,True,804013.461949451
-414,Non-LGBTQ+,Democrat,Female,75,Law,Business,African American,Christianity,False,564596.0159875558
-415,Non-LGBTQ+,Republican,Male,57,Master,Public Service/Politics,White,Christianity,False,232353.01196008053
-416,Non-LGBTQ+,Republican,Female,73,Law,Other,White,Christianity,True,453260.84327172325
-417,Non-LGBTQ+,Republican,Female,70,Doctorate,Public Service/Politics,White,Christianity,False,581411.113420867
-418,Non-LGBTQ+,Democrat,Male,36,Bachelor,Business,White,Christianity,False,545867.4677443397
-419,Non-LGBTQ+,Republican,Male,72,Doctorate,Business,White,Non-Affiliated/Other,False,198881.92495280955
-420,Non-LGBTQ+,Democrat,Female,59,Bachelor,Public Service/Politics,Other,Non-Affiliated/Other,True,320361.2208804386
-421,Non-LGBTQ+,Democrat,Male,55,Bachelor,Public Service/Politics,White,Christianity,False,484234.46263317444
-422,Non-LGBTQ+,Republican,Female,55,Bachelor,Law,White,Christianity,False,653768.6568540428
-423,Non-LGBTQ+,Democrat,Male,62,Bachelor,Other,White,Christianity,False,166758.08808415086
-424,Non-LGBTQ+,Democrat,Male,68,Bachelor,Public Service/Politics,African American,Christianity,False,461068.26425680856
-425,Non-LGBTQ+,Democrat,Female,50,Bachelor,Law,White,Christianity,False,537072.1716633802
-426,Non-LGBTQ+,Democrat,Male,65,Bachelor,Law,Other,Christianity,True,764646.8495614469
-427,Non-LGBTQ+,Democrat,Male,69,Master,Education,Other,Christianity,False,707004.4008372434
-428,Non-LGBTQ+,Republican,Male,82,Law,Business,White,Christianity,False,669073.3917855881
-429,Non-LGBTQ+,Democrat,Male,53,Bachelor,Business,Other,Christianity,False,335169.99305368104
-430,Non-LGBTQ+,Republican,Male,60,Bachelor,Business,Other,Christianity,False,192598.36878053617
-431,Non-LGBTQ+,Republican,Male,66,Bachelor,Law,Hispanic or Latino,Christianity,False,410789.8294725781
-432,Non-LGBTQ+,Democrat,Female,75,Bachelor,Education,Asian American/Pacific Islander,Christianity,False,825033.5160515124
-433,Non-LGBTQ+,Democrat,Male,60,Bachelor,Public Service/Politics,White,Non-Affiliated/Other,False,1003586.4993546396
-434,Non-LGBTQ+,Democrat,Male,75,Bachelor,Business,White,Christianity,False,713286.1337875607
-435,Non-LGBTQ+,Republican,Male,44,Bachelor,Military,White,Christianity,False,619726.6599775918
-436,Non-LGBTQ+,Democrat,Female,51,Doctorate,Education,White,Christianity,False,604515.8698810294
-437,Non-LGBTQ+,Republican,Male,67,Bachelor,Other,Other,Non-Affiliated/Other,False,378625.9297884339
-438,Non-LGBTQ+,Democrat,Female,49,Bachelor,Education,White,Christianity,False,468519.6071197707
-439,Non-LGBTQ+,Republican,Male,52,Bachelor,Business,Hispanic or Latino,Christianity,False,1151871.006354092
-440,Non-LGBTQ+,Democrat,Male,58,Bachelor,Law,Hispanic or Latino,Christianity,False,312101.6997791038
-441,Non-LGBTQ+,Democrat,Male,71,Bachelor,Law,Asian American/Pacific Islander,Judaism,False,1121023.620509107
-442,Non-LGBTQ+,Republican,Male,45,Master,Public Service/Politics,Other,Non-Affiliated/Other,False,425640.04367178644
-443,Non-LGBTQ+,Republican,Male,65,Bachelor,Business,White,Christianity,False,970027.2394105929
-444,Non-LGBTQ+,Democrat,Male,74,Bachelor,Law,White,Non-Affiliated/Other,False,247448.03334339452
-445,Non-LGBTQ+,Republican,Female,62,No College,Public Service/Politics,White,Non-Affiliated/Other,True,670189.2927701466
-446,Non-LGBTQ+,Democrat,Male,60,Law,Education,White,Non-Affiliated/Other,False,345925.3604170005
-447,Non-LGBTQ+,Republican,Male,68,Master,Law,White,Christianity,False,246404.50196642784
-448,Non-LGBTQ+,Republican,Male,62,Bachelor,Other,White,Christianity,False,557730.0810478956
-449,Non-LGBTQ+,Democrat,Male,77,Master,Public Service/Politics,Hispanic or Latino,Christianity,False,828273.9794602661
-450,Non-LGBTQ+,Democrat,Male,52,Bachelor,Public Service/Politics,White,Judaism,False,327712.72268192255
-451,Non-LGBTQ+,Democrat,Male,63,Bachelor,Law,White,Christianity,True,236299.51180473476
-452,Non-LGBTQ+,Republican,Male,66,Bachelor,Public Service/Politics,African American,Christianity,False,477558.0466773504
-453,Non-LGBTQ+,Republican,Female,60,Bachelor,Law,White,Christianity,True,478612.08889916795
-454,Non-LGBTQ+,Democrat,Male,35,Bachelor,Education,White,Judaism,False,657712.504240322
-455,Non-LGBTQ+,Democrat,Male,62,Bachelor,Public Service/Politics,Hispanic or Latino,Non-Affiliated/Other,False,803844.1315108525
-456,LGBTQ+,Republican,Female,73,Doctorate,Business,African American,Christianity,False,485364.67120084545
-457,Non-LGBTQ+,Republican,Female,71,Law,Business,Hispanic or Latino,Non-Affiliated/Other,True,1264408.5669432294
-458,Non-LGBTQ+,Republican,Male,67,Master,Business,White,Christianity,False,559322.0753703237
-459,Non-LGBTQ+,Democrat,Female,53,Bachelor,Military,Asian American/Pacific Islander,Non-Affiliated/Other,False,420479.1294233626
-460,Non-LGBTQ+,Democrat,Male,67,Law,Education,African American,Christianity,False,223368.84507405479
-461,Non-LGBTQ+,Democrat,Male,58,Bachelor,Law,White,Christianity,False,438464.2753044737
-462,Non-LGBTQ+,Republican,Male,67,Master,Law,African American,Non-Affiliated/Other,False,422595.148805795
-463,Non-LGBTQ+,Democrat,Male,65,Bachelor,Business,Asian American/Pacific Islander,Christianity,True,808160.3538474254
-464,Non-LGBTQ+,Republican,Male,54,Master,Military,White,Non-Affiliated/Other,False,630081.9627053179
-465,Non-LGBTQ+,Democrat,Female,55,Bachelor,Law,White,Christianity,True,277251.0844309523
-466,Non-LGBTQ+,Republican,Male,67,Law,Law,Other,Christianity,True,544972.4765406492
-467,Non-LGBTQ+,Republican,Male,61,Law,Healthcare,Hispanic or Latino,Christianity,False,699505.519203511
-468,Non-LGBTQ+,Republican,Male,55,Bachelor,Public Service/Politics,White,Christianity,False,1073440.0582894362
-469,Non-LGBTQ+,Democrat,Female,54,Bachelor,Education,African American,Christianity,False,779271.9467022194
-470,LGBTQ+,Democrat,Male,60,Doctorate,Public Service/Politics,White,Christianity,False,731451.8726269201
-471,Non-LGBTQ+,Democrat,Male,79,Bachelor,Business,White,Christianity,False,515249.42083830596
-472,Non-LGBTQ+,Republican,Male,58,Law,Business,White,Christianity,True,607142.8500215374
-473,Non-LGBTQ+,Republican,Male,63,Bachelor,Other,Other,Non-Affiliated/Other,True,933891.7655221026
-474,Non-LGBTQ+,Republican,Female,65,Bachelor,Healthcare,Other,Non-Affiliated/Other,True,256779.9261807497
+,LGBTQ+ Status,Party,Gender,Age,Education,Occupation,Race/Ethnicity,Religion,Military Service,Chamber,Estimated Net Worth,Campaign_Expenditure,Legislative_Effectiveness_Score,Approval_Rating,Terms_Served,Experience_in_Congress_Years,Twitter_Followers,Bills_Introduced
+0,Non-LGBTQ+,Democrat,Male,59,Bachelor,Public Service/Politics,African American,Christianity,False,House,284034.27078985656,910061.3197106492,0.6276506653122875,23,3,10,498842,94
+1,Non-LGBTQ+,Republican,Male,62,Bachelor,Public Service/Politics,Hispanic or Latino,Christianity,False,House,306992.3459325872,1147300.8656653892,2.1718313211635,50,4,13,259530,71
+2,Non-LGBTQ+,Democrat,Male,56,Law,Education,White,Christianity,False,House,736762.2169370982,1097050.610904698,0.5742250397593788,29,0,9,560698,97
+3,Non-LGBTQ+,Democrat,Female,68,Bachelor,Business,Other,Non-Affiliated/Other,False,House,576013.1604799986,943165.7769167537,0.5550325307963525,56,2,5,465110,115
+4,Non-LGBTQ+,Democrat,Male,36,Master,Business,White,Non-Affiliated/Other,False,House,544067.1050434381,886011.2628074634,0.5609989697066936,37,1,9,560613,80
+5,Non-LGBTQ+,Republican,Male,87,Doctorate,Business,White,Christianity,False,House,439489.3328974943,614659.7689166386,0.6125701053637513,43,2,7,152789,69
+6,Non-LGBTQ+,Democrat,Male,49,Bachelor,Law,White,Non-Affiliated/Other,False,House,413846.05102406675,980373.3757895402,0.5977095818561127,16,2,6,533640,116
+7,Non-LGBTQ+,Democrat,Male,61,Law,Healthcare,Hispanic or Latino,Judaism,False,House,328304.823750672,855350.0660102563,2.768782557373784,9,1,8,505063,100
+8,Non-LGBTQ+,Democrat,Male,48,Bachelor,Other,Hispanic or Latino,Christianity,False,House,797497.1370055481,1021663.3079870048,0.6337718464954117,28,2,8,478254,75
+9,Non-LGBTQ+,Republican,Female,64,Bachelor,Business,White,Christianity,False,House,351729.2338561929,1076358.6109884568,0.6336830706710296,37,3,5,226237,88
+10,Non-LGBTQ+,Democrat,Male,60,Bachelor,Education,White,Christianity,True,House,555186.077188773,1143877.0166206995,0.6113008485773452,11,0,16,439063,75
+11,Non-LGBTQ+,Democrat,Male,51,Master,Education,Asian American/Pacific Islander,Christianity,False,House,1147812.5694934167,938707.5044487977,1.3844252510912034,19,1,10,418648,75
+12,Non-LGBTQ+,Democrat,Male,68,Doctorate,Law,White,Christianity,False,House,423468.54019437777,689703.896764728,2.181108473458457,15,1,9,268193,89
+13,Non-LGBTQ+,Democrat,Male,56,Bachelor,Other,African American,Christianity,False,House,808320.9288084843,535074.7803469311,0.6028185930254528,42,2,8,473198,46
+14,Non-LGBTQ+,Republican,Male,63,Master,Public Service/Politics,Other,Non-Affiliated/Other,True,House,664451.9771818975,773505.2446479726,0.5516326185966672,53,3,12,304816,31
+15,Non-LGBTQ+,Democrat,Male,48,Bachelor,Public Service/Politics,White,Christianity,False,House,584257.5407494318,1118076.710398717,2.7284738958867396,25,0,14,466459,73
+16,Non-LGBTQ+,Republican,Female,57,Bachelor,Healthcare,White,Christianity,False,Senate,620038.9628521932,9376347.62989571,0.6470307387564659,59,2,10,281756,49
+17,Non-LGBTQ+,Republican,Male,77,Bachelor,Business,African American,Christianity,False,House,476827.5112170316,835226.6451693533,1.271840892320912,45,1,8,195990,82
+18,Non-LGBTQ+,Republican,Male,67,Doctorate,Education,Hispanic or Latino,Christianity,False,House,508770.0177029033,615076.1147169817,1.585155023764301,36,3,12,184715,52
+19,Non-LGBTQ+,Democrat,Male,60,Master,Healthcare,White,Christianity,False,House,380144.37862471386,761334.3369872937,1.6395102147715483,41,1,8,424924,56
+20,Non-LGBTQ+,Republican,Male,53,Bachelor,Public Service/Politics,Other,Christianity,False,House,510472.44466050155,1082853.8285734216,2.3571546105172025,50,2,9,198725,111
+21,Non-LGBTQ+,Democrat,Female,58,Bachelor,Healthcare,White,Christianity,False,House,373155.4543558923,815568.8482773158,0.6211632695263204,15,1,11,381696,80
+22,Non-LGBTQ+,Republican,Female,59,Bachelor,Business,White,Christianity,True,House,826694.8519086575,984091.0910679575,2.0072776159141057,43,3,7,272489,76
+23,Non-LGBTQ+,Republican,Male,62,Bachelor,Business,Hispanic or Latino,Christianity,True,House,213761.17434395282,952291.7137458414,0.6117596646718052,36,4,2,338946,39
+24,Non-LGBTQ+,Republican,Male,47,Bachelor,Law,Asian American/Pacific Islander,Christianity,False,House,635959.4121852575,1049751.8061388647,0.54527816137919,31,0,7,216653,61
+25,Non-LGBTQ+,Republican,Male,64,Law,Military,White,Judaism,False,House,591641.8384236734,1249193.1993226619,0.6163367224744546,54,1,10,165409,77
+26,Non-LGBTQ+,Republican,Male,47,Bachelor,Public Service/Politics,Hispanic or Latino,Christianity,False,House,565446.7239012503,1028111.885108376,0.5958047347894424,64,2,10,282840,46
+27,Non-LGBTQ+,Republican,Male,74,Bachelor,Business,White,Christianity,True,House,834520.7206861599,904493.7102826323,1.5596320455462303,31,1,12,178205,84
+28,Non-LGBTQ+,Republican,Male,50,Bachelor,Law,White,Non-Affiliated/Other,False,House,433350.2547320296,1269058.4613578005,0.5348524767812525,50,2,7,190837,59
+29,Non-LGBTQ+,Republican,Male,60,Law,Law,White,Christianity,True,House,568115.6577023226,984870.5978047061,0.6012478900244642,38,3,13,274750,67
+30,Non-LGBTQ+,Democrat,Male,67,Master,Law,Asian American/Pacific Islander,Christianity,True,House,211947.19306518798,735318.2309681168,2.2006741848356994,21,1,9,483469,72
+31,Non-LGBTQ+,Democrat,Female,55,Bachelor,Public Service/Politics,White,Islam,False,House,406242.25033136236,1045694.9716707024,0.5276156501634026,20,1,10,431282,122
+32,Non-LGBTQ+,Republican,Male,61,Master,Public Service/Politics,White,Christianity,False,Senate,766991.956239013,7518699.128220974,0.6008870573484084,36,1,11,253418,74
+33,Non-LGBTQ+,Republican,Male,72,Bachelor,Business,White,Christianity,True,House,255961.54814871558,866528.7979034871,0.6053044426718943,45,2,4,229530,48
+34,Non-LGBTQ+,Republican,Female,63,Bachelor,Education,Native American,Non-Affiliated/Other,False,House,541574.036507634,828785.7300682659,0.576503290740011,36,2,5,344477,95
+35,Non-LGBTQ+,Democrat,Male,61,Bachelor,Public Service/Politics,African American,Non-Affiliated/Other,True,House,356327.2543824763,868264.5117955117,0.6162718763255605,28,0,5,432420,60
+36,Non-LGBTQ+,Republican,Male,41,Bachelor,Public Service/Politics,Hispanic or Latino,Non-Affiliated/Other,False,House,473009.0930603995,782308.6961374887,1.8977131791440578,44,1,11,204329,80
+37,Non-LGBTQ+,Democrat,Male,48,Bachelor,Other,White,Christianity,False,House,367149.5851735208,874114.4521438746,0.612156203005405,23,1,7,454497,45
+38,Non-LGBTQ+,Democrat,Male,68,Law,Public Service/Politics,African American,Christianity,True,Senate,268006.2486977644,5776858.733314951,0.6228459356938952,16,1,14,458724,58
+39,Non-LGBTQ+,Democrat,Female,63,Law,Other,White,Christianity,False,House,606442.4019248186,947556.6243565717,2.310719637449753,20,0,8,559564,88
+40,Non-LGBTQ+,Democrat,Female,65,Master,Law,Asian American/Pacific Islander,Christianity,False,House,487753.286425015,934065.0170003924,2.6089726325390608,33,0,4,300846,99
+41,Non-LGBTQ+,Democrat,Male,64,Bachelor,Education,Other,Christianity,False,House,679204.7702208209,940185.1003891093,2.1891436855903303,31,0,6,542603,88
+42,Non-LGBTQ+,Republican,Male,70,Bachelor,Public Service/Politics,White,Christianity,False,House,743840.8141179634,910724.7384135973,0.5797896578241746,35,1,8,222936,72
+43,Non-LGBTQ+,Republican,Male,55,Master,Public Service/Politics,African American,Non-Affiliated/Other,True,House,922638.4693867337,889971.8334276839,0.5725198871450562,45,1,10,288841,67
+44,Non-LGBTQ+,Republican,Male,59,Bachelor,Law,White,Christianity,True,House,534510.5514967643,1137609.8240654375,1.3218620733394228,52,1,5,247618,38
+45,Non-LGBTQ+,Republican,Male,47,Bachelor,Education,White,Christianity,False,House,942860.7556706802,934084.2791429996,0.6065365787220652,28,2,10,275935,57
+46,Non-LGBTQ+,Republican,Female,45,Bachelor,Law,White,Christianity,False,House,306961.04329374287,1105526.8127777907,2.797381053165868,50,2,11,230430,63
+47,Non-LGBTQ+,Democrat,Male,41,Law,Public Service/Politics,White,Christianity,True,House,787676.925711728,742596.3425422587,0.5848386303535418,19,2,6,543802,106
+48,Non-LGBTQ+,Republican,Female,49,Bachelor,Education,White,Christianity,False,House,629108.2286881912,1028003.2296684433,0.6192423846550138,50,2,14,333188,83
+49,Non-LGBTQ+,Republican,Male,73,Bachelor,Education,African American,Christianity,True,House,561804.7809436475,789704.6729133922,0.5680711542480549,37,1,6,213038,30
+50,Non-LGBTQ+,Democrat,Male,42,Master,Law,White,Christianity,False,Senate,624514.2924319019,5834560.750462535,2.1003384058377197,7,1,5,489281,91
+51,Non-LGBTQ+,Republican,Male,54,Bachelor,Education,Hispanic or Latino,Christianity,False,House,309277.4156035423,803905.7293008456,2.759039554039131,28,0,3,225689,65
+52,Non-LGBTQ+,Democrat,Female,44,Bachelor,Education,White,Non-Affiliated/Other,True,House,274852.52839883463,792620.9661391248,2.4044260246903355,26,1,12,659298,71
+53,Non-LGBTQ+,Republican,Female,51,Bachelor,Law,White,Non-Affiliated/Other,False,House,1175586.194911423,793519.9423210718,1.0078369558993399,47,2,8,228303,90
+54,Non-LGBTQ+,Democrat,Female,59,Bachelor,Public Service/Politics,Hispanic or Latino,Christianity,False,House,459549.6597122838,1141060.7356924969,0.6243977297343132,16,3,7,426731,105
+55,Non-LGBTQ+,Republican,Male,50,Master,Business,White,Christianity,False,House,456282.1588296574,930125.2306733703,0.6263362422221649,51,1,4,221086,98
+56,Non-LGBTQ+,Republican,Male,68,Bachelor,Public Service/Politics,White,Non-Affiliated/Other,False,House,288141.9847636263,962461.1895699247,0.6074863288564256,28,2,7,243214,54
+57,Non-LGBTQ+,Democrat,Female,73,Bachelor,Business,African American,Non-Affiliated/Other,False,House,238344.938458611,839662.4260729342,0.628520219406915,25,0,15,420649,78
+58,Non-LGBTQ+,Democrat,Male,35,Law,Business,White,Christianity,False,House,478400.6967325217,1076200.2941814547,0.5646130694637429,13,1,2,463155,91
+59,Non-LGBTQ+,Democrat,Male,51,Law,Public Service/Politics,White,Judaism,False,House,421497.6228419276,985861.3495952006,0.6027934729287501,19,1,6,515720,104
+60,Non-LGBTQ+,Democrat,Male,58,Law,Business,White,Christianity,False,House,500433.7772395494,866344.0635292422,0.647366429652151,26,3,13,488453,75
+61,Non-LGBTQ+,Democrat,Female,69,Bachelor,Public Service/Politics,Other,Non-Affiliated/Other,False,House,522270.1948456778,636780.1188393993,0.6435250604623935,17,2,12,583171,81
+62,Non-LGBTQ+,Democrat,Female,53,Bachelor,Education,African American,Non-Affiliated/Other,False,Senate,1735999.5552928306,6877366.0725010615,2.3189108865994545,22,2,6,468064,62
+63,Non-LGBTQ+,Democrat,Male,57,Doctorate,Military,African American,Christianity,True,House,422132.0197214615,981671.0945441874,1.4334337211237609,36,2,9,479538,61
+64,Non-LGBTQ+,Democrat,Male,46,Master,Public Service/Politics,African American,Non-Affiliated/Other,False,House,1101665.2221361028,701856.1695896025,1.3359977420388305,20,2,9,527106,101
+65,Non-LGBTQ+,Republican,Female,42,Bachelor,Other,White,Christianity,False,House,1136399.495398319,868780.1881463459,0.6049767768099482,53,3,8,362240,108
+66,Non-LGBTQ+,Republican,Male,72,Bachelor,Business,White,Non-Affiliated/Other,False,House,728815.228517043,1018640.1097751672,0.6077965892663955,33,0,13,210620,73
+67,Non-LGBTQ+,Democrat,Male,39,Bachelor,Public Service/Politics,Hispanic or Latino,Christianity,False,House,444542.17491327634,595281.7302058868,1.9176934899490055,31,2,9,692362,105
+68,Non-LGBTQ+,Republican,Female,81,Law,Public Service/Politics,White,Non-Affiliated/Other,False,House,253122.0871795625,805157.826498415,0.5658357183822056,59,3,11,190821,84
+69,Non-LGBTQ+,Republican,Male,65,Bachelor,Business,White,Christianity,False,House,634971.4498965848,989794.8290049473,0.6187039224747214,20,0,9,261449,58
+70,Non-LGBTQ+,Republican,Male,64,Bachelor,Education,White,Christianity,False,House,832151.1860142516,1076952.0994810946,2.0479664294725146,37,2,2,233031,84
+71,Non-LGBTQ+,Republican,Male,63,Bachelor,Law,White,Christianity,True,House,1198051.5772724121,1271489.146696615,2.159133057696176,50,1,4,209236,113
+72,LGBTQ+,Democrat,Female,55,Master,Public Service/Politics,Other,Non-Affiliated/Other,False,Senate,310949.0652076263,9558818.083637036,0.6253658561133065,23,2,5,569909,84
+73,Non-LGBTQ+,Republican,Female,61,Law,Public Service/Politics,White,Non-Affiliated/Other,False,House,442679.00062135677,947829.7263290768,0.5884491694754796,48,1,7,279995,114
+74,Non-LGBTQ+,Democrat,Female,56,Bachelor,Business,White,Non-Affiliated/Other,False,Senate,311897.8727235621,6260927.856340827,0.5792907712751902,19,2,14,451875,32
+75,Non-LGBTQ+,Republican,Male,63,Master,Public Service/Politics,White,Non-Affiliated/Other,True,House,364260.43850859377,1088113.2277109546,0.6472553659376046,45,1,9,145310,95
+76,Non-LGBTQ+,Republican,Female,57,Doctorate,Public Service/Politics,Other,Christianity,False,House,697011.4690756588,824104.4932419368,0.5678549343350751,43,2,8,228998,77
+77,Non-LGBTQ+,Republican,Female,48,Bachelor,Public Service/Politics,White,Christianity,False,House,356008.89401897514,784774.0682219778,0.5801245813059384,56,2,12,256960,67
+78,Non-LGBTQ+,Democrat,Male,49,Bachelor,Education,White,Christianity,True,House,331117.2392399705,867003.330086477,0.6526489613744018,28,1,4,500181,86
+79,Non-LGBTQ+,Republican,Female,48,Bachelor,Military,Hispanic or Latino,Christianity,False,House,744792.7786928952,844430.0254803159,0.5768100610769875,48,2,7,287797,25
+80,Non-LGBTQ+,Democrat,Male,67,Master,Business,African American,Christianity,False,House,626392.7017103989,952322.2926396625,1.9187788828372052,21,1,6,693354,80
+81,Non-LGBTQ+,Republican,Male,51,Bachelor,Military,White,Christianity,False,House,595626.4431899927,769616.4885036199,1.7248875855205672,40,2,9,270694,83
+82,Non-LGBTQ+,Democrat,Male,38,Master,Business,White,Christianity,False,House,360742.50429485017,893370.7508014116,0.876405486405296,21,1,11,556777,114
+83,Non-LGBTQ+,Republican,Male,61,Master,Business,White,Christianity,False,House,954435.1862708239,1209042.8407651528,0.5948500907343118,48,2,9,257409,62
+84,Non-LGBTQ+,Democrat,Male,73,Bachelor,Public Service/Politics,White,Christianity,True,House,503635.70394322946,943936.5480455237,0.557072073715986,21,2,9,617244,68
+85,Non-LGBTQ+,Democrat,Male,65,Law,Law,White,Christianity,False,House,1643696.861501007,1194964.831374115,0.6109389394369976,28,1,7,553140,74
+86,Non-LGBTQ+,Republican,Male,51,Bachelor,Other,White,Non-Affiliated/Other,False,House,541959.450007881,1094418.9686796758,2.6639300863648763,65,1,9,287455,97
+87,Non-LGBTQ+,Democrat,Female,42,Bachelor,Law,White,Judaism,False,House,155700.48246190068,984616.0230939188,0.6097474434491195,34,0,5,680896,91
+88,Non-LGBTQ+,Republican,Male,56,Master,Business,White,Non-Affiliated/Other,True,House,152272.29475376967,814301.2782988712,1.728014132486128,41,2,10,261349,61
+89,Non-LGBTQ+,Republican,Male,56,Master,Law,African American,Christianity,True,Senate,683060.2499330123,7990051.623079827,2.2596816517540312,57,1,6,236452,87
+90,Non-LGBTQ+,Republican,Male,48,Bachelor,Public Service/Politics,Other,Christianity,False,House,958007.0859850373,876955.7341573418,0.5071423973635546,40,0,5,272314,77
+91,Non-LGBTQ+,Republican,Female,63,Law,Healthcare,African American,Hinduism,False,House,337881.0915572193,877687.042582952,2.806633841377378,24,0,8,306812,99
+92,Non-LGBTQ+,Republican,Male,76,Law,Business,White,Christianity,False,Senate,1429524.9779409086,7031134.063782088,2.2148637840373633,34,3,2,275071,57
+93,Non-LGBTQ+,Republican,Male,60,Bachelor,Business,White,Christianity,False,House,1148380.0394567798,920985.0744813684,0.6462185412106577,26,1,12,303032,66
+94,Non-LGBTQ+,Republican,Female,59,Doctorate,Law,Other,Christianity,True,House,555507.149921555,748400.5911739082,1.630848966916535,41,3,10,216551,65
+95,Non-LGBTQ+,Republican,Male,48,Bachelor,Law,White,Christianity,True,House,654803.4207517613,647073.4148152786,0.5812253090809442,45,1,9,206596,38
+96,Non-LGBTQ+,Republican,Male,71,Bachelor,Public Service/Politics,White,Christianity,False,Senate,782014.4409919681,8209463.60228086,0.5932480224746081,61,3,3,222748,82
+97,Non-LGBTQ+,Republican,Male,57,Bachelor,Law,White,Christianity,False,House,1286403.4072378387,980710.3633129498,3.302848290270932,48,3,6,186631,81
+98,Non-LGBTQ+,Republican,Female,52,Law,Public Service/Politics,African American,Christianity,False,Senate,703224.4263743951,4591809.306471402,0.6562192548290334,42,1,8,255515,75
+99,Non-LGBTQ+,Democrat,Male,58,Master,Law,African American,Christianity,False,House,549261.1022634122,787529.4965955609,0.6057347955917325,34,0,7,456997,80
+100,Non-LGBTQ+,Democrat,Female,62,Bachelor,Education,White,Christianity,False,Senate,699774.8897244087,7156372.475860532,0.610931332820651,3,0,3,623021,56
+101,Non-LGBTQ+,Republican,Male,59,Bachelor,Education,White,Non-Affiliated/Other,False,House,654118.311249204,957711.8041287072,2.3726560695998535,47,1,4,185439,64
+102,Non-LGBTQ+,Republican,Female,69,Master,Law,Other,Christianity,False,House,793785.4352615918,648629.5608981187,0.7019221141185639,52,3,7,327746,66
+103,Non-LGBTQ+,Republican,Female,61,Bachelor,Business,White,Christianity,False,House,228057.19480016382,861985.820510169,2.2166134998010625,30,1,4,200940,54
+104,Non-LGBTQ+,Republican,Female,55,Law,Public Service/Politics,African American,Non-Affiliated/Other,False,House,585540.190309018,975186.6076335185,2.0082380521756997,56,2,12,188088,70
+105,Non-LGBTQ+,Republican,Male,61,Law,Education,African American,Christianity,False,House,629438.6259411337,814776.6561459345,1.770287263047118,48,3,9,208767,85
+106,Non-LGBTQ+,Republican,Female,62,Bachelor,Public Service/Politics,African American,Christianity,False,House,482115.8871366583,968000.5562303859,0.6101016804679389,40,2,6,347564,122
+107,Non-LGBTQ+,Republican,Male,44,Doctorate,Business,White,Christianity,False,House,740030.4400323001,790289.4417197991,1.6165716178122758,51,2,12,247996,79
+108,Non-LGBTQ+,Republican,Male,69,Bachelor,Public Service/Politics,White,Christianity,False,Senate,1306610.826924519,7812780.92845289,2.2867644291612677,67,2,11,276472,81
+109,Non-LGBTQ+,Democrat,Male,54,Doctorate,Public Service/Politics,White,Christianity,False,House,535776.26826326,778079.7910162663,0.5391061995467739,27,2,9,481611,83
+110,Non-LGBTQ+,Republican,Female,55,Master,Law,Asian American/Pacific Islander,Non-Affiliated/Other,False,Senate,706602.7584664952,5043560.230881124,1.8186114296760263,47,1,8,245496,27
+111,Non-LGBTQ+,Democrat,Female,65,Master,Public Service/Politics,Other,Christianity,False,House,1116261.549292663,883255.616018884,2.4343648815474057,21,1,7,449412,84
+112,Non-LGBTQ+,Republican,Female,65,Bachelor,Law,White,Christianity,True,House,542067.401865405,620014.1054758757,2.208200689038719,36,2,6,252537,76
+113,Non-LGBTQ+,Republican,Male,50,Law,Business,White,Christianity,False,Senate,320658.4369408985,3743465.7497737696,1.6935442135054743,53,3,4,274730,136
+114,Non-LGBTQ+,Democrat,Male,65,Bachelor,Public Service/Politics,Other,Christianity,False,Senate,680275.2685615298,8048408.506031455,1.8362314222881038,17,3,13,667831,81
+115,Non-LGBTQ+,Republican,Female,52,Bachelor,Business,Hispanic or Latino,Christianity,False,Senate,166296.94739599354,5256662.803551431,2.620428561858755,45,2,6,156277,82
+116,Non-LGBTQ+,Democrat,Male,76,Bachelor,Public Service/Politics,Other,Christianity,False,House,158447.7014306788,681893.9346471088,0.5485663037869623,21,2,8,661082,84
+117,Non-LGBTQ+,Republican,Male,49,Bachelor,Public Service/Politics,White,Christianity,True,House,590585.3253495101,731932.2006368755,1.2344399669549175,49,2,5,276398,45
+118,Non-LGBTQ+,Republican,Male,60,Bachelor,Law,White,Christianity,False,House,154798.2888077858,723851.6668338617,1.4045753219383945,48,1,7,231612,103
+119,Non-LGBTQ+,Democrat,Male,50,Master,Public Service/Politics,African American,Christianity,True,Senate,259050.81185031997,6722783.673770679,0.5996453824832458,36,2,17,445228,100
+120,Non-LGBTQ+,Republican,Male,80,Law,Education,African American,Christianity,False,House,413459.19047499634,681221.1684243309,1.1402983702204985,39,3,6,302184,94
+121,Non-LGBTQ+,Democrat,Male,45,Bachelor,Public Service/Politics,White,Non-Affiliated/Other,False,Senate,348591.2120662864,7587185.438387273,0.6406747073335174,23,1,12,522898,66
+122,Non-LGBTQ+,Republican,Male,63,Master,Public Service/Politics,White,Christianity,False,House,464380.77276351897,994370.9240961936,1.40788044947715,35,0,8,173297,110
+123,Non-LGBTQ+,Democrat,Male,50,Bachelor,Law,White,Christianity,False,House,872221.2936254625,648550.3193770086,2.118623300474167,21,1,10,536307,56
+124,Non-LGBTQ+,Democrat,Female,54,Law,Business,White,Christianity,False,House,563320.3682842633,766791.3883570951,1.6214900036081081,29,2,12,614437,96
+125,Non-LGBTQ+,Republican,Male,62,Law,Public Service/Politics,White,Judaism,False,House,328635.0608382871,783898.4772808594,1.9392727181039826,52,2,9,292893,129
+126,Non-LGBTQ+,Republican,Male,70,Bachelor,Business,Other,Christianity,False,Senate,984199.514181729,6362605.915813975,0.9877061413962331,35,1,7,218657,50
+127,Non-LGBTQ+,Democrat,Male,74,Master,Public Service/Politics,White,Christianity,False,House,244735.8535503321,1072931.8135448676,2.599379150954654,34,0,7,365799,73
+128,LGBTQ+,Republican,Male,42,Bachelor,Education,Asian American/Pacific Islander,Islam,False,House,558664.9126987284,1083305.1951882744,1.3848589747990756,58,1,8,233701,77
+129,Non-LGBTQ+,Republican,Female,60,Bachelor,Business,White,Non-Affiliated/Other,False,House,231496.58248102257,1327844.9099976465,1.3200627252697812,49,1,14,412699,62
+130,Non-LGBTQ+,Republican,Female,72,Law,Education,African American,Christianity,False,House,567231.2400069257,469561.4732400528,3.4518468100745454,63,0,4,172750,36
+131,Non-LGBTQ+,Democrat,Male,41,Bachelor,Healthcare,Other,Christianity,False,House,426364.40715898504,711675.5503205117,2.3227857996751666,18,1,3,415726,86
+132,Non-LGBTQ+,Democrat,Male,61,Bachelor,Business,White,Non-Affiliated/Other,False,Senate,858964.0363136277,9034278.248109763,2.5753093048388767,13,2,3,539204,63
+133,Non-LGBTQ+,Democrat,Female,57,Bachelor,Military,White,Non-Affiliated/Other,False,House,716911.8097060195,597825.1623123648,0.6196376211819463,8,2,5,487547,94
+134,Non-LGBTQ+,Democrat,Female,62,Law,Business,White,Non-Affiliated/Other,False,House,372798.63913892757,1244378.9310629223,0.5808353246469731,40,2,10,479980,66
+135,Non-LGBTQ+,Democrat,Male,50,Bachelor,Other,White,Christianity,False,House,338707.965704739,904572.009653589,1.1711674336349072,32,1,10,702472,115
+136,Non-LGBTQ+,Democrat,Male,43,Bachelor,Public Service/Politics,Hispanic or Latino,Christianity,False,House,427117.74810722814,955095.1186562531,0.5873775136399362,25,1,6,414674,69
+137,Non-LGBTQ+,Democrat,Male,38,Master,Law,Other,Christianity,False,House,1277159.5997360859,691587.5820106905,0.5584541838429901,28,1,8,498572,78
+138,Non-LGBTQ+,Democrat,Female,67,Law,Business,White,Judaism,False,House,1123430.6230408056,796839.4008870315,1.4117027362865875,14,2,5,520191,101
+139,Non-LGBTQ+,Democrat,Male,68,Bachelor,Business,White,Christianity,False,Senate,308115.2821806647,9273592.231949836,0.5326946955233973,50,0,5,419526,60
+140,Non-LGBTQ+,Republican,Female,60,Bachelor,Law,White,Christianity,True,House,745996.394754164,913368.2551687743,0.6049738938115987,46,3,10,177967,80
+141,Non-LGBTQ+,Democrat,Male,52,Bachelor,Law,Hispanic or Latino,Non-Affiliated/Other,False,House,210375.1538814984,798038.955409968,2.9533719031117833,27,2,11,526932,111
+142,Non-LGBTQ+,Republican,Male,41,Bachelor,Public Service/Politics,White,Christianity,True,Senate,399788.9839934875,7133086.768770505,2.3251553047037907,52,1,7,340683,34
+143,Non-LGBTQ+,Republican,Male,63,Bachelor,Public Service/Politics,White,Non-Affiliated/Other,False,House,314450.26445301715,887352.0514577169,0.5955959004702981,49,2,13,270229,79
+144,Non-LGBTQ+,Republican,Male,46,Master,Law,African American,Christianity,False,House,853416.6042998111,984078.4264773545,0.5983726242246179,47,3,11,254504,81
+145,Non-LGBTQ+,Democrat,Male,50,Master,Law,African American,Christianity,False,House,262237.1739943811,725095.340699019,0.09394297076970563,18,1,13,508273,100
+146,Non-LGBTQ+,Democrat,Male,52,Master,Other,White,Christianity,False,House,619729.5766104606,864161.303738346,1.7175456002525347,30,1,7,474158,60
+147,Non-LGBTQ+,Democrat,Male,55,Bachelor,Education,African American,Islam,False,House,500177.56191226124,762655.0527084755,1.0970233107406107,44,3,13,618348,58
+148,Non-LGBTQ+,Democrat,Female,50,Law,Other,White,Christianity,False,House,458006.6407931531,553334.785162763,2.0629697281590587,39,4,15,449456,95
+149,Non-LGBTQ+,Republican,Male,58,Bachelor,Law,White,Christianity,False,House,1153319.4869701595,1008703.6212167784,0.5890313410029676,60,2,7,182161,82
+150,Non-LGBTQ+,Democrat,Male,51,Doctorate,Public Service/Politics,Native American,Non-Affiliated/Other,True,House,1205267.3572961662,655969.669007805,1.4419050321125493,20,0,8,341835,90
+151,Non-LGBTQ+,Democrat,Female,64,Master,Public Service/Politics,Hispanic or Latino,Christianity,True,Senate,465174.07445245754,6362965.598017999,2.0490377313294594,16,1,5,507901,91
+152,Non-LGBTQ+,Democrat,Female,68,Bachelor,Education,White,Christianity,False,House,420586.4084690295,1088643.503761219,0.6044971819551191,24,3,5,606069,71
+153,Non-LGBTQ+,Democrat,Female,58,Master,Law,White,Christianity,False,Senate,235372.98803328894,4563317.687328956,2.9194709555915077,26,0,5,523749,89
+154,Non-LGBTQ+,Democrat,Female,62,Bachelor,Public Service/Politics,White,Christianity,False,House,498936.38607166917,986891.9179387332,2.4045309220854856,36,1,6,468263,90
+155,Non-LGBTQ+,Republican,Male,79,Master,Business,White,Christianity,False,House,1327774.785330862,867984.7972578359,0.6093377678294654,28,2,9,272922,57
+156,Non-LGBTQ+,Democrat,Male,46,Bachelor,Other,White,Christianity,False,House,468830.0934232203,747977.0073453236,0.5597589105889171,41,1,6,518621,122
+157,Non-LGBTQ+,Republican,Female,45,Bachelor,Business,White,Christianity,False,House,719810.3251365726,1286077.4115116873,0.5543975810022281,43,3,9,291310,86
+158,Non-LGBTQ+,Democrat,Male,64,Law,Business,White,Christianity,False,House,248603.54441141387,921851.0862763247,0.6255963714892416,21,2,9,632650,61
+159,Non-LGBTQ+,Republican,Male,77,Bachelor,Business,Hispanic or Latino,Christianity,False,Senate,402309.07381776633,5818440.452729936,1.8560041338072168,34,4,7,202280,91
+160,Non-LGBTQ+,Democrat,Female,55,Law,Public Service/Politics,African American,Christianity,False,House,630076.1917278153,737610.4544618526,2.1340986263996276,9,2,8,266040,65
+161,Non-LGBTQ+,Democrat,Male,75,Bachelor,Business,African American,Christianity,False,House,527178.5509131147,1080560.4638308005,0.6417390542696941,34,1,6,464846,100
+162,Non-LGBTQ+,Republican,Male,58,Master,Business,White,Christianity,False,House,755169.1513113528,767878.6597243908,1.0435231323632925,45,2,7,199033,103
+163,Non-LGBTQ+,Republican,Male,51,Master,Public Service/Politics,Other,Christianity,False,House,369914.5955448652,1014222.0382251895,2.844236187718475,32,2,6,291598,54
+164,Non-LGBTQ+,Republican,Male,47,Bachelor,Education,Asian American/Pacific Islander,Christianity,False,Senate,208432.2032327943,6582018.081642269,2.5796192353134435,32,3,8,213783,99
+165,Non-LGBTQ+,Democrat,Male,64,Bachelor,Business,Hispanic or Latino,Christianity,False,House,876251.5555506351,1078962.6320858977,0.7085849023569016,22,1,6,312422,93
+166,Non-LGBTQ+,Republican,Male,48,Bachelor,Education,Hispanic or Latino,Non-Affiliated/Other,False,Senate,313103.38946811185,5177937.5995566435,3.435810554695806,61,1,5,221290,95
+167,Non-LGBTQ+,Democrat,Female,58,Bachelor,Healthcare,Other,Christianity,False,House,644136.1470176111,715497.3974505241,2.1786563232304994,23,0,10,350803,122
+168,Non-LGBTQ+,Democrat,Male,73,Bachelor,Public Service/Politics,White,Non-Affiliated/Other,False,Senate,626429.6839137246,6206008.679717944,1.6836973897670382,10,3,10,659016,80
+169,Non-LGBTQ+,Republican,Male,54,Master,Law,White,Non-Affiliated/Other,False,House,217615.88231673694,842396.8109333452,2.3009773836010634,42,2,11,273582,56
+170,Non-LGBTQ+,Republican,Female,71,Law,Business,African American,Christianity,True,House,844859.893450428,858130.9543467332,0.5584833357459411,42,1,5,282378,52
+171,LGBTQ+,Democrat,Female,45,Law,Healthcare,Hispanic or Latino,Christianity,True,Senate,376653.06100405136,10467078.693667263,0.6233517954487884,0,2,7,553603,68
+172,Non-LGBTQ+,Democrat,Female,52,Master,Public Service/Politics,Hispanic or Latino,Christianity,False,House,513954.8439793444,1293335.6802955384,0.5663163349867101,25,1,9,584017,83
+173,Non-LGBTQ+,Republican,Female,43,Master,Law,White,Hinduism,False,Senate,418014.7907380023,7318358.497349872,0.6861182160055744,42,1,6,306667,83
+174,Non-LGBTQ+,Republican,Male,58,Master,Law,White,Christianity,True,Senate,1125411.301930667,7477546.446309581,0.60265880766302,51,2,10,223013,81
+175,Non-LGBTQ+,Republican,Male,65,Bachelor,Public Service/Politics,White,Christianity,False,House,978825.3228092187,835490.9880734803,2.381887569037314,63,2,9,179002,95
+176,Non-LGBTQ+,Democrat,Male,58,Law,Public Service/Politics,Other,Christianity,False,House,202034.97107221515,732982.6234789316,0.5666327302644818,37,3,9,415307,85
+177,Non-LGBTQ+,Democrat,Male,70,Master,Law,White,Non-Affiliated/Other,False,House,1546920.8092455333,889178.2162122497,0.634862887554364,23,1,12,495475,114
+178,Non-LGBTQ+,Democrat,Male,50,Bachelor,Law,White,Hinduism,False,House,356186.5933505833,1060752.4147753648,0.5995643950244053,14,0,10,243566,79
+179,Non-LGBTQ+,Democrat,Male,60,Bachelor,Business,White,Christianity,False,House,1430567.4130754126,1113061.5975700465,1.106195994371819,51,0,8,614273,139
+180,Non-LGBTQ+,Democrat,Female,52,Bachelor,Law,White,Christianity,False,House,439880.59379857656,1057276.2961818918,1.832062056093012,26,1,7,310325,97
+181,Non-LGBTQ+,Democrat,Male,61,Bachelor,Business,Other,Christianity,True,House,421639.1044330524,606289.4077200468,3.1747033706070633,26,1,8,559909,67
+182,Non-LGBTQ+,Republican,Male,62,Law,Law,African American,Christianity,True,House,441838.4121581806,825987.7984201366,2.5113046660147553,44,0,5,241596,48
+183,Non-LGBTQ+,Democrat,Male,63,Bachelor,Public Service/Politics,Hispanic or Latino,Non-Affiliated/Other,False,House,409203.7817845312,657555.0578363165,0.5839648721845774,27,2,3,528518,94
+184,Non-LGBTQ+,Democrat,Male,47,Bachelor,Healthcare,White,Christianity,True,Senate,1766589.9180827956,8492572.948835133,0.5205189643688587,24,0,9,452808,80
+185,Non-LGBTQ+,Democrat,Male,49,Doctorate,Public Service/Politics,African American,Christianity,False,House,481269.0642107869,803819.589423745,1.4646838417904406,20,2,12,521721,99
+186,Non-LGBTQ+,Republican,Female,50,Bachelor,Business,White,Christianity,False,House,429860.13234261645,913471.3986986092,0.5402183885535102,39,4,7,226406,86
+187,Non-LGBTQ+,Democrat,Male,55,Bachelor,Public Service/Politics,African American,Non-Affiliated/Other,False,Senate,519628.15911960305,7562702.008148216,0.5215474976146046,25,2,13,444382,83
+188,Non-LGBTQ+,Democrat,Male,58,Bachelor,Public Service/Politics,White,Hinduism,True,House,308259.04971025727,1375953.9660539466,2.465896063809757,20,2,7,410276,68
+189,Non-LGBTQ+,Republican,Male,64,Master,Business,White,Christianity,False,Senate,1111169.5247880325,6947537.022374397,2.0184031189091414,37,3,2,326291,37
+190,Non-LGBTQ+,Democrat,Female,49,Law,Public Service/Politics,African American,Judaism,False,House,239623.19783742938,835159.9936826796,3.0905497492595417,27,3,11,536691,76
+191,Non-LGBTQ+,Democrat,Male,41,Bachelor,Education,Other,Christianity,False,House,367823.71750772,654661.1986711497,1.3624944049187815,23,2,7,520950,102
+192,Non-LGBTQ+,Democrat,Male,79,Law,Public Service/Politics,White,Christianity,True,Senate,798662.3401240339,8554529.109137729,1.978388638076926,41,1,11,412444,89
+193,Non-LGBTQ+,Democrat,Male,46,Bachelor,Business,Hispanic or Latino,Christianity,False,House,510700.9346596397,845354.2169143313,1.1171341186959514,0,1,4,476515,60
+194,Non-LGBTQ+,Democrat,Male,66,Law,Business,White,Christianity,False,House,658007.0790303381,1176334.4241747907,1.6117133602395122,36,1,9,401277,88
+195,Non-LGBTQ+,Republican,Female,58,Master,Public Service/Politics,White,Christianity,False,House,1076198.4499605743,1077059.1408185752,1.8423661949548151,57,1,6,225442,84
+196,Non-LGBTQ+,Republican,Female,60,Law,Public Service/Politics,White,Non-Affiliated/Other,False,House,825929.0488771441,838619.1210426702,0.5841488460767648,24,2,9,189544,52
+197,Non-LGBTQ+,Republican,Male,57,Bachelor,Business,White,Christianity,True,House,535577.8572410553,627439.0679337421,2.0129290525016637,41,2,10,329457,78
+198,Non-LGBTQ+,Democrat,Female,54,Doctorate,Business,White,Christianity,True,House,1421232.061498412,971013.6606088444,0.6414669546521443,22,0,10,424309,86
+199,Non-LGBTQ+,Democrat,Female,62,Master,Business,White,Christianity,False,House,365198.1284655467,767366.1453089166,2.5159086215629656,11,3,8,412492,62
+200,Non-LGBTQ+,Democrat,Male,53,Bachelor,Business,White,Christianity,False,House,475541.08304437215,929033.4711543301,0.5673450436305588,18,2,4,367439,92
+201,Non-LGBTQ+,Republican,Female,69,Law,Law,Other,Non-Affiliated/Other,False,House,492447.537783288,1066877.7097215857,1.9610179407432762,33,1,10,211440,89
+202,Non-LGBTQ+,Democrat,Male,63,Bachelor,Public Service/Politics,White,Christianity,False,House,475039.1470181113,580403.9996753349,2.4711588090947,43,2,11,450511,106
+203,Non-LGBTQ+,Democrat,Male,63,Law,Business,Hispanic or Latino,Christianity,True,House,292950.2413764904,969581.7114444736,0.6441972040158082,35,2,5,495052,106
+204,Non-LGBTQ+,Republican,Male,52,Bachelor,Other,White,Islam,False,House,226508.66173373567,1058678.5338716276,0.5719507931308062,57,0,5,217734,40
+205,LGBTQ+,Democrat,Female,55,Master,Business,African American,Christianity,False,Senate,615976.5444467857,8005583.404712149,0.6302505954613609,33,1,11,339939,66
+206,Non-LGBTQ+,Republican,Male,46,Bachelor,Law,White,Christianity,False,House,364261.2047105175,632611.1896740688,2.18470177202817,33,0,7,174271,87
+207,Non-LGBTQ+,Republican,Female,54,Bachelor,Business,White,Christianity,False,Senate,1297912.5121007035,7151470.087853388,1.3202035607603,39,4,5,283983,87
+208,LGBTQ+,Republican,Female,47,Bachelor,Education,White,Christianity,False,Senate,482189.3777609259,8539408.531915499,0.6341672832017733,49,2,9,243861,87
+209,Non-LGBTQ+,Democrat,Male,71,Bachelor,Education,White,Non-Affiliated/Other,False,House,440920.00731104094,983733.3032242088,0.6065520577690573,13,0,6,564889,162
+210,Non-LGBTQ+,Democrat,Female,58,Bachelor,Business,White,Islam,False,House,864177.3307115482,901126.2624126585,0.5259590806758648,33,5,8,578028,96
+211,Non-LGBTQ+,Democrat,Male,59,Bachelor,Other,African American,Christianity,False,House,611371.2695763091,1127081.548815415,0.5875889797506314,23,1,7,515108,107
+212,Non-LGBTQ+,Democrat,Male,55,Bachelor,Public Service/Politics,Other,Non-Affiliated/Other,False,House,457990.9318796057,753071.3946088155,2.0044624399558995,22,1,7,376827,104
+213,Non-LGBTQ+,Democrat,Female,59,Bachelor,Public Service/Politics,Hispanic or Latino,Christianity,False,House,362941.70335149794,646581.2960356064,0.5743066003770672,33,1,11,518958,98
+214,Non-LGBTQ+,Democrat,Male,82,Bachelor,Education,African American,Christianity,True,House,3113363.7129739923,841941.1738002372,2.739784399223628,30,1,1,639960,78
+215,Non-LGBTQ+,Democrat,Female,54,Master,Education,White,Christianity,False,House,599143.4066448889,974356.9149945247,2.76220847245915,22,2,10,455257,100
+216,Non-LGBTQ+,Republican,Female,51,Bachelor,Public Service/Politics,White,Christianity,False,Senate,859905.8333212995,7987930.481597722,1.743128589702407,56,0,11,267031,55
+217,Non-LGBTQ+,Democrat,Male,63,Law,Public Service/Politics,White,Christianity,False,House,299805.92189904297,1017441.6828624229,0.5791431552028683,15,3,6,498622,80
+218,Non-LGBTQ+,Republican,Male,32,Law,Public Service/Politics,White,Christianity,False,Senate,374508.83914809005,7713724.296437095,1.898596616063164,51,0,11,318619,62
+219,Non-LGBTQ+,Democrat,Male,58,Master,Public Service/Politics,White,Non-Affiliated/Other,False,Senate,1437672.8983722825,7996536.284298882,1.8559972077472522,31,1,5,432221,86
+220,Non-LGBTQ+,Democrat,Male,54,Bachelor,Education,White,Christianity,True,House,1005332.456321403,860863.3583785351,0.574873818723857,22,2,6,615353,131
+221,Non-LGBTQ+,Democrat,Female,47,Law,Business,White,Christianity,False,House,628552.2445107977,851419.7061444387,0.0,29,1,6,462499,47
+222,Non-LGBTQ+,Republican,Male,62,Bachelor,Business,White,Christianity,False,House,413154.9286512933,1153641.4222791726,0.6748123392219965,32,1,11,215293,92
+223,Non-LGBTQ+,Republican,Male,58,Bachelor,Business,Hispanic or Latino,Christianity,False,Senate,444784.6411021265,4951653.870947109,1.9800586212338311,54,0,3,255493,34
+224,Non-LGBTQ+,Republican,Male,39,Bachelor,Public Service/Politics,Hispanic or Latino,Christianity,False,Senate,356577.90053000045,7164695.216713634,1.86946799621584,43,4,13,267123,63
+225,Non-LGBTQ+,Republican,Male,51,Master,Public Service/Politics,White,Christianity,False,House,280390.5445645872,792943.6303071312,0.6139443024501767,39,2,7,345576,102
+226,Non-LGBTQ+,Democrat,Female,29,Bachelor,Law,Other,Non-Affiliated/Other,True,House,793560.8245712672,1076095.8690693795,1.9302630908552854,36,0,10,531954,86
+227,Non-LGBTQ+,Republican,Male,60,Bachelor,Other,Other,Christianity,True,House,654599.5730380361,874820.3939842797,1.7135357433845906,37,2,10,259664,48
+228,Non-LGBTQ+,Democrat,Female,60,No College,Education,White,Christianity,False,House,722449.4893390768,879415.6888558673,1.357541758020682,11,0,8,659614,70
+229,Non-LGBTQ+,Democrat,Male,49,Law,Public Service/Politics,White,Christianity,False,House,422487.1805490058,1189247.1602192083,0.8421313079708189,10,3,6,560105,98
+230,Non-LGBTQ+,Republican,Female,63,Bachelor,Healthcare,White,Christianity,False,House,568173.9296324309,728263.5192114387,0.5424363726580086,51,2,12,217786,56
+231,Non-LGBTQ+,Republican,Male,45,Bachelor,Education,Other,Christianity,True,House,402858.83528703294,916896.2856671534,1.288841500669669,32,1,6,317799,80
+232,Non-LGBTQ+,Republican,Male,48,Law,Education,Native American,Judaism,False,House,347565.82343953644,889528.5159145873,0.627813464762172,62,2,6,213019,76
+233,Non-LGBTQ+,Republican,Female,62,Bachelor,Business,White,Christianity,False,House,1150715.631978889,973882.8173755505,2.428171227553823,24,1,11,217538,58
+234,Non-LGBTQ+,Republican,Male,51,Bachelor,Business,White,Christianity,False,House,531318.5498056206,1269230.7611162055,0.5625567882548307,61,0,8,207574,128
+235,Non-LGBTQ+,Republican,Female,57,Bachelor,Business,White,Christianity,True,Senate,644410.0631982215,6097558.107942468,0.48669306762302744,47,2,12,203188,90
+236,Non-LGBTQ+,Republican,Male,52,Law,Public Service/Politics,White,Christianity,True,House,759366.9345858105,706419.631288467,0.600488320992608,44,2,8,266659,24
+237,Non-LGBTQ+,Republican,Male,53,Master,Public Service/Politics,White,Christianity,False,House,534658.6690650441,732369.8438650438,1.7189645553348833,39,3,6,237105,79
+238,Non-LGBTQ+,Democrat,Male,54,Law,Public Service/Politics,Asian American/Pacific Islander,Non-Affiliated/Other,False,House,563926.80822986,836141.5256880395,1.7036685241198657,29,2,9,152183,71
+239,Non-LGBTQ+,Republican,Male,50,Law,Business,African American,Christianity,False,House,290410.5205098221,889610.3305544037,2.571300370071027,44,2,7,236587,96
+240,Non-LGBTQ+,Republican,Male,60,Bachelor,Law,Asian American/Pacific Islander,Judaism,True,House,319433.969492571,942566.4027537799,0.6060032322110361,56,2,6,224104,55
+241,Non-LGBTQ+,Democrat,Male,51,Bachelor,Business,Asian American/Pacific Islander,Christianity,False,House,311282.45668800466,1246430.190723773,0.5585299556413934,27,3,10,589283,82
+242,Non-LGBTQ+,Republican,Male,58,Bachelor,Public Service/Politics,Hispanic or Latino,Islam,False,Senate,676773.9427137987,9108166.8566255,0.5487361238556197,46,1,13,221837,87
+243,Non-LGBTQ+,Democrat,Male,50,Bachelor,Other,White,Christianity,False,Senate,518040.5001563806,8344343.613898933,1.817305361198178,22,2,7,753926,102
+244,LGBTQ+,Democrat,Male,42,Bachelor,Military,African American,Christianity,False,House,319447.3004963206,1374550.1741033166,0.561508844614344,25,2,5,639679,60
+245,Non-LGBTQ+,Republican,Female,67,Master,Education,White,Christianity,False,Senate,668246.7684983409,8027167.062836016,0.5970176206746552,48,2,8,230504,66
+246,Non-LGBTQ+,Democrat,Female,62,Master,Other,African American,Non-Affiliated/Other,True,House,656115.164318256,1077552.6955200802,2.614740479265003,8,1,10,614962,75
+247,Non-LGBTQ+,Democrat,Female,80,Law,Business,White,Christianity,False,Senate,353232.013394613,7671806.058215121,1.1260393432938869,12,2,9,552521,71
+248,Non-LGBTQ+,Democrat,Female,47,Bachelor,Other,African American,Christianity,False,House,493091.2884188371,1037314.1759950768,0.6038372706449926,33,1,12,523347,120
+249,Non-LGBTQ+,Democrat,Male,55,Master,Public Service/Politics,White,Christianity,False,House,657325.2412535076,992942.5938651066,0.6390588910702563,27,3,10,580265,93
+250,Non-LGBTQ+,Republican,Female,56,Master,Business,White,Non-Affiliated/Other,False,House,325522.12163854175,850516.9514274374,0.5964305140797032,43,1,5,252704,43
+251,Non-LGBTQ+,Democrat,Male,67,Bachelor,Public Service/Politics,White,Christianity,False,Senate,663627.8203899001,4902215.2190774195,2.4262887896114695,26,1,7,524035,103
+252,Non-LGBTQ+,Republican,Male,52,Master,Public Service/Politics,White,Islam,True,Senate,581214.5120522929,6738251.288242611,0.5878691733350364,48,1,4,291168,128
+253,Non-LGBTQ+,Democrat,Male,46,Bachelor,Public Service/Politics,Hispanic or Latino,Christianity,False,Senate,303386.70492625405,7349160.348215822,2.0855023861490616,20,1,11,705245,105
+254,Non-LGBTQ+,Democrat,Male,69,Bachelor,Law,Hispanic or Latino,Christianity,True,House,558082.3130458655,891055.9226631231,2.2525421585743937,18,2,2,525119,54
+255,Non-LGBTQ+,Democrat,Female,54,Bachelor,Education,White,Christianity,True,House,600301.7177563134,686288.355546339,1.6258650800998902,27,1,4,454620,75
+256,Non-LGBTQ+,Democrat,Male,66,Bachelor,Law,White,Non-Affiliated/Other,False,Senate,365624.7504122744,6690692.028863903,0.6848544195166631,16,2,6,297077,110
+257,Non-LGBTQ+,Republican,Male,65,Bachelor,Public Service/Politics,White,Christianity,False,House,380302.2280149447,882710.7139672303,0.6246908789203489,49,2,10,348065,57
+258,Non-LGBTQ+,Republican,Male,57,Master,Education,White,Non-Affiliated/Other,False,Senate,301991.2770316611,6830455.37968361,0.6555755161707674,27,2,6,236838,86
+259,Non-LGBTQ+,Democrat,Female,56,Doctorate,Law,White,Christianity,False,House,399457.9942457587,966413.5432946036,2.6425118160848045,36,2,7,553481,100
+260,Non-LGBTQ+,Democrat,Male,53,Master,Business,Other,Christianity,False,House,496988.6024828631,1049077.6661560496,0.6140345688563148,30,2,7,690591,66
+261,Non-LGBTQ+,Republican,Male,57,Master,Law,White,Christianity,False,House,380827.6913196893,788039.5193123855,2.837277582946432,47,2,9,261380,73
+262,Non-LGBTQ+,Democrat,Male,66,Bachelor,Public Service/Politics,White,Christianity,False,House,237974.6485499457,1098553.0333544477,0.6081005998606414,35,2,4,480533,20
+263,Non-LGBTQ+,Democrat,Female,49,Master,Business,White,Non-Affiliated/Other,False,House,354360.2624249553,1081743.642028101,1.5282408122809834,42,1,5,641967,64
+264,Non-LGBTQ+,Democrat,Male,58,Bachelor,Military,White,Non-Affiliated/Other,False,House,405841.2385272576,935703.128436543,1.9889696174445428,36,0,13,546074,79
+265,Non-LGBTQ+,Republican,Male,46,Bachelor,Public Service/Politics,White,Non-Affiliated/Other,False,Senate,752218.9610963828,7482778.720795179,1.3572194273836857,26,3,9,279305,43
+266,Non-LGBTQ+,Republican,Male,47,Bachelor,Business,African American,Judaism,False,House,673165.0574470457,1055210.4401309558,0.6793395416810077,32,2,10,173842,115
+267,Non-LGBTQ+,Republican,Male,57,Bachelor,Healthcare,White,Christianity,False,House,759544.2921596802,724375.1825878902,0.5638024195298753,38,1,8,310296,39
+268,Non-LGBTQ+,Democrat,Male,38,Bachelor,Law,White,Christianity,False,Senate,345536.6272613602,8338521.448566888,0.6032029820860305,26,2,8,537559,76
+269,Non-LGBTQ+,Democrat,Male,78,Bachelor,Public Service/Politics,White,Non-Affiliated/Other,True,Senate,536670.0576869993,5518783.6756513,2.636881576492799,31,1,9,362841,87
+270,Non-LGBTQ+,Republican,Female,45,Bachelor,Public Service/Politics,White,Christianity,False,House,148871.6981746077,797264.924919087,0.56367567331746,37,2,10,274255,111
+271,Non-LGBTQ+,Republican,Male,57,Doctorate,Public Service/Politics,White,Judaism,True,House,619596.3994962563,913380.8306944619,2.604852872433315,46,1,11,146874,39
+272,Non-LGBTQ+,Republican,Male,69,Bachelor,Law,Other,Judaism,False,House,678617.021552517,536023.9968907547,0.5485543276782902,37,2,8,367099,104
+273,Non-LGBTQ+,Republican,Female,49,Bachelor,Business,African American,Christianity,False,Senate,419387.5842762063,7151721.56244624,0.5609506898273738,38,2,11,194907,75
+274,Non-LGBTQ+,Democrat,Male,34,Bachelor,Public Service/Politics,White,Non-Affiliated/Other,False,Senate,579591.1865746767,8240038.424731797,0.6617988528766119,11,2,1,661179,65
+275,Non-LGBTQ+,Republican,Male,53,Master,Other,White,Christianity,False,Senate,234427.4036729968,4363368.660956414,2.009266206362977,35,1,11,209352,86
+276,Non-LGBTQ+,Democrat,Male,49,Bachelor,Business,White,Christianity,False,Senate,334981.26444199815,8384796.734479172,0.592707924614109,12,2,7,556023,88
+277,Non-LGBTQ+,Republican,Male,35,Bachelor,Public Service/Politics,White,Christianity,False,Senate,733137.0953650769,5971270.861329399,0.6101172096294568,35,1,10,204394,59
+278,Non-LGBTQ+,Democrat,Female,60,Bachelor,Business,African American,Christianity,False,House,645635.2641103836,915283.9009765091,1.233320248608278,36,1,6,599712,86
+279,Non-LGBTQ+,Republican,Male,59,Bachelor,Law,African American,Christianity,False,House,406946.1401491391,778405.3692268217,1.7750828553643179,35,2,4,238234,65
+280,Non-LGBTQ+,Republican,Female,69,Bachelor,Public Service/Politics,White,Christianity,False,House,750162.0554511009,1025076.5466554234,0.6002133006628454,71,4,9,273389,77
+281,Non-LGBTQ+,Republican,Male,46,Bachelor,Public Service/Politics,White,Non-Affiliated/Other,True,House,535797.9638093652,1106441.7796216726,0.6525269019913611,49,2,3,250753,91
+282,Non-LGBTQ+,Republican,Male,41,Bachelor,Education,White,Non-Affiliated/Other,False,Senate,388579.4356447489,7788098.138257835,0.5289808255237737,46,0,7,181717,114
+283,Non-LGBTQ+,Democrat,Male,53,Bachelor,Business,Native American,Christianity,False,House,456320.0571927195,921234.6126033291,0.6751605419982366,17,1,6,550411,60
+284,Non-LGBTQ+,Republican,Male,57,Bachelor,Business,African American,Christianity,False,Senate,398178.0443097973,6272229.441940339,0.5947930356247942,52,2,7,224838,128
+285,Non-LGBTQ+,Democrat,Male,67,Law,Business,White,Non-Affiliated/Other,False,House,276640.8578835335,865574.4152010046,1.2926269903599854,20,0,10,604531,45
+286,Non-LGBTQ+,Democrat,Female,72,Bachelor,Public Service/Politics,White,Christianity,False,House,937250.8864113746,996123.6441805405,1.1805820260638034,27,2,7,476414,81
+287,Non-LGBTQ+,Democrat,Male,70,Bachelor,Public Service/Politics,African American,Christianity,True,House,376378.7242392642,1002296.7323389302,2.1488151565231264,51,2,9,492324,96
+288,Non-LGBTQ+,Democrat,Female,60,Bachelor,Business,White,Christianity,False,House,329780.6515802691,1021100.0043038971,0.5427416169861079,25,2,10,668293,90
+289,Non-LGBTQ+,Republican,Male,65,Law,Public Service/Politics,White,Christianity,True,House,232742.78998411665,647184.8230075369,1.6332153199264983,56,1,6,369082,59
+290,Non-LGBTQ+,Democrat,Female,51,Bachelor,Public Service/Politics,White,Christianity,False,House,133837.20383711107,917807.1769938213,0.5894602029274293,18,1,6,578603,80
+291,Non-LGBTQ+,Democrat,Female,59,Bachelor,Education,African American,Non-Affiliated/Other,False,House,710065.0123131879,807934.0059567078,0.6487927920824471,25,2,12,471286,75
+292,Non-LGBTQ+,Democrat,Female,45,Master,Other,White,Christianity,False,House,743532.4738449646,1041638.4430952441,0.6434613661888091,43,1,8,462534,73
+293,Non-LGBTQ+,Republican,Female,58,Bachelor,Education,White,Christianity,True,House,907893.7812166498,740353.8648796575,1.5819390034906757,38,1,10,209066,96
+294,Non-LGBTQ+,Republican,Female,58,Bachelor,Healthcare,Other,Christianity,True,House,464094.61372841167,1003320.8959673556,0.5910448657253214,63,3,10,218738,83
+295,Non-LGBTQ+,Republican,Male,75,Bachelor,Public Service/Politics,White,Christianity,True,House,425647.62592047465,827254.9835411896,0.9926321330794934,52,2,4,236320,57
+296,Non-LGBTQ+,Republican,Male,55,Law,Other,White,Christianity,False,House,387899.5994254578,583713.9065243617,0.5132840866762658,39,0,6,348213,97
+297,Non-LGBTQ+,Democrat,Male,58,Bachelor,Public Service/Politics,White,Judaism,False,House,405990.3064196741,1045621.4519476445,1.2193057249885089,32,2,9,480278,91
+298,Non-LGBTQ+,Democrat,Female,60,Master,Other,White,Judaism,False,House,875244.4981586033,873497.0805522925,2.6747330073275224,35,2,2,377395,101
+299,Non-LGBTQ+,Republican,Male,53,No College,Other,Hispanic or Latino,Christianity,False,House,493414.9354255222,1151627.1327500197,0.6333124806935416,51,3,7,252083,90
+300,Non-LGBTQ+,Democrat,Female,49,Bachelor,Law,White,Non-Affiliated/Other,False,Senate,604041.8577371214,4337198.597443726,2.2170568258642627,10,1,5,517813,68
+301,Non-LGBTQ+,Democrat,Male,70,Bachelor,Other,White,Non-Affiliated/Other,True,House,400856.9708232828,825574.9445226557,1.0778734147165216,18,2,11,503564,73
+302,Non-LGBTQ+,Democrat,Male,48,Bachelor,Law,White,Judaism,False,House,967806.3847654067,882998.4237394194,0.5698005972572064,23,2,9,579969,99
+303,Non-LGBTQ+,Republican,Male,44,Bachelor,Public Service/Politics,African American,Christianity,False,House,192912.87434280073,970588.3519350912,0.5635776715725477,44,1,12,253450,90
+304,Non-LGBTQ+,Republican,Male,64,Bachelor,Business,African American,Christianity,False,House,271604.24116994895,683417.5047639352,0.5930325036212989,51,2,8,288436,74
+305,Non-LGBTQ+,Democrat,Male,69,Law,Law,White,Christianity,False,House,604537.2930482561,1019878.0337314754,0.5903478851089062,27,1,8,421966,87
+306,Non-LGBTQ+,Republican,Male,53,Master,Public Service/Politics,White,Christianity,False,Senate,1199803.9819252442,9495378.394820858,0.5574409881684982,31,3,7,339036,106
+307,Non-LGBTQ+,Republican,Male,53,Master,Law,Hispanic or Latino,Christianity,False,Senate,446776.2895553258,7225991.271387004,2.1958830350770016,48,1,6,262624,60
+308,Non-LGBTQ+,Republican,Male,60,Bachelor,Other,White,Christianity,False,House,328134.2080427182,894765.8128160371,2.1214639393794523,51,0,16,270011,88
+309,Non-LGBTQ+,Republican,Male,50,Law,Public Service/Politics,Asian American/Pacific Islander,Non-Affiliated/Other,False,House,824633.8346328989,630106.4472232377,1.5288299901831084,50,1,10,210774,69
+310,Non-LGBTQ+,Republican,Male,50,Doctorate,Education,Hispanic or Latino,Non-Affiliated/Other,False,House,587841.4798319722,782586.9190719306,0.6130548646950006,55,2,5,273591,69
+311,Non-LGBTQ+,Democrat,Female,66,Law,Military,Asian American/Pacific Islander,Non-Affiliated/Other,False,Senate,953095.4008039185,6839243.5302307205,0.6479672335131852,34,1,16,565107,106
+312,Non-LGBTQ+,Republican,Male,63,Bachelor,Military,White,Christianity,False,House,262285.22484132997,782689.0157360956,2.8634336053013296,49,-1,7,191512,95
+313,Non-LGBTQ+,Democrat,Male,71,Master,Other,White,Christianity,False,House,916390.2778249673,1062774.9372165822,2.283404424528409,25,2,9,334091,101
+314,Non-LGBTQ+,Democrat,Male,45,Bachelor,Business,Hispanic or Latino,Christianity,False,House,230529.62290545533,1018017.7956865499,0.6197388043296418,9,2,11,529367,111
+315,Non-LGBTQ+,Republican,Male,52,Bachelor,Other,White,Christianity,False,House,432906.6108217113,1362676.9262642595,1.831210515734559,49,2,3,225562,75
+316,Non-LGBTQ+,Democrat,Male,60,Bachelor,Education,White,Christianity,False,House,614617.1015675995,745396.7009558226,0.6439407445391829,28,1,6,525992,98
+317,Non-LGBTQ+,Democrat,Male,48,Master,Public Service/Politics,Asian American/Pacific Islander,Christianity,False,House,548734.5381617154,927911.849562707,0.5545290406104476,28,1,13,370896,78
+318,Non-LGBTQ+,Democrat,Male,64,Master,Business,Other,Christianity,False,House,849717.776253119,672922.5924560227,0.63900780707707,13,3,7,343949,91
+319,Non-LGBTQ+,Republican,Male,70,Bachelor,Law,White,Non-Affiliated/Other,True,House,200593.02212794826,478009.4410615465,1.8018403415337412,34,0,11,260334,71
+320,Non-LGBTQ+,Republican,Male,52,Bachelor,Public Service/Politics,White,Christianity,False,House,536524.2912317166,1052040.9958137625,0.6635776750381864,55,1,7,232511,77
+321,Non-LGBTQ+,Democrat,Female,58,Bachelor,Law,White,Judaism,True,House,910896.3500887646,1011341.9884463192,0.6251432979320439,25,2,8,288930,96
+322,Non-LGBTQ+,Republican,Female,72,Bachelor,Law,Hispanic or Latino,Christianity,False,House,515045.48232494143,768124.941275953,0.5972105478894032,51,2,13,317155,54
+323,Non-LGBTQ+,Republican,Male,75,Bachelor,Public Service/Politics,Other,Christianity,False,House,282432.12565169705,938696.5510390113,0.5900313734466772,45,2,9,184617,127
+324,Non-LGBTQ+,Republican,Male,65,Bachelor,Law,White,Christianity,False,Senate,827460.8507296194,6065122.887791978,0.622478333784398,45,1,7,378666,49
+325,Non-LGBTQ+,Republican,Male,63,Master,Education,White,Christianity,False,Senate,361569.02480213455,6247454.082303041,0.6204139017982847,54,3,6,218799,44
+326,Non-LGBTQ+,Democrat,Male,49,Bachelor,Business,Native American,Christianity,False,House,331108.65766220255,820397.5501898755,1.7333194083809034,20,2,6,540156,108
+327,Non-LGBTQ+,Democrat,Female,61,Bachelor,Public Service/Politics,White,Christianity,False,House,310921.42327637656,760569.4875794251,0.6040099714447223,26,0,12,664695,100
+328,Non-LGBTQ+,Republican,Male,63,Bachelor,Public Service/Politics,White,Christianity,False,House,452716.2465653972,792954.2357446029,0.6382644330155561,40,2,10,323972,90
+329,Non-LGBTQ+,Republican,Male,55,Law,Business,Other,Christianity,False,House,547924.886218369,754130.4005778392,1.1362032674521918,40,2,5,349307,90
+330,Non-LGBTQ+,Democrat,Male,51,Master,Military,White,Christianity,False,House,265086.9992251268,998069.4119277946,0.6310047713900029,22,3,8,347692,84
+331,Non-LGBTQ+,Democrat,Male,45,Master,Public Service/Politics,African American,Non-Affiliated/Other,False,House,293766.47825057857,422591.5878349285,0.6222910741130173,28,2,8,386413,67
+332,LGBTQ+,Republican,Male,40,Bachelor,Law,White,Christianity,True,Senate,353317.3496202927,6607334.64333698,0.6506223437132155,40,0,9,261300,76
+333,Non-LGBTQ+,Democrat,Male,38,Bachelor,Public Service/Politics,White,Judaism,False,House,310167.90332369227,682266.0427110237,1.536978748719849,38,0,6,583975,71
+334,Non-LGBTQ+,Republican,Male,63,Bachelor,Business,Hispanic or Latino,Christianity,False,House,509274.5243339526,688769.2969672544,1.9833369123243123,36,3,11,249439,99
+335,Non-LGBTQ+,Republican,Male,59,Master,Education,White,Non-Affiliated/Other,False,House,598974.4223519083,827333.6121771246,0.6088309291011873,43,1,8,168100,71
+336,Non-LGBTQ+,Democrat,Male,53,Law,Law,Other,Non-Affiliated/Other,True,House,559221.1452257643,919370.0717170266,0.6315547768775687,21,0,9,549658,68
+337,Non-LGBTQ+,Democrat,Male,54,Master,Public Service/Politics,White,Christianity,False,Senate,559628.9880334511,6295909.8403545,2.2453224100295035,40,3,6,480575,78
+338,Non-LGBTQ+,Republican,Male,60,Law,Business,White,Christianity,False,House,1152978.595673124,730420.3277485183,0.547325077334758,46,1,6,239688,85
+339,Non-LGBTQ+,Republican,Male,56,Master,Public Service/Politics,White,Non-Affiliated/Other,True,House,617976.170860272,1051856.5928323988,0.6124914026421021,55,2,16,136102,60
+340,Non-LGBTQ+,Democrat,Male,44,Bachelor,Business,White,Christianity,False,House,739955.6280951318,759482.5018773068,0.6854314375996066,11,1,13,579748,68
+341,Non-LGBTQ+,Republican,Male,67,Law,Law,White,Christianity,False,House,406384.69009068253,789704.0934454938,0.626146005370935,47,3,8,257260,81
+342,Non-LGBTQ+,Democrat,Male,60,Bachelor,Public Service/Politics,White,Christianity,False,House,801601.1538417757,929257.3019488179,2.993365634208848,34,2,13,679516,89
+343,Non-LGBTQ+,Republican,Male,60,Bachelor,Public Service/Politics,White,Non-Affiliated/Other,False,House,396799.78617041546,935715.1220604985,2.62520956528914,45,1,12,246275,62
+344,Non-LGBTQ+,Democrat,Female,66,Bachelor,Business,White,Non-Affiliated/Other,False,Senate,614207.1580573482,5759571.311129015,2.822806231503727,36,0,6,556634,75
+345,Non-LGBTQ+,Democrat,Male,49,Bachelor,Military,Hispanic or Latino,Christianity,True,House,251872.91741292944,393442.05409434694,0.6132971318804554,20,4,6,583182,89
+346,Non-LGBTQ+,Democrat,Male,70,Bachelor,Other,African American,Christianity,False,House,543334.5065453311,718660.4209019922,2.302699335240006,40,1,10,325384,56
+347,Non-LGBTQ+,Republican,Male,56,Bachelor,Public Service/Politics,African American,Christianity,False,Senate,307021.56236503867,6803914.905082882,2.1379053692787195,67,1,9,380835,39
+348,Non-LGBTQ+,Republican,Male,66,Bachelor,Education,White,Christianity,False,House,798412.9347172212,1001998.2301520103,1.9824859740812737,41,3,7,228460,57
+349,Non-LGBTQ+,Democrat,Male,65,Bachelor,Business,White,Non-Affiliated/Other,False,House,774754.5964145842,907677.8211570746,0.6316994688039357,21,2,10,549457,80
+350,Non-LGBTQ+,Republican,Male,47,Bachelor,Business,African American,Christianity,False,House,395952.5594236173,835733.7310385844,0.5779179791556727,59,3,4,282029,82
+351,Non-LGBTQ+,Democrat,Female,62,Bachelor,Education,White,Christianity,False,Senate,1393251.5831297191,9681200.711352624,3.1464080323467924,41,1,8,418522,114
+352,Non-LGBTQ+,Democrat,Male,61,Bachelor,Military,White,Christianity,True,House,433403.40706752485,811001.2786168411,1.405578329927477,20,3,4,684698,102
+353,Non-LGBTQ+,Republican,Male,58,Bachelor,Other,Hispanic or Latino,Judaism,False,House,223318.4206069914,1032153.1031345942,0.6346454149808708,40,0,4,263298,71
+354,Non-LGBTQ+,Republican,Male,56,Master,Law,Hispanic or Latino,Christianity,False,House,338677.7662321739,637739.4033109637,2.8328732126485163,42,1,6,239326,74
+355,Non-LGBTQ+,Democrat,Female,57,Master,Business,White,Christianity,False,Senate,296645.43000508135,5113639.257226431,1.8705126925360502,12,2,9,513851,64
+356,Non-LGBTQ+,Republican,Female,66,Law,Education,White,Christianity,False,House,604504.5212298628,994567.3905510054,1.2911289225401648,35,3,6,288213,74
+357,Non-LGBTQ+,Republican,Female,63,Master,Public Service/Politics,Hispanic or Latino,Christianity,True,House,269596.5507725552,1066069.8101291717,2.6948009252875176,34,2,4,250540,67
+358,Non-LGBTQ+,Democrat,Male,58,Bachelor,Law,White,Christianity,False,House,381839.77770099876,807899.7402529921,2.1056538389963624,18,1,9,588193,91
+359,Non-LGBTQ+,Democrat,Female,42,Master,Business,Hispanic or Latino,Christianity,False,Senate,585159.3385242112,4418975.96264026,0.6347274989107652,25,1,12,331513,68
+360,Non-LGBTQ+,Republican,Male,62,Bachelor,Law,Hispanic or Latino,Christianity,False,House,535891.1412589198,847888.4593955843,1.9120733574531317,47,3,10,212602,87
+361,Non-LGBTQ+,Democrat,Female,65,Bachelor,Public Service/Politics,Hispanic or Latino,Non-Affiliated/Other,False,House,496849.0175168283,956044.2816525162,0.6738379010091353,41,2,13,286120,115
+362,Non-LGBTQ+,Democrat,Male,80,Master,Public Service/Politics,White,Non-Affiliated/Other,False,Senate,532513.5578146363,6718770.206212449,0.6698701373569081,16,1,12,699701,82
+363,Non-LGBTQ+,Republican,Female,68,Bachelor,Military,White,Non-Affiliated/Other,True,House,415448.2466208112,820541.0798192142,0.6161160215519439,54,1,7,349200,85
+364,Non-LGBTQ+,Democrat,Male,38,Master,Public Service/Politics,African American,Christianity,False,House,224243.40034115524,894432.0780452262,0.6572259198634808,23,1,10,562662,98
+365,Non-LGBTQ+,Democrat,Male,58,Law,Business,African American,Non-Affiliated/Other,True,House,410013.04983179766,743088.9485166658,2.044980082985757,25,1,8,398738,76
+366,Non-LGBTQ+,Republican,Male,76,Law,Public Service/Politics,Hispanic or Latino,Christianity,False,House,632059.1557139803,721820.3392395603,0.6129731321878479,51,3,11,369494,80
+367,Non-LGBTQ+,Republican,Female,64,Law,Public Service/Politics,White,Christianity,False,House,466911.90710127295,1014069.1142042298,1.711248808884377,33,2,8,219779,75
+368,Non-LGBTQ+,Democrat,Male,61,Bachelor,Public Service/Politics,White,Christianity,True,House,608107.870604938,939554.915924683,0.6009808276483767,29,2,6,478679,86
+369,Non-LGBTQ+,Democrat,Male,66,Bachelor,Public Service/Politics,Other,Christianity,False,Senate,372865.0595954341,6381943.0495183915,0.9453141361781082,27,2,12,515953,69
+370,Non-LGBTQ+,Republican,Male,51,Bachelor,Healthcare,Hispanic or Latino,Christianity,False,House,822029.3815217837,786762.1867888159,1.5352600484980699,49,2,9,272576,75
+371,LGBTQ+,Republican,Male,62,Bachelor,Public Service/Politics,Other,Christianity,False,House,139274.8285218907,845617.5403114905,1.49298369596909,47,0,6,282190,87
+372,Non-LGBTQ+,Republican,Female,55,Master,Other,Hispanic or Latino,Christianity,False,Senate,536640.4702304828,7131061.325203909,0.628588420493664,69,2,7,284198,111
+373,Non-LGBTQ+,Republican,Male,57,Master,Law,White,Christianity,False,Senate,981466.8830471033,9248354.273690777,0.5757735340860917,38,1,6,242774,98
+374,Non-LGBTQ+,Democrat,Female,66,Master,Business,African American,Christianity,False,Senate,1057282.6484795876,7798258.893608108,0.5770037251968141,20,1,5,566810,128
+375,Non-LGBTQ+,Republican,Male,54,Bachelor,Law,Other,Christianity,False,House,445276.3113261662,758113.1385369694,1.745954363507506,38,1,9,240540,55
+376,Non-LGBTQ+,Republican,Male,76,Bachelor,Business,White,Christianity,True,House,257626.02570767322,803913.7458251708,0.5682259297655695,39,2,12,278965,96
+377,Non-LGBTQ+,Democrat,Female,59,Bachelor,Education,African American,Non-Affiliated/Other,False,House,990138.1903444189,731946.1824293777,2.1462614850447244,19,2,11,549729,88
+378,Non-LGBTQ+,Republican,Male,66,Bachelor,Public Service/Politics,White,Non-Affiliated/Other,False,House,487200.38908963377,885857.5238866598,0.6161779231309522,56,0,9,288142,129
+379,Non-LGBTQ+,Democrat,Male,49,Law,Business,White,Christianity,False,House,461796.04325306526,731807.5194444457,2.4902923779985624,40,2,15,563797,68
+380,Non-LGBTQ+,Republican,Male,71,Bachelor,Healthcare,Hispanic or Latino,Christianity,False,Senate,319955.1334462758,7226377.9093945315,2.3836987120245343,39,1,5,227878,54
+381,Non-LGBTQ+,Republican,Female,78,Bachelor,Military,White,Christianity,True,House,267645.7714721835,402215.85444415535,2.3218269829432554,36,3,12,272936,60
+382,Non-LGBTQ+,Republican,Male,58,Bachelor,Healthcare,White,Non-Affiliated/Other,True,House,662844.009612668,974379.0761572588,1.776246005900598,49,0,10,282670,21
+383,Non-LGBTQ+,Democrat,Female,52,Master,Business,White,Christianity,False,House,698925.2694088658,971519.1673171726,0.5833633337208031,20,0,8,370888,74
+384,Non-LGBTQ+,Democrat,Female,66,Master,Education,White,Christianity,False,House,553012.2202181804,1105342.42745438,1.440725381247333,32,1,12,472596,69
+385,Non-LGBTQ+,Republican,Male,78,Bachelor,Business,White,Christianity,True,House,341239.7152642678,1079773.3393319065,0.5622398298817792,47,1,10,280406,78
+386,Non-LGBTQ+,Democrat,Male,49,Bachelor,Business,White,Christianity,False,House,293567.820011433,754983.1791420752,2.100002103828939,10,1,14,670929,91
+387,Non-LGBTQ+,Democrat,Male,52,Bachelor,Public Service/Politics,Other,Christianity,False,House,244321.2043397869,1059524.8740811264,0.5694703604198935,41,1,13,582490,122
+388,Non-LGBTQ+,Democrat,Male,59,Bachelor,Law,White,Non-Affiliated/Other,False,House,377788.87596208043,847796.6345892308,2.8883471490379726,43,2,16,677238,104
+389,Non-LGBTQ+,Democrat,Male,55,Master,Public Service/Politics,White,Christianity,False,House,302379.03586159315,529873.5641478363,1.956595814277713,19,3,9,460163,73
+390,Non-LGBTQ+,Democrat,Male,55,Master,Business,White,Christianity,True,House,212715.0019559676,950540.9686633956,0.6640227307213911,22,2,15,525019,67
+391,Non-LGBTQ+,Democrat,Male,43,Bachelor,Healthcare,African American,Non-Affiliated/Other,False,Senate,692480.8640914233,5742623.735888098,2.3335892727794176,28,2,7,580574,94
+392,Non-LGBTQ+,Republican,Female,69,Bachelor,Public Service/Politics,White,Non-Affiliated/Other,False,House,258546.6566695464,878088.6534392649,1.498873527005415,48,0,10,133682,41
+393,Non-LGBTQ+,Republican,Female,67,Doctorate,Public Service/Politics,Hispanic or Latino,Christianity,False,House,817760.4449577208,1219212.188961739,0.5974583402567454,51,1,9,325540,120
+394,Non-LGBTQ+,Democrat,Female,47,Bachelor,Public Service/Politics,African American,Christianity,False,House,608893.8518851694,962412.8620039836,0.5288515996900185,46,1,13,313909,108
+395,Non-LGBTQ+,Republican,Male,78,Master,Military,Hispanic or Latino,Christianity,False,Senate,579275.7939505602,5211963.804552042,2.0976284886278354,43,2,12,299847,63
+396,Non-LGBTQ+,Republican,Male,80,Bachelor,Business,White,Non-Affiliated/Other,False,House,1149707.2473781593,1051643.4814987215,1.555470713506465,37,1,8,284342,32
+397,Non-LGBTQ+,Republican,Male,56,Bachelor,Business,African American,Christianity,True,Senate,262882.3993432529,7404066.6160256555,0.5526937488935665,31,1,13,133020,108
+398,Non-LGBTQ+,Republican,Female,75,Bachelor,Education,White,Non-Affiliated/Other,False,House,773939.8028322238,673719.6512620614,2.921650689830594,37,2,10,135547,72
+399,Non-LGBTQ+,Democrat,Male,58,Bachelor,Education,Other,Christianity,False,Senate,430861.55134058965,4416944.867567752,2.6174913193987304,25,3,8,643248,109
+400,Non-LGBTQ+,Republican,Female,65,Doctorate,Business,African American,Christianity,True,House,1808301.3026021915,702128.0198284351,2.6004451176728502,62,1,11,310736,35
+401,Non-LGBTQ+,Republican,Male,55,Bachelor,Law,White,Christianity,False,Senate,413315.35906509426,8043641.577248288,0.6333989329642687,39,2,6,205957,60
+402,Non-LGBTQ+,Democrat,Male,86,Bachelor,Education,White,Christianity,True,House,381249.46717976884,867662.8354564469,0.5475237378666435,28,2,13,411812,85
+403,Non-LGBTQ+,Democrat,Female,61,Bachelor,Law,White,Christianity,False,House,618548.7360203358,892654.4338997789,1.731997424824579,25,2,11,551260,85
+404,Non-LGBTQ+,Republican,Male,65,Bachelor,Public Service/Politics,African American,Christianity,False,House,450407.99714476947,637113.4397480945,1.7697271294816361,56,2,11,249363,63
+405,Non-LGBTQ+,Republican,Female,57,Bachelor,Healthcare,White,Christianity,False,House,342193.5857997216,1033428.1967109411,0.9218750439300107,70,1,10,302720,90
+406,Non-LGBTQ+,Republican,Female,82,Bachelor,Business,White,Non-Affiliated/Other,False,House,307805.9975566655,559218.1599278024,0.5763852899939558,39,1,16,273979,48
+407,LGBTQ+,Republican,Male,82,Master,Public Service/Politics,White,Christianity,False,Senate,1036609.2639907692,5700606.206967162,1.6418938472840643,40,1,15,329152,71
+408,Non-LGBTQ+,Republican,Male,80,Bachelor,Business,African American,Judaism,False,House,279465.0618544897,953372.2751282878,2.0577637015613783,55,2,15,298504,78
+409,Non-LGBTQ+,Republican,Male,73,Bachelor,Public Service/Politics,Hispanic or Latino,Christianity,False,House,559001.3446522717,719877.559405113,0.7079181678967356,51,2,10,286039,87
+410,Non-LGBTQ+,Democrat,Female,57,Law,Public Service/Politics,Hispanic or Latino,Christianity,False,House,847846.977320179,988592.0507888846,1.9668701215736666,44,2,7,464788,99
+411,Non-LGBTQ+,Republican,Male,72,Bachelor,Education,Hispanic or Latino,Christianity,True,House,868576.4361073981,765496.3033729066,0.6054864411209693,50,1,11,228734,46
+412,Non-LGBTQ+,Republican,Male,63,Doctorate,Public Service/Politics,White,Christianity,False,Senate,370103.20431722904,4930170.553356523,1.8249787144162097,41,2,12,247412,36
+413,Non-LGBTQ+,Democrat,Male,77,Bachelor,Business,White,Non-Affiliated/Other,True,House,451021.81025894365,1109615.5521238104,2.4362706925095106,31,3,13,684094,110
+414,Non-LGBTQ+,Democrat,Female,75,Law,Business,African American,Christianity,False,House,409325.77214708965,905756.2152456258,1.3152979353312841,37,0,12,459373,91
+415,Non-LGBTQ+,Democrat,Male,57,Master,Public Service/Politics,White,Christianity,False,House,232083.8472861273,1015377.7135611279,0.6808251184501825,34,1,8,526053,70
+416,Non-LGBTQ+,Democrat,Female,73,Law,Other,White,Christianity,True,House,654169.694774408,1105228.9447316804,0.5948138351667324,31,3,9,275520,116
+417,Non-LGBTQ+,Republican,Female,70,Doctorate,Public Service/Politics,White,Christianity,False,House,509719.16706494393,450477.4086020277,0.5832745172955295,55,1,9,283790,77
+418,Non-LGBTQ+,Republican,Male,36,Bachelor,Business,White,Christianity,False,House,1027517.1515355912,992309.6556824624,2.580024703604138,56,2,12,362860,104
+419,Non-LGBTQ+,Republican,Male,72,Doctorate,Business,White,Non-Affiliated/Other,False,House,331293.7850245585,784966.6863032125,0.5621683494094483,58,2,12,203318,76
+420,Non-LGBTQ+,Republican,Female,59,Bachelor,Public Service/Politics,Other,Non-Affiliated/Other,True,House,861742.3927924574,764779.6781485004,2.4248471222618417,51,2,13,408722,126
+421,Non-LGBTQ+,Republican,Male,55,Bachelor,Public Service/Politics,White,Christianity,False,Senate,892677.3215828829,7175911.308507078,2.8492696347507342,43,2,12,259112,118
+422,Non-LGBTQ+,Republican,Female,55,Bachelor,Law,White,Christianity,False,House,511907.49855173443,856603.8802984935,0.5898246631782741,46,2,5,121353,68
+423,Non-LGBTQ+,Democrat,Male,62,Bachelor,Other,White,Christianity,False,Senate,168878.1270408846,7387969.305524839,3.2500259348740688,38,0,6,461446,104
+424,Non-LGBTQ+,Republican,Male,68,Bachelor,Public Service/Politics,African American,Christianity,False,House,386961.1381227447,870697.0463349102,2.3784648561010053,36,1,10,316522,91
+425,Non-LGBTQ+,Democrat,Female,50,Bachelor,Law,White,Christianity,False,House,1221144.3141998134,908326.403130935,2.386139229774874,29,3,11,699932,112
+426,Non-LGBTQ+,Democrat,Male,65,Bachelor,Law,Other,Christianity,True,House,580062.5741392634,789808.8939250528,2.824949261026405,22,4,14,571810,65
+427,Non-LGBTQ+,Republican,Male,69,Master,Education,Other,Christianity,False,House,707196.0680034715,686360.7884393401,2.9888412329361795,45,1,11,328380,92
+428,Non-LGBTQ+,Democrat,Male,82,Law,Business,White,Christianity,False,House,478197.9688883006,788694.0567776442,0.6112479774247896,38,3,8,382221,106
+429,Non-LGBTQ+,Republican,Male,53,Bachelor,Business,Other,Christianity,False,Senate,447146.6619028662,6446553.277510611,2.472896960247497,46,1,13,215987,31
+430,Non-LGBTQ+,Democrat,Male,60,Bachelor,Business,Other,Christianity,False,House,196553.7270566446,1252654.130211612,0.6595502127307186,26,1,11,332054,61
+431,Non-LGBTQ+,Republican,Male,66,Bachelor,Law,Hispanic or Latino,Christianity,False,House,743952.8855467095,1186894.3713526328,0.5506350833009787,31,3,9,219747,24
+432,Non-LGBTQ+,Democrat,Female,75,Bachelor,Education,Asian American/Pacific Islander,Christianity,False,House,857866.6782707487,760455.5044731139,0.909644958109367,33,2,6,576192,79
+433,Non-LGBTQ+,Republican,Male,60,Bachelor,Public Service/Politics,White,Non-Affiliated/Other,False,House,310808.4965164513,888895.1624076505,1.944187665425597,51,3,11,260633,92
+434,Non-LGBTQ+,Republican,Male,75,Bachelor,Business,White,Christianity,False,House,457227.25255989976,826258.6451775163,0.8948014377241825,66,2,11,293392,112
+435,Non-LGBTQ+,Republican,Male,44,Bachelor,Military,White,Christianity,False,House,427407.31580857525,945399.2109086195,0.5867314398280516,41,0,8,203174,76
+436,Non-LGBTQ+,Republican,Female,51,Doctorate,Education,White,Christianity,False,Senate,616886.3106472102,6934898.062841284,2.1743232471094824,47,2,13,206224,115
+437,Non-LGBTQ+,Republican,Male,67,Bachelor,Other,Other,Non-Affiliated/Other,False,House,380857.88780846476,1016903.9223482033,0.5883644873341729,47,3,13,260231,40
+438,Non-LGBTQ+,Democrat,Female,49,Bachelor,Education,White,Christianity,False,Senate,796540.9655769836,2668828.498205035,1.892187219377659,41,1,11,439735,50
+439,Non-LGBTQ+,Democrat,Male,52,Bachelor,Business,Hispanic or Latino,Christianity,False,House,518152.8399123914,987920.9793718443,0.5574533497273664,25,1,11,630185,83
+440,Non-LGBTQ+,Democrat,Male,58,Bachelor,Law,Hispanic or Latino,Christianity,False,House,139755.79395870402,806242.9952288085,2.4674754073849257,28,2,14,437258,92
+441,Non-LGBTQ+,Republican,Male,71,Bachelor,Law,Asian American/Pacific Islander,Judaism,False,House,623886.3597621255,751159.9559261163,1.3217664034963519,51,1,12,225231,74
+442,Non-LGBTQ+,Democrat,Male,45,Master,Public Service/Politics,Other,Non-Affiliated/Other,False,House,822857.9554972372,1064917.4215813677,0.510567492461309,27,2,9,541884,43
+443,Non-LGBTQ+,Republican,Male,65,Bachelor,Business,White,Christianity,False,House,281062.5572689625,1185979.6144650534,0.5912724071834874,40,2,10,230536,72
+444,Non-LGBTQ+,Republican,Male,74,Bachelor,Law,White,Non-Affiliated/Other,False,Senate,613371.9769884009,7515520.098114436,2.545982033798547,46,1,12,188253,42
+445,Non-LGBTQ+,Democrat,Female,62,No College,Public Service/Politics,White,Non-Affiliated/Other,True,House,1248362.4523163617,828611.9302141981,0.603498851629884,36,2,5,390064,98
+446,Non-LGBTQ+,Democrat,Male,60,Law,Education,White,Non-Affiliated/Other,False,House,528816.3917182133,684367.763462801,1.2590647187236996,15,2,8,553777,92
+447,Non-LGBTQ+,Republican,Male,68,Master,Law,White,Christianity,False,Senate,884853.8858005338,2856204.1683933954,0.6044406335270385,46,1,13,182064,51
+448,Non-LGBTQ+,Democrat,Male,62,Bachelor,Other,White,Christianity,False,Senate,400827.2807925403,7161030.741726294,0.6187610858566941,18,1,14,639716,74
+449,Non-LGBTQ+,Republican,Male,77,Master,Public Service/Politics,Hispanic or Latino,Christianity,False,House,495529.03736067197,982271.6798908035,2.0356847809730647,56,1,14,215480,48
+450,Non-LGBTQ+,Republican,Male,52,Bachelor,Public Service/Politics,White,Judaism,False,House,451374.5372783003,859713.3486701595,1.816084606559206,29,1,13,280811,73
+451,Non-LGBTQ+,Republican,Male,63,Bachelor,Law,White,Christianity,True,House,412010.1089143566,1046123.0980786434,2.2805435814048844,39,0,11,218479,98
+452,Non-LGBTQ+,Republican,Male,66,Bachelor,Public Service/Politics,African American,Christianity,False,House,464400.3836209908,684316.9770623464,0.5260852624192193,48,1,8,204238,50
+453,Non-LGBTQ+,Republican,Female,60,Bachelor,Law,White,Christianity,True,House,221244.23077614798,891128.2073502863,0.5620392258892912,60,1,10,262305,87
+454,Non-LGBTQ+,Democrat,Male,35,Bachelor,Education,White,Judaism,False,House,423760.3279879397,832994.6077619847,1.172183296560031,25,2,5,605178,74
+455,Non-LGBTQ+,Democrat,Male,62,Bachelor,Public Service/Politics,Hispanic or Latino,Non-Affiliated/Other,False,House,976047.5711284443,858229.217321713,2.8141338955217634,20,2,15,475263,69
+456,LGBTQ+,Republican,Female,73,Doctorate,Business,African American,Christianity,False,House,308821.3857104294,1132178.9188438985,0.6304152470159395,63,1,8,246726,72
+457,Non-LGBTQ+,Republican,Female,71,Law,Business,Hispanic or Latino,Non-Affiliated/Other,True,House,293401.34875605075,903079.6191744178,0.6079818274223422,30,2,9,290371,49
+458,Non-LGBTQ+,Democrat,Male,67,Master,Business,White,Christianity,False,House,515539.6850590184,868888.5783731397,0.538338771599927,4,1,14,584053,73
+459,Non-LGBTQ+,Democrat,Female,53,Bachelor,Military,Asian American/Pacific Islander,Non-Affiliated/Other,False,House,528582.9095444148,709443.9541219092,2.440252387012441,30,1,6,496151,61
+460,Non-LGBTQ+,Republican,Male,67,Law,Education,African American,Christianity,False,House,603858.837546977,1117193.0853436675,2.837742097426623,39,1,7,227826,124
+461,Non-LGBTQ+,Democrat,Male,58,Bachelor,Law,White,Christianity,False,Senate,472358.7742731107,4653250.95317739,2.333420771945933,15,2,12,508266,85
+462,Non-LGBTQ+,Republican,Male,67,Master,Law,African American,Non-Affiliated/Other,False,House,518292.720763805,822411.3215996608,0.5986022969633887,52,2,12,240454,57
+463,Non-LGBTQ+,Democrat,Male,65,Bachelor,Business,Asian American/Pacific Islander,Christianity,True,House,419542.86909159773,1182957.4525653536,2.370684821542749,28,1,10,531297,89
+464,Non-LGBTQ+,Republican,Male,54,Master,Military,White,Non-Affiliated/Other,False,House,264200.9587000482,1006235.0131650713,0.6117195938668519,39,1,11,190286,72
+465,Non-LGBTQ+,Democrat,Female,55,Bachelor,Law,White,Christianity,True,House,482466.826123349,874416.9831815762,2.5528232874005585,13,1,15,527718,80
+466,Non-LGBTQ+,Republican,Male,67,Law,Law,Other,Christianity,True,House,718313.8543898725,925855.7895069262,0.6385750463331648,53,3,13,214085,90
+467,Non-LGBTQ+,Democrat,Male,61,Law,Healthcare,Hispanic or Latino,Christianity,False,House,646863.5731476063,751603.1817877879,0.5906879806313257,32,1,12,590589,100
+468,Non-LGBTQ+,Democrat,Male,55,Bachelor,Public Service/Politics,White,Christianity,False,House,209031.9340838673,909616.3154378406,0.5719727324629822,25,2,13,432753,74
+469,Non-LGBTQ+,Republican,Female,54,Bachelor,Education,African American,Christianity,False,Senate,567119.9197695229,6113046.971014216,1.7324036761037547,63,1,10,217245,60
+470,LGBTQ+,Democrat,Male,60,Doctorate,Public Service/Politics,White,Christianity,False,House,319968.750229903,910381.9283897056,2.3113652743969113,15,2,17,544540,79
+471,Non-LGBTQ+,Republican,Male,79,Bachelor,Business,White,Christianity,False,House,1002939.1328570987,606925.3310750694,1.7697667240321948,29,2,4,250711,17
+472,Non-LGBTQ+,Democrat,Male,58,Law,Business,White,Christianity,True,House,588597.7362999668,993564.5809106726,0.5681456781679213,19,1,15,727665,54
+473,Non-LGBTQ+,Republican,Male,63,Bachelor,Other,Other,Non-Affiliated/Other,True,House,782700.467801695,1104944.5609917308,0.6000594095541155,44,2,13,168535,109
+474,Non-LGBTQ+,Democrat,Female,65,Bachelor,Healthcare,Other,Non-Affiliated/Other,True,House,505320.14081642474,885263.0569904918,0.6472507510453892,28,4,11,510985,117
