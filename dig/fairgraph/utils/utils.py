@@ -1,6 +1,7 @@
 import numpy as np
 import scipy.sparse as sp
 import torch
+from sklearn.metrics import classification_report
 
 def scipysp_to_pytorchsp(sp_mx):
     """ converts scipy sparse matrix to pytorch sparse matrix """
@@ -36,6 +37,6 @@ def fair_metric(output,idx, labels, sens):
     #print("preds", pred_y)
     parity = abs(sum(pred_y[idx_s0])/sum(idx_s0)-sum(pred_y[idx_s1])/sum(idx_s1))
     equality = abs(sum(pred_y[idx_s0_y1])/sum(idx_s0_y1)-sum(pred_y[idx_s1_y1])/sum(idx_s1_y1))
-
-    return parity,equality
+    cr = classification_report(val_y, pred_y)
+    return parity,equality, cr
 
