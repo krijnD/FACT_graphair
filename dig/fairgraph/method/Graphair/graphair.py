@@ -127,7 +127,7 @@ class graphair(nn.Module):
         adj_norm = scipysp_to_pytorchsp(adj_norm)
     
         adj = adj_norm.cuda()
-        print("adj", adj)
+        #print("adj", adj)
         return self.f_encoder(adj,x)
 
     def fit_whole(self, epochs, adj, x,sens,idx_sens,warmup=None, adv_epoches=1):
