@@ -217,7 +217,16 @@ of congress member demographics for machine learning and data analysis purposes.
     - Description: The cleaned numeric value of the individual's average net worth for
 
 
-
+Generated
+LGBTQ+ identification is rare, with 11 members identifying as LGBTQ+ and 464 as Non-LGBTQ+.
+Political party affiliations are nearly evenly split, with 231 Democrats and 244 Republicans.
+Gender representation shows 144 female and 331 male members.
+Educational achievements vary, with a notable number holding Bachelor's degrees (285 members), while Doctorates (22) and Law degrees (72) are less common.
+Occupation backgrounds are diverse, including Business (117), Education (60), Healthcare (19), Law (82), Military (18), Public Service/Politics (146), and others.
+Racial and ethnic diversity includes African American (69), Asian American/Pacific Islander (17), Hispanic or Latino (58), Native American (5), and White (278) members.
+Religious affiliations are primarily Christian (339), with smaller representations of Hinduism (4), Islam (7), Judaism (22), and Non-Affiliated/Other (103).
+Military service is reported by 97 members.
+Chamber representation is divided between the House (375) and Senate (100).
 ### Feature Dataset: encoded_data.csv
 For utilization in our project (and generally)  we transformed 
 all the categorical variables gathered in `full_with_ed.csv` into various
