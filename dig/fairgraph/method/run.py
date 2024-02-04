@@ -14,6 +14,12 @@ def parse_args():
                         help='Dataset to use for training and evaluation.')
     parser.add_argument('--sens_att', type=str, default=None,
                         help='For Congress which attribute to focus on')
+    parser.add_argument('--fm', type=bool, default=True,
+                        help='Do feature masking')
+    parser.add_argument('--ep', type=bool, default=True,
+                        help='Do edge perturbation')
+    parser.add_argument('--with_fair', type=bool, default=True,
+                        help='Optimize with fair metrics')
     args = parser.parse_args()
     return args
 
@@ -36,7 +42,7 @@ class run():
         pass
 
     def run(self, device, dataset, model='Graphair', epochs=10_000, test_epochs=1_000,
-            lr=1e-4, weight_decay=1e-5):
+            lr=1e-4, weight_decay=1e-5, fm = True, ep=True, with_fair=True):
         r""" This method runs training and evaluation for a fairgraph model on the given dataset.
         Check :obj:`examples.fairgraph.Graphair.run_graphair_nba.py` for examples on how to run the Graphair model.
 
@@ -92,7 +98,7 @@ class run():
 
         # generate model
         if model == 'Graphair':
-            aug_model = aug_module(features, n_hidden=64, temperature=1).to(device)
+            aug_model = aug_module(features, n_hidden=64, temperature=1,  FM=fm, EP=ep).to(device)
             f_encoder = GCN_Body(in_feats=features.shape[1], n_hidden=64, out_feats=64, dropout=0.1, nlayer=2).to(
                 device)
             sens_model = GCN(in_feats=features.shape[1], n_hidden=64, out_feats=64, nclass=1).to(device)
@@ -106,7 +112,7 @@ class run():
 
         # call fit_whole
         st_time = time.time()
-        model.fit_whole(epochs=epochs, adj=adj, x=features, sens=sens, idx_sens=idx_sens, warmup=50, adv_epoches=1)
+        model.fit_whole(epochs=epochs, adj=adj, x=features, sens=sens, idx_sens=idx_sens, warmup=50, adv_epoches=1, with_fair=with_fair)
         print("Training time: ", time.time() - st_time)
         st_time = time.time()
 
@@ -134,4 +140,4 @@ if __name__ == '__main__':
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     run_fairgraph = run()
     run_fairgraph.run(device, dataset=dataset, model='Graphair', epochs=1000, test_epochs=1000,
-                      lr=1e-3, weight_decay=1e-5)
+                      lr=1e-3, weight_decay=1e-5, fm = args.fm, ep=args.ep, with_fair=args.with_fair)

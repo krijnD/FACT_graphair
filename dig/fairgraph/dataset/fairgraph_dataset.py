@@ -293,7 +293,7 @@ class CNG():
     @property
     def raw_paths(self):
         # Paths to the raw data files relative to `self.root`
-        return [ "encoded_data.csv", "congress.edgelist"]
+        return [ "encoded_congress.csv", "congress.edgelist"]
 
     # def preprocess_vectors(self, df):
     #     # Dropping first and last name vector

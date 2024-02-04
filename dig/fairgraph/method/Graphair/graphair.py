@@ -131,7 +131,7 @@ class graphair(nn.Module):
         #print("adj", adj)
         return self.f_encoder(adj,x)
 
-    def fit_whole(self, epochs, adj, x,sens,idx_sens,warmup=None, adv_epoches=1):
+    def fit_whole(self, epochs, adj, x,sens,idx_sens,warmup=None, adv_epoches=1, with_fair=True):
         assert sp.issparse(adj)
         if not isinstance(adj, sp.coo_matrix):
             adj = sp.coo_matrix(adj)
@@ -198,7 +198,10 @@ class graphair(nn.Module):
 
             feat_loss =  self.criterion_recons(x_aug, x)
             recons_loss =  edge_loss + self.lam * feat_loss
-            loss = self.beta * contrastive_loss + self.gamma * recons_loss - self.alpha * senloss
+            if with_fair:
+                loss = self.beta * contrastive_loss + self.gamma * recons_loss - self.alpha * senloss
+            else:
+                loss = self.beta * contrastive_loss + self.gamma * recons_loss
             self.optimizer.zero_grad()
             loss.backward()
             self.optimizer.step()
@@ -377,11 +380,12 @@ class graphair(nn.Module):
 
                 parity_val, equality_val, _ = fair_metric(output,idx_val, labels, sens)
                 parity_test, equality_test, cr = fair_metric(output,idx_test, labels, sens)
-                print(cr)
+
                 if epoch%10==0:
                     print("Epoch [{}] Test set results:".format(epoch),
                         "acc_test= {:.4f}".format(acc_test.item()),
                         "acc_val: {:.4f}".format(acc_val.item()),
+                        "acc_train: {:.4f}".format(acc_train.item()),
                         "dp_val: {:.4f}".format(parity_val),
                         "dp_test: {:.4f}".format(parity_test),
                         "eo_val: {:.4f}".format(equality_val),
@@ -402,6 +406,7 @@ class graphair(nn.Module):
                         "dp_test: {:.4f}".format(best_dp_test),
                         "eo_val: {:.4f}".format(best_eo),
                         "eo_test: {:.4f}".format(best_eo_test),)
+            print(cr)
         
             acc_list.append(best_test.item())
             dp_list.append(best_dp_test)

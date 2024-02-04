@@ -7,13 +7,15 @@ from .GCN import GCN_Body
 
 
 class aug_module(torch.nn.Module):
-    def __init__(self, features, n_hidden=64, temperature=1) -> None:
+    def __init__(self, features, n_hidden=64, temperature=1, FM=True, EP=True) -> None:
         super(aug_module,self).__init__()
         self.g_encoder = GCN_Body(in_feats = features.shape[1], n_hidden = n_hidden, out_feats = n_hidden, dropout = 0.1, nlayer = 1)
         self.Aaug = MLPA(in_feats = n_hidden, dim_h = n_hidden, dim_z =features.shape[1])
         self.Xaug = MLPX(in_feats = n_hidden, n_hidden = n_hidden, out_feats = features.shape[1], dropout = 0.1)
         
         self.temperature = temperature
+        self.fm = FM
+        self.ep = EP
         
 
     
@@ -29,17 +31,26 @@ class aug_module(torch.nn.Module):
             edge_probs = alpha*edge_probs + (1-alpha)*adj_orig
 
         # sampling
-        adj_sampled = pyro.distributions.RelaxedBernoulliStraightThrough(temperature=self.temperature, probs=edge_probs).rsample()
-        # making adj_sampled symmetric
-        adj_sampled = adj_sampled.triu(1)
-        adj_sampled = adj_sampled + adj_sampled.T
-        adj_sampled = self.normalize_adj(adj_sampled)
+        if self.ep is False:
+            adj_sampled = adj
+            adj_logits = torch.zeros_like(adj)
+        else:
+            adj_sampled = pyro.distributions.RelaxedBernoulliStraightThrough(temperature=self.temperature, probs=edge_probs).rsample()
+            # making adj_sampled symmetric
+            adj_sampled = adj_sampled.triu(1)
+            adj_sampled = adj_sampled + adj_sampled.T
+            adj_sampled = self.normalize_adj(adj_sampled)
 
-        # Node feature masking
-        mask_logits = self.Xaug(h)
-        mask_probs = torch.sigmoid(mask_logits)
-        mask = pyro.distributions.RelaxedBernoulliStraightThrough(temperature=self.temperature, probs=mask_probs).rsample()
-        x_new = x * mask
+        if self.fm is False:
+            x_new = x
+        else:
+            # Node feature masking
+            mask_logits = self.Xaug(h)
+            mask_probs = torch.sigmoid(mask_logits)
+            mask = pyro.distributions.RelaxedBernoulliStraightThrough(temperature=self.temperature, probs=mask_probs).rsample()
+            x_new = x * mask
+
+
 
         return adj_sampled, x_new, adj_logits
     
