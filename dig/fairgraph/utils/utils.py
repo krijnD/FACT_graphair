@@ -37,6 +37,6 @@ def fair_metric(output,idx, labels, sens):
     #print("preds", pred_y)
     parity = abs(sum(pred_y[idx_s0])/sum(idx_s0)-sum(pred_y[idx_s1])/sum(idx_s1))
     equality = abs(sum(pred_y[idx_s0_y1])/sum(idx_s0_y1)-sum(pred_y[idx_s1_y1])/sum(idx_s1_y1))
-    #cr = classification_report(val_y, pred_y)
-    return parity,equality #, cr
+    cr = classification_report(val_y, pred_y, zero_division=0.0)
+    return parity,equality, cr
 

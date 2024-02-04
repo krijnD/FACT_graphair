@@ -378,8 +378,8 @@ class graphair(nn.Module):
                 acc_val = accuracy(output[idx_val], labels[idx_val])
                 acc_test = accuracy(output[idx_test], labels[idx_test])
 
-                parity_val, equality_val = fair_metric(output,idx_val, labels, sens)
-                parity_test, equality_test = fair_metric(output,idx_test, labels, sens)
+                parity_val, equality_val, _ = fair_metric(output,idx_val, labels, sens)
+                parity_test, equality_test, cr = fair_metric(output,idx_test, labels, sens)
 
                 if epoch%50==0:
                     print("Epoch [{}] Test set results:".format(epoch),
@@ -390,6 +390,7 @@ class graphair(nn.Module):
                         "dp_test: {:.4f}".format(parity_test),
                         "eo_val: {:.4f}".format(equality_val),
                         "eo_test: {:.4f}".format(equality_test), )
+                    print(cr)
                 if acc_val > best_acc:
                     best_acc = acc_val
                     best_test = acc_test
