@@ -1,3 +1,3 @@
-from .fairgraph_dataset import POKEC, NBA, CNG
+from .fairgraph_dataset import POKEC, NBA, CNG, RCNG
 
-__all_ = [POKEC,NBA, CNG]
+__all_ = [POKEC,NBA, CNG, RCNG]
