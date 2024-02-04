@@ -381,7 +381,7 @@ class graphair(nn.Module):
                 parity_val, equality_val = fair_metric(output,idx_val, labels, sens)
                 parity_test, equality_test = fair_metric(output,idx_test, labels, sens)
 
-                if epoch%10==0:
+                if epoch%50==0:
                     print("Epoch [{}] Test set results:".format(epoch),
                         "acc_test= {:.4f}".format(acc_test.item()),
                         "acc_val: {:.4f}".format(acc_val.item()),
