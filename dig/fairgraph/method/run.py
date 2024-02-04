@@ -139,5 +139,5 @@ if __name__ == '__main__':
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     run_fairgraph = run()
-    run_fairgraph.run(device, dataset=dataset, model='Graphair', epochs=1000, test_epochs=1000,
+    run_fairgraph.run(device, dataset=dataset, model='Graphair', epochs=1000, test_epochs=500,
                       lr=1e-3, weight_decay=1e-5, fm = args.fm, ep=args.ep, with_fair=args.with_fair)
