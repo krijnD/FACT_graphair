@@ -146,6 +146,10 @@ class run():
         dataset_name = dataset.name
 
         features = dataset.features
+
+        if dataset_name=='POKEC_Z' or dataset_name=='POKEC_N':
+            minibatch = dataset.minibatch
+
         sens = dataset.sens
         adj = dataset.adj
         idx_sens = dataset.idx_sens_train
@@ -163,13 +167,20 @@ class run():
         else:
             raise Exception('At this moment, only Graphair is supported!')
 
-        # call fit_whole
-        st_time = time.time()
-        model.fit_whole(epochs=epochs, adj=adj, x=features, sens=sens, idx_sens=idx_sens, warmup=0, adv_epoches=1)
-        print("Training time: ", time.time() - st_time)
-        # Log GPU usage after training
-        log_gpu_usage()
-        adj_old = deepcopy(adj)
+        if dataset_name=='POKEC_Z' or dataset_name=='POKEC_N':
+            # call fit_batch_GraphSAINT
+            st_time = time.time()
+            model.fit_batch_GraphSAINT(epochs=epochs,adj=adj, x=features,sens=sens,idx_sens = idx_sens,minibatch=minibatch, warmup=0, adv_epoches=1)
+            print("Training time: ", time.time() - st_time)
+
+        if dataset_name=='NBA':
+            # call fit_whole
+            st_time = time.time()
+            model.fit_whole(epochs=epochs, adj=adj, x=features, sens=sens, idx_sens=idx_sens, warmup=0, adv_epoches=1)
+            print("Training time: ", time.time() - st_time)
+            # Log GPU usage after training
+            log_gpu_usage()
+            adj_old = deepcopy(adj)
 
 
         #********REPRODUCE FIGURES*********
