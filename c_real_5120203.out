@@ -1,0 +1,1706 @@
+============================================================================================== 
+Warning! Mixing Conda and module environments may lead to corruption of the
+user environment. 
+We do not recommend users mixing those two environments unless absolutely
+necessary. Note that 
+SURF does not provide any support for Conda environment.
+For more information, please refer to our software policy page:
+https://servicedesk.surf.nl/wiki/display/WIKI/Software+policy+Snellius#SoftwarepolicySnelliusandLisa-UseofAnacondaandMinicondaenvironmentsonSnellius 
+
+Remember that many packages have already been installed on the system and can
+be loaded using 
+the 'module load <package__name>' command. If you are uncertain if a package is
+already available 
+on the system, please use 'module avail' or 'module spider' to search for it.
+============================================================================================== 
+Processing /gpfs/home5/igardner/DIG_FACT
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: scipy in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (1.10.1)
+Requirement already satisfied: cilog in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (1.3.0)
+Requirement already satisfied: typed-argument-parser==1.7.2 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (1.7.2)
+Requirement already satisfied: captum==0.2.0 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (0.2.0)
+Requirement already satisfied: munch in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (4.0.0)
+Requirement already satisfied: gdown in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (4.7.1)
+Requirement already satisfied: shap in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (0.44.0)
+Requirement already satisfied: IPython in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (8.12.3)
+Requirement already satisfied: tqdm in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (4.66.1)
+Requirement already satisfied: rdkit-pypi in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (2022.9.5)
+Requirement already satisfied: pandas in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (2.0.3)
+Requirement already satisfied: sympy in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (1.12)
+Requirement already satisfied: pyscf>=1.7.6 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (2.4.0)
+Requirement already satisfied: hydra-core in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from dive-into-graphs==1.0.0) (1.3.2)
+Requirement already satisfied: matplotlib in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from captum==0.2.0->dive-into-graphs==1.0.0) (3.7.4)
+Requirement already satisfied: numpy in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from captum==0.2.0->dive-into-graphs==1.0.0) (1.24.4)
+Requirement already satisfied: torch>=1.2 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from captum==0.2.0->dive-into-graphs==1.0.0) (2.1.2)
+Requirement already satisfied: typing-extensions>=3.7.4 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from typed-argument-parser==1.7.2->dive-into-graphs==1.0.0) (4.9.0)
+Requirement already satisfied: typing-inspect>=0.7.1 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from typed-argument-parser==1.7.2->dive-into-graphs==1.0.0) (0.9.0)
+Requirement already satisfied: h5py>=2.7 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from pyscf>=1.7.6->dive-into-graphs==1.0.0) (3.10.0)
+Requirement already satisfied: setuptools in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from pyscf>=1.7.6->dive-into-graphs==1.0.0) (68.2.2)
+Requirement already satisfied: tabulate in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from cilog->dive-into-graphs==1.0.0) (0.9.0)
+Requirement already satisfied: openpyxl in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from cilog->dive-into-graphs==1.0.0) (3.1.2)
+Requirement already satisfied: filelock in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from gdown->dive-into-graphs==1.0.0) (3.13.1)
+Requirement already satisfied: requests[socks] in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from gdown->dive-into-graphs==1.0.0) (2.31.0)
+Requirement already satisfied: six in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from gdown->dive-into-graphs==1.0.0) (1.16.0)
+Requirement already satisfied: beautifulsoup4 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from gdown->dive-into-graphs==1.0.0) (4.12.2)
+Requirement already satisfied: omegaconf<2.4,>=2.2 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from hydra-core->dive-into-graphs==1.0.0) (2.3.0)
+Requirement already satisfied: antlr4-python3-runtime==4.9.* in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from hydra-core->dive-into-graphs==1.0.0) (4.9.3)
+Requirement already satisfied: packaging in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from hydra-core->dive-into-graphs==1.0.0) (23.2)
+Requirement already satisfied: importlib-resources in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from hydra-core->dive-into-graphs==1.0.0) (6.1.1)
+Requirement already satisfied: backcall in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from IPython->dive-into-graphs==1.0.0) (0.2.0)
+Requirement already satisfied: decorator in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from IPython->dive-into-graphs==1.0.0) (5.1.1)
+Requirement already satisfied: jedi>=0.16 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from IPython->dive-into-graphs==1.0.0) (0.19.1)
+Requirement already satisfied: matplotlib-inline in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from IPython->dive-into-graphs==1.0.0) (0.1.6)
+Requirement already satisfied: pickleshare in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from IPython->dive-into-graphs==1.0.0) (0.7.5)
+Requirement already satisfied: prompt-toolkit!=3.0.37,<3.1.0,>=3.0.30 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from IPython->dive-into-graphs==1.0.0) (3.0.43)
+Requirement already satisfied: pygments>=2.4.0 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from IPython->dive-into-graphs==1.0.0) (2.17.2)
+Requirement already satisfied: stack-data in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from IPython->dive-into-graphs==1.0.0) (0.6.3)
+Requirement already satisfied: traitlets>=5 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from IPython->dive-into-graphs==1.0.0) (5.14.1)
+Requirement already satisfied: pexpect>4.3 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from IPython->dive-into-graphs==1.0.0) (4.9.0)
+Requirement already satisfied: python-dateutil>=2.8.2 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from pandas->dive-into-graphs==1.0.0) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from pandas->dive-into-graphs==1.0.0) (2023.3.post1)
+Requirement already satisfied: tzdata>=2022.1 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from pandas->dive-into-graphs==1.0.0) (2023.4)
+Requirement already satisfied: Pillow in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from rdkit-pypi->dive-into-graphs==1.0.0) (8.3.2)
+Requirement already satisfied: scikit-learn in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from shap->dive-into-graphs==1.0.0) (1.3.2)
+Requirement already satisfied: slicer==0.0.7 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from shap->dive-into-graphs==1.0.0) (0.0.7)
+Requirement already satisfied: numba in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from shap->dive-into-graphs==1.0.0) (0.58.1)
+Requirement already satisfied: cloudpickle in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from shap->dive-into-graphs==1.0.0) (3.0.0)
+Requirement already satisfied: mpmath>=0.19 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from sympy->dive-into-graphs==1.0.0) (1.3.0)
+Requirement already satisfied: parso<0.9.0,>=0.8.3 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from jedi>=0.16->IPython->dive-into-graphs==1.0.0) (0.8.3)
+Requirement already satisfied: PyYAML>=5.1.0 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from omegaconf<2.4,>=2.2->hydra-core->dive-into-graphs==1.0.0) (6.0.1)
+Requirement already satisfied: ptyprocess>=0.5 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from pexpect>4.3->IPython->dive-into-graphs==1.0.0) (0.7.0)
+Requirement already satisfied: wcwidth in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from prompt-toolkit!=3.0.37,<3.1.0,>=3.0.30->IPython->dive-into-graphs==1.0.0) (0.2.13)
+Requirement already satisfied: networkx in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (3.1)
+Requirement already satisfied: jinja2 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (3.1.3)
+Requirement already satisfied: fsspec in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (2023.12.2)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.1.105 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (12.1.105)
+Requirement already satisfied: nvidia-cuda-runtime-cu12==12.1.105 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (12.1.105)
+Requirement already satisfied: nvidia-cuda-cupti-cu12==12.1.105 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (12.1.105)
+Requirement already satisfied: nvidia-cudnn-cu12==8.9.2.26 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (8.9.2.26)
+Requirement already satisfied: nvidia-cublas-cu12==12.1.3.1 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (12.1.3.1)
+Requirement already satisfied: nvidia-cufft-cu12==11.0.2.54 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (11.0.2.54)
+Requirement already satisfied: nvidia-curand-cu12==10.3.2.106 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (10.3.2.106)
+Requirement already satisfied: nvidia-cusolver-cu12==11.4.5.107 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (11.4.5.107)
+Requirement already satisfied: nvidia-cusparse-cu12==12.1.0.106 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (12.1.0.106)
+Requirement already satisfied: nvidia-nccl-cu12==2.18.1 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (2.18.1)
+Requirement already satisfied: nvidia-nvtx-cu12==12.1.105 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (12.1.105)
+Requirement already satisfied: triton==2.1.0 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (2.1.0)
+Requirement already satisfied: nvidia-nvjitlink-cu12 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from nvidia-cusolver-cu12==11.4.5.107->torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (12.3.101)
+Requirement already satisfied: mypy-extensions>=0.3.0 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from typing-inspect>=0.7.1->typed-argument-parser==1.7.2->dive-into-graphs==1.0.0) (1.0.0)
+Requirement already satisfied: soupsieve>1.2 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from beautifulsoup4->gdown->dive-into-graphs==1.0.0) (2.5)
+Requirement already satisfied: zipp>=3.1.0 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from importlib-resources->hydra-core->dive-into-graphs==1.0.0) (3.17.0)
+Requirement already satisfied: contourpy>=1.0.1 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from matplotlib->captum==0.2.0->dive-into-graphs==1.0.0) (1.1.1)
+Requirement already satisfied: cycler>=0.10 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from matplotlib->captum==0.2.0->dive-into-graphs==1.0.0) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from matplotlib->captum==0.2.0->dive-into-graphs==1.0.0) (4.47.2)
+Requirement already satisfied: kiwisolver>=1.0.1 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from matplotlib->captum==0.2.0->dive-into-graphs==1.0.0) (1.4.5)
+Requirement already satisfied: pyparsing>=2.3.1 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from matplotlib->captum==0.2.0->dive-into-graphs==1.0.0) (3.1.1)
+Requirement already satisfied: llvmlite<0.42,>=0.41.0dev0 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from numba->shap->dive-into-graphs==1.0.0) (0.41.1)
+Requirement already satisfied: importlib-metadata in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from numba->shap->dive-into-graphs==1.0.0) (7.0.1)
+Requirement already satisfied: et-xmlfile in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from openpyxl->cilog->dive-into-graphs==1.0.0) (1.1.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from requests[socks]->gdown->dive-into-graphs==1.0.0) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from requests[socks]->gdown->dive-into-graphs==1.0.0) (3.6)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from requests[socks]->gdown->dive-into-graphs==1.0.0) (2.1.0)
+Requirement already satisfied: certifi>=2017.4.17 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from requests[socks]->gdown->dive-into-graphs==1.0.0) (2023.11.17)
+Requirement already satisfied: PySocks!=1.5.7,>=1.5.6 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from requests[socks]->gdown->dive-into-graphs==1.0.0) (1.7.1)
+Requirement already satisfied: joblib>=1.1.1 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from scikit-learn->shap->dive-into-graphs==1.0.0) (1.3.2)
+Requirement already satisfied: threadpoolctl>=2.0.0 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from scikit-learn->shap->dive-into-graphs==1.0.0) (3.2.0)
+Requirement already satisfied: executing>=1.2.0 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from stack-data->IPython->dive-into-graphs==1.0.0) (2.0.1)
+Requirement already satisfied: asttokens>=2.1.0 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from stack-data->IPython->dive-into-graphs==1.0.0) (2.4.1)
+Requirement already satisfied: pure-eval in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from stack-data->IPython->dive-into-graphs==1.0.0) (0.2.2)
+Requirement already satisfied: MarkupSafe>=2.0 in /gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages (from jinja2->torch>=1.2->captum==0.2.0->dive-into-graphs==1.0.0) (2.1.3)
+Building wheels for collected packages: dive-into-graphs
+  Building wheel for dive-into-graphs (setup.py): started
+  Building wheel for dive-into-graphs (setup.py): finished with status 'done'
+  Created wheel for dive-into-graphs: filename=dive_into_graphs-1.0.0-py3-none-any.whl size=4298090 sha256=a89ce8137b40f8099180fed6b2d3f2ac2f705f9d3ae0980c82497a53d180643e
+  Stored in directory: /gpfs/scratch1/nodespecific/gcn32/igardner.5120203/pip-ephem-wheel-cache-rpb65hof/wheels/f2/a5/44/8e74a178bc5e0574bbc1a498340d5eabccec7f25ee69384396
+Successfully built dive-into-graphs
+Installing collected packages: dive-into-graphs
+  Attempting uninstall: dive-into-graphs
+    Found existing installation: dive-into-graphs 1.0.0
+    Uninstalling dive-into-graphs-1.0.0:
+      Successfully uninstalled dive-into-graphs-1.0.0
+Successfully installed dive-into-graphs-1.0.0
+real c
+Loading RCNG dataset from /gpfs/home5/igardner/DIG_FACT/dig/fairgraph/method/benchmark_dataset/encoded_data.csv
+/gpfs/home5/igardner/thesis/env/dig/lib/python3.8/site-packages/dig/fairgraph/utils/utils.py:13: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:605.)
+  pyt_sp_mx = torch.sparse.FloatTensor(torch.LongTensor(coords.T),
+edge reconstruction loss: 1.1244 feature reconstruction loss: 0.4931
+edge reconstruction loss: 0.8246 feature reconstruction loss: 0.4994
+edge reconstruction loss: 0.6468 feature reconstruction loss: 0.4915
+edge reconstruction loss: 0.5535 feature reconstruction loss: 0.4872
+edge reconstruction loss: 0.5039 feature reconstruction loss: 0.4904
+edge reconstruction loss: 0.4764 feature reconstruction loss: 0.4816
+edge reconstruction loss: 0.4641 feature reconstruction loss: 0.4763
+edge reconstruction loss: 0.4591 feature reconstruction loss: 0.4714
+edge reconstruction loss: 0.4565 feature reconstruction loss: 0.4714
+edge reconstruction loss: 0.4514 feature reconstruction loss: 0.4682
+edge reconstruction loss: 0.4462 feature reconstruction loss: 0.4610
+edge reconstruction loss: 0.4423 feature reconstruction loss: 0.4556
+edge reconstruction loss: 0.4368 feature reconstruction loss: 0.4566
+edge reconstruction loss: 0.4316 feature reconstruction loss: 0.4552
+edge reconstruction loss: 0.4276 feature reconstruction loss: 0.4409
+edge reconstruction loss: 0.4234 feature reconstruction loss: 0.4410
+edge reconstruction loss: 0.4212 feature reconstruction loss: 0.4309
+edge reconstruction loss: 0.4184 feature reconstruction loss: 0.4241
+edge reconstruction loss: 0.4164 feature reconstruction loss: 0.4160
+edge reconstruction loss: 0.4138 feature reconstruction loss: 0.4026
+edge reconstruction loss: 0.4102 feature reconstruction loss: 0.3965
+edge reconstruction loss: 0.4077 feature reconstruction loss: 0.3913
+edge reconstruction loss: 0.4053 feature reconstruction loss: 0.3743
+edge reconstruction loss: 0.4034 feature reconstruction loss: 0.3656
+edge reconstruction loss: 0.4017 feature reconstruction loss: 0.3626
+edge reconstruction loss: 0.4001 feature reconstruction loss: 0.3437
+edge reconstruction loss: 0.3988 feature reconstruction loss: 0.3292
+edge reconstruction loss: 0.3973 feature reconstruction loss: 0.3132
+edge reconstruction loss: 0.3958 feature reconstruction loss: 0.3045
+edge reconstruction loss: 0.3943 feature reconstruction loss: 0.2806
+edge reconstruction loss: 0.3932 feature reconstruction loss: 0.2680
+edge reconstruction loss: 0.3922 feature reconstruction loss: 0.2443
+edge reconstruction loss: 0.3906 feature reconstruction loss: 0.2322
+edge reconstruction loss: 0.3898 feature reconstruction loss: 0.2107
+edge reconstruction loss: 0.3887 feature reconstruction loss: 0.1947
+edge reconstruction loss: 0.3883 feature reconstruction loss: 0.1734
+edge reconstruction loss: 0.3882 feature reconstruction loss: 0.1556
+edge reconstruction loss: 0.3875 feature reconstruction loss: 0.1364
+edge reconstruction loss: 0.3868 feature reconstruction loss: 0.1222
+edge reconstruction loss: 0.3861 feature reconstruction loss: 0.1063
+edge reconstruction loss: 0.3859 feature reconstruction loss: 0.0912
+edge reconstruction loss: 0.3852 feature reconstruction loss: 0.0780
+edge reconstruction loss: 0.3850 feature reconstruction loss: 0.0697
+edge reconstruction loss: 0.3849 feature reconstruction loss: 0.0562
+edge reconstruction loss: 0.3851 feature reconstruction loss: 0.0463
+edge reconstruction loss: 0.3849 feature reconstruction loss: 0.0412
+edge reconstruction loss: 0.3844 feature reconstruction loss: 0.0323
+edge reconstruction loss: 0.3845 feature reconstruction loss: 0.0281
+edge reconstruction loss: 0.3847 feature reconstruction loss: 0.0244
+edge reconstruction loss: 0.3849 feature reconstruction loss: 0.0177
+Epoch: 0001 sens loss: 0.5630 contrastive loss: 6.2193 edge reconstruction loss: 0.3849 feature reconstruction loss: 0.0157
+Epoch: 0002 sens loss: 0.5640 contrastive loss: 6.2144 edge reconstruction loss: 0.3842 feature reconstruction loss: 0.0155
+Epoch: 0003 sens loss: 0.5667 contrastive loss: 6.2150 edge reconstruction loss: 0.3850 feature reconstruction loss: 0.0139
+Epoch: 0004 sens loss: 0.5681 contrastive loss: 6.2152 edge reconstruction loss: 0.3854 feature reconstruction loss: 0.0162
+Epoch: 0005 sens loss: 0.5739 contrastive loss: 6.2098 edge reconstruction loss: 0.3866 feature reconstruction loss: 0.0166
+Epoch: 0006 sens loss: 0.5735 contrastive loss: 6.2121 edge reconstruction loss: 0.3881 feature reconstruction loss: 0.0144
+Epoch: 0007 sens loss: 0.5745 contrastive loss: 6.2029 edge reconstruction loss: 0.3889 feature reconstruction loss: 0.0138
+Epoch: 0008 sens loss: 0.5741 contrastive loss: 6.2051 edge reconstruction loss: 0.3899 feature reconstruction loss: 0.0164
+Epoch: 0009 sens loss: 0.5661 contrastive loss: 6.2034 edge reconstruction loss: 0.3936 feature reconstruction loss: 0.0152
+Epoch: 0010 sens loss: 0.5689 contrastive loss: 6.2028 edge reconstruction loss: 0.3949 feature reconstruction loss: 0.0140
+Epoch: 0011 sens loss: 0.5660 contrastive loss: 6.1987 edge reconstruction loss: 0.3967 feature reconstruction loss: 0.0142
+Epoch: 0012 sens loss: 0.5643 contrastive loss: 6.1994 edge reconstruction loss: 0.3946 feature reconstruction loss: 0.0136
+Epoch: 0013 sens loss: 0.5624 contrastive loss: 6.1938 edge reconstruction loss: 0.3972 feature reconstruction loss: 0.0139
+Epoch: 0014 sens loss: 0.5634 contrastive loss: 6.1950 edge reconstruction loss: 0.3999 feature reconstruction loss: 0.0122
+Epoch: 0015 sens loss: 0.5633 contrastive loss: 6.1974 edge reconstruction loss: 0.3978 feature reconstruction loss: 0.0115
+Epoch: 0016 sens loss: 0.5623 contrastive loss: 6.1899 edge reconstruction loss: 0.3971 feature reconstruction loss: 0.0120
+Epoch: 0017 sens loss: 0.5656 contrastive loss: 6.1820 edge reconstruction loss: 0.3983 feature reconstruction loss: 0.0128
+Epoch: 0018 sens loss: 0.5640 contrastive loss: 6.1886 edge reconstruction loss: 0.3984 feature reconstruction loss: 0.0115
+Epoch: 0019 sens loss: 0.5672 contrastive loss: 6.1834 edge reconstruction loss: 0.3993 feature reconstruction loss: 0.0119
+Epoch: 0020 sens loss: 0.5665 contrastive loss: 6.1945 edge reconstruction loss: 0.4017 feature reconstruction loss: 0.0115
+Epoch: 0021 sens loss: 0.5629 contrastive loss: 6.1914 edge reconstruction loss: 0.3981 feature reconstruction loss: 0.0144
+Epoch: 0022 sens loss: 0.5658 contrastive loss: 6.1846 edge reconstruction loss: 0.4007 feature reconstruction loss: 0.0116
+Epoch: 0023 sens loss: 0.5672 contrastive loss: 6.1911 edge reconstruction loss: 0.4006 feature reconstruction loss: 0.0131
+Epoch: 0024 sens loss: 0.5658 contrastive loss: 6.1856 edge reconstruction loss: 0.3999 feature reconstruction loss: 0.0117
+Epoch: 0025 sens loss: 0.5639 contrastive loss: 6.1754 edge reconstruction loss: 0.4026 feature reconstruction loss: 0.0125
+Epoch: 0026 sens loss: 0.5635 contrastive loss: 6.1685 edge reconstruction loss: 0.4033 feature reconstruction loss: 0.0116
+Epoch: 0027 sens loss: 0.5632 contrastive loss: 6.1725 edge reconstruction loss: 0.4034 feature reconstruction loss: 0.0113
+Epoch: 0028 sens loss: 0.5623 contrastive loss: 6.1758 edge reconstruction loss: 0.4046 feature reconstruction loss: 0.0118
+Epoch: 0029 sens loss: 0.5616 contrastive loss: 6.1810 edge reconstruction loss: 0.4052 feature reconstruction loss: 0.0129
+Epoch: 0030 sens loss: 0.5642 contrastive loss: 6.1656 edge reconstruction loss: 0.4098 feature reconstruction loss: 0.0131
+Epoch: 0031 sens loss: 0.5634 contrastive loss: 6.1665 edge reconstruction loss: 0.4096 feature reconstruction loss: 0.0140
+Epoch: 0032 sens loss: 0.5621 contrastive loss: 6.1787 edge reconstruction loss: 0.4133 feature reconstruction loss: 0.0140
+Epoch: 0033 sens loss: 0.5630 contrastive loss: 6.1709 edge reconstruction loss: 0.4107 feature reconstruction loss: 0.0131
+Epoch: 0034 sens loss: 0.5653 contrastive loss: 6.1596 edge reconstruction loss: 0.4151 feature reconstruction loss: 0.0142
+Epoch: 0035 sens loss: 0.5623 contrastive loss: 6.1596 edge reconstruction loss: 0.4154 feature reconstruction loss: 0.0146
+Epoch: 0036 sens loss: 0.5606 contrastive loss: 6.1690 edge reconstruction loss: 0.4159 feature reconstruction loss: 0.0137
+Epoch: 0037 sens loss: 0.5657 contrastive loss: 6.1671 edge reconstruction loss: 0.4186 feature reconstruction loss: 0.0147
+Epoch: 0038 sens loss: 0.5645 contrastive loss: 6.1526 edge reconstruction loss: 0.4234 feature reconstruction loss: 0.0130
+Epoch: 0039 sens loss: 0.5656 contrastive loss: 6.1543 edge reconstruction loss: 0.4215 feature reconstruction loss: 0.0145
+Epoch: 0040 sens loss: 0.5655 contrastive loss: 6.1628 edge reconstruction loss: 0.4186 feature reconstruction loss: 0.0141
+Epoch: 0041 sens loss: 0.5618 contrastive loss: 6.1672 edge reconstruction loss: 0.4246 feature reconstruction loss: 0.0149
+Epoch: 0042 sens loss: 0.5618 contrastive loss: 6.1496 edge reconstruction loss: 0.4233 feature reconstruction loss: 0.0136
+Epoch: 0043 sens loss: 0.5630 contrastive loss: 6.1399 edge reconstruction loss: 0.4258 feature reconstruction loss: 0.0164
+Epoch: 0044 sens loss: 0.5635 contrastive loss: 6.1565 edge reconstruction loss: 0.4274 feature reconstruction loss: 0.0156
+Epoch: 0045 sens loss: 0.5650 contrastive loss: 6.1520 edge reconstruction loss: 0.4241 feature reconstruction loss: 0.0133
+Epoch: 0046 sens loss: 0.5646 contrastive loss: 6.1475 edge reconstruction loss: 0.4283 feature reconstruction loss: 0.0137
+Epoch: 0047 sens loss: 0.5634 contrastive loss: 6.1491 edge reconstruction loss: 0.4253 feature reconstruction loss: 0.0149
+Epoch: 0048 sens loss: 0.5644 contrastive loss: 6.1369 edge reconstruction loss: 0.4277 feature reconstruction loss: 0.0140
+Epoch: 0049 sens loss: 0.5632 contrastive loss: 6.1569 edge reconstruction loss: 0.4248 feature reconstruction loss: 0.0140
+Epoch: 0050 sens loss: 0.5644 contrastive loss: 6.1525 edge reconstruction loss: 0.4200 feature reconstruction loss: 0.0145
+Epoch: 0051 sens loss: 0.5645 contrastive loss: 6.1419 edge reconstruction loss: 0.4222 feature reconstruction loss: 0.0148
+Epoch: 0052 sens loss: 0.5636 contrastive loss: 6.1513 edge reconstruction loss: 0.4253 feature reconstruction loss: 0.0142
+Epoch: 0053 sens loss: 0.5622 contrastive loss: 6.1459 edge reconstruction loss: 0.4251 feature reconstruction loss: 0.0153
+Epoch: 0054 sens loss: 0.5615 contrastive loss: 6.1346 edge reconstruction loss: 0.4254 feature reconstruction loss: 0.0137
+Epoch: 0055 sens loss: 0.5648 contrastive loss: 6.1659 edge reconstruction loss: 0.4258 feature reconstruction loss: 0.0155
+Epoch: 0056 sens loss: 0.5625 contrastive loss: 6.1386 edge reconstruction loss: 0.4336 feature reconstruction loss: 0.0154
+Epoch: 0057 sens loss: 0.5633 contrastive loss: 6.1532 edge reconstruction loss: 0.4351 feature reconstruction loss: 0.0138
+Epoch: 0058 sens loss: 0.5638 contrastive loss: 6.1525 edge reconstruction loss: 0.4383 feature reconstruction loss: 0.0138
+Epoch: 0059 sens loss: 0.5620 contrastive loss: 6.1405 edge reconstruction loss: 0.4330 feature reconstruction loss: 0.0154
+Epoch: 0060 sens loss: 0.5638 contrastive loss: 6.1497 edge reconstruction loss: 0.4359 feature reconstruction loss: 0.0141
+Epoch: 0061 sens loss: 0.5654 contrastive loss: 6.1278 edge reconstruction loss: 0.4404 feature reconstruction loss: 0.0162
+Epoch: 0062 sens loss: 0.5642 contrastive loss: 6.1351 edge reconstruction loss: 0.4353 feature reconstruction loss: 0.0160
+Epoch: 0063 sens loss: 0.5644 contrastive loss: 6.1497 edge reconstruction loss: 0.4419 feature reconstruction loss: 0.0144
+Epoch: 0064 sens loss: 0.5633 contrastive loss: 6.1177 edge reconstruction loss: 0.4385 feature reconstruction loss: 0.0148
+Epoch: 0065 sens loss: 0.5657 contrastive loss: 6.1301 edge reconstruction loss: 0.4458 feature reconstruction loss: 0.0176
+Epoch: 0066 sens loss: 0.5646 contrastive loss: 6.1465 edge reconstruction loss: 0.4444 feature reconstruction loss: 0.0157
+Epoch: 0067 sens loss: 0.5627 contrastive loss: 6.1232 edge reconstruction loss: 0.4436 feature reconstruction loss: 0.0157
+Epoch: 0068 sens loss: 0.5635 contrastive loss: 6.1460 edge reconstruction loss: 0.4392 feature reconstruction loss: 0.0166
+Epoch: 0069 sens loss: 0.5628 contrastive loss: 6.1274 edge reconstruction loss: 0.4443 feature reconstruction loss: 0.0151
+Epoch: 0070 sens loss: 0.5640 contrastive loss: 6.1281 edge reconstruction loss: 0.4386 feature reconstruction loss: 0.0143
+Epoch: 0071 sens loss: 0.5642 contrastive loss: 6.1364 edge reconstruction loss: 0.4348 feature reconstruction loss: 0.0150
+Epoch: 0072 sens loss: 0.5647 contrastive loss: 6.1252 edge reconstruction loss: 0.4357 feature reconstruction loss: 0.0164
+Epoch: 0073 sens loss: 0.5647 contrastive loss: 6.1336 edge reconstruction loss: 0.4391 feature reconstruction loss: 0.0175
+Epoch: 0074 sens loss: 0.5634 contrastive loss: 6.1185 edge reconstruction loss: 0.4351 feature reconstruction loss: 0.0178
+Epoch: 0075 sens loss: 0.5645 contrastive loss: 6.1453 edge reconstruction loss: 0.4350 feature reconstruction loss: 0.0162
+Epoch: 0076 sens loss: 0.5671 contrastive loss: 6.1310 edge reconstruction loss: 0.4355 feature reconstruction loss: 0.0164
+Epoch: 0077 sens loss: 0.5640 contrastive loss: 6.1282 edge reconstruction loss: 0.4460 feature reconstruction loss: 0.0167
+Epoch: 0078 sens loss: 0.5642 contrastive loss: 6.1227 edge reconstruction loss: 0.4509 feature reconstruction loss: 0.0167
+Epoch: 0079 sens loss: 0.5639 contrastive loss: 6.1213 edge reconstruction loss: 0.4546 feature reconstruction loss: 0.0164
+Epoch: 0080 sens loss: 0.5646 contrastive loss: 6.1187 edge reconstruction loss: 0.4475 feature reconstruction loss: 0.0170
+Epoch: 0081 sens loss: 0.5654 contrastive loss: 6.1159 edge reconstruction loss: 0.4444 feature reconstruction loss: 0.0178
+Epoch: 0082 sens loss: 0.5656 contrastive loss: 6.1131 edge reconstruction loss: 0.4500 feature reconstruction loss: 0.0162
+Epoch: 0083 sens loss: 0.5648 contrastive loss: 6.1227 edge reconstruction loss: 0.4509 feature reconstruction loss: 0.0162
+Epoch: 0084 sens loss: 0.5620 contrastive loss: 6.1122 edge reconstruction loss: 0.4465 feature reconstruction loss: 0.0185
+Epoch: 0085 sens loss: 0.5634 contrastive loss: 6.1145 edge reconstruction loss: 0.4441 feature reconstruction loss: 0.0185
+Epoch: 0086 sens loss: 0.5654 contrastive loss: 6.1197 edge reconstruction loss: 0.4383 feature reconstruction loss: 0.0185
+Epoch: 0087 sens loss: 0.5635 contrastive loss: 6.1207 edge reconstruction loss: 0.4420 feature reconstruction loss: 0.0175
+Epoch: 0088 sens loss: 0.5641 contrastive loss: 6.1093 edge reconstruction loss: 0.4406 feature reconstruction loss: 0.0185
+Epoch: 0089 sens loss: 0.5668 contrastive loss: 6.1146 edge reconstruction loss: 0.4514 feature reconstruction loss: 0.0166
+Epoch: 0090 sens loss: 0.5649 contrastive loss: 6.1094 edge reconstruction loss: 0.4510 feature reconstruction loss: 0.0164
+Epoch: 0091 sens loss: 0.5666 contrastive loss: 6.1168 edge reconstruction loss: 0.4580 feature reconstruction loss: 0.0152
+Epoch: 0092 sens loss: 0.5668 contrastive loss: 6.1203 edge reconstruction loss: 0.4498 feature reconstruction loss: 0.0180
+Epoch: 0093 sens loss: 0.5661 contrastive loss: 6.0919 edge reconstruction loss: 0.4654 feature reconstruction loss: 0.0164
+Epoch: 0094 sens loss: 0.5653 contrastive loss: 6.1108 edge reconstruction loss: 0.4466 feature reconstruction loss: 0.0177
+Epoch: 0095 sens loss: 0.5640 contrastive loss: 6.1068 edge reconstruction loss: 0.4528 feature reconstruction loss: 0.0172
+Epoch: 0096 sens loss: 0.5645 contrastive loss: 6.1144 edge reconstruction loss: 0.4540 feature reconstruction loss: 0.0158
+Epoch: 0097 sens loss: 0.5647 contrastive loss: 6.1233 edge reconstruction loss: 0.4506 feature reconstruction loss: 0.0177
+Epoch: 0098 sens loss: 0.5643 contrastive loss: 6.0935 edge reconstruction loss: 0.4545 feature reconstruction loss: 0.0171
+Epoch: 0099 sens loss: 0.5662 contrastive loss: 6.0840 edge reconstruction loss: 0.4447 feature reconstruction loss: 0.0177
+Epoch: 0100 sens loss: 0.5655 contrastive loss: 6.1036 edge reconstruction loss: 0.4598 feature reconstruction loss: 0.0168
+Epoch: 0101 sens loss: 0.5647 contrastive loss: 6.0964 edge reconstruction loss: 0.4522 feature reconstruction loss: 0.0176
+Epoch: 0102 sens loss: 0.5653 contrastive loss: 6.1242 edge reconstruction loss: 0.4496 feature reconstruction loss: 0.0173
+Epoch: 0103 sens loss: 0.5643 contrastive loss: 6.1229 edge reconstruction loss: 0.4562 feature reconstruction loss: 0.0177
+Epoch: 0104 sens loss: 0.5660 contrastive loss: 6.1302 edge reconstruction loss: 0.4558 feature reconstruction loss: 0.0177
+Epoch: 0105 sens loss: 0.5647 contrastive loss: 6.0863 edge reconstruction loss: 0.4546 feature reconstruction loss: 0.0164
+Epoch: 0106 sens loss: 0.5645 contrastive loss: 6.0905 edge reconstruction loss: 0.4635 feature reconstruction loss: 0.0188
+Epoch: 0107 sens loss: 0.5667 contrastive loss: 6.1031 edge reconstruction loss: 0.4551 feature reconstruction loss: 0.0179
+Epoch: 0108 sens loss: 0.5664 contrastive loss: 6.1010 edge reconstruction loss: 0.4667 feature reconstruction loss: 0.0173
+Epoch: 0109 sens loss: 0.5657 contrastive loss: 6.0964 edge reconstruction loss: 0.4642 feature reconstruction loss: 0.0167
+Epoch: 0110 sens loss: 0.5637 contrastive loss: 6.0846 edge reconstruction loss: 0.4586 feature reconstruction loss: 0.0177
+Epoch: 0111 sens loss: 0.5665 contrastive loss: 6.0802 edge reconstruction loss: 0.4718 feature reconstruction loss: 0.0172
+Epoch: 0112 sens loss: 0.5650 contrastive loss: 6.1142 edge reconstruction loss: 0.4531 feature reconstruction loss: 0.0172
+Epoch: 0113 sens loss: 0.5665 contrastive loss: 6.1000 edge reconstruction loss: 0.4690 feature reconstruction loss: 0.0180
+Epoch: 0114 sens loss: 0.5643 contrastive loss: 6.0782 edge reconstruction loss: 0.4570 feature reconstruction loss: 0.0182
+Epoch: 0115 sens loss: 0.5646 contrastive loss: 6.1174 edge reconstruction loss: 0.4497 feature reconstruction loss: 0.0193
+Epoch: 0116 sens loss: 0.5661 contrastive loss: 6.0890 edge reconstruction loss: 0.4528 feature reconstruction loss: 0.0162
+Epoch: 0117 sens loss: 0.5666 contrastive loss: 6.1104 edge reconstruction loss: 0.4623 feature reconstruction loss: 0.0153
+Epoch: 0118 sens loss: 0.5662 contrastive loss: 6.0961 edge reconstruction loss: 0.4601 feature reconstruction loss: 0.0178
+Epoch: 0119 sens loss: 0.5667 contrastive loss: 6.0915 edge reconstruction loss: 0.4658 feature reconstruction loss: 0.0190
+Epoch: 0120 sens loss: 0.5647 contrastive loss: 6.0664 edge reconstruction loss: 0.4761 feature reconstruction loss: 0.0183
+Epoch: 0121 sens loss: 0.5655 contrastive loss: 6.1209 edge reconstruction loss: 0.4512 feature reconstruction loss: 0.0196
+Epoch: 0122 sens loss: 0.5658 contrastive loss: 6.0629 edge reconstruction loss: 0.4758 feature reconstruction loss: 0.0167
+Epoch: 0123 sens loss: 0.5661 contrastive loss: 6.0651 edge reconstruction loss: 0.4653 feature reconstruction loss: 0.0178
+Epoch: 0124 sens loss: 0.5652 contrastive loss: 6.0598 edge reconstruction loss: 0.4652 feature reconstruction loss: 0.0189
+Epoch: 0125 sens loss: 0.5667 contrastive loss: 6.0890 edge reconstruction loss: 0.4543 feature reconstruction loss: 0.0173
+Epoch: 0126 sens loss: 0.5675 contrastive loss: 6.0697 edge reconstruction loss: 0.4564 feature reconstruction loss: 0.0167
+Epoch: 0127 sens loss: 0.5658 contrastive loss: 6.0686 edge reconstruction loss: 0.4624 feature reconstruction loss: 0.0186
+Epoch: 0128 sens loss: 0.5664 contrastive loss: 6.0980 edge reconstruction loss: 0.4489 feature reconstruction loss: 0.0175
+Epoch: 0129 sens loss: 0.5652 contrastive loss: 6.0734 edge reconstruction loss: 0.4692 feature reconstruction loss: 0.0179
+Epoch: 0130 sens loss: 0.5668 contrastive loss: 6.0564 edge reconstruction loss: 0.4768 feature reconstruction loss: 0.0190
+Epoch: 0131 sens loss: 0.5661 contrastive loss: 6.0877 edge reconstruction loss: 0.4664 feature reconstruction loss: 0.0173
+Epoch: 0132 sens loss: 0.5659 contrastive loss: 6.0685 edge reconstruction loss: 0.4834 feature reconstruction loss: 0.0171
+Epoch: 0133 sens loss: 0.5660 contrastive loss: 6.0855 edge reconstruction loss: 0.4668 feature reconstruction loss: 0.0181
+Epoch: 0134 sens loss: 0.5656 contrastive loss: 6.0813 edge reconstruction loss: 0.4597 feature reconstruction loss: 0.0186
+Epoch: 0135 sens loss: 0.5655 contrastive loss: 6.0659 edge reconstruction loss: 0.4682 feature reconstruction loss: 0.0170
+Epoch: 0136 sens loss: 0.5689 contrastive loss: 6.0883 edge reconstruction loss: 0.4775 feature reconstruction loss: 0.0174
+Epoch: 0137 sens loss: 0.5668 contrastive loss: 6.0546 edge reconstruction loss: 0.4716 feature reconstruction loss: 0.0181
+Epoch: 0138 sens loss: 0.5656 contrastive loss: 6.0508 edge reconstruction loss: 0.4822 feature reconstruction loss: 0.0174
+Epoch: 0139 sens loss: 0.5650 contrastive loss: 6.0935 edge reconstruction loss: 0.4729 feature reconstruction loss: 0.0178
+Epoch: 0140 sens loss: 0.5673 contrastive loss: 6.0751 edge reconstruction loss: 0.4688 feature reconstruction loss: 0.0161
+Epoch: 0141 sens loss: 0.5652 contrastive loss: 6.0451 edge reconstruction loss: 0.4688 feature reconstruction loss: 0.0189
+Epoch: 0142 sens loss: 0.5676 contrastive loss: 6.0696 edge reconstruction loss: 0.4560 feature reconstruction loss: 0.0179
+Epoch: 0143 sens loss: 0.5641 contrastive loss: 6.0790 edge reconstruction loss: 0.4767 feature reconstruction loss: 0.0190
+Epoch: 0144 sens loss: 0.5674 contrastive loss: 6.0502 edge reconstruction loss: 0.4633 feature reconstruction loss: 0.0173
+Epoch: 0145 sens loss: 0.5632 contrastive loss: 6.0580 edge reconstruction loss: 0.4831 feature reconstruction loss: 0.0166
+Epoch: 0146 sens loss: 0.5639 contrastive loss: 6.0848 edge reconstruction loss: 0.4615 feature reconstruction loss: 0.0181
+Epoch: 0147 sens loss: 0.5666 contrastive loss: 6.0678 edge reconstruction loss: 0.4807 feature reconstruction loss: 0.0165
+Epoch: 0148 sens loss: 0.5686 contrastive loss: 6.0497 edge reconstruction loss: 0.4887 feature reconstruction loss: 0.0166
+Epoch: 0149 sens loss: 0.5671 contrastive loss: 6.0618 edge reconstruction loss: 0.4825 feature reconstruction loss: 0.0177
+Epoch: 0150 sens loss: 0.5676 contrastive loss: 6.0754 edge reconstruction loss: 0.4766 feature reconstruction loss: 0.0173
+Epoch: 0151 sens loss: 0.5660 contrastive loss: 6.0421 edge reconstruction loss: 0.4742 feature reconstruction loss: 0.0162
+Epoch: 0152 sens loss: 0.5682 contrastive loss: 6.0922 edge reconstruction loss: 0.4643 feature reconstruction loss: 0.0208
+Epoch: 0153 sens loss: 0.5666 contrastive loss: 6.0668 edge reconstruction loss: 0.4603 feature reconstruction loss: 0.0188
+Epoch: 0154 sens loss: 0.5662 contrastive loss: 6.0747 edge reconstruction loss: 0.4552 feature reconstruction loss: 0.0179
+Epoch: 0155 sens loss: 0.5665 contrastive loss: 6.0532 edge reconstruction loss: 0.4707 feature reconstruction loss: 0.0192
+Epoch: 0156 sens loss: 0.5679 contrastive loss: 6.0468 edge reconstruction loss: 0.4697 feature reconstruction loss: 0.0206
+Epoch: 0157 sens loss: 0.5666 contrastive loss: 6.0414 edge reconstruction loss: 0.4839 feature reconstruction loss: 0.0181
+Epoch: 0158 sens loss: 0.5678 contrastive loss: 6.0321 edge reconstruction loss: 0.5126 feature reconstruction loss: 0.0173
+Epoch: 0159 sens loss: 0.5671 contrastive loss: 6.0917 edge reconstruction loss: 0.4888 feature reconstruction loss: 0.0192
+Epoch: 0160 sens loss: 0.5662 contrastive loss: 6.0349 edge reconstruction loss: 0.4985 feature reconstruction loss: 0.0174
+Epoch: 0161 sens loss: 0.5674 contrastive loss: 6.0374 edge reconstruction loss: 0.4834 feature reconstruction loss: 0.0171
+Epoch: 0162 sens loss: 0.5662 contrastive loss: 6.0561 edge reconstruction loss: 0.4567 feature reconstruction loss: 0.0188
+Epoch: 0163 sens loss: 0.5664 contrastive loss: 6.0708 edge reconstruction loss: 0.4693 feature reconstruction loss: 0.0178
+Epoch: 0164 sens loss: 0.5654 contrastive loss: 6.0675 edge reconstruction loss: 0.4628 feature reconstruction loss: 0.0179
+Epoch: 0165 sens loss: 0.5673 contrastive loss: 6.0491 edge reconstruction loss: 0.4637 feature reconstruction loss: 0.0190
+Epoch: 0166 sens loss: 0.5658 contrastive loss: 6.0363 edge reconstruction loss: 0.4843 feature reconstruction loss: 0.0182
+Epoch: 0167 sens loss: 0.5652 contrastive loss: 6.0572 edge reconstruction loss: 0.4733 feature reconstruction loss: 0.0177
+Epoch: 0168 sens loss: 0.5668 contrastive loss: 6.0486 edge reconstruction loss: 0.5059 feature reconstruction loss: 0.0172
+Epoch: 0169 sens loss: 0.5668 contrastive loss: 6.0375 edge reconstruction loss: 0.4828 feature reconstruction loss: 0.0183
+Epoch: 0170 sens loss: 0.5660 contrastive loss: 6.0093 edge reconstruction loss: 0.4803 feature reconstruction loss: 0.0155
+Epoch: 0171 sens loss: 0.5668 contrastive loss: 6.0664 edge reconstruction loss: 0.4825 feature reconstruction loss: 0.0160
+Epoch: 0172 sens loss: 0.5646 contrastive loss: 6.0490 edge reconstruction loss: 0.4775 feature reconstruction loss: 0.0181
+Epoch: 0173 sens loss: 0.5658 contrastive loss: 6.0484 edge reconstruction loss: 0.4876 feature reconstruction loss: 0.0178
+Epoch: 0174 sens loss: 0.5648 contrastive loss: 6.0634 edge reconstruction loss: 0.4751 feature reconstruction loss: 0.0167
+Epoch: 0175 sens loss: 0.5680 contrastive loss: 6.0330 edge reconstruction loss: 0.4876 feature reconstruction loss: 0.0185
+Epoch: 0176 sens loss: 0.5683 contrastive loss: 6.0354 edge reconstruction loss: 0.5030 feature reconstruction loss: 0.0182
+Epoch: 0177 sens loss: 0.5643 contrastive loss: 6.0635 edge reconstruction loss: 0.4669 feature reconstruction loss: 0.0177
+Epoch: 0178 sens loss: 0.5661 contrastive loss: 6.0736 edge reconstruction loss: 0.4794 feature reconstruction loss: 0.0170
+Epoch: 0179 sens loss: 0.5674 contrastive loss: 6.0576 edge reconstruction loss: 0.4875 feature reconstruction loss: 0.0159
+Epoch: 0180 sens loss: 0.5659 contrastive loss: 6.0198 edge reconstruction loss: 0.4837 feature reconstruction loss: 0.0170
+Epoch: 0181 sens loss: 0.5677 contrastive loss: 6.0365 edge reconstruction loss: 0.4859 feature reconstruction loss: 0.0172
+Epoch: 0182 sens loss: 0.5667 contrastive loss: 6.0376 edge reconstruction loss: 0.4937 feature reconstruction loss: 0.0172
+Epoch: 0183 sens loss: 0.5680 contrastive loss: 6.0483 edge reconstruction loss: 0.4877 feature reconstruction loss: 0.0189
+Epoch: 0184 sens loss: 0.5662 contrastive loss: 6.0566 edge reconstruction loss: 0.4450 feature reconstruction loss: 0.0185
+Epoch: 0185 sens loss: 0.5649 contrastive loss: 6.0282 edge reconstruction loss: 0.4682 feature reconstruction loss: 0.0183
+Epoch: 0186 sens loss: 0.5658 contrastive loss: 6.0188 edge reconstruction loss: 0.4834 feature reconstruction loss: 0.0177
+Epoch: 0187 sens loss: 0.5672 contrastive loss: 6.0489 edge reconstruction loss: 0.5067 feature reconstruction loss: 0.0161
+Epoch: 0188 sens loss: 0.5690 contrastive loss: 6.0351 edge reconstruction loss: 0.5114 feature reconstruction loss: 0.0163
+Epoch: 0189 sens loss: 0.5673 contrastive loss: 6.0026 edge reconstruction loss: 0.5010 feature reconstruction loss: 0.0175
+Epoch: 0190 sens loss: 0.5666 contrastive loss: 6.0338 edge reconstruction loss: 0.4869 feature reconstruction loss: 0.0167
+Epoch: 0191 sens loss: 0.5667 contrastive loss: 6.0678 edge reconstruction loss: 0.4933 feature reconstruction loss: 0.0181
+Epoch: 0192 sens loss: 0.5653 contrastive loss: 6.0603 edge reconstruction loss: 0.4617 feature reconstruction loss: 0.0169
+Epoch: 0193 sens loss: 0.5645 contrastive loss: 6.0447 edge reconstruction loss: 0.4720 feature reconstruction loss: 0.0161
+Epoch: 0194 sens loss: 0.5683 contrastive loss: 6.0389 edge reconstruction loss: 0.4556 feature reconstruction loss: 0.0172
+Epoch: 0195 sens loss: 0.5653 contrastive loss: 6.0432 edge reconstruction loss: 0.4800 feature reconstruction loss: 0.0192
+Epoch: 0196 sens loss: 0.5652 contrastive loss: 6.0511 edge reconstruction loss: 0.4890 feature reconstruction loss: 0.0166
+Epoch: 0197 sens loss: 0.5662 contrastive loss: 5.9889 edge reconstruction loss: 0.5055 feature reconstruction loss: 0.0177
+Epoch: 0198 sens loss: 0.5678 contrastive loss: 5.9771 edge reconstruction loss: 0.5087 feature reconstruction loss: 0.0187
+Epoch: 0199 sens loss: 0.5671 contrastive loss: 5.9913 edge reconstruction loss: 0.5107 feature reconstruction loss: 0.0188
+Epoch: 0200 sens loss: 0.5651 contrastive loss: 6.0357 edge reconstruction loss: 0.4705 feature reconstruction loss: 0.0184
+Epoch: 0201 sens loss: 0.5649 contrastive loss: 6.0250 edge reconstruction loss: 0.4831 feature reconstruction loss: 0.0190
+Epoch: 0202 sens loss: 0.5666 contrastive loss: 6.0113 edge reconstruction loss: 0.4538 feature reconstruction loss: 0.0187
+Epoch: 0203 sens loss: 0.5655 contrastive loss: 5.9883 edge reconstruction loss: 0.5056 feature reconstruction loss: 0.0186
+Epoch: 0204 sens loss: 0.5669 contrastive loss: 6.0079 edge reconstruction loss: 0.5158 feature reconstruction loss: 0.0166
+Epoch: 0205 sens loss: 0.5656 contrastive loss: 5.9977 edge reconstruction loss: 0.4980 feature reconstruction loss: 0.0171
+Epoch: 0206 sens loss: 0.5645 contrastive loss: 6.0069 edge reconstruction loss: 0.4778 feature reconstruction loss: 0.0182
+Epoch: 0207 sens loss: 0.5644 contrastive loss: 6.0159 edge reconstruction loss: 0.4748 feature reconstruction loss: 0.0185
+Epoch: 0208 sens loss: 0.5633 contrastive loss: 6.0095 edge reconstruction loss: 0.4788 feature reconstruction loss: 0.0190
+Epoch: 0209 sens loss: 0.5660 contrastive loss: 6.0133 edge reconstruction loss: 0.4773 feature reconstruction loss: 0.0184
+Epoch: 0210 sens loss: 0.5658 contrastive loss: 5.9808 edge reconstruction loss: 0.4933 feature reconstruction loss: 0.0190
+Epoch: 0211 sens loss: 0.5663 contrastive loss: 5.9743 edge reconstruction loss: 0.4881 feature reconstruction loss: 0.0187
+Epoch: 0212 sens loss: 0.5647 contrastive loss: 5.9714 edge reconstruction loss: 0.5280 feature reconstruction loss: 0.0182
+Epoch: 0213 sens loss: 0.5678 contrastive loss: 5.9636 edge reconstruction loss: 0.5113 feature reconstruction loss: 0.0168
+Epoch: 0214 sens loss: 0.5652 contrastive loss: 5.9724 edge reconstruction loss: 0.5102 feature reconstruction loss: 0.0190
+Epoch: 0215 sens loss: 0.5652 contrastive loss: 5.9790 edge reconstruction loss: 0.4863 feature reconstruction loss: 0.0190
+Epoch: 0216 sens loss: 0.5628 contrastive loss: 5.9980 edge reconstruction loss: 0.4730 feature reconstruction loss: 0.0190
+Epoch: 0217 sens loss: 0.5636 contrastive loss: 6.0128 edge reconstruction loss: 0.4597 feature reconstruction loss: 0.0190
+Epoch: 0218 sens loss: 0.5658 contrastive loss: 5.9828 edge reconstruction loss: 0.4912 feature reconstruction loss: 0.0186
+Epoch: 0219 sens loss: 0.5610 contrastive loss: 6.0174 edge reconstruction loss: 0.4911 feature reconstruction loss: 0.0193
+Epoch: 0220 sens loss: 0.5642 contrastive loss: 6.0025 edge reconstruction loss: 0.4810 feature reconstruction loss: 0.0191
+Epoch: 0221 sens loss: 0.5643 contrastive loss: 5.9677 edge reconstruction loss: 0.5178 feature reconstruction loss: 0.0198
+Epoch: 0222 sens loss: 0.5652 contrastive loss: 5.9470 edge reconstruction loss: 0.5639 feature reconstruction loss: 0.0195
+Epoch: 0223 sens loss: 0.5651 contrastive loss: 5.9693 edge reconstruction loss: 0.5634 feature reconstruction loss: 0.0197
+Epoch: 0224 sens loss: 0.5649 contrastive loss: 5.9616 edge reconstruction loss: 0.5357 feature reconstruction loss: 0.0185
+Epoch: 0225 sens loss: 0.5606 contrastive loss: 6.0016 edge reconstruction loss: 0.4899 feature reconstruction loss: 0.0180
+Epoch: 0226 sens loss: 0.5612 contrastive loss: 5.9767 edge reconstruction loss: 0.4738 feature reconstruction loss: 0.0190
+Epoch: 0227 sens loss: 0.5618 contrastive loss: 6.0313 edge reconstruction loss: 0.4712 feature reconstruction loss: 0.0188
+Epoch: 0228 sens loss: 0.5597 contrastive loss: 5.9889 edge reconstruction loss: 0.4584 feature reconstruction loss: 0.0195
+Epoch: 0229 sens loss: 0.5612 contrastive loss: 5.9530 edge reconstruction loss: 0.4788 feature reconstruction loss: 0.0193
+Epoch: 0230 sens loss: 0.5620 contrastive loss: 5.9688 edge reconstruction loss: 0.5013 feature reconstruction loss: 0.0188
+Epoch: 0231 sens loss: 0.5625 contrastive loss: 5.9403 edge reconstruction loss: 0.5258 feature reconstruction loss: 0.0168
+Epoch: 0232 sens loss: 0.5624 contrastive loss: 5.9440 edge reconstruction loss: 0.5306 feature reconstruction loss: 0.0177
+Epoch: 0233 sens loss: 0.5603 contrastive loss: 5.9830 edge reconstruction loss: 0.5417 feature reconstruction loss: 0.0189
+Epoch: 0234 sens loss: 0.5610 contrastive loss: 5.9710 edge reconstruction loss: 0.5379 feature reconstruction loss: 0.0196
+Epoch: 0235 sens loss: 0.5624 contrastive loss: 5.9448 edge reconstruction loss: 0.5034 feature reconstruction loss: 0.0183
+Epoch: 0236 sens loss: 0.5609 contrastive loss: 5.9704 edge reconstruction loss: 0.4832 feature reconstruction loss: 0.0183
+Epoch: 0237 sens loss: 0.5580 contrastive loss: 5.9355 edge reconstruction loss: 0.4883 feature reconstruction loss: 0.0177
+Epoch: 0238 sens loss: 0.5580 contrastive loss: 5.9376 edge reconstruction loss: 0.4819 feature reconstruction loss: 0.0185
+Epoch: 0239 sens loss: 0.5601 contrastive loss: 5.9445 edge reconstruction loss: 0.4835 feature reconstruction loss: 0.0188
+Epoch: 0240 sens loss: 0.5609 contrastive loss: 5.9368 edge reconstruction loss: 0.5150 feature reconstruction loss: 0.0173
+Epoch: 0241 sens loss: 0.5565 contrastive loss: 5.9763 edge reconstruction loss: 0.5080 feature reconstruction loss: 0.0179
+Epoch: 0242 sens loss: 0.5608 contrastive loss: 5.9830 edge reconstruction loss: 0.5207 feature reconstruction loss: 0.0196
+Epoch: 0243 sens loss: 0.5588 contrastive loss: 5.9490 edge reconstruction loss: 0.5638 feature reconstruction loss: 0.0201
+Epoch: 0244 sens loss: 0.5600 contrastive loss: 5.9607 edge reconstruction loss: 0.5664 feature reconstruction loss: 0.0181
+Epoch: 0245 sens loss: 0.5592 contrastive loss: 5.9703 edge reconstruction loss: 0.5086 feature reconstruction loss: 0.0194
+Epoch: 0246 sens loss: 0.5570 contrastive loss: 5.9461 edge reconstruction loss: 0.5052 feature reconstruction loss: 0.0187
+Epoch: 0247 sens loss: 0.5594 contrastive loss: 5.9305 edge reconstruction loss: 0.5085 feature reconstruction loss: 0.0180
+Epoch: 0248 sens loss: 0.5574 contrastive loss: 5.9622 edge reconstruction loss: 0.4876 feature reconstruction loss: 0.0181
+Epoch: 0249 sens loss: 0.5597 contrastive loss: 5.9359 edge reconstruction loss: 0.4968 feature reconstruction loss: 0.0182
+Epoch: 0250 sens loss: 0.5614 contrastive loss: 5.9482 edge reconstruction loss: 0.5063 feature reconstruction loss: 0.0197
+Epoch: 0251 sens loss: 0.5566 contrastive loss: 5.9725 edge reconstruction loss: 0.5262 feature reconstruction loss: 0.0200
+Epoch: 0252 sens loss: 0.5552 contrastive loss: 6.0002 edge reconstruction loss: 0.4969 feature reconstruction loss: 0.0210
+Epoch: 0253 sens loss: 0.5596 contrastive loss: 5.9638 edge reconstruction loss: 0.5503 feature reconstruction loss: 0.0180
+Epoch: 0254 sens loss: 0.5550 contrastive loss: 5.9369 edge reconstruction loss: 0.5528 feature reconstruction loss: 0.0207
+Epoch: 0255 sens loss: 0.5566 contrastive loss: 5.9059 edge reconstruction loss: 0.5697 feature reconstruction loss: 0.0175
+Epoch: 0256 sens loss: 0.5547 contrastive loss: 5.9331 edge reconstruction loss: 0.5534 feature reconstruction loss: 0.0186
+Epoch: 0257 sens loss: 0.5539 contrastive loss: 5.9590 edge reconstruction loss: 0.5089 feature reconstruction loss: 0.0200
+Epoch: 0258 sens loss: 0.5546 contrastive loss: 5.9427 edge reconstruction loss: 0.5234 feature reconstruction loss: 0.0206
+Epoch: 0259 sens loss: 0.5515 contrastive loss: 5.9849 edge reconstruction loss: 0.5073 feature reconstruction loss: 0.0195
+Epoch: 0260 sens loss: 0.5581 contrastive loss: 5.9576 edge reconstruction loss: 0.5061 feature reconstruction loss: 0.0194
+Epoch: 0261 sens loss: 0.5533 contrastive loss: 5.9345 edge reconstruction loss: 0.5001 feature reconstruction loss: 0.0200
+Epoch: 0262 sens loss: 0.5525 contrastive loss: 5.9439 edge reconstruction loss: 0.5242 feature reconstruction loss: 0.0216
+Epoch: 0263 sens loss: 0.5573 contrastive loss: 5.9555 edge reconstruction loss: 0.5484 feature reconstruction loss: 0.0189
+Epoch: 0264 sens loss: 0.5593 contrastive loss: 5.9485 edge reconstruction loss: 0.5460 feature reconstruction loss: 0.0193
+Epoch: 0265 sens loss: 0.5504 contrastive loss: 5.9263 edge reconstruction loss: 0.5399 feature reconstruction loss: 0.0193
+Epoch: 0266 sens loss: 0.5530 contrastive loss: 5.9692 edge reconstruction loss: 0.5502 feature reconstruction loss: 0.0193
+Epoch: 0267 sens loss: 0.5525 contrastive loss: 5.9173 edge reconstruction loss: 0.5444 feature reconstruction loss: 0.0196
+Epoch: 0268 sens loss: 0.5494 contrastive loss: 5.9127 edge reconstruction loss: 0.5643 feature reconstruction loss: 0.0201
+Epoch: 0269 sens loss: 0.5541 contrastive loss: 5.9734 edge reconstruction loss: 0.5369 feature reconstruction loss: 0.0211
+Epoch: 0270 sens loss: 0.5505 contrastive loss: 5.9147 edge reconstruction loss: 0.5222 feature reconstruction loss: 0.0200
+Epoch: 0271 sens loss: 0.5510 contrastive loss: 5.9387 edge reconstruction loss: 0.5334 feature reconstruction loss: 0.0206
+Epoch: 0272 sens loss: 0.5533 contrastive loss: 5.9497 edge reconstruction loss: 0.5093 feature reconstruction loss: 0.0206
+Epoch: 0273 sens loss: 0.5593 contrastive loss: 5.9471 edge reconstruction loss: 0.5461 feature reconstruction loss: 0.0217
+Epoch: 0274 sens loss: 0.5505 contrastive loss: 5.9624 edge reconstruction loss: 0.5238 feature reconstruction loss: 0.0194
+Epoch: 0275 sens loss: 0.5575 contrastive loss: 5.9183 edge reconstruction loss: 0.5479 feature reconstruction loss: 0.0201
+Epoch: 0276 sens loss: 0.5505 contrastive loss: 5.9356 edge reconstruction loss: 0.5240 feature reconstruction loss: 0.0215
+Epoch: 0277 sens loss: 0.5518 contrastive loss: 5.9311 edge reconstruction loss: 0.5371 feature reconstruction loss: 0.0218
+Epoch: 0278 sens loss: 0.5533 contrastive loss: 5.9458 edge reconstruction loss: 0.5494 feature reconstruction loss: 0.0214
+Epoch: 0279 sens loss: 0.5535 contrastive loss: 5.9288 edge reconstruction loss: 0.5369 feature reconstruction loss: 0.0227
+Epoch: 0280 sens loss: 0.5552 contrastive loss: 5.9373 edge reconstruction loss: 0.5624 feature reconstruction loss: 0.0198
+Epoch: 0281 sens loss: 0.5551 contrastive loss: 5.9219 edge reconstruction loss: 0.5474 feature reconstruction loss: 0.0211
+Epoch: 0282 sens loss: 0.5470 contrastive loss: 5.9181 edge reconstruction loss: 0.5403 feature reconstruction loss: 0.0204
+Epoch: 0283 sens loss: 0.5479 contrastive loss: 5.9516 edge reconstruction loss: 0.5119 feature reconstruction loss: 0.0198
+Epoch: 0284 sens loss: 0.5478 contrastive loss: 5.9228 edge reconstruction loss: 0.5182 feature reconstruction loss: 0.0223
+Epoch: 0285 sens loss: 0.5514 contrastive loss: 5.9293 edge reconstruction loss: 0.5049 feature reconstruction loss: 0.0209
+Epoch: 0286 sens loss: 0.5452 contrastive loss: 5.9297 edge reconstruction loss: 0.5272 feature reconstruction loss: 0.0201
+Epoch: 0287 sens loss: 0.5480 contrastive loss: 5.9514 edge reconstruction loss: 0.5635 feature reconstruction loss: 0.0213
+Epoch: 0288 sens loss: 0.5508 contrastive loss: 5.9093 edge reconstruction loss: 0.5436 feature reconstruction loss: 0.0216
+Epoch: 0289 sens loss: 0.5451 contrastive loss: 5.9124 edge reconstruction loss: 0.5793 feature reconstruction loss: 0.0213
+Epoch: 0290 sens loss: 0.5481 contrastive loss: 5.9079 edge reconstruction loss: 0.5875 feature reconstruction loss: 0.0210
+Epoch: 0291 sens loss: 0.5495 contrastive loss: 5.9255 edge reconstruction loss: 0.5713 feature reconstruction loss: 0.0204
+Epoch: 0292 sens loss: 0.5535 contrastive loss: 5.9375 edge reconstruction loss: 0.5532 feature reconstruction loss: 0.0191
+Epoch: 0293 sens loss: 0.5478 contrastive loss: 5.9253 edge reconstruction loss: 0.5367 feature reconstruction loss: 0.0199
+Epoch: 0294 sens loss: 0.5482 contrastive loss: 5.9010 edge reconstruction loss: 0.5112 feature reconstruction loss: 0.0213
+Epoch: 0295 sens loss: 0.5430 contrastive loss: 5.9432 edge reconstruction loss: 0.5082 feature reconstruction loss: 0.0208
+Epoch: 0296 sens loss: 0.5500 contrastive loss: 5.9124 edge reconstruction loss: 0.4885 feature reconstruction loss: 0.0213
+Epoch: 0297 sens loss: 0.5447 contrastive loss: 5.9145 edge reconstruction loss: 0.4901 feature reconstruction loss: 0.0199
+Epoch: 0298 sens loss: 0.5520 contrastive loss: 5.9282 edge reconstruction loss: 0.5334 feature reconstruction loss: 0.0202
+Epoch: 0299 sens loss: 0.5440 contrastive loss: 5.8845 edge reconstruction loss: 0.5477 feature reconstruction loss: 0.0197
+Epoch: 0300 sens loss: 0.5592 contrastive loss: 5.9065 edge reconstruction loss: 0.5913 feature reconstruction loss: 0.0213
+Epoch: 0301 sens loss: 0.5496 contrastive loss: 5.9092 edge reconstruction loss: 0.5844 feature reconstruction loss: 0.0196
+Epoch: 0302 sens loss: 0.5653 contrastive loss: 5.9059 edge reconstruction loss: 0.5886 feature reconstruction loss: 0.0193
+Epoch: 0303 sens loss: 0.5480 contrastive loss: 5.9331 edge reconstruction loss: 0.5750 feature reconstruction loss: 0.0202
+Epoch: 0304 sens loss: 0.5503 contrastive loss: 5.9476 edge reconstruction loss: 0.5211 feature reconstruction loss: 0.0205
+Epoch: 0305 sens loss: 0.5485 contrastive loss: 5.9773 edge reconstruction loss: 0.5378 feature reconstruction loss: 0.0197
+Epoch: 0306 sens loss: 0.5557 contrastive loss: 5.9482 edge reconstruction loss: 0.5112 feature reconstruction loss: 0.0212
+Epoch: 0307 sens loss: 0.5337 contrastive loss: 5.9597 edge reconstruction loss: 0.5170 feature reconstruction loss: 0.0201
+Epoch: 0308 sens loss: 0.5396 contrastive loss: 5.9084 edge reconstruction loss: 0.5224 feature reconstruction loss: 0.0201
+Epoch: 0309 sens loss: 0.5483 contrastive loss: 5.9359 edge reconstruction loss: 0.5620 feature reconstruction loss: 0.0191
+Epoch: 0310 sens loss: 0.5448 contrastive loss: 5.9355 edge reconstruction loss: 0.5751 feature reconstruction loss: 0.0201
+Epoch: 0311 sens loss: 0.5485 contrastive loss: 5.9287 edge reconstruction loss: 0.5655 feature reconstruction loss: 0.0202
+Epoch: 0312 sens loss: 0.5408 contrastive loss: 5.9186 edge reconstruction loss: 0.5726 feature reconstruction loss: 0.0183
+Epoch: 0313 sens loss: 0.5491 contrastive loss: 5.9203 edge reconstruction loss: 0.5367 feature reconstruction loss: 0.0181
+Epoch: 0314 sens loss: 0.5544 contrastive loss: 5.8895 edge reconstruction loss: 0.5373 feature reconstruction loss: 0.0198
+Epoch: 0315 sens loss: 0.5422 contrastive loss: 5.9120 edge reconstruction loss: 0.5524 feature reconstruction loss: 0.0208
+Epoch: 0316 sens loss: 0.5483 contrastive loss: 5.8990 edge reconstruction loss: 0.5292 feature reconstruction loss: 0.0202
+Epoch: 0317 sens loss: 0.5373 contrastive loss: 5.9212 edge reconstruction loss: 0.5440 feature reconstruction loss: 0.0208
+Epoch: 0318 sens loss: 0.5510 contrastive loss: 5.9206 edge reconstruction loss: 0.5513 feature reconstruction loss: 0.0192
+Epoch: 0319 sens loss: 0.5388 contrastive loss: 5.9252 edge reconstruction loss: 0.5114 feature reconstruction loss: 0.0201
+Epoch: 0320 sens loss: 0.5433 contrastive loss: 5.9246 edge reconstruction loss: 0.5365 feature reconstruction loss: 0.0196
+Epoch: 0321 sens loss: 0.5408 contrastive loss: 5.9629 edge reconstruction loss: 0.5488 feature reconstruction loss: 0.0184
+Epoch: 0322 sens loss: 0.5452 contrastive loss: 5.9299 edge reconstruction loss: 0.5546 feature reconstruction loss: 0.0187
+Epoch: 0323 sens loss: 0.5455 contrastive loss: 5.8978 edge reconstruction loss: 0.5650 feature reconstruction loss: 0.0177
+Epoch: 0324 sens loss: 0.5458 contrastive loss: 5.9122 edge reconstruction loss: 0.5536 feature reconstruction loss: 0.0192
+Epoch: 0325 sens loss: 0.5390 contrastive loss: 5.8965 edge reconstruction loss: 0.5568 feature reconstruction loss: 0.0199
+Epoch: 0326 sens loss: 0.5398 contrastive loss: 5.9155 edge reconstruction loss: 0.5414 feature reconstruction loss: 0.0191
+Epoch: 0327 sens loss: 0.5488 contrastive loss: 5.9389 edge reconstruction loss: 0.5549 feature reconstruction loss: 0.0175
+Epoch: 0328 sens loss: 0.5577 contrastive loss: 5.9236 edge reconstruction loss: 0.5485 feature reconstruction loss: 0.0180
+Epoch: 0329 sens loss: 0.5488 contrastive loss: 5.8732 edge reconstruction loss: 0.5502 feature reconstruction loss: 0.0185
+Epoch: 0330 sens loss: 0.5441 contrastive loss: 5.9007 edge reconstruction loss: 0.5348 feature reconstruction loss: 0.0190
+Epoch: 0331 sens loss: 0.5368 contrastive loss: 5.8982 edge reconstruction loss: 0.5209 feature reconstruction loss: 0.0189
+Epoch: 0332 sens loss: 0.5426 contrastive loss: 5.8761 edge reconstruction loss: 0.5176 feature reconstruction loss: 0.0186
+Epoch: 0333 sens loss: 0.5455 contrastive loss: 5.8932 edge reconstruction loss: 0.5626 feature reconstruction loss: 0.0189
+Epoch: 0334 sens loss: 0.5372 contrastive loss: 5.9645 edge reconstruction loss: 0.4988 feature reconstruction loss: 0.0194
+Epoch: 0335 sens loss: 0.5405 contrastive loss: 5.9200 edge reconstruction loss: 0.5327 feature reconstruction loss: 0.0178
+Epoch: 0336 sens loss: 0.5425 contrastive loss: 5.8980 edge reconstruction loss: 0.5527 feature reconstruction loss: 0.0180
+Epoch: 0337 sens loss: 0.5490 contrastive loss: 5.9182 edge reconstruction loss: 0.5666 feature reconstruction loss: 0.0200
+Epoch: 0338 sens loss: 0.5378 contrastive loss: 5.8974 edge reconstruction loss: 0.5561 feature reconstruction loss: 0.0180
+Epoch: 0339 sens loss: 0.5414 contrastive loss: 5.8765 edge reconstruction loss: 0.5431 feature reconstruction loss: 0.0177
+Epoch: 0340 sens loss: 0.5387 contrastive loss: 5.9368 edge reconstruction loss: 0.5578 feature reconstruction loss: 0.0175
+Epoch: 0341 sens loss: 0.5373 contrastive loss: 5.9029 edge reconstruction loss: 0.5587 feature reconstruction loss: 0.0188
+Epoch: 0342 sens loss: 0.5448 contrastive loss: 5.9185 edge reconstruction loss: 0.5615 feature reconstruction loss: 0.0158
+Epoch: 0343 sens loss: 0.5400 contrastive loss: 5.9399 edge reconstruction loss: 0.5351 feature reconstruction loss: 0.0206
+Epoch: 0344 sens loss: 0.5454 contrastive loss: 5.8893 edge reconstruction loss: 0.5368 feature reconstruction loss: 0.0179
+Epoch: 0345 sens loss: 0.5351 contrastive loss: 5.9254 edge reconstruction loss: 0.5283 feature reconstruction loss: 0.0195
+Epoch: 0346 sens loss: 0.5635 contrastive loss: 5.9118 edge reconstruction loss: 0.5285 feature reconstruction loss: 0.0181
+Epoch: 0347 sens loss: 0.5392 contrastive loss: 5.8977 edge reconstruction loss: 0.5254 feature reconstruction loss: 0.0200
+Epoch: 0348 sens loss: 0.5451 contrastive loss: 5.9022 edge reconstruction loss: 0.5514 feature reconstruction loss: 0.0185
+Epoch: 0349 sens loss: 0.5415 contrastive loss: 5.9068 edge reconstruction loss: 0.5623 feature reconstruction loss: 0.0187
+Epoch: 0350 sens loss: 0.5389 contrastive loss: 5.8827 edge reconstruction loss: 0.5762 feature reconstruction loss: 0.0174
+Epoch: 0351 sens loss: 0.5375 contrastive loss: 5.8903 edge reconstruction loss: 0.5688 feature reconstruction loss: 0.0181
+Epoch: 0352 sens loss: 0.5389 contrastive loss: 5.9104 edge reconstruction loss: 0.5453 feature reconstruction loss: 0.0190
+Epoch: 0353 sens loss: 0.5382 contrastive loss: 5.8978 edge reconstruction loss: 0.5617 feature reconstruction loss: 0.0169
+Epoch: 0354 sens loss: 0.5412 contrastive loss: 5.8816 edge reconstruction loss: 0.5360 feature reconstruction loss: 0.0185
+Epoch: 0355 sens loss: 0.5403 contrastive loss: 5.8757 edge reconstruction loss: 0.5088 feature reconstruction loss: 0.0176
+Epoch: 0356 sens loss: 0.5346 contrastive loss: 5.8948 edge reconstruction loss: 0.5183 feature reconstruction loss: 0.0153
+Epoch: 0357 sens loss: 0.5451 contrastive loss: 5.8906 edge reconstruction loss: 0.5237 feature reconstruction loss: 0.0155
+Epoch: 0358 sens loss: 0.5423 contrastive loss: 5.8721 edge reconstruction loss: 0.5257 feature reconstruction loss: 0.0168
+Epoch: 0359 sens loss: 0.5381 contrastive loss: 5.9393 edge reconstruction loss: 0.5402 feature reconstruction loss: 0.0173
+Epoch: 0360 sens loss: 0.5524 contrastive loss: 5.8788 edge reconstruction loss: 0.5413 feature reconstruction loss: 0.0151
+Epoch: 0361 sens loss: 0.5450 contrastive loss: 5.8957 edge reconstruction loss: 0.5443 feature reconstruction loss: 0.0177
+Epoch: 0362 sens loss: 0.5807 contrastive loss: 5.8693 edge reconstruction loss: 0.5426 feature reconstruction loss: 0.0180
+Epoch: 0363 sens loss: 0.5551 contrastive loss: 5.8718 edge reconstruction loss: 0.5830 feature reconstruction loss: 0.0177
+Epoch: 0364 sens loss: 0.5440 contrastive loss: 5.8589 edge reconstruction loss: 0.5704 feature reconstruction loss: 0.0152
+Epoch: 0365 sens loss: 0.5712 contrastive loss: 5.8916 edge reconstruction loss: 0.5532 feature reconstruction loss: 0.0170
+Epoch: 0366 sens loss: 0.5363 contrastive loss: 5.9143 edge reconstruction loss: 0.5510 feature reconstruction loss: 0.0172
+Epoch: 0367 sens loss: 0.5696 contrastive loss: 5.8839 edge reconstruction loss: 0.5559 feature reconstruction loss: 0.0162
+Epoch: 0368 sens loss: 0.5713 contrastive loss: 5.8697 edge reconstruction loss: 0.5463 feature reconstruction loss: 0.0187
+Epoch: 0369 sens loss: 0.5364 contrastive loss: 5.8433 edge reconstruction loss: 0.5736 feature reconstruction loss: 0.0156
+Epoch: 0370 sens loss: 0.5532 contrastive loss: 5.8820 edge reconstruction loss: 0.5355 feature reconstruction loss: 0.0164
+Epoch: 0371 sens loss: 0.5664 contrastive loss: 5.8494 edge reconstruction loss: 0.5360 feature reconstruction loss: 0.0169
+Epoch: 0372 sens loss: 0.5327 contrastive loss: 5.8396 edge reconstruction loss: 0.5403 feature reconstruction loss: 0.0165
+Epoch: 0373 sens loss: 0.5608 contrastive loss: 5.8795 edge reconstruction loss: 0.5188 feature reconstruction loss: 0.0177
+Epoch: 0374 sens loss: 0.5488 contrastive loss: 5.8517 edge reconstruction loss: 0.5218 feature reconstruction loss: 0.0167
+Epoch: 0375 sens loss: 0.5341 contrastive loss: 5.8972 edge reconstruction loss: 0.5268 feature reconstruction loss: 0.0145
+Epoch: 0376 sens loss: 0.5506 contrastive loss: 5.8914 edge reconstruction loss: 0.5510 feature reconstruction loss: 0.0160
+Epoch: 0377 sens loss: 0.5656 contrastive loss: 5.8946 edge reconstruction loss: 0.5415 feature reconstruction loss: 0.0171
+Epoch: 0378 sens loss: 0.5440 contrastive loss: 5.8847 edge reconstruction loss: 0.5420 feature reconstruction loss: 0.0176
+Epoch: 0379 sens loss: 0.5495 contrastive loss: 5.8951 edge reconstruction loss: 0.5431 feature reconstruction loss: 0.0154
+Epoch: 0380 sens loss: 0.5687 contrastive loss: 5.8622 edge reconstruction loss: 0.5301 feature reconstruction loss: 0.0161
+Epoch: 0381 sens loss: 0.5398 contrastive loss: 5.8880 edge reconstruction loss: 0.5470 feature reconstruction loss: 0.0139
+Epoch: 0382 sens loss: 0.5465 contrastive loss: 5.8555 edge reconstruction loss: 0.5285 feature reconstruction loss: 0.0180
+Epoch: 0383 sens loss: 0.5491 contrastive loss: 5.9092 edge reconstruction loss: 0.5337 feature reconstruction loss: 0.0165
+Epoch: 0384 sens loss: 0.5464 contrastive loss: 5.8851 edge reconstruction loss: 0.5372 feature reconstruction loss: 0.0152
+Epoch: 0385 sens loss: 0.5394 contrastive loss: 5.8749 edge reconstruction loss: 0.5269 feature reconstruction loss: 0.0149
+Epoch: 0386 sens loss: 0.5502 contrastive loss: 5.8672 edge reconstruction loss: 0.5300 feature reconstruction loss: 0.0163
+Epoch: 0387 sens loss: 0.5374 contrastive loss: 5.8955 edge reconstruction loss: 0.5190 feature reconstruction loss: 0.0153
+Epoch: 0388 sens loss: 0.5355 contrastive loss: 5.8708 edge reconstruction loss: 0.5380 feature reconstruction loss: 0.0163
+Epoch: 0389 sens loss: 0.5404 contrastive loss: 5.8698 edge reconstruction loss: 0.5494 feature reconstruction loss: 0.0146
+Epoch: 0390 sens loss: 0.5426 contrastive loss: 5.8404 edge reconstruction loss: 0.5397 feature reconstruction loss: 0.0149
+Epoch: 0391 sens loss: 0.5430 contrastive loss: 5.8180 edge reconstruction loss: 0.5268 feature reconstruction loss: 0.0166
+Epoch: 0392 sens loss: 0.5384 contrastive loss: 5.8327 edge reconstruction loss: 0.5261 feature reconstruction loss: 0.0166
+Epoch: 0393 sens loss: 0.5462 contrastive loss: 5.8650 edge reconstruction loss: 0.5394 feature reconstruction loss: 0.0151
+Epoch: 0394 sens loss: 0.5490 contrastive loss: 5.8772 edge reconstruction loss: 0.5414 feature reconstruction loss: 0.0152
+Epoch: 0395 sens loss: 0.5381 contrastive loss: 5.8885 edge reconstruction loss: 0.5075 feature reconstruction loss: 0.0159
+Epoch: 0396 sens loss: 0.5441 contrastive loss: 5.8449 edge reconstruction loss: 0.5073 feature reconstruction loss: 0.0160
+Epoch: 0397 sens loss: 0.5322 contrastive loss: 5.8501 edge reconstruction loss: 0.5396 feature reconstruction loss: 0.0138
+Epoch: 0398 sens loss: 0.5390 contrastive loss: 5.8241 edge reconstruction loss: 0.5454 feature reconstruction loss: 0.0155
+Epoch: 0399 sens loss: 0.5378 contrastive loss: 5.8286 edge reconstruction loss: 0.5474 feature reconstruction loss: 0.0156
+Epoch: 0400 sens loss: 0.5347 contrastive loss: 5.8227 edge reconstruction loss: 0.5576 feature reconstruction loss: 0.0155
+Epoch: 0401 sens loss: 0.5319 contrastive loss: 5.8654 edge reconstruction loss: 0.5330 feature reconstruction loss: 0.0150
+Epoch: 0402 sens loss: 0.5400 contrastive loss: 5.8739 edge reconstruction loss: 0.5248 feature reconstruction loss: 0.0151
+Epoch: 0403 sens loss: 0.5272 contrastive loss: 5.8562 edge reconstruction loss: 0.5366 feature reconstruction loss: 0.0153
+Epoch: 0404 sens loss: 0.5387 contrastive loss: 5.8696 edge reconstruction loss: 0.5332 feature reconstruction loss: 0.0141
+Epoch: 0405 sens loss: 0.5363 contrastive loss: 5.8844 edge reconstruction loss: 0.5190 feature reconstruction loss: 0.0158
+Epoch: 0406 sens loss: 0.5346 contrastive loss: 5.8318 edge reconstruction loss: 0.5413 feature reconstruction loss: 0.0167
+Epoch: 0407 sens loss: 0.5337 contrastive loss: 5.8733 edge reconstruction loss: 0.5405 feature reconstruction loss: 0.0161
+Epoch: 0408 sens loss: 0.5358 contrastive loss: 5.8461 edge reconstruction loss: 0.5771 feature reconstruction loss: 0.0157
+Epoch: 0409 sens loss: 0.5298 contrastive loss: 5.8446 edge reconstruction loss: 0.5683 feature reconstruction loss: 0.0139
+Epoch: 0410 sens loss: 0.5435 contrastive loss: 5.8387 edge reconstruction loss: 0.5648 feature reconstruction loss: 0.0168
+Epoch: 0411 sens loss: 0.5494 contrastive loss: 5.8559 edge reconstruction loss: 0.5616 feature reconstruction loss: 0.0154
+Epoch: 0412 sens loss: 0.5338 contrastive loss: 5.9154 edge reconstruction loss: 0.5234 feature reconstruction loss: 0.0158
+Epoch: 0413 sens loss: 0.5452 contrastive loss: 5.8570 edge reconstruction loss: 0.5293 feature reconstruction loss: 0.0153
+Epoch: 0414 sens loss: 0.5356 contrastive loss: 5.8367 edge reconstruction loss: 0.5016 feature reconstruction loss: 0.0161
+Epoch: 0415 sens loss: 0.5330 contrastive loss: 5.8412 edge reconstruction loss: 0.5223 feature reconstruction loss: 0.0167
+Epoch: 0416 sens loss: 0.5356 contrastive loss: 5.8934 edge reconstruction loss: 0.4866 feature reconstruction loss: 0.0171
+Epoch: 0417 sens loss: 0.5364 contrastive loss: 5.8726 edge reconstruction loss: 0.5046 feature reconstruction loss: 0.0152
+Epoch: 0418 sens loss: 0.5419 contrastive loss: 5.8412 edge reconstruction loss: 0.5272 feature reconstruction loss: 0.0158
+Epoch: 0419 sens loss: 0.5514 contrastive loss: 5.8265 edge reconstruction loss: 0.5761 feature reconstruction loss: 0.0172
+Epoch: 0420 sens loss: 0.5330 contrastive loss: 5.7962 edge reconstruction loss: 0.5699 feature reconstruction loss: 0.0164
+Epoch: 0421 sens loss: 0.5456 contrastive loss: 5.8171 edge reconstruction loss: 0.5734 feature reconstruction loss: 0.0174
+Epoch: 0422 sens loss: 0.5316 contrastive loss: 5.8190 edge reconstruction loss: 0.5794 feature reconstruction loss: 0.0161
+Epoch: 0423 sens loss: 0.5414 contrastive loss: 5.8025 edge reconstruction loss: 0.5799 feature reconstruction loss: 0.0179
+Epoch: 0424 sens loss: 0.5370 contrastive loss: 5.8855 edge reconstruction loss: 0.5219 feature reconstruction loss: 0.0162
+Epoch: 0425 sens loss: 0.5409 contrastive loss: 5.8337 edge reconstruction loss: 0.5016 feature reconstruction loss: 0.0158
+Epoch: 0426 sens loss: 0.5256 contrastive loss: 5.8128 edge reconstruction loss: 0.5149 feature reconstruction loss: 0.0168
+Epoch: 0427 sens loss: 0.5367 contrastive loss: 5.8941 edge reconstruction loss: 0.5207 feature reconstruction loss: 0.0163
+Epoch: 0428 sens loss: 0.5472 contrastive loss: 5.8320 edge reconstruction loss: 0.5271 feature reconstruction loss: 0.0158
+Epoch: 0429 sens loss: 0.5337 contrastive loss: 5.8484 edge reconstruction loss: 0.5310 feature reconstruction loss: 0.0167
+Epoch: 0430 sens loss: 0.5447 contrastive loss: 5.8668 edge reconstruction loss: 0.5274 feature reconstruction loss: 0.0165
+Epoch: 0431 sens loss: 0.5441 contrastive loss: 5.8521 edge reconstruction loss: 0.5488 feature reconstruction loss: 0.0175
+Epoch: 0432 sens loss: 0.5334 contrastive loss: 5.8108 edge reconstruction loss: 0.5593 feature reconstruction loss: 0.0169
+Epoch: 0433 sens loss: 0.5500 contrastive loss: 5.8275 edge reconstruction loss: 0.5612 feature reconstruction loss: 0.0149
+Epoch: 0434 sens loss: 0.5382 contrastive loss: 5.8393 edge reconstruction loss: 0.5734 feature reconstruction loss: 0.0143
+Epoch: 0435 sens loss: 0.5479 contrastive loss: 5.8008 edge reconstruction loss: 0.5568 feature reconstruction loss: 0.0154
+Epoch: 0436 sens loss: 0.5504 contrastive loss: 5.8319 edge reconstruction loss: 0.5607 feature reconstruction loss: 0.0163
+Epoch: 0437 sens loss: 0.5325 contrastive loss: 5.8374 edge reconstruction loss: 0.5193 feature reconstruction loss: 0.0171
+Epoch: 0438 sens loss: 0.5421 contrastive loss: 5.8078 edge reconstruction loss: 0.5156 feature reconstruction loss: 0.0163
+Epoch: 0439 sens loss: 0.5475 contrastive loss: 5.8549 edge reconstruction loss: 0.5109 feature reconstruction loss: 0.0163
+Epoch: 0440 sens loss: 0.5341 contrastive loss: 5.8064 edge reconstruction loss: 0.4930 feature reconstruction loss: 0.0175
+Epoch: 0441 sens loss: 0.5440 contrastive loss: 5.8340 edge reconstruction loss: 0.4980 feature reconstruction loss: 0.0172
+Epoch: 0442 sens loss: 0.5322 contrastive loss: 5.8258 edge reconstruction loss: 0.5108 feature reconstruction loss: 0.0167
+Epoch: 0443 sens loss: 0.5407 contrastive loss: 5.8326 edge reconstruction loss: 0.5608 feature reconstruction loss: 0.0149
+Epoch: 0444 sens loss: 0.5536 contrastive loss: 5.8333 edge reconstruction loss: 0.5743 feature reconstruction loss: 0.0159
+Epoch: 0445 sens loss: 0.5377 contrastive loss: 5.8182 edge reconstruction loss: 0.5760 feature reconstruction loss: 0.0163
+Epoch: 0446 sens loss: 0.5336 contrastive loss: 5.8229 edge reconstruction loss: 0.5512 feature reconstruction loss: 0.0169
+Epoch: 0447 sens loss: 0.5380 contrastive loss: 5.7959 edge reconstruction loss: 0.5452 feature reconstruction loss: 0.0165
+Epoch: 0448 sens loss: 0.5409 contrastive loss: 5.8009 edge reconstruction loss: 0.5388 feature reconstruction loss: 0.0174
+Epoch: 0449 sens loss: 0.5459 contrastive loss: 5.8478 edge reconstruction loss: 0.5266 feature reconstruction loss: 0.0156
+Epoch: 0450 sens loss: 0.5479 contrastive loss: 5.8107 edge reconstruction loss: 0.4948 feature reconstruction loss: 0.0176
+Epoch: 0451 sens loss: 0.5509 contrastive loss: 5.8651 edge reconstruction loss: 0.5094 feature reconstruction loss: 0.0171
+Epoch: 0452 sens loss: 0.5337 contrastive loss: 5.7788 edge reconstruction loss: 0.5534 feature reconstruction loss: 0.0176
+Epoch: 0453 sens loss: 0.5525 contrastive loss: 5.8138 edge reconstruction loss: 0.5460 feature reconstruction loss: 0.0158
+Epoch: 0454 sens loss: 0.5338 contrastive loss: 5.8221 edge reconstruction loss: 0.5562 feature reconstruction loss: 0.0170
+Epoch: 0455 sens loss: 0.5454 contrastive loss: 5.8155 edge reconstruction loss: 0.5401 feature reconstruction loss: 0.0166
+Epoch: 0456 sens loss: 0.5290 contrastive loss: 5.7965 edge reconstruction loss: 0.5589 feature reconstruction loss: 0.0164
+Epoch: 0457 sens loss: 0.5411 contrastive loss: 5.8303 edge reconstruction loss: 0.5224 feature reconstruction loss: 0.0169
+Epoch: 0458 sens loss: 0.5465 contrastive loss: 5.7777 edge reconstruction loss: 0.5470 feature reconstruction loss: 0.0162
+Epoch: 0459 sens loss: 0.5368 contrastive loss: 5.8129 edge reconstruction loss: 0.5228 feature reconstruction loss: 0.0153
+Epoch: 0460 sens loss: 0.5302 contrastive loss: 5.8006 edge reconstruction loss: 0.5173 feature reconstruction loss: 0.0161
+Epoch: 0461 sens loss: 0.5361 contrastive loss: 5.7642 edge reconstruction loss: 0.5187 feature reconstruction loss: 0.0168
+Epoch: 0462 sens loss: 0.5335 contrastive loss: 5.7829 edge reconstruction loss: 0.5443 feature reconstruction loss: 0.0173
+Epoch: 0463 sens loss: 0.5339 contrastive loss: 5.7861 edge reconstruction loss: 0.5432 feature reconstruction loss: 0.0158
+Epoch: 0464 sens loss: 0.5343 contrastive loss: 5.7744 edge reconstruction loss: 0.5495 feature reconstruction loss: 0.0166
+Epoch: 0465 sens loss: 0.5388 contrastive loss: 5.8060 edge reconstruction loss: 0.5159 feature reconstruction loss: 0.0158
+Epoch: 0466 sens loss: 0.5404 contrastive loss: 5.7738 edge reconstruction loss: 0.5494 feature reconstruction loss: 0.0157
+Epoch: 0467 sens loss: 0.5318 contrastive loss: 5.8483 edge reconstruction loss: 0.5391 feature reconstruction loss: 0.0164
+Epoch: 0468 sens loss: 0.5319 contrastive loss: 5.8643 edge reconstruction loss: 0.5440 feature reconstruction loss: 0.0163
+Epoch: 0469 sens loss: 0.5374 contrastive loss: 5.7517 edge reconstruction loss: 0.5643 feature reconstruction loss: 0.0160
+Epoch: 0470 sens loss: 0.5371 contrastive loss: 5.8283 edge reconstruction loss: 0.5763 feature reconstruction loss: 0.0153
+Epoch: 0471 sens loss: 0.5578 contrastive loss: 5.7610 edge reconstruction loss: 0.5433 feature reconstruction loss: 0.0155
+Epoch: 0472 sens loss: 0.5391 contrastive loss: 5.7699 edge reconstruction loss: 0.5078 feature reconstruction loss: 0.0143
+Epoch: 0473 sens loss: 0.5268 contrastive loss: 5.8122 edge reconstruction loss: 0.4988 feature reconstruction loss: 0.0174
+Epoch: 0474 sens loss: 0.5324 contrastive loss: 5.8031 edge reconstruction loss: 0.5227 feature reconstruction loss: 0.0161
+Epoch: 0475 sens loss: 0.5443 contrastive loss: 5.7711 edge reconstruction loss: 0.5183 feature reconstruction loss: 0.0171
+Epoch: 0476 sens loss: 0.5352 contrastive loss: 5.7493 edge reconstruction loss: 0.5525 feature reconstruction loss: 0.0164
+Epoch: 0477 sens loss: 0.5674 contrastive loss: 5.7823 edge reconstruction loss: 0.5686 feature reconstruction loss: 0.0173
+Epoch: 0478 sens loss: 0.5228 contrastive loss: 5.7627 edge reconstruction loss: 0.5333 feature reconstruction loss: 0.0167
+Epoch: 0479 sens loss: 0.5413 contrastive loss: 5.7956 edge reconstruction loss: 0.5557 feature reconstruction loss: 0.0162
+Epoch: 0480 sens loss: 0.5379 contrastive loss: 5.7169 edge reconstruction loss: 0.5685 feature reconstruction loss: 0.0160
+Epoch: 0481 sens loss: 0.5352 contrastive loss: 5.8230 edge reconstruction loss: 0.5380 feature reconstruction loss: 0.0165
+Epoch: 0482 sens loss: 0.5294 contrastive loss: 5.7743 edge reconstruction loss: 0.5700 feature reconstruction loss: 0.0137
+Epoch: 0483 sens loss: 0.5442 contrastive loss: 5.7665 edge reconstruction loss: 0.5304 feature reconstruction loss: 0.0159
+Epoch: 0484 sens loss: 0.5289 contrastive loss: 5.8098 edge reconstruction loss: 0.5125 feature reconstruction loss: 0.0159
+Epoch: 0485 sens loss: 0.5340 contrastive loss: 5.8141 edge reconstruction loss: 0.5127 feature reconstruction loss: 0.0160
+Epoch: 0486 sens loss: 0.5370 contrastive loss: 5.8015 edge reconstruction loss: 0.5295 feature reconstruction loss: 0.0169
+Epoch: 0487 sens loss: 0.5347 contrastive loss: 5.7997 edge reconstruction loss: 0.5158 feature reconstruction loss: 0.0153
+Epoch: 0488 sens loss: 0.5385 contrastive loss: 5.7733 edge reconstruction loss: 0.5418 feature reconstruction loss: 0.0164
+Epoch: 0489 sens loss: 0.5358 contrastive loss: 5.7454 edge reconstruction loss: 0.5596 feature reconstruction loss: 0.0151
+Epoch: 0490 sens loss: 0.5462 contrastive loss: 5.7389 edge reconstruction loss: 0.5950 feature reconstruction loss: 0.0157
+Epoch: 0491 sens loss: 0.5635 contrastive loss: 5.7837 edge reconstruction loss: 0.5403 feature reconstruction loss: 0.0175
+Epoch: 0492 sens loss: 0.5328 contrastive loss: 5.7728 edge reconstruction loss: 0.5391 feature reconstruction loss: 0.0163
+Epoch: 0493 sens loss: 0.5350 contrastive loss: 5.7480 edge reconstruction loss: 0.5271 feature reconstruction loss: 0.0164
+Epoch: 0494 sens loss: 0.5527 contrastive loss: 5.7873 edge reconstruction loss: 0.5124 feature reconstruction loss: 0.0166
+Epoch: 0495 sens loss: 0.5391 contrastive loss: 5.7405 edge reconstruction loss: 0.5324 feature reconstruction loss: 0.0158
+Epoch: 0496 sens loss: 0.5330 contrastive loss: 5.7894 edge reconstruction loss: 0.4990 feature reconstruction loss: 0.0171
+Epoch: 0497 sens loss: 0.5424 contrastive loss: 5.7199 edge reconstruction loss: 0.5798 feature reconstruction loss: 0.0154
+Epoch: 0498 sens loss: 0.5443 contrastive loss: 5.7397 edge reconstruction loss: 0.5546 feature reconstruction loss: 0.0161
+Epoch: 0499 sens loss: 0.5354 contrastive loss: 5.7528 edge reconstruction loss: 0.5979 feature reconstruction loss: 0.0157
+Epoch: 0500 sens loss: 0.5337 contrastive loss: 5.7595 edge reconstruction loss: 0.5423 feature reconstruction loss: 0.0155
+Epoch: 0501 sens loss: 0.5319 contrastive loss: 5.7989 edge reconstruction loss: 0.5138 feature reconstruction loss: 0.0164
+Epoch: 0502 sens loss: 0.5298 contrastive loss: 5.7653 edge reconstruction loss: 0.5296 feature reconstruction loss: 0.0166
+Epoch: 0503 sens loss: 0.5391 contrastive loss: 5.7260 edge reconstruction loss: 0.5494 feature reconstruction loss: 0.0146
+Epoch: 0504 sens loss: 0.5372 contrastive loss: 5.7869 edge reconstruction loss: 0.5400 feature reconstruction loss: 0.0168
+Epoch: 0505 sens loss: 0.5340 contrastive loss: 5.7260 edge reconstruction loss: 0.5460 feature reconstruction loss: 0.0154
+Epoch: 0506 sens loss: 0.5300 contrastive loss: 5.7343 edge reconstruction loss: 0.5636 feature reconstruction loss: 0.0156
+Epoch: 0507 sens loss: 0.5309 contrastive loss: 5.7664 edge reconstruction loss: 0.5458 feature reconstruction loss: 0.0155
+Epoch: 0508 sens loss: 0.5267 contrastive loss: 5.7693 edge reconstruction loss: 0.5170 feature reconstruction loss: 0.0168
+Epoch: 0509 sens loss: 0.5370 contrastive loss: 5.7841 edge reconstruction loss: 0.5413 feature reconstruction loss: 0.0159
+Epoch: 0510 sens loss: 0.5311 contrastive loss: 5.7822 edge reconstruction loss: 0.5492 feature reconstruction loss: 0.0159
+Epoch: 0511 sens loss: 0.5248 contrastive loss: 5.7451 edge reconstruction loss: 0.5571 feature reconstruction loss: 0.0152
+Epoch: 0512 sens loss: 0.5467 contrastive loss: 5.7801 edge reconstruction loss: 0.5251 feature reconstruction loss: 0.0164
+Epoch: 0513 sens loss: 0.5314 contrastive loss: 5.7396 edge reconstruction loss: 0.5617 feature reconstruction loss: 0.0164
+Epoch: 0514 sens loss: 0.5558 contrastive loss: 5.7824 edge reconstruction loss: 0.5807 feature reconstruction loss: 0.0135
+Epoch: 0515 sens loss: 0.5254 contrastive loss: 5.7555 edge reconstruction loss: 0.5268 feature reconstruction loss: 0.0166
+Epoch: 0516 sens loss: 0.5531 contrastive loss: 5.7690 edge reconstruction loss: 0.5351 feature reconstruction loss: 0.0156
+Epoch: 0517 sens loss: 0.5510 contrastive loss: 5.7472 edge reconstruction loss: 0.5428 feature reconstruction loss: 0.0160
+Epoch: 0518 sens loss: 0.5304 contrastive loss: 5.7282 edge reconstruction loss: 0.5456 feature reconstruction loss: 0.0147
+Epoch: 0519 sens loss: 0.5510 contrastive loss: 5.7583 edge reconstruction loss: 0.5365 feature reconstruction loss: 0.0169
+Epoch: 0520 sens loss: 0.5501 contrastive loss: 5.7553 edge reconstruction loss: 0.5430 feature reconstruction loss: 0.0158
+Epoch: 0521 sens loss: 0.5318 contrastive loss: 5.7442 edge reconstruction loss: 0.5495 feature reconstruction loss: 0.0147
+Epoch: 0522 sens loss: 0.5565 contrastive loss: 5.7448 edge reconstruction loss: 0.5439 feature reconstruction loss: 0.0132
+Epoch: 0523 sens loss: 0.5695 contrastive loss: 5.7283 edge reconstruction loss: 0.5281 feature reconstruction loss: 0.0145
+Epoch: 0524 sens loss: 0.5388 contrastive loss: 5.7641 edge reconstruction loss: 0.5607 feature reconstruction loss: 0.0160
+Epoch: 0525 sens loss: 0.5703 contrastive loss: 5.6752 edge reconstruction loss: 0.5746 feature reconstruction loss: 0.0153
+Epoch: 0526 sens loss: 0.5793 contrastive loss: 5.7354 edge reconstruction loss: 0.5364 feature reconstruction loss: 0.0155
+Epoch: 0527 sens loss: 0.5214 contrastive loss: 5.7703 edge reconstruction loss: 0.5173 feature reconstruction loss: 0.0163
+Epoch: 0528 sens loss: 0.5784 contrastive loss: 5.7495 edge reconstruction loss: 0.5528 feature reconstruction loss: 0.0154
+Epoch: 0529 sens loss: 0.5663 contrastive loss: 5.7222 edge reconstruction loss: 0.5886 feature reconstruction loss: 0.0150
+Epoch: 0530 sens loss: 0.5305 contrastive loss: 5.7471 edge reconstruction loss: 0.5480 feature reconstruction loss: 0.0151
+Epoch: 0531 sens loss: 0.5724 contrastive loss: 5.7363 edge reconstruction loss: 0.5117 feature reconstruction loss: 0.0168
+Epoch: 0532 sens loss: 0.5901 contrastive loss: 5.7528 edge reconstruction loss: 0.5444 feature reconstruction loss: 0.0143
+Epoch: 0533 sens loss: 0.5688 contrastive loss: 5.7159 edge reconstruction loss: 0.5518 feature reconstruction loss: 0.0148
+Epoch: 0534 sens loss: 0.5282 contrastive loss: 5.7162 edge reconstruction loss: 0.5450 feature reconstruction loss: 0.0174
+Epoch: 0535 sens loss: 0.5862 contrastive loss: 5.7405 edge reconstruction loss: 0.5264 feature reconstruction loss: 0.0154
+Epoch: 0536 sens loss: 0.5707 contrastive loss: 5.7111 edge reconstruction loss: 0.5785 feature reconstruction loss: 0.0137
+Epoch: 0537 sens loss: 0.5372 contrastive loss: 5.7010 edge reconstruction loss: 0.5713 feature reconstruction loss: 0.0149
+Epoch: 0538 sens loss: 0.5385 contrastive loss: 5.7429 edge reconstruction loss: 0.5552 feature reconstruction loss: 0.0162
+Epoch: 0539 sens loss: 0.5522 contrastive loss: 5.7575 edge reconstruction loss: 0.5599 feature reconstruction loss: 0.0147
+Epoch: 0540 sens loss: 0.5578 contrastive loss: 5.7217 edge reconstruction loss: 0.5196 feature reconstruction loss: 0.0148
+Epoch: 0541 sens loss: 0.5566 contrastive loss: 5.7259 edge reconstruction loss: 0.5369 feature reconstruction loss: 0.0146
+Epoch: 0542 sens loss: 0.5424 contrastive loss: 5.7501 edge reconstruction loss: 0.5296 feature reconstruction loss: 0.0138
+Epoch: 0543 sens loss: 0.5412 contrastive loss: 5.7414 edge reconstruction loss: 0.5584 feature reconstruction loss: 0.0144
+Epoch: 0544 sens loss: 0.5564 contrastive loss: 5.7045 edge reconstruction loss: 0.5442 feature reconstruction loss: 0.0148
+Epoch: 0545 sens loss: 0.5565 contrastive loss: 5.7406 edge reconstruction loss: 0.5382 feature reconstruction loss: 0.0130
+Epoch: 0546 sens loss: 0.5440 contrastive loss: 5.7160 edge reconstruction loss: 0.5547 feature reconstruction loss: 0.0147
+Epoch: 0547 sens loss: 0.5383 contrastive loss: 5.6902 edge reconstruction loss: 0.5618 feature reconstruction loss: 0.0148
+Epoch: 0548 sens loss: 0.5422 contrastive loss: 5.6849 edge reconstruction loss: 0.5487 feature reconstruction loss: 0.0159
+Epoch: 0549 sens loss: 0.5579 contrastive loss: 5.6491 edge reconstruction loss: 0.6064 feature reconstruction loss: 0.0135
+Epoch: 0550 sens loss: 0.5386 contrastive loss: 5.6665 edge reconstruction loss: 0.5876 feature reconstruction loss: 0.0144
+Epoch: 0551 sens loss: 0.5365 contrastive loss: 5.7343 edge reconstruction loss: 0.5029 feature reconstruction loss: 0.0146
+Epoch: 0552 sens loss: 0.5391 contrastive loss: 5.7257 edge reconstruction loss: 0.5440 feature reconstruction loss: 0.0148
+Epoch: 0553 sens loss: 0.5462 contrastive loss: 5.7268 edge reconstruction loss: 0.5495 feature reconstruction loss: 0.0137
+Epoch: 0554 sens loss: 0.5381 contrastive loss: 5.7205 edge reconstruction loss: 0.5315 feature reconstruction loss: 0.0149
+Epoch: 0555 sens loss: 0.5500 contrastive loss: 5.7359 edge reconstruction loss: 0.5481 feature reconstruction loss: 0.0143
+Epoch: 0556 sens loss: 0.5347 contrastive loss: 5.7113 edge reconstruction loss: 0.5728 feature reconstruction loss: 0.0144
+Epoch: 0557 sens loss: 0.5446 contrastive loss: 5.7396 edge reconstruction loss: 0.5532 feature reconstruction loss: 0.0160
+Epoch: 0558 sens loss: 0.5392 contrastive loss: 5.7700 edge reconstruction loss: 0.5406 feature reconstruction loss: 0.0153
+Epoch: 0559 sens loss: 0.5401 contrastive loss: 5.7094 edge reconstruction loss: 0.5578 feature reconstruction loss: 0.0147
+Epoch: 0560 sens loss: 0.5542 contrastive loss: 5.6978 edge reconstruction loss: 0.5511 feature reconstruction loss: 0.0142
+Epoch: 0561 sens loss: 0.5350 contrastive loss: 5.7290 edge reconstruction loss: 0.5193 feature reconstruction loss: 0.0141
+Epoch: 0562 sens loss: 0.5331 contrastive loss: 5.7323 edge reconstruction loss: 0.5255 feature reconstruction loss: 0.0146
+Epoch: 0563 sens loss: 0.5311 contrastive loss: 5.6730 edge reconstruction loss: 0.5622 feature reconstruction loss: 0.0145
+Epoch: 0564 sens loss: 0.5338 contrastive loss: 5.7178 edge reconstruction loss: 0.5439 feature reconstruction loss: 0.0162
+Epoch: 0565 sens loss: 0.5327 contrastive loss: 5.7001 edge reconstruction loss: 0.5220 feature reconstruction loss: 0.0150
+Epoch: 0566 sens loss: 0.5420 contrastive loss: 5.6612 edge reconstruction loss: 0.6148 feature reconstruction loss: 0.0123
+Epoch: 0567 sens loss: 0.5376 contrastive loss: 5.6814 edge reconstruction loss: 0.5905 feature reconstruction loss: 0.0141
+Epoch: 0568 sens loss: 0.5351 contrastive loss: 5.7668 edge reconstruction loss: 0.5283 feature reconstruction loss: 0.0167
+Epoch: 0569 sens loss: 0.5330 contrastive loss: 5.7638 edge reconstruction loss: 0.5145 feature reconstruction loss: 0.0142
+Epoch: 0570 sens loss: 0.5345 contrastive loss: 5.6836 edge reconstruction loss: 0.5151 feature reconstruction loss: 0.0154
+Epoch: 0571 sens loss: 0.5355 contrastive loss: 5.6740 edge reconstruction loss: 0.5575 feature reconstruction loss: 0.0150
+Epoch: 0572 sens loss: 0.5390 contrastive loss: 5.6534 edge reconstruction loss: 0.5493 feature reconstruction loss: 0.0167
+Epoch: 0573 sens loss: 0.5407 contrastive loss: 5.6889 edge reconstruction loss: 0.5491 feature reconstruction loss: 0.0146
+Epoch: 0574 sens loss: 0.5345 contrastive loss: 5.6802 edge reconstruction loss: 0.5825 feature reconstruction loss: 0.0142
+Epoch: 0575 sens loss: 0.5358 contrastive loss: 5.6935 edge reconstruction loss: 0.5959 feature reconstruction loss: 0.0144
+Epoch: 0576 sens loss: 0.5261 contrastive loss: 5.6672 edge reconstruction loss: 0.6220 feature reconstruction loss: 0.0159
+Epoch: 0577 sens loss: 0.5322 contrastive loss: 5.6892 edge reconstruction loss: 0.5275 feature reconstruction loss: 0.0141
+Epoch: 0578 sens loss: 0.5403 contrastive loss: 5.6813 edge reconstruction loss: 0.5552 feature reconstruction loss: 0.0164
+Epoch: 0579 sens loss: 0.5355 contrastive loss: 5.6962 edge reconstruction loss: 0.5025 feature reconstruction loss: 0.0148
+Epoch: 0580 sens loss: 0.5321 contrastive loss: 5.6735 edge reconstruction loss: 0.5231 feature reconstruction loss: 0.0165
+Epoch: 0581 sens loss: 0.5408 contrastive loss: 5.6774 edge reconstruction loss: 0.5639 feature reconstruction loss: 0.0137
+Epoch: 0582 sens loss: 0.5311 contrastive loss: 5.6875 edge reconstruction loss: 0.5519 feature reconstruction loss: 0.0167
+Epoch: 0583 sens loss: 0.5316 contrastive loss: 5.6770 edge reconstruction loss: 0.5672 feature reconstruction loss: 0.0129
+Epoch: 0584 sens loss: 0.5407 contrastive loss: 5.6558 edge reconstruction loss: 0.5661 feature reconstruction loss: 0.0145
+Epoch: 0585 sens loss: 0.5464 contrastive loss: 5.6820 edge reconstruction loss: 0.5595 feature reconstruction loss: 0.0150
+Epoch: 0586 sens loss: 0.5351 contrastive loss: 5.6270 edge reconstruction loss: 0.5791 feature reconstruction loss: 0.0151
+Epoch: 0587 sens loss: 0.5382 contrastive loss: 5.6636 edge reconstruction loss: 0.5680 feature reconstruction loss: 0.0174
+Epoch: 0588 sens loss: 0.5473 contrastive loss: 5.6879 edge reconstruction loss: 0.5433 feature reconstruction loss: 0.0155
+Epoch: 0589 sens loss: 0.5450 contrastive loss: 5.6679 edge reconstruction loss: 0.5557 feature reconstruction loss: 0.0147
+Epoch: 0590 sens loss: 0.5283 contrastive loss: 5.7129 edge reconstruction loss: 0.5245 feature reconstruction loss: 0.0147
+Epoch: 0591 sens loss: 0.5267 contrastive loss: 5.6770 edge reconstruction loss: 0.5625 feature reconstruction loss: 0.0157
+Epoch: 0592 sens loss: 0.5386 contrastive loss: 5.6470 edge reconstruction loss: 0.5790 feature reconstruction loss: 0.0162
+Epoch: 0593 sens loss: 0.5387 contrastive loss: 5.6703 edge reconstruction loss: 0.5822 feature reconstruction loss: 0.0152
+Epoch: 0594 sens loss: 0.5370 contrastive loss: 5.7150 edge reconstruction loss: 0.5848 feature reconstruction loss: 0.0164
+Epoch: 0595 sens loss: 0.5360 contrastive loss: 5.6827 edge reconstruction loss: 0.5907 feature reconstruction loss: 0.0161
+Epoch: 0596 sens loss: 0.5322 contrastive loss: 5.7148 edge reconstruction loss: 0.5472 feature reconstruction loss: 0.0140
+Epoch: 0597 sens loss: 0.5375 contrastive loss: 5.6533 edge reconstruction loss: 0.5459 feature reconstruction loss: 0.0148
+Epoch: 0598 sens loss: 0.5357 contrastive loss: 5.7201 edge reconstruction loss: 0.5354 feature reconstruction loss: 0.0158
+Epoch: 0599 sens loss: 0.5399 contrastive loss: 5.6776 edge reconstruction loss: 0.5436 feature reconstruction loss: 0.0143
+Epoch: 0600 sens loss: 0.5416 contrastive loss: 5.6682 edge reconstruction loss: 0.5562 feature reconstruction loss: 0.0150
+Epoch: 0601 sens loss: 0.5528 contrastive loss: 5.6349 edge reconstruction loss: 0.5643 feature reconstruction loss: 0.0147
+Epoch: 0602 sens loss: 0.5322 contrastive loss: 5.6457 edge reconstruction loss: 0.5748 feature reconstruction loss: 0.0159
+Epoch: 0603 sens loss: 0.5439 contrastive loss: 5.6500 edge reconstruction loss: 0.5568 feature reconstruction loss: 0.0168
+Epoch: 0604 sens loss: 0.5241 contrastive loss: 5.6989 edge reconstruction loss: 0.5650 feature reconstruction loss: 0.0140
+Epoch: 0605 sens loss: 0.5261 contrastive loss: 5.6604 edge reconstruction loss: 0.5913 feature reconstruction loss: 0.0134
+Epoch: 0606 sens loss: 0.5427 contrastive loss: 5.6599 edge reconstruction loss: 0.5995 feature reconstruction loss: 0.0174
+Epoch: 0607 sens loss: 0.5456 contrastive loss: 5.7073 edge reconstruction loss: 0.5781 feature reconstruction loss: 0.0175
+Epoch: 0608 sens loss: 0.5292 contrastive loss: 5.7263 edge reconstruction loss: 0.5250 feature reconstruction loss: 0.0159
+Epoch: 0609 sens loss: 0.5349 contrastive loss: 5.7047 edge reconstruction loss: 0.5282 feature reconstruction loss: 0.0148
+Epoch: 0610 sens loss: 0.5319 contrastive loss: 5.7551 edge reconstruction loss: 0.5077 feature reconstruction loss: 0.0159
+Epoch: 0611 sens loss: 0.5407 contrastive loss: 5.6971 edge reconstruction loss: 0.5436 feature reconstruction loss: 0.0145
+Epoch: 0612 sens loss: 0.5390 contrastive loss: 5.6535 edge reconstruction loss: 0.5890 feature reconstruction loss: 0.0165
+Epoch: 0613 sens loss: 0.5225 contrastive loss: 5.6253 edge reconstruction loss: 0.6381 feature reconstruction loss: 0.0164
+Epoch: 0614 sens loss: 0.5433 contrastive loss: 5.6770 edge reconstruction loss: 0.6093 feature reconstruction loss: 0.0146
+Epoch: 0615 sens loss: 0.5546 contrastive loss: 5.6393 edge reconstruction loss: 0.6705 feature reconstruction loss: 0.0163
+Epoch: 0616 sens loss: 0.5328 contrastive loss: 5.6476 edge reconstruction loss: 0.6167 feature reconstruction loss: 0.0154
+Epoch: 0617 sens loss: 0.5307 contrastive loss: 5.6663 edge reconstruction loss: 0.5826 feature reconstruction loss: 0.0156
+Epoch: 0618 sens loss: 0.5483 contrastive loss: 5.6573 edge reconstruction loss: 0.5154 feature reconstruction loss: 0.0168
+Epoch: 0619 sens loss: 0.5423 contrastive loss: 5.6712 edge reconstruction loss: 0.5505 feature reconstruction loss: 0.0167
+Epoch: 0620 sens loss: 0.5301 contrastive loss: 5.7329 edge reconstruction loss: 0.5082 feature reconstruction loss: 0.0164
+Epoch: 0621 sens loss: 0.5472 contrastive loss: 5.7414 edge reconstruction loss: 0.5026 feature reconstruction loss: 0.0157
+Epoch: 0622 sens loss: 0.5392 contrastive loss: 5.6059 edge reconstruction loss: 0.5783 feature reconstruction loss: 0.0155
+Epoch: 0623 sens loss: 0.5326 contrastive loss: 5.6259 edge reconstruction loss: 0.5873 feature reconstruction loss: 0.0157
+Epoch: 0624 sens loss: 0.5310 contrastive loss: 5.6505 edge reconstruction loss: 0.5907 feature reconstruction loss: 0.0169
+Epoch: 0625 sens loss: 0.5309 contrastive loss: 5.6503 edge reconstruction loss: 0.5821 feature reconstruction loss: 0.0158
+Epoch: 0626 sens loss: 0.5297 contrastive loss: 5.6948 edge reconstruction loss: 0.5933 feature reconstruction loss: 0.0153
+Epoch: 0627 sens loss: 0.5330 contrastive loss: 5.6833 edge reconstruction loss: 0.5638 feature reconstruction loss: 0.0159
+Epoch: 0628 sens loss: 0.5281 contrastive loss: 5.7078 edge reconstruction loss: 0.5985 feature reconstruction loss: 0.0158
+Epoch: 0629 sens loss: 0.5405 contrastive loss: 5.6446 edge reconstruction loss: 0.5359 feature reconstruction loss: 0.0155
+Epoch: 0630 sens loss: 0.5529 contrastive loss: 5.6421 edge reconstruction loss: 0.5736 feature reconstruction loss: 0.0162
+Epoch: 0631 sens loss: 0.5246 contrastive loss: 5.6674 edge reconstruction loss: 0.5832 feature reconstruction loss: 0.0174
+Epoch: 0632 sens loss: 0.5344 contrastive loss: 5.6366 edge reconstruction loss: 0.5572 feature reconstruction loss: 0.0167
+Epoch: 0633 sens loss: 0.5236 contrastive loss: 5.6949 edge reconstruction loss: 0.5512 feature reconstruction loss: 0.0161
+Epoch: 0634 sens loss: 0.5330 contrastive loss: 5.7587 edge reconstruction loss: 0.5242 feature reconstruction loss: 0.0165
+Epoch: 0635 sens loss: 0.5312 contrastive loss: 5.6784 edge reconstruction loss: 0.5360 feature reconstruction loss: 0.0154
+Epoch: 0636 sens loss: 0.5367 contrastive loss: 5.6817 edge reconstruction loss: 0.5809 feature reconstruction loss: 0.0181
+Epoch: 0637 sens loss: 0.5422 contrastive loss: 5.6327 edge reconstruction loss: 0.6547 feature reconstruction loss: 0.0156
+Epoch: 0638 sens loss: 0.5402 contrastive loss: 5.6418 edge reconstruction loss: 0.6397 feature reconstruction loss: 0.0174
+Epoch: 0639 sens loss: 0.5485 contrastive loss: 5.6119 edge reconstruction loss: 0.6035 feature reconstruction loss: 0.0161
+Epoch: 0640 sens loss: 0.5287 contrastive loss: 5.6729 edge reconstruction loss: 0.5564 feature reconstruction loss: 0.0153
+Epoch: 0641 sens loss: 0.5446 contrastive loss: 5.6483 edge reconstruction loss: 0.5569 feature reconstruction loss: 0.0161
+Epoch: 0642 sens loss: 0.5332 contrastive loss: 5.6641 edge reconstruction loss: 0.5068 feature reconstruction loss: 0.0155
+Epoch: 0643 sens loss: 0.5171 contrastive loss: 5.6306 edge reconstruction loss: 0.5551 feature reconstruction loss: 0.0141
+Epoch: 0644 sens loss: 0.5475 contrastive loss: 5.6378 edge reconstruction loss: 0.5473 feature reconstruction loss: 0.0162
+Epoch: 0645 sens loss: 0.5260 contrastive loss: 5.6827 edge reconstruction loss: 0.5466 feature reconstruction loss: 0.0155
+Epoch: 0646 sens loss: 0.5479 contrastive loss: 5.6434 edge reconstruction loss: 0.6198 feature reconstruction loss: 0.0153
+Epoch: 0647 sens loss: 0.5247 contrastive loss: 5.6264 edge reconstruction loss: 0.6135 feature reconstruction loss: 0.0172
+Epoch: 0648 sens loss: 0.5233 contrastive loss: 5.6237 edge reconstruction loss: 0.5660 feature reconstruction loss: 0.0174
+Epoch: 0649 sens loss: 0.5289 contrastive loss: 5.6402 edge reconstruction loss: 0.5734 feature reconstruction loss: 0.0158
+Epoch: 0650 sens loss: 0.5328 contrastive loss: 5.6248 edge reconstruction loss: 0.5496 feature reconstruction loss: 0.0157
+Epoch: 0651 sens loss: 0.5376 contrastive loss: 5.6242 edge reconstruction loss: 0.5765 feature reconstruction loss: 0.0165
+Epoch: 0652 sens loss: 0.5340 contrastive loss: 5.6880 edge reconstruction loss: 0.4870 feature reconstruction loss: 0.0166
+Epoch: 0653 sens loss: 0.5470 contrastive loss: 5.6739 edge reconstruction loss: 0.5338 feature reconstruction loss: 0.0156
+Epoch: 0654 sens loss: 0.5297 contrastive loss: 5.6553 edge reconstruction loss: 0.6135 feature reconstruction loss: 0.0160
+Epoch: 0655 sens loss: 0.5691 contrastive loss: 5.5726 edge reconstruction loss: 0.6233 feature reconstruction loss: 0.0165
+Epoch: 0656 sens loss: 0.5585 contrastive loss: 5.6043 edge reconstruction loss: 0.6018 feature reconstruction loss: 0.0165
+Epoch: 0657 sens loss: 0.5322 contrastive loss: 5.6212 edge reconstruction loss: 0.6223 feature reconstruction loss: 0.0160
+Epoch: 0658 sens loss: 0.5336 contrastive loss: 5.6243 edge reconstruction loss: 0.5601 feature reconstruction loss: 0.0162
+Epoch: 0659 sens loss: 0.5172 contrastive loss: 5.6410 edge reconstruction loss: 0.5527 feature reconstruction loss: 0.0143
+Epoch: 0660 sens loss: 0.5304 contrastive loss: 5.6250 edge reconstruction loss: 0.5959 feature reconstruction loss: 0.0154
+Epoch: 0661 sens loss: 0.5385 contrastive loss: 5.7055 edge reconstruction loss: 0.5613 feature reconstruction loss: 0.0172
+Epoch: 0662 sens loss: 0.5460 contrastive loss: 5.6441 edge reconstruction loss: 0.5510 feature reconstruction loss: 0.0173
+Epoch: 0663 sens loss: 0.5315 contrastive loss: 5.6876 edge reconstruction loss: 0.5595 feature reconstruction loss: 0.0172
+Epoch: 0664 sens loss: 0.5345 contrastive loss: 5.6861 edge reconstruction loss: 0.5540 feature reconstruction loss: 0.0161
+Epoch: 0665 sens loss: 0.5222 contrastive loss: 5.7046 edge reconstruction loss: 0.5526 feature reconstruction loss: 0.0156
+Epoch: 0666 sens loss: 0.5344 contrastive loss: 5.6122 edge reconstruction loss: 0.6381 feature reconstruction loss: 0.0168
+Epoch: 0667 sens loss: 0.5232 contrastive loss: 5.5843 edge reconstruction loss: 0.6016 feature reconstruction loss: 0.0164
+Epoch: 0668 sens loss: 0.5385 contrastive loss: 5.6217 edge reconstruction loss: 0.6355 feature reconstruction loss: 0.0145
+Epoch: 0669 sens loss: 0.5358 contrastive loss: 5.6514 edge reconstruction loss: 0.5869 feature reconstruction loss: 0.0171
+Epoch: 0670 sens loss: 0.5335 contrastive loss: 5.6406 edge reconstruction loss: 0.5521 feature reconstruction loss: 0.0169
+Epoch: 0671 sens loss: 0.5234 contrastive loss: 5.6540 edge reconstruction loss: 0.5587 feature reconstruction loss: 0.0176
+Epoch: 0672 sens loss: 0.5281 contrastive loss: 5.6817 edge reconstruction loss: 0.5297 feature reconstruction loss: 0.0141
+Epoch: 0673 sens loss: 0.5278 contrastive loss: 5.6048 edge reconstruction loss: 0.6165 feature reconstruction loss: 0.0157
+Epoch: 0674 sens loss: 0.5341 contrastive loss: 5.6398 edge reconstruction loss: 0.5673 feature reconstruction loss: 0.0153
+Epoch: 0675 sens loss: 0.5264 contrastive loss: 5.6702 edge reconstruction loss: 0.5437 feature reconstruction loss: 0.0178
+Epoch: 0676 sens loss: 0.5302 contrastive loss: 5.6661 edge reconstruction loss: 0.5769 feature reconstruction loss: 0.0165
+Epoch: 0677 sens loss: 0.5246 contrastive loss: 5.6221 edge reconstruction loss: 0.5276 feature reconstruction loss: 0.0147
+Epoch: 0678 sens loss: 0.5289 contrastive loss: 5.6573 edge reconstruction loss: 0.5951 feature reconstruction loss: 0.0154
+Epoch: 0679 sens loss: 0.5308 contrastive loss: 5.5777 edge reconstruction loss: 0.5895 feature reconstruction loss: 0.0174
+Epoch: 0680 sens loss: 0.5360 contrastive loss: 5.6967 edge reconstruction loss: 0.5499 feature reconstruction loss: 0.0151
+Epoch: 0681 sens loss: 0.5471 contrastive loss: 5.5875 edge reconstruction loss: 0.5815 feature reconstruction loss: 0.0154
+Epoch: 0682 sens loss: 0.5313 contrastive loss: 5.6031 edge reconstruction loss: 0.5890 feature reconstruction loss: 0.0158
+Epoch: 0683 sens loss: 0.5238 contrastive loss: 5.6492 edge reconstruction loss: 0.5504 feature reconstruction loss: 0.0176
+Epoch: 0684 sens loss: 0.5332 contrastive loss: 5.6064 edge reconstruction loss: 0.5880 feature reconstruction loss: 0.0164
+Epoch: 0685 sens loss: 0.5322 contrastive loss: 5.5661 edge reconstruction loss: 0.5696 feature reconstruction loss: 0.0164
+Epoch: 0686 sens loss: 0.5259 contrastive loss: 5.6233 edge reconstruction loss: 0.5374 feature reconstruction loss: 0.0166
+Epoch: 0687 sens loss: 0.5172 contrastive loss: 5.6776 edge reconstruction loss: 0.5476 feature reconstruction loss: 0.0159
+Epoch: 0688 sens loss: 0.5463 contrastive loss: 5.6383 edge reconstruction loss: 0.6100 feature reconstruction loss: 0.0143
+Epoch: 0689 sens loss: 0.5323 contrastive loss: 5.5744 edge reconstruction loss: 0.6238 feature reconstruction loss: 0.0166
+Epoch: 0690 sens loss: 0.5233 contrastive loss: 5.6495 edge reconstruction loss: 0.5881 feature reconstruction loss: 0.0155
+Epoch: 0691 sens loss: 0.5320 contrastive loss: 5.6513 edge reconstruction loss: 0.6367 feature reconstruction loss: 0.0153
+Epoch: 0692 sens loss: 0.5423 contrastive loss: 5.6312 edge reconstruction loss: 0.5343 feature reconstruction loss: 0.0164
+Epoch: 0693 sens loss: 0.5267 contrastive loss: 5.6252 edge reconstruction loss: 0.5707 feature reconstruction loss: 0.0150
+Epoch: 0694 sens loss: 0.5288 contrastive loss: 5.6164 edge reconstruction loss: 0.5981 feature reconstruction loss: 0.0160
+Epoch: 0695 sens loss: 0.5290 contrastive loss: 5.6472 edge reconstruction loss: 0.5884 feature reconstruction loss: 0.0154
+Epoch: 0696 sens loss: 0.5249 contrastive loss: 5.6300 edge reconstruction loss: 0.5762 feature reconstruction loss: 0.0179
+Epoch: 0697 sens loss: 0.5281 contrastive loss: 5.5957 edge reconstruction loss: 0.5874 feature reconstruction loss: 0.0167
+Epoch: 0698 sens loss: 0.5244 contrastive loss: 5.6082 edge reconstruction loss: 0.5449 feature reconstruction loss: 0.0167
+Epoch: 0699 sens loss: 0.5193 contrastive loss: 5.6507 edge reconstruction loss: 0.5542 feature reconstruction loss: 0.0164
+Epoch: 0700 sens loss: 0.5291 contrastive loss: 5.6350 edge reconstruction loss: 0.5576 feature reconstruction loss: 0.0170
+Epoch: 0701 sens loss: 0.5328 contrastive loss: 5.5913 edge reconstruction loss: 0.5955 feature reconstruction loss: 0.0157
+Epoch: 0702 sens loss: 0.5266 contrastive loss: 5.6387 edge reconstruction loss: 0.5437 feature reconstruction loss: 0.0166
+Epoch: 0703 sens loss: 0.5268 contrastive loss: 5.6209 edge reconstruction loss: 0.5572 feature reconstruction loss: 0.0165
+Epoch: 0704 sens loss: 0.5306 contrastive loss: 5.6347 edge reconstruction loss: 0.5804 feature reconstruction loss: 0.0166
+Epoch: 0705 sens loss: 0.5485 contrastive loss: 5.6189 edge reconstruction loss: 0.6056 feature reconstruction loss: 0.0182
+Epoch: 0706 sens loss: 0.5250 contrastive loss: 5.5816 edge reconstruction loss: 0.5991 feature reconstruction loss: 0.0159
+Epoch: 0707 sens loss: 0.5435 contrastive loss: 5.5579 edge reconstruction loss: 0.6304 feature reconstruction loss: 0.0161
+Epoch: 0708 sens loss: 0.5377 contrastive loss: 5.6325 edge reconstruction loss: 0.5836 feature reconstruction loss: 0.0177
+Epoch: 0709 sens loss: 0.5343 contrastive loss: 5.6272 edge reconstruction loss: 0.5698 feature reconstruction loss: 0.0173
+Epoch: 0710 sens loss: 0.5393 contrastive loss: 5.5993 edge reconstruction loss: 0.5665 feature reconstruction loss: 0.0164
+Epoch: 0711 sens loss: 0.5250 contrastive loss: 5.6784 edge reconstruction loss: 0.5981 feature reconstruction loss: 0.0178
+Epoch: 0712 sens loss: 0.5274 contrastive loss: 5.6020 edge reconstruction loss: 0.6545 feature reconstruction loss: 0.0156
+Epoch: 0713 sens loss: 0.5221 contrastive loss: 5.6144 edge reconstruction loss: 0.5647 feature reconstruction loss: 0.0165
+Epoch: 0714 sens loss: 0.5354 contrastive loss: 5.5539 edge reconstruction loss: 0.6063 feature reconstruction loss: 0.0167
+Epoch: 0715 sens loss: 0.5437 contrastive loss: 5.6174 edge reconstruction loss: 0.5676 feature reconstruction loss: 0.0159
+Epoch: 0716 sens loss: 0.5356 contrastive loss: 5.6313 edge reconstruction loss: 0.5624 feature reconstruction loss: 0.0174
+Epoch: 0717 sens loss: 0.5517 contrastive loss: 5.6458 edge reconstruction loss: 0.5380 feature reconstruction loss: 0.0185
+Epoch: 0718 sens loss: 0.5516 contrastive loss: 5.6073 edge reconstruction loss: 0.5550 feature reconstruction loss: 0.0175
+Epoch: 0719 sens loss: 0.5354 contrastive loss: 5.5605 edge reconstruction loss: 0.5924 feature reconstruction loss: 0.0179
+Epoch: 0720 sens loss: 0.5263 contrastive loss: 5.6027 edge reconstruction loss: 0.5976 feature reconstruction loss: 0.0177
+Epoch: 0721 sens loss: 0.5347 contrastive loss: 5.5682 edge reconstruction loss: 0.6739 feature reconstruction loss: 0.0164
+Epoch: 0722 sens loss: 0.5286 contrastive loss: 5.5575 edge reconstruction loss: 0.6567 feature reconstruction loss: 0.0177
+Epoch: 0723 sens loss: 0.5271 contrastive loss: 5.5642 edge reconstruction loss: 0.5866 feature reconstruction loss: 0.0163
+Epoch: 0724 sens loss: 0.5220 contrastive loss: 5.6179 edge reconstruction loss: 0.5347 feature reconstruction loss: 0.0157
+Epoch: 0725 sens loss: 0.5337 contrastive loss: 5.5931 edge reconstruction loss: 0.5375 feature reconstruction loss: 0.0170
+Epoch: 0726 sens loss: 0.5240 contrastive loss: 5.6262 edge reconstruction loss: 0.5163 feature reconstruction loss: 0.0175
+Epoch: 0727 sens loss: 0.5348 contrastive loss: 5.5464 edge reconstruction loss: 0.5846 feature reconstruction loss: 0.0155
+Epoch: 0728 sens loss: 0.5555 contrastive loss: 5.5891 edge reconstruction loss: 0.5696 feature reconstruction loss: 0.0177
+Epoch: 0729 sens loss: 0.5232 contrastive loss: 5.5944 edge reconstruction loss: 0.5468 feature reconstruction loss: 0.0154
+Epoch: 0730 sens loss: 0.5297 contrastive loss: 5.5557 edge reconstruction loss: 0.5847 feature reconstruction loss: 0.0170
+Epoch: 0731 sens loss: 0.5359 contrastive loss: 5.5711 edge reconstruction loss: 0.5783 feature reconstruction loss: 0.0157
+Epoch: 0732 sens loss: 0.5348 contrastive loss: 5.5484 edge reconstruction loss: 0.6741 feature reconstruction loss: 0.0166
+Epoch: 0733 sens loss: 0.5367 contrastive loss: 5.5631 edge reconstruction loss: 0.6621 feature reconstruction loss: 0.0167
+Epoch: 0734 sens loss: 0.5351 contrastive loss: 5.5415 edge reconstruction loss: 0.5982 feature reconstruction loss: 0.0174
+Epoch: 0735 sens loss: 0.5277 contrastive loss: 5.5861 edge reconstruction loss: 0.5779 feature reconstruction loss: 0.0171
+Epoch: 0736 sens loss: 0.5353 contrastive loss: 5.5940 edge reconstruction loss: 0.5484 feature reconstruction loss: 0.0177
+Epoch: 0737 sens loss: 0.5228 contrastive loss: 5.5682 edge reconstruction loss: 0.5470 feature reconstruction loss: 0.0172
+Epoch: 0738 sens loss: 0.5355 contrastive loss: 5.5745 edge reconstruction loss: 0.5134 feature reconstruction loss: 0.0181
+Epoch: 0739 sens loss: 0.5334 contrastive loss: 5.5619 edge reconstruction loss: 0.5606 feature reconstruction loss: 0.0165
+Epoch: 0740 sens loss: 0.5213 contrastive loss: 5.5983 edge reconstruction loss: 0.5329 feature reconstruction loss: 0.0165
+Epoch: 0741 sens loss: 0.5411 contrastive loss: 5.6142 edge reconstruction loss: 0.5055 feature reconstruction loss: 0.0164
+Epoch: 0742 sens loss: 0.5221 contrastive loss: 5.5386 edge reconstruction loss: 0.5820 feature reconstruction loss: 0.0167
+Epoch: 0743 sens loss: 0.5337 contrastive loss: 5.5669 edge reconstruction loss: 0.6511 feature reconstruction loss: 0.0168
+Epoch: 0744 sens loss: 0.5243 contrastive loss: 5.5979 edge reconstruction loss: 0.6300 feature reconstruction loss: 0.0164
+Epoch: 0745 sens loss: 0.5121 contrastive loss: 5.5565 edge reconstruction loss: 0.5907 feature reconstruction loss: 0.0171
+Epoch: 0746 sens loss: 0.5344 contrastive loss: 5.5476 edge reconstruction loss: 0.7274 feature reconstruction loss: 0.0165
+Epoch: 0747 sens loss: 0.5446 contrastive loss: 5.5647 edge reconstruction loss: 0.6186 feature reconstruction loss: 0.0165
+Epoch: 0748 sens loss: 0.5232 contrastive loss: 5.5607 edge reconstruction loss: 0.5514 feature reconstruction loss: 0.0166
+Epoch: 0749 sens loss: 0.5304 contrastive loss: 5.5579 edge reconstruction loss: 0.5374 feature reconstruction loss: 0.0168
+Epoch: 0750 sens loss: 0.5294 contrastive loss: 5.6865 edge reconstruction loss: 0.5073 feature reconstruction loss: 0.0182
+Epoch: 0751 sens loss: 0.5420 contrastive loss: 5.6425 edge reconstruction loss: 0.5361 feature reconstruction loss: 0.0162
+Epoch: 0752 sens loss: 0.5230 contrastive loss: 5.5807 edge reconstruction loss: 0.5340 feature reconstruction loss: 0.0182
+Epoch: 0753 sens loss: 0.5154 contrastive loss: 5.5370 edge reconstruction loss: 0.5393 feature reconstruction loss: 0.0169
+Epoch: 0754 sens loss: 0.5640 contrastive loss: 5.5182 edge reconstruction loss: 0.5926 feature reconstruction loss: 0.0161
+Epoch: 0755 sens loss: 0.5269 contrastive loss: 5.5630 edge reconstruction loss: 0.6300 feature reconstruction loss: 0.0165
+Epoch: 0756 sens loss: 0.5311 contrastive loss: 5.5441 edge reconstruction loss: 0.6921 feature reconstruction loss: 0.0162
+Epoch: 0757 sens loss: 0.5402 contrastive loss: 5.5241 edge reconstruction loss: 0.6256 feature reconstruction loss: 0.0165
+Epoch: 0758 sens loss: 0.5176 contrastive loss: 5.5623 edge reconstruction loss: 0.5945 feature reconstruction loss: 0.0159
+Epoch: 0759 sens loss: 0.5269 contrastive loss: 5.5509 edge reconstruction loss: 0.6049 feature reconstruction loss: 0.0166
+Epoch: 0760 sens loss: 0.5428 contrastive loss: 5.5600 edge reconstruction loss: 0.5713 feature reconstruction loss: 0.0163
+Epoch: 0761 sens loss: 0.5472 contrastive loss: 5.5801 edge reconstruction loss: 0.5413 feature reconstruction loss: 0.0160
+Epoch: 0762 sens loss: 0.5366 contrastive loss: 5.5385 edge reconstruction loss: 0.5387 feature reconstruction loss: 0.0172
+Epoch: 0763 sens loss: 0.5304 contrastive loss: 5.5914 edge reconstruction loss: 0.5555 feature reconstruction loss: 0.0160
+Epoch: 0764 sens loss: 0.5153 contrastive loss: 5.5659 edge reconstruction loss: 0.5877 feature reconstruction loss: 0.0173
+Epoch: 0765 sens loss: 0.5238 contrastive loss: 5.6071 edge reconstruction loss: 0.5539 feature reconstruction loss: 0.0157
+Epoch: 0766 sens loss: 0.5260 contrastive loss: 5.5782 edge reconstruction loss: 0.5648 feature reconstruction loss: 0.0157
+Epoch: 0767 sens loss: 0.5267 contrastive loss: 5.5899 edge reconstruction loss: 0.5153 feature reconstruction loss: 0.0155
+Epoch: 0768 sens loss: 0.5267 contrastive loss: 5.5614 edge reconstruction loss: 0.5852 feature reconstruction loss: 0.0157
+Epoch: 0769 sens loss: 0.5175 contrastive loss: 5.5327 edge reconstruction loss: 0.5452 feature reconstruction loss: 0.0167
+Epoch: 0770 sens loss: 0.5424 contrastive loss: 5.5528 edge reconstruction loss: 0.5893 feature reconstruction loss: 0.0151
+Epoch: 0771 sens loss: 0.5324 contrastive loss: 5.5037 edge reconstruction loss: 0.6335 feature reconstruction loss: 0.0157
+Epoch: 0772 sens loss: 0.5282 contrastive loss: 5.5231 edge reconstruction loss: 0.6319 feature reconstruction loss: 0.0153
+Epoch: 0773 sens loss: 0.5362 contrastive loss: 5.5601 edge reconstruction loss: 0.6449 feature reconstruction loss: 0.0158
+Epoch: 0774 sens loss: 0.5695 contrastive loss: 5.5414 edge reconstruction loss: 0.6205 feature reconstruction loss: 0.0153
+Epoch: 0775 sens loss: 0.5696 contrastive loss: 5.5517 edge reconstruction loss: 0.5950 feature reconstruction loss: 0.0153
+Epoch: 0776 sens loss: 0.5359 contrastive loss: 5.5963 edge reconstruction loss: 0.5381 feature reconstruction loss: 0.0161
+Epoch: 0777 sens loss: 0.5269 contrastive loss: 5.6366 edge reconstruction loss: 0.5277 feature reconstruction loss: 0.0172
+Epoch: 0778 sens loss: 0.5577 contrastive loss: 5.6008 edge reconstruction loss: 0.5076 feature reconstruction loss: 0.0149
+Epoch: 0779 sens loss: 0.5396 contrastive loss: 5.5709 edge reconstruction loss: 0.5812 feature reconstruction loss: 0.0132
+Epoch: 0780 sens loss: 0.5431 contrastive loss: 5.5188 edge reconstruction loss: 0.6382 feature reconstruction loss: 0.0148
+Epoch: 0781 sens loss: 0.5527 contrastive loss: 5.5728 edge reconstruction loss: 0.6239 feature reconstruction loss: 0.0160
+Epoch: 0782 sens loss: 0.5678 contrastive loss: 5.5407 edge reconstruction loss: 0.6004 feature reconstruction loss: 0.0159
+Epoch: 0783 sens loss: 0.5577 contrastive loss: 5.5386 edge reconstruction loss: 0.6273 feature reconstruction loss: 0.0157
+Epoch: 0784 sens loss: 0.5299 contrastive loss: 5.5627 edge reconstruction loss: 0.6978 feature reconstruction loss: 0.0153
+Epoch: 0785 sens loss: 0.5506 contrastive loss: 5.5367 edge reconstruction loss: 0.5861 feature reconstruction loss: 0.0162
+Epoch: 0786 sens loss: 0.5306 contrastive loss: 5.5992 edge reconstruction loss: 0.5711 feature reconstruction loss: 0.0159
+Epoch: 0787 sens loss: 0.5613 contrastive loss: 5.5773 edge reconstruction loss: 0.5742 feature reconstruction loss: 0.0161
+Epoch: 0788 sens loss: 0.5352 contrastive loss: 5.5578 edge reconstruction loss: 0.5819 feature reconstruction loss: 0.0164
+Epoch: 0789 sens loss: 0.5485 contrastive loss: 5.5970 edge reconstruction loss: 0.5120 feature reconstruction loss: 0.0167
+Epoch: 0790 sens loss: 0.5447 contrastive loss: 5.5619 edge reconstruction loss: 0.5220 feature reconstruction loss: 0.0166
+Epoch: 0791 sens loss: 0.5398 contrastive loss: 5.5578 edge reconstruction loss: 0.6330 feature reconstruction loss: 0.0152
+Epoch: 0792 sens loss: 0.5359 contrastive loss: 5.5501 edge reconstruction loss: 0.6248 feature reconstruction loss: 0.0153
+Epoch: 0793 sens loss: 0.5340 contrastive loss: 5.5573 edge reconstruction loss: 0.6259 feature reconstruction loss: 0.0155
+Epoch: 0794 sens loss: 0.5465 contrastive loss: 5.5158 edge reconstruction loss: 0.5927 feature reconstruction loss: 0.0171
+Epoch: 0795 sens loss: 0.5405 contrastive loss: 5.5179 edge reconstruction loss: 0.6122 feature reconstruction loss: 0.0156
+Epoch: 0796 sens loss: 0.5499 contrastive loss: 5.5401 edge reconstruction loss: 0.5690 feature reconstruction loss: 0.0161
+Epoch: 0797 sens loss: 0.5503 contrastive loss: 5.5898 edge reconstruction loss: 0.5595 feature reconstruction loss: 0.0159
+Epoch: 0798 sens loss: 0.5388 contrastive loss: 5.5234 edge reconstruction loss: 0.6586 feature reconstruction loss: 0.0158
+Epoch: 0799 sens loss: 0.5517 contrastive loss: 5.5170 edge reconstruction loss: 0.6460 feature reconstruction loss: 0.0154
+Epoch: 0800 sens loss: 0.5457 contrastive loss: 5.5484 edge reconstruction loss: 0.6050 feature reconstruction loss: 0.0156
+Epoch: 0801 sens loss: 0.5499 contrastive loss: 5.5324 edge reconstruction loss: 0.6092 feature reconstruction loss: 0.0164
+Epoch: 0802 sens loss: 0.5317 contrastive loss: 5.5314 edge reconstruction loss: 0.5961 feature reconstruction loss: 0.0164
+Epoch: 0803 sens loss: 0.5389 contrastive loss: 5.5903 edge reconstruction loss: 0.5731 feature reconstruction loss: 0.0154
+Epoch: 0804 sens loss: 0.5434 contrastive loss: 5.5606 edge reconstruction loss: 0.5833 feature reconstruction loss: 0.0151
+Epoch: 0805 sens loss: 0.5341 contrastive loss: 5.5509 edge reconstruction loss: 0.5629 feature reconstruction loss: 0.0148
+Epoch: 0806 sens loss: 0.5317 contrastive loss: 5.5004 edge reconstruction loss: 0.5899 feature reconstruction loss: 0.0151
+Epoch: 0807 sens loss: 0.5222 contrastive loss: 5.5839 edge reconstruction loss: 0.5245 feature reconstruction loss: 0.0163
+Epoch: 0808 sens loss: 0.5343 contrastive loss: 5.5329 edge reconstruction loss: 0.5577 feature reconstruction loss: 0.0154
+Epoch: 0809 sens loss: 0.5276 contrastive loss: 5.5457 edge reconstruction loss: 0.5313 feature reconstruction loss: 0.0170
+Epoch: 0810 sens loss: 0.5336 contrastive loss: 5.5633 edge reconstruction loss: 0.5837 feature reconstruction loss: 0.0163
+Epoch: 0811 sens loss: 0.5210 contrastive loss: 5.5042 edge reconstruction loss: 0.6167 feature reconstruction loss: 0.0146
+Epoch: 0812 sens loss: 0.5312 contrastive loss: 5.5109 edge reconstruction loss: 0.6027 feature reconstruction loss: 0.0147
+Epoch: 0813 sens loss: 0.5370 contrastive loss: 5.5675 edge reconstruction loss: 0.6352 feature reconstruction loss: 0.0151
+Epoch: 0814 sens loss: 0.5422 contrastive loss: 5.5169 edge reconstruction loss: 0.6042 feature reconstruction loss: 0.0160
+Epoch: 0815 sens loss: 0.5228 contrastive loss: 5.5609 edge reconstruction loss: 0.5792 feature reconstruction loss: 0.0152
+Epoch: 0816 sens loss: 0.5367 contrastive loss: 5.5265 edge reconstruction loss: 0.5722 feature reconstruction loss: 0.0156
+Epoch: 0817 sens loss: 0.5237 contrastive loss: 5.5174 edge reconstruction loss: 0.5539 feature reconstruction loss: 0.0158
+Epoch: 0818 sens loss: 0.5439 contrastive loss: 5.5425 edge reconstruction loss: 0.5190 feature reconstruction loss: 0.0142
+Epoch: 0819 sens loss: 0.5265 contrastive loss: 5.5839 edge reconstruction loss: 0.5196 feature reconstruction loss: 0.0158
+Epoch: 0820 sens loss: 0.5306 contrastive loss: 5.5361 edge reconstruction loss: 0.5573 feature reconstruction loss: 0.0163
+Epoch: 0821 sens loss: 0.5255 contrastive loss: 5.5246 edge reconstruction loss: 0.5323 feature reconstruction loss: 0.0167
+Epoch: 0822 sens loss: 0.5673 contrastive loss: 5.4904 edge reconstruction loss: 0.6173 feature reconstruction loss: 0.0157
+Epoch: 0823 sens loss: 0.5318 contrastive loss: 5.5132 edge reconstruction loss: 0.5882 feature reconstruction loss: 0.0156
+Epoch: 0824 sens loss: 0.5212 contrastive loss: 5.5400 edge reconstruction loss: 0.6005 feature reconstruction loss: 0.0150
+Epoch: 0825 sens loss: 0.5376 contrastive loss: 5.5142 edge reconstruction loss: 0.6026 feature reconstruction loss: 0.0160
+Epoch: 0826 sens loss: 0.5525 contrastive loss: 5.5005 edge reconstruction loss: 0.6647 feature reconstruction loss: 0.0138
+Epoch: 0827 sens loss: 0.5332 contrastive loss: 5.5331 edge reconstruction loss: 0.6195 feature reconstruction loss: 0.0156
+Epoch: 0828 sens loss: 0.5313 contrastive loss: 5.4961 edge reconstruction loss: 0.6109 feature reconstruction loss: 0.0153
+Epoch: 0829 sens loss: 0.5265 contrastive loss: 5.5575 edge reconstruction loss: 0.5471 feature reconstruction loss: 0.0148
+Epoch: 0830 sens loss: 0.5388 contrastive loss: 5.5505 edge reconstruction loss: 0.5588 feature reconstruction loss: 0.0159
+Epoch: 0831 sens loss: 0.5308 contrastive loss: 5.6974 edge reconstruction loss: 0.4885 feature reconstruction loss: 0.0154
+Epoch: 0832 sens loss: 0.5342 contrastive loss: 5.4757 edge reconstruction loss: 0.5567 feature reconstruction loss: 0.0157
+Epoch: 0833 sens loss: 0.5170 contrastive loss: 5.4895 edge reconstruction loss: 0.6035 feature reconstruction loss: 0.0155
+Epoch: 0834 sens loss: 0.5354 contrastive loss: 5.5155 edge reconstruction loss: 0.6092 feature reconstruction loss: 0.0149
+Epoch: 0835 sens loss: 0.5249 contrastive loss: 5.5454 edge reconstruction loss: 0.5983 feature reconstruction loss: 0.0157
+Epoch: 0836 sens loss: 0.5333 contrastive loss: 5.4974 edge reconstruction loss: 0.5664 feature reconstruction loss: 0.0149
+Epoch: 0837 sens loss: 0.5264 contrastive loss: 5.5935 edge reconstruction loss: 0.5506 feature reconstruction loss: 0.0156
+Epoch: 0838 sens loss: 0.5172 contrastive loss: 5.5123 edge reconstruction loss: 0.6412 feature reconstruction loss: 0.0165
+Epoch: 0839 sens loss: 0.5202 contrastive loss: 5.5313 edge reconstruction loss: 0.6526 feature reconstruction loss: 0.0142
+Epoch: 0840 sens loss: 0.5348 contrastive loss: 5.5642 edge reconstruction loss: 0.6055 feature reconstruction loss: 0.0158
+Epoch: 0841 sens loss: 0.5265 contrastive loss: 5.5096 edge reconstruction loss: 0.5536 feature reconstruction loss: 0.0153
+Epoch: 0842 sens loss: 0.5275 contrastive loss: 5.4737 edge reconstruction loss: 0.6059 feature reconstruction loss: 0.0136
+Epoch: 0843 sens loss: 0.5185 contrastive loss: 5.4996 edge reconstruction loss: 0.5653 feature reconstruction loss: 0.0146
+Epoch: 0844 sens loss: 0.5305 contrastive loss: 5.5489 edge reconstruction loss: 0.5955 feature reconstruction loss: 0.0164
+Epoch: 0845 sens loss: 0.5366 contrastive loss: 5.5585 edge reconstruction loss: 0.5319 feature reconstruction loss: 0.0161
+Epoch: 0846 sens loss: 0.5302 contrastive loss: 5.5248 edge reconstruction loss: 0.5761 feature reconstruction loss: 0.0152
+Epoch: 0847 sens loss: 0.5307 contrastive loss: 5.5485 edge reconstruction loss: 0.5630 feature reconstruction loss: 0.0141
+Epoch: 0848 sens loss: 0.5291 contrastive loss: 5.5236 edge reconstruction loss: 0.6034 feature reconstruction loss: 0.0154
+Epoch: 0849 sens loss: 0.5292 contrastive loss: 5.5465 edge reconstruction loss: 0.5877 feature reconstruction loss: 0.0147
+Epoch: 0850 sens loss: 0.5222 contrastive loss: 5.5397 edge reconstruction loss: 0.5800 feature reconstruction loss: 0.0149
+Epoch: 0851 sens loss: 0.5087 contrastive loss: 5.5374 edge reconstruction loss: 0.5698 feature reconstruction loss: 0.0155
+Epoch: 0852 sens loss: 0.5275 contrastive loss: 5.5048 edge reconstruction loss: 0.6215 feature reconstruction loss: 0.0137
+Epoch: 0853 sens loss: 0.5274 contrastive loss: 5.5562 edge reconstruction loss: 0.5807 feature reconstruction loss: 0.0158
+Epoch: 0854 sens loss: 0.5187 contrastive loss: 5.4849 edge reconstruction loss: 0.6317 feature reconstruction loss: 0.0155
+Epoch: 0855 sens loss: 0.5309 contrastive loss: 5.5805 edge reconstruction loss: 0.5726 feature reconstruction loss: 0.0143
+Epoch: 0856 sens loss: 0.5214 contrastive loss: 5.5055 edge reconstruction loss: 0.5657 feature reconstruction loss: 0.0145
+Epoch: 0857 sens loss: 0.5295 contrastive loss: 5.4712 edge reconstruction loss: 0.6027 feature reconstruction loss: 0.0149
+Epoch: 0858 sens loss: 0.5190 contrastive loss: 5.4982 edge reconstruction loss: 0.5743 feature reconstruction loss: 0.0163
+Epoch: 0859 sens loss: 0.5148 contrastive loss: 5.4909 edge reconstruction loss: 0.5684 feature reconstruction loss: 0.0156
+Epoch: 0860 sens loss: 0.5246 contrastive loss: 5.5513 edge reconstruction loss: 0.5547 feature reconstruction loss: 0.0131
+Epoch: 0861 sens loss: 0.5455 contrastive loss: 5.5349 edge reconstruction loss: 0.5805 feature reconstruction loss: 0.0171
+Epoch: 0862 sens loss: 0.5341 contrastive loss: 5.5780 edge reconstruction loss: 0.5594 feature reconstruction loss: 0.0138
+Epoch: 0863 sens loss: 0.5281 contrastive loss: 5.4962 edge reconstruction loss: 0.6206 feature reconstruction loss: 0.0135
+Epoch: 0864 sens loss: 0.5411 contrastive loss: 5.5549 edge reconstruction loss: 0.5824 feature reconstruction loss: 0.0142
+Epoch: 0865 sens loss: 0.5268 contrastive loss: 5.5324 edge reconstruction loss: 0.5755 feature reconstruction loss: 0.0155
+Epoch: 0866 sens loss: 0.5349 contrastive loss: 5.5289 edge reconstruction loss: 0.5682 feature reconstruction loss: 0.0134
+Epoch: 0867 sens loss: 0.5269 contrastive loss: 5.5195 edge reconstruction loss: 0.5934 feature reconstruction loss: 0.0170
+Epoch: 0868 sens loss: 0.5270 contrastive loss: 5.5920 edge reconstruction loss: 0.5618 feature reconstruction loss: 0.0125
+Epoch: 0869 sens loss: 0.5341 contrastive loss: 5.4923 edge reconstruction loss: 0.6496 feature reconstruction loss: 0.0140
+Epoch: 0870 sens loss: 0.5252 contrastive loss: 5.5084 edge reconstruction loss: 0.6126 feature reconstruction loss: 0.0149
+Epoch: 0871 sens loss: 0.5245 contrastive loss: 5.5358 edge reconstruction loss: 0.6071 feature reconstruction loss: 0.0158
+Epoch: 0872 sens loss: 0.5240 contrastive loss: 5.5172 edge reconstruction loss: 0.5648 feature reconstruction loss: 0.0147
+Epoch: 0873 sens loss: 0.5474 contrastive loss: 5.5430 edge reconstruction loss: 0.5640 feature reconstruction loss: 0.0142
+Epoch: 0874 sens loss: 0.5300 contrastive loss: 5.5303 edge reconstruction loss: 0.5478 feature reconstruction loss: 0.0143
+Epoch: 0875 sens loss: 0.5154 contrastive loss: 5.4907 edge reconstruction loss: 0.5997 feature reconstruction loss: 0.0130
+Epoch: 0876 sens loss: 0.5284 contrastive loss: 5.4837 edge reconstruction loss: 0.5992 feature reconstruction loss: 0.0135
+Epoch: 0877 sens loss: 0.5249 contrastive loss: 5.4655 edge reconstruction loss: 0.5916 feature reconstruction loss: 0.0144
+Epoch: 0878 sens loss: 0.5224 contrastive loss: 5.5012 edge reconstruction loss: 0.5859 feature reconstruction loss: 0.0146
+Epoch: 0879 sens loss: 0.5229 contrastive loss: 5.4789 edge reconstruction loss: 0.6062 feature reconstruction loss: 0.0139
+Epoch: 0880 sens loss: 0.5475 contrastive loss: 5.5123 edge reconstruction loss: 0.5424 feature reconstruction loss: 0.0147
+Epoch: 0881 sens loss: 0.5229 contrastive loss: 5.4674 edge reconstruction loss: 0.5653 feature reconstruction loss: 0.0135
+Epoch: 0882 sens loss: 0.5222 contrastive loss: 5.5020 edge reconstruction loss: 0.6165 feature reconstruction loss: 0.0145
+Epoch: 0883 sens loss: 0.5331 contrastive loss: 5.5189 edge reconstruction loss: 0.6094 feature reconstruction loss: 0.0151
+Epoch: 0884 sens loss: 0.5421 contrastive loss: 5.4898 edge reconstruction loss: 0.6125 feature reconstruction loss: 0.0127
+Epoch: 0885 sens loss: 0.5192 contrastive loss: 5.5062 edge reconstruction loss: 0.5855 feature reconstruction loss: 0.0138
+Epoch: 0886 sens loss: 0.5382 contrastive loss: 5.4942 edge reconstruction loss: 0.5960 feature reconstruction loss: 0.0124
+Epoch: 0887 sens loss: 0.5298 contrastive loss: 5.5502 edge reconstruction loss: 0.5830 feature reconstruction loss: 0.0161
+Epoch: 0888 sens loss: 0.5300 contrastive loss: 5.4782 edge reconstruction loss: 0.5656 feature reconstruction loss: 0.0149
+Epoch: 0889 sens loss: 0.5318 contrastive loss: 5.5679 edge reconstruction loss: 0.5961 feature reconstruction loss: 0.0136
+Epoch: 0890 sens loss: 0.5304 contrastive loss: 5.4889 edge reconstruction loss: 0.5979 feature reconstruction loss: 0.0135
+Epoch: 0891 sens loss: 0.5371 contrastive loss: 5.5022 edge reconstruction loss: 0.5725 feature reconstruction loss: 0.0137
+Epoch: 0892 sens loss: 0.5384 contrastive loss: 5.5255 edge reconstruction loss: 0.6046 feature reconstruction loss: 0.0138
+Epoch: 0893 sens loss: 0.5433 contrastive loss: 5.5258 edge reconstruction loss: 0.6978 feature reconstruction loss: 0.0150
+Epoch: 0894 sens loss: 0.5504 contrastive loss: 5.4742 edge reconstruction loss: 0.6142 feature reconstruction loss: 0.0125
+Epoch: 0895 sens loss: 0.5390 contrastive loss: 5.5322 edge reconstruction loss: 0.6148 feature reconstruction loss: 0.0142
+Epoch: 0896 sens loss: 0.5255 contrastive loss: 5.5215 edge reconstruction loss: 0.5750 feature reconstruction loss: 0.0135
+Epoch: 0897 sens loss: 0.5405 contrastive loss: 5.4884 edge reconstruction loss: 0.5997 feature reconstruction loss: 0.0144
+Epoch: 0898 sens loss: 0.5430 contrastive loss: 5.5510 edge reconstruction loss: 0.5520 feature reconstruction loss: 0.0116
+Epoch: 0899 sens loss: 0.5310 contrastive loss: 5.4873 edge reconstruction loss: 0.5552 feature reconstruction loss: 0.0129
+Epoch: 0900 sens loss: 0.5275 contrastive loss: 5.5015 edge reconstruction loss: 0.6394 feature reconstruction loss: 0.0154
+Epoch: 0901 sens loss: 0.5265 contrastive loss: 5.5209 edge reconstruction loss: 0.5920 feature reconstruction loss: 0.0142
+Epoch: 0902 sens loss: 0.5373 contrastive loss: 5.5035 edge reconstruction loss: 0.5954 feature reconstruction loss: 0.0135
+Epoch: 0903 sens loss: 0.5375 contrastive loss: 5.4926 edge reconstruction loss: 0.6284 feature reconstruction loss: 0.0143
+Epoch: 0904 sens loss: 0.5207 contrastive loss: 5.5327 edge reconstruction loss: 0.5830 feature reconstruction loss: 0.0133
+Epoch: 0905 sens loss: 0.5457 contrastive loss: 5.5124 edge reconstruction loss: 0.5769 feature reconstruction loss: 0.0137
+Epoch: 0906 sens loss: 0.5527 contrastive loss: 5.5387 edge reconstruction loss: 0.5795 feature reconstruction loss: 0.0146
+Epoch: 0907 sens loss: 0.5382 contrastive loss: 5.4681 edge reconstruction loss: 0.5972 feature reconstruction loss: 0.0148
+Epoch: 0908 sens loss: 0.5344 contrastive loss: 5.4948 edge reconstruction loss: 0.5244 feature reconstruction loss: 0.0161
+Epoch: 0909 sens loss: 0.5362 contrastive loss: 5.4965 edge reconstruction loss: 0.6180 feature reconstruction loss: 0.0129
+Epoch: 0910 sens loss: 0.5453 contrastive loss: 5.5295 edge reconstruction loss: 0.5491 feature reconstruction loss: 0.0160
+Epoch: 0911 sens loss: 0.5338 contrastive loss: 5.5372 edge reconstruction loss: 0.5836 feature reconstruction loss: 0.0149
+Epoch: 0912 sens loss: 0.5217 contrastive loss: 5.5351 edge reconstruction loss: 0.5956 feature reconstruction loss: 0.0142
+Epoch: 0913 sens loss: 0.5255 contrastive loss: 5.5443 edge reconstruction loss: 0.5771 feature reconstruction loss: 0.0140
+Epoch: 0914 sens loss: 0.5391 contrastive loss: 5.4637 edge reconstruction loss: 0.6569 feature reconstruction loss: 0.0144
+Epoch: 0915 sens loss: 0.5205 contrastive loss: 5.4948 edge reconstruction loss: 0.6605 feature reconstruction loss: 0.0136
+Epoch: 0916 sens loss: 0.5368 contrastive loss: 5.4382 edge reconstruction loss: 0.6467 feature reconstruction loss: 0.0125
+Epoch: 0917 sens loss: 0.5345 contrastive loss: 5.4892 edge reconstruction loss: 0.6369 feature reconstruction loss: 0.0144
+Epoch: 0918 sens loss: 0.5325 contrastive loss: 5.5168 edge reconstruction loss: 0.5565 feature reconstruction loss: 0.0146
+Epoch: 0919 sens loss: 0.5214 contrastive loss: 5.5591 edge reconstruction loss: 0.5515 feature reconstruction loss: 0.0145
+Epoch: 0920 sens loss: 0.5274 contrastive loss: 5.5559 edge reconstruction loss: 0.5263 feature reconstruction loss: 0.0146
+Epoch: 0921 sens loss: 0.5201 contrastive loss: 5.4616 edge reconstruction loss: 0.6270 feature reconstruction loss: 0.0144
+Epoch: 0922 sens loss: 0.5317 contrastive loss: 5.4881 edge reconstruction loss: 0.5986 feature reconstruction loss: 0.0148
+Epoch: 0923 sens loss: 0.5279 contrastive loss: 5.4902 edge reconstruction loss: 0.6034 feature reconstruction loss: 0.0138
+Epoch: 0924 sens loss: 0.5173 contrastive loss: 5.5070 edge reconstruction loss: 0.6317 feature reconstruction loss: 0.0138
+Epoch: 0925 sens loss: 0.5186 contrastive loss: 5.5023 edge reconstruction loss: 0.5717 feature reconstruction loss: 0.0147
+Epoch: 0926 sens loss: 0.5313 contrastive loss: 5.5024 edge reconstruction loss: 0.5379 feature reconstruction loss: 0.0144
+Epoch: 0927 sens loss: 0.5341 contrastive loss: 5.6543 edge reconstruction loss: 0.5120 feature reconstruction loss: 0.0137
+Epoch: 0928 sens loss: 0.5321 contrastive loss: 5.5087 edge reconstruction loss: 0.5820 feature reconstruction loss: 0.0142
+Epoch: 0929 sens loss: 0.5222 contrastive loss: 5.4491 edge reconstruction loss: 0.5615 feature reconstruction loss: 0.0144
+Epoch: 0930 sens loss: 0.5207 contrastive loss: 5.4974 edge reconstruction loss: 0.6185 feature reconstruction loss: 0.0145
+Epoch: 0931 sens loss: 0.5227 contrastive loss: 5.4537 edge reconstruction loss: 0.6389 feature reconstruction loss: 0.0147
+Epoch: 0932 sens loss: 0.5288 contrastive loss: 5.4310 edge reconstruction loss: 0.6159 feature reconstruction loss: 0.0150
+Epoch: 0933 sens loss: 0.5369 contrastive loss: 5.4771 edge reconstruction loss: 0.6830 feature reconstruction loss: 0.0149
+Epoch: 0934 sens loss: 0.5292 contrastive loss: 5.5237 edge reconstruction loss: 0.5809 feature reconstruction loss: 0.0146
+Epoch: 0935 sens loss: 0.5180 contrastive loss: 5.4566 edge reconstruction loss: 0.5544 feature reconstruction loss: 0.0148
+Epoch: 0936 sens loss: 0.5250 contrastive loss: 5.5072 edge reconstruction loss: 0.5590 feature reconstruction loss: 0.0122
+Epoch: 0937 sens loss: 0.5130 contrastive loss: 5.4858 edge reconstruction loss: 0.5509 feature reconstruction loss: 0.0145
+Epoch: 0938 sens loss: 0.5217 contrastive loss: 5.5192 edge reconstruction loss: 0.5753 feature reconstruction loss: 0.0149
+Epoch: 0939 sens loss: 0.5149 contrastive loss: 5.4963 edge reconstruction loss: 0.5459 feature reconstruction loss: 0.0153
+Epoch: 0940 sens loss: 0.5345 contrastive loss: 5.4838 edge reconstruction loss: 0.5797 feature reconstruction loss: 0.0142
+Epoch: 0941 sens loss: 0.5053 contrastive loss: 5.4710 edge reconstruction loss: 0.5851 feature reconstruction loss: 0.0143
+Epoch: 0942 sens loss: 0.5223 contrastive loss: 5.4659 edge reconstruction loss: 0.6226 feature reconstruction loss: 0.0133
+Epoch: 0943 sens loss: 0.5183 contrastive loss: 5.4815 edge reconstruction loss: 0.6269 feature reconstruction loss: 0.0118
+Epoch: 0944 sens loss: 0.5466 contrastive loss: 5.5016 edge reconstruction loss: 0.5905 feature reconstruction loss: 0.0137
+Epoch: 0945 sens loss: 0.5325 contrastive loss: 5.5030 edge reconstruction loss: 0.5869 feature reconstruction loss: 0.0151
+Epoch: 0946 sens loss: 0.5186 contrastive loss: 5.4318 edge reconstruction loss: 0.6136 feature reconstruction loss: 0.0144
+Epoch: 0947 sens loss: 0.5263 contrastive loss: 5.4946 edge reconstruction loss: 0.5810 feature reconstruction loss: 0.0155
+Epoch: 0948 sens loss: 0.5463 contrastive loss: 5.5603 edge reconstruction loss: 0.5534 feature reconstruction loss: 0.0144
+Epoch: 0949 sens loss: 0.5446 contrastive loss: 5.4937 edge reconstruction loss: 0.5988 feature reconstruction loss: 0.0148
+Epoch: 0950 sens loss: 0.5260 contrastive loss: 5.4547 edge reconstruction loss: 0.6290 feature reconstruction loss: 0.0135
+Epoch: 0951 sens loss: 0.5297 contrastive loss: 5.4903 edge reconstruction loss: 0.5384 feature reconstruction loss: 0.0138
+Epoch: 0952 sens loss: 0.5397 contrastive loss: 5.4847 edge reconstruction loss: 0.6025 feature reconstruction loss: 0.0125
+Epoch: 0953 sens loss: 0.5560 contrastive loss: 5.4570 edge reconstruction loss: 0.6225 feature reconstruction loss: 0.0132
+Epoch: 0954 sens loss: 0.5283 contrastive loss: 5.4885 edge reconstruction loss: 0.5779 feature reconstruction loss: 0.0132
+Epoch: 0955 sens loss: 0.5471 contrastive loss: 5.5118 edge reconstruction loss: 0.6140 feature reconstruction loss: 0.0131
+Epoch: 0956 sens loss: 0.5417 contrastive loss: 5.4203 edge reconstruction loss: 0.6578 feature reconstruction loss: 0.0130
+Epoch: 0957 sens loss: 0.5316 contrastive loss: 5.4635 edge reconstruction loss: 0.6647 feature reconstruction loss: 0.0143
+Epoch: 0958 sens loss: 0.5289 contrastive loss: 5.4741 edge reconstruction loss: 0.6330 feature reconstruction loss: 0.0130
+Epoch: 0959 sens loss: 0.5376 contrastive loss: 5.5622 edge reconstruction loss: 0.6018 feature reconstruction loss: 0.0124
+Epoch: 0960 sens loss: 0.5313 contrastive loss: 5.5257 edge reconstruction loss: 0.5381 feature reconstruction loss: 0.0130
+Epoch: 0961 sens loss: 0.5337 contrastive loss: 5.5003 edge reconstruction loss: 0.5603 feature reconstruction loss: 0.0127
+Epoch: 0962 sens loss: 0.5341 contrastive loss: 5.4956 edge reconstruction loss: 0.5968 feature reconstruction loss: 0.0121
+Epoch: 0963 sens loss: 0.5262 contrastive loss: 5.5460 edge reconstruction loss: 0.5450 feature reconstruction loss: 0.0139
+Epoch: 0964 sens loss: 0.5338 contrastive loss: 5.5074 edge reconstruction loss: 0.5509 feature reconstruction loss: 0.0147
+Epoch: 0965 sens loss: 0.5318 contrastive loss: 5.5031 edge reconstruction loss: 0.6442 feature reconstruction loss: 0.0133
+Epoch: 0966 sens loss: 0.5277 contrastive loss: 5.4583 edge reconstruction loss: 0.6518 feature reconstruction loss: 0.0142
+Epoch: 0967 sens loss: 0.5256 contrastive loss: 5.4745 edge reconstruction loss: 0.6549 feature reconstruction loss: 0.0131
+Epoch: 0968 sens loss: 0.5198 contrastive loss: 5.4537 edge reconstruction loss: 0.6939 feature reconstruction loss: 0.0131
+Epoch: 0969 sens loss: 0.5293 contrastive loss: 5.4714 edge reconstruction loss: 0.6381 feature reconstruction loss: 0.0131
+Epoch: 0970 sens loss: 0.5203 contrastive loss: 5.5255 edge reconstruction loss: 0.5864 feature reconstruction loss: 0.0136
+Epoch: 0971 sens loss: 0.5341 contrastive loss: 5.6378 edge reconstruction loss: 0.5201 feature reconstruction loss: 0.0141
+Epoch: 0972 sens loss: 0.5434 contrastive loss: 5.4837 edge reconstruction loss: 0.5685 feature reconstruction loss: 0.0135
+Epoch: 0973 sens loss: 0.5396 contrastive loss: 5.5925 edge reconstruction loss: 0.5287 feature reconstruction loss: 0.0142
+Epoch: 0974 sens loss: 0.5279 contrastive loss: 5.6487 edge reconstruction loss: 0.5330 feature reconstruction loss: 0.0137
+Epoch: 0975 sens loss: 0.5325 contrastive loss: 5.5676 edge reconstruction loss: 0.5129 feature reconstruction loss: 0.0132
+Epoch: 0976 sens loss: 0.5214 contrastive loss: 5.6089 edge reconstruction loss: 0.6189 feature reconstruction loss: 0.0132
+Epoch: 0977 sens loss: 0.5208 contrastive loss: 5.4754 edge reconstruction loss: 0.6370 feature reconstruction loss: 0.0151
+Epoch: 0978 sens loss: 0.5252 contrastive loss: 5.5010 edge reconstruction loss: 0.7911 feature reconstruction loss: 0.0130
+Epoch: 0979 sens loss: 0.5344 contrastive loss: 5.4822 edge reconstruction loss: 0.8195 feature reconstruction loss: 0.0129
+Epoch: 0980 sens loss: 0.5295 contrastive loss: 5.4717 edge reconstruction loss: 0.7052 feature reconstruction loss: 0.0145
+Epoch: 0981 sens loss: 0.5419 contrastive loss: 5.4888 edge reconstruction loss: 0.6048 feature reconstruction loss: 0.0146
+Epoch: 0982 sens loss: 0.5323 contrastive loss: 5.4263 edge reconstruction loss: 0.5821 feature reconstruction loss: 0.0137
+Epoch: 0983 sens loss: 0.5546 contrastive loss: 5.5518 edge reconstruction loss: 0.5420 feature reconstruction loss: 0.0137
+Epoch: 0984 sens loss: 0.5272 contrastive loss: 5.4970 edge reconstruction loss: 0.5578 feature reconstruction loss: 0.0139
+Epoch: 0985 sens loss: 0.5218 contrastive loss: 5.5291 edge reconstruction loss: 0.5192 feature reconstruction loss: 0.0142
+Epoch: 0986 sens loss: 0.5360 contrastive loss: 5.4963 edge reconstruction loss: 0.5688 feature reconstruction loss: 0.0148
+Epoch: 0987 sens loss: 0.5510 contrastive loss: 5.4967 edge reconstruction loss: 0.5858 feature reconstruction loss: 0.0132
+Epoch: 0988 sens loss: 0.5215 contrastive loss: 5.4736 edge reconstruction loss: 0.5928 feature reconstruction loss: 0.0137
+Epoch: 0989 sens loss: 0.5254 contrastive loss: 5.4696 edge reconstruction loss: 0.6676 feature reconstruction loss: 0.0157
+Epoch: 0990 sens loss: 0.5352 contrastive loss: 5.5495 edge reconstruction loss: 0.5758 feature reconstruction loss: 0.0133
+Epoch: 0991 sens loss: 0.5274 contrastive loss: 5.5052 edge reconstruction loss: 0.6427 feature reconstruction loss: 0.0147
+Epoch: 0992 sens loss: 0.5327 contrastive loss: 5.4772 edge reconstruction loss: 0.6166 feature reconstruction loss: 0.0145
+Epoch: 0993 sens loss: 0.5228 contrastive loss: 5.4004 edge reconstruction loss: 0.6229 feature reconstruction loss: 0.0164
+Epoch: 0994 sens loss: 0.5219 contrastive loss: 5.4683 edge reconstruction loss: 0.5649 feature reconstruction loss: 0.0139
+Epoch: 0995 sens loss: 0.5259 contrastive loss: 5.4622 edge reconstruction loss: 0.6016 feature reconstruction loss: 0.0136
+Epoch: 0996 sens loss: 0.5267 contrastive loss: 5.5003 edge reconstruction loss: 0.5676 feature reconstruction loss: 0.0161
+Epoch: 0997 sens loss: 0.5349 contrastive loss: 5.5207 edge reconstruction loss: 0.5589 feature reconstruction loss: 0.0153
+Epoch: 0998 sens loss: 0.5162 contrastive loss: 5.5481 edge reconstruction loss: 0.5472 feature reconstruction loss: 0.0143
+Epoch: 0999 sens loss: 0.5280 contrastive loss: 5.4705 edge reconstruction loss: 0.6052 feature reconstruction loss: 0.0150
+Epoch: 1000 sens loss: 0.5338 contrastive loss: 5.4524 edge reconstruction loss: 0.6157 feature reconstruction loss: 0.0141
+Training time:  20.311431169509888
+Epoch [0] Test set results: acc_test= 0.2500 acc_val: 0.2500 acc_train: 0.4286 dp_val: 0.2564 dp_test: 0.2564 eo_val: 0.2771 eo_test: 0.2771
+              precision    recall  f1-score   support
+
+           0       0.11      0.80      0.20         5
+           1       0.88      0.18      0.30        39
+
+    accuracy                           0.25        44
+   macro avg       0.49      0.49      0.25        44
+weighted avg       0.79      0.25      0.29        44
+
+Epoch [50] Test set results: acc_test= 0.8864 acc_val: 0.8864 acc_train: 0.6786 dp_val: 0.0000 dp_test: 0.0000 eo_val: 0.0000 eo_test: 0.0000
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.89      1.00      0.94        39
+
+    accuracy                           0.89        44
+   macro avg       0.44      0.50      0.47        44
+weighted avg       0.79      0.89      0.83        44
+
+Epoch [100] Test set results: acc_test= 0.8864 acc_val: 0.8864 acc_train: 0.6786 dp_val: 0.0000 dp_test: 0.0000 eo_val: 0.0000 eo_test: 0.0000
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.89      1.00      0.94        39
+
+    accuracy                           0.89        44
+   macro avg       0.44      0.50      0.47        44
+weighted avg       0.79      0.89      0.83        44
+
+Epoch [150] Test set results: acc_test= 0.7273 acc_val: 0.7273 acc_train: 0.7500 dp_val: 0.0812 dp_test: 0.0812 eo_val: 0.0571 eo_test: 0.0571
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.86      0.82      0.84        39
+
+    accuracy                           0.73        44
+   macro avg       0.43      0.41      0.42        44
+weighted avg       0.77      0.73      0.75        44
+
+Epoch [200] Test set results: acc_test= 0.7045 acc_val: 0.7045 acc_train: 0.7500 dp_val: 0.1197 dp_test: 0.1197 eo_val: 0.0971 eo_test: 0.0971
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.86      0.79      0.83        39
+
+    accuracy                           0.70        44
+   macro avg       0.43      0.40      0.41        44
+weighted avg       0.76      0.70      0.73        44
+
+Epoch [250] Test set results: acc_test= 0.7045 acc_val: 0.7045 acc_train: 0.8214 dp_val: 0.1197 dp_test: 0.1197 eo_val: 0.0971 eo_test: 0.0971
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.86      0.79      0.83        39
+
+    accuracy                           0.70        44
+   macro avg       0.43      0.40      0.41        44
+weighted avg       0.76      0.70      0.73        44
+
+Epoch [300] Test set results: acc_test= 0.7273 acc_val: 0.7273 acc_train: 0.8214 dp_val: 0.0812 dp_test: 0.0812 eo_val: 0.0571 eo_test: 0.0571
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.86      0.82      0.84        39
+
+    accuracy                           0.73        44
+   macro avg       0.43      0.41      0.42        44
+weighted avg       0.77      0.73      0.75        44
+
+Epoch [350] Test set results: acc_test= 0.6818 acc_val: 0.6818 acc_train: 0.8929 dp_val: 0.0299 dp_test: 0.0299 eo_val: 0.0857 eo_test: 0.0857
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.86      0.77      0.81        39
+
+    accuracy                           0.68        44
+   macro avg       0.43      0.38      0.41        44
+weighted avg       0.76      0.68      0.72        44
+
+Epoch [400] Test set results: acc_test= 0.6818 acc_val: 0.6818 acc_train: 0.8929 dp_val: 0.0299 dp_test: 0.0299 eo_val: 0.0857 eo_test: 0.0857
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.86      0.77      0.81        39
+
+    accuracy                           0.68        44
+   macro avg       0.43      0.38      0.41        44
+weighted avg       0.76      0.68      0.72        44
+
+Epoch [450] Test set results: acc_test= 0.6818 acc_val: 0.6818 acc_train: 0.9286 dp_val: 0.0470 dp_test: 0.0470 eo_val: 0.0457 eo_test: 0.0457
+              precision    recall  f1-score   support
+
+           0       0.09      0.20      0.13         5
+           1       0.88      0.74      0.81        39
+
+    accuracy                           0.68        44
+   macro avg       0.48      0.47      0.47        44
+weighted avg       0.79      0.68      0.73        44
+
+Optimization Finished!
+Test results: acc_test= 0.8864 acc_val: 0.8864 dp_val: 0.0000 dp_test: 0.0000 eo_val: 0.0000 eo_test: 0.0000
+Epoch [0] Test set results: acc_test= 0.1136 acc_val: 0.1136 acc_train: 0.3214 dp_val: 0.0000 dp_test: 0.0000 eo_val: 0.0000 eo_test: 0.0000
+              precision    recall  f1-score   support
+
+           0       0.11      1.00      0.20         5
+           1       0.00      0.00      0.00        39
+
+    accuracy                           0.11        44
+   macro avg       0.06      0.50      0.10        44
+weighted avg       0.01      0.11      0.02        44
+
+Epoch [50] Test set results: acc_test= 0.8864 acc_val: 0.8864 acc_train: 0.6786 dp_val: 0.0000 dp_test: 0.0000 eo_val: 0.0000 eo_test: 0.0000
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.89      1.00      0.94        39
+
+    accuracy                           0.89        44
+   macro avg       0.44      0.50      0.47        44
+weighted avg       0.79      0.89      0.83        44
+
+Epoch [100] Test set results: acc_test= 0.6818 acc_val: 0.6818 acc_train: 0.7500 dp_val: 0.1581 dp_test: 0.1581 eo_val: 0.1371 eo_test: 0.1371
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.86      0.77      0.81        39
+
+    accuracy                           0.68        44
+   macro avg       0.43      0.38      0.41        44
+weighted avg       0.76      0.68      0.72        44
+
+Epoch [150] Test set results: acc_test= 0.7045 acc_val: 0.7045 acc_train: 0.8214 dp_val: 0.1197 dp_test: 0.1197 eo_val: 0.0971 eo_test: 0.0971
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.86      0.79      0.83        39
+
+    accuracy                           0.70        44
+   macro avg       0.43      0.40      0.41        44
+weighted avg       0.76      0.70      0.73        44
+
+Epoch [200] Test set results: acc_test= 0.7273 acc_val: 0.7273 acc_train: 0.8571 dp_val: 0.0812 dp_test: 0.0812 eo_val: 0.0571 eo_test: 0.0571
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.86      0.82      0.84        39
+
+    accuracy                           0.73        44
+   macro avg       0.43      0.41      0.42        44
+weighted avg       0.77      0.73      0.75        44
+
+Epoch [250] Test set results: acc_test= 0.7045 acc_val: 0.7045 acc_train: 0.8929 dp_val: 0.0855 dp_test: 0.0855 eo_val: 0.0857 eo_test: 0.0857
+              precision    recall  f1-score   support
+
+           0       0.10      0.20      0.13         5
+           1       0.88      0.77      0.82        39
+
+    accuracy                           0.70        44
+   macro avg       0.49      0.48      0.48        44
+weighted avg       0.79      0.70      0.74        44
+
+Epoch [300] Test set results: acc_test= 0.7045 acc_val: 0.7045 acc_train: 0.8929 dp_val: 0.0855 dp_test: 0.0855 eo_val: 0.0857 eo_test: 0.0857
+              precision    recall  f1-score   support
+
+           0       0.10      0.20      0.13         5
+           1       0.88      0.77      0.82        39
+
+    accuracy                           0.70        44
+   macro avg       0.49      0.48      0.48        44
+weighted avg       0.79      0.70      0.74        44
+
+Epoch [350] Test set results: acc_test= 0.7045 acc_val: 0.7045 acc_train: 0.9286 dp_val: 0.0855 dp_test: 0.0855 eo_val: 0.0857 eo_test: 0.0857
+              precision    recall  f1-score   support
+
+           0       0.10      0.20      0.13         5
+           1       0.88      0.77      0.82        39
+
+    accuracy                           0.70        44
+   macro avg       0.49      0.48      0.48        44
+weighted avg       0.79      0.70      0.74        44
+
+Epoch [400] Test set results: acc_test= 0.7045 acc_val: 0.7045 acc_train: 0.9643 dp_val: 0.0855 dp_test: 0.0855 eo_val: 0.0857 eo_test: 0.0857
+              precision    recall  f1-score   support
+
+           0       0.10      0.20      0.13         5
+           1       0.88      0.77      0.82        39
+
+    accuracy                           0.70        44
+   macro avg       0.49      0.48      0.48        44
+weighted avg       0.79      0.70      0.74        44
+
+Epoch [450] Test set results: acc_test= 0.6818 acc_val: 0.6818 acc_train: 0.9643 dp_val: 0.0470 dp_test: 0.0470 eo_val: 0.0457 eo_test: 0.0457
+              precision    recall  f1-score   support
+
+           0       0.09      0.20      0.13         5
+           1       0.88      0.74      0.81        39
+
+    accuracy                           0.68        44
+   macro avg       0.48      0.47      0.47        44
+weighted avg       0.79      0.68      0.73        44
+
+Optimization Finished!
+Test results: acc_test= 0.8864 acc_val: 0.8864 dp_val: 0.0000 dp_test: 0.0000 eo_val: 0.0000 eo_test: 0.0000
+Epoch [0] Test set results: acc_test= 0.8864 acc_val: 0.8864 acc_train: 0.6786 dp_val: 0.0000 dp_test: 0.0000 eo_val: 0.0000 eo_test: 0.0000
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.89      1.00      0.94        39
+
+    accuracy                           0.89        44
+   macro avg       0.44      0.50      0.47        44
+weighted avg       0.79      0.89      0.83        44
+
+Epoch [50] Test set results: acc_test= 0.8409 acc_val: 0.8409 acc_train: 0.6786 dp_val: 0.0769 dp_test: 0.0769 eo_val: 0.0800 eo_test: 0.0800
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.88      0.95      0.91        39
+
+    accuracy                           0.84        44
+   macro avg       0.44      0.47      0.46        44
+weighted avg       0.78      0.84      0.81        44
+
+Epoch [100] Test set results: acc_test= 0.6364 acc_val: 0.6364 acc_train: 0.7500 dp_val: 0.2350 dp_test: 0.2350 eo_val: 0.2171 eo_test: 0.2171
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.85      0.72      0.78        39
+
+    accuracy                           0.64        44
+   macro avg       0.42      0.36      0.39        44
+weighted avg       0.75      0.64      0.69        44
+
+Epoch [150] Test set results: acc_test= 0.6364 acc_val: 0.6364 acc_train: 0.8214 dp_val: 0.2350 dp_test: 0.2350 eo_val: 0.2171 eo_test: 0.2171
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.85      0.72      0.78        39
+
+    accuracy                           0.64        44
+   macro avg       0.42      0.36      0.39        44
+weighted avg       0.75      0.64      0.69        44
+
+Epoch [200] Test set results: acc_test= 0.6818 acc_val: 0.6818 acc_train: 0.8214 dp_val: 0.1581 dp_test: 0.1581 eo_val: 0.1371 eo_test: 0.1371
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.86      0.77      0.81        39
+
+    accuracy                           0.68        44
+   macro avg       0.43      0.38      0.41        44
+weighted avg       0.76      0.68      0.72        44
+
+Epoch [250] Test set results: acc_test= 0.7045 acc_val: 0.7045 acc_train: 0.8929 dp_val: 0.0256 dp_test: 0.0256 eo_val: 0.0143 eo_test: 0.0143
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.86      0.79      0.83        39
+
+    accuracy                           0.70        44
+   macro avg       0.43      0.40      0.41        44
+weighted avg       0.76      0.70      0.73        44
+
+Epoch [300] Test set results: acc_test= 0.6818 acc_val: 0.6818 acc_train: 0.8929 dp_val: 0.0299 dp_test: 0.0299 eo_val: 0.0857 eo_test: 0.0857
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.86      0.77      0.81        39
+
+    accuracy                           0.68        44
+   macro avg       0.43      0.38      0.41        44
+weighted avg       0.76      0.68      0.72        44
+
+Epoch [350] Test set results: acc_test= 0.6818 acc_val: 0.6818 acc_train: 0.8929 dp_val: 0.0299 dp_test: 0.0299 eo_val: 0.0857 eo_test: 0.0857
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.86      0.77      0.81        39
+
+    accuracy                           0.68        44
+   macro avg       0.43      0.38      0.41        44
+weighted avg       0.76      0.68      0.72        44
+
+Epoch [400] Test set results: acc_test= 0.6591 acc_val: 0.6591 acc_train: 0.9286 dp_val: 0.0085 dp_test: 0.0085 eo_val: 0.0457 eo_test: 0.0457
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.85      0.74      0.79        39
+
+    accuracy                           0.66        44
+   macro avg       0.43      0.37      0.40        44
+weighted avg       0.76      0.66      0.70        44
+
+Epoch [450] Test set results: acc_test= 0.6591 acc_val: 0.6591 acc_train: 0.9643 dp_val: 0.0085 dp_test: 0.0085 eo_val: 0.0457 eo_test: 0.0457
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.85      0.74      0.79        39
+
+    accuracy                           0.66        44
+   macro avg       0.43      0.37      0.40        44
+weighted avg       0.76      0.66      0.70        44
+
+Optimization Finished!
+Test results: acc_test= 0.8864 acc_val: 0.8864 dp_val: 0.0000 dp_test: 0.0000 eo_val: 0.0000 eo_test: 0.0000
+Epoch [0] Test set results: acc_test= 0.8864 acc_val: 0.8864 acc_train: 0.6786 dp_val: 0.0000 dp_test: 0.0000 eo_val: 0.0000 eo_test: 0.0000
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.89      1.00      0.94        39
+
+    accuracy                           0.89        44
+   macro avg       0.44      0.50      0.47        44
+weighted avg       0.79      0.89      0.83        44
+
+Epoch [50] Test set results: acc_test= 0.8182 acc_val: 0.8182 acc_train: 0.6786 dp_val: 0.0214 dp_test: 0.0214 eo_val: 0.0086 eo_test: 0.0086
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.88      0.92      0.90        39
+
+    accuracy                           0.82        44
+   macro avg       0.44      0.46      0.45        44
+weighted avg       0.78      0.82      0.80        44
+
+Epoch [100] Test set results: acc_test= 0.6591 acc_val: 0.6591 acc_train: 0.7500 dp_val: 0.1966 dp_test: 0.1966 eo_val: 0.1771 eo_test: 0.1771
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.85      0.74      0.79        39
+
+    accuracy                           0.66        44
+   macro avg       0.43      0.37      0.40        44
+weighted avg       0.76      0.66      0.70        44
+
+Epoch [150] Test set results: acc_test= 0.6591 acc_val: 0.6591 acc_train: 0.8214 dp_val: 0.1966 dp_test: 0.1966 eo_val: 0.1771 eo_test: 0.1771
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.85      0.74      0.79        39
+
+    accuracy                           0.66        44
+   macro avg       0.43      0.37      0.40        44
+weighted avg       0.76      0.66      0.70        44
+
+Epoch [200] Test set results: acc_test= 0.7273 acc_val: 0.7273 acc_train: 0.8571 dp_val: 0.0812 dp_test: 0.0812 eo_val: 0.0571 eo_test: 0.0571
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.86      0.82      0.84        39
+
+    accuracy                           0.73        44
+   macro avg       0.43      0.41      0.42        44
+weighted avg       0.77      0.73      0.75        44
+
+Epoch [250] Test set results: acc_test= 0.6818 acc_val: 0.6818 acc_train: 0.8929 dp_val: 0.0299 dp_test: 0.0299 eo_val: 0.0857 eo_test: 0.0857
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.86      0.77      0.81        39
+
+    accuracy                           0.68        44
+   macro avg       0.43      0.38      0.41        44
+weighted avg       0.76      0.68      0.72        44
+
+Epoch [300] Test set results: acc_test= 0.7045 acc_val: 0.7045 acc_train: 0.8929 dp_val: 0.0855 dp_test: 0.0855 eo_val: 0.0857 eo_test: 0.0857
+              precision    recall  f1-score   support
+
+           0       0.10      0.20      0.13         5
+           1       0.88      0.77      0.82        39
+
+    accuracy                           0.70        44
+   macro avg       0.49      0.48      0.48        44
+weighted avg       0.79      0.70      0.74        44
+
+Epoch [350] Test set results: acc_test= 0.6818 acc_val: 0.6818 acc_train: 0.9286 dp_val: 0.0470 dp_test: 0.0470 eo_val: 0.0457 eo_test: 0.0457
+              precision    recall  f1-score   support
+
+           0       0.09      0.20      0.13         5
+           1       0.88      0.74      0.81        39
+
+    accuracy                           0.68        44
+   macro avg       0.48      0.47      0.47        44
+weighted avg       0.79      0.68      0.73        44
+
+Epoch [400] Test set results: acc_test= 0.6818 acc_val: 0.6818 acc_train: 0.9643 dp_val: 0.0470 dp_test: 0.0470 eo_val: 0.0457 eo_test: 0.0457
+              precision    recall  f1-score   support
+
+           0       0.09      0.20      0.13         5
+           1       0.88      0.74      0.81        39
+
+    accuracy                           0.68        44
+   macro avg       0.48      0.47      0.47        44
+weighted avg       0.79      0.68      0.73        44
+
+Epoch [450] Test set results: acc_test= 0.6818 acc_val: 0.6818 acc_train: 0.9643 dp_val: 0.0470 dp_test: 0.0470 eo_val: 0.0457 eo_test: 0.0457
+              precision    recall  f1-score   support
+
+           0       0.09      0.20      0.13         5
+           1       0.88      0.74      0.81        39
+
+    accuracy                           0.68        44
+   macro avg       0.48      0.47      0.47        44
+weighted avg       0.79      0.68      0.73        44
+
+Optimization Finished!
+Test results: acc_test= 0.8864 acc_val: 0.8864 dp_val: 0.0000 dp_test: 0.0000 eo_val: 0.0000 eo_test: 0.0000
+Epoch [0] Test set results: acc_test= 0.1136 acc_val: 0.1136 acc_train: 0.3214 dp_val: 0.0000 dp_test: 0.0000 eo_val: 0.0000 eo_test: 0.0000
+              precision    recall  f1-score   support
+
+           0       0.11      1.00      0.20         5
+           1       0.00      0.00      0.00        39
+
+    accuracy                           0.11        44
+   macro avg       0.06      0.50      0.10        44
+weighted avg       0.01      0.11      0.02        44
+
+Epoch [50] Test set results: acc_test= 0.8864 acc_val: 0.8864 acc_train: 0.6786 dp_val: 0.0000 dp_test: 0.0000 eo_val: 0.0000 eo_test: 0.0000
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.89      1.00      0.94        39
+
+    accuracy                           0.89        44
+   macro avg       0.44      0.50      0.47        44
+weighted avg       0.79      0.89      0.83        44
+
+Epoch [100] Test set results: acc_test= 0.6818 acc_val: 0.6818 acc_train: 0.7500 dp_val: 0.1581 dp_test: 0.1581 eo_val: 0.1371 eo_test: 0.1371
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.86      0.77      0.81        39
+
+    accuracy                           0.68        44
+   macro avg       0.43      0.38      0.41        44
+weighted avg       0.76      0.68      0.72        44
+
+Epoch [150] Test set results: acc_test= 0.6818 acc_val: 0.6818 acc_train: 0.7857 dp_val: 0.1581 dp_test: 0.1581 eo_val: 0.1371 eo_test: 0.1371
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.86      0.77      0.81        39
+
+    accuracy                           0.68        44
+   macro avg       0.43      0.38      0.41        44
+weighted avg       0.76      0.68      0.72        44
+
+Epoch [200] Test set results: acc_test= 0.7273 acc_val: 0.7273 acc_train: 0.8571 dp_val: 0.0812 dp_test: 0.0812 eo_val: 0.0571 eo_test: 0.0571
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         5
+           1       0.86      0.82      0.84        39
+
+    accuracy                           0.73        44
+   macro avg       0.43      0.41      0.42        44
+weighted avg       0.77      0.73      0.75        44
+
+Epoch [250] Test set results: acc_test= 0.7045 acc_val: 0.7045 acc_train: 0.8929 dp_val: 0.0855 dp_test: 0.0855 eo_val: 0.0857 eo_test: 0.0857
+              precision    recall  f1-score   support
+
+           0       0.10      0.20      0.13         5
+           1       0.88      0.77      0.82        39
+
+    accuracy                           0.70        44
+   macro avg       0.49      0.48      0.48        44
+weighted avg       0.79      0.70      0.74        44
+
+Epoch [300] Test set results: acc_test= 0.7045 acc_val: 0.7045 acc_train: 0.8929 dp_val: 0.0855 dp_test: 0.0855 eo_val: 0.0857 eo_test: 0.0857
+              precision    recall  f1-score   support
+
+           0       0.10      0.20      0.13         5
+           1       0.88      0.77      0.82        39
+
+    accuracy                           0.70        44
+   macro avg       0.49      0.48      0.48        44
+weighted avg       0.79      0.70      0.74        44
+
+Epoch [350] Test set results: acc_test= 0.7045 acc_val: 0.7045 acc_train: 0.8929 dp_val: 0.0855 dp_test: 0.0855 eo_val: 0.0857 eo_test: 0.0857
+              precision    recall  f1-score   support
+
+           0       0.10      0.20      0.13         5
+           1       0.88      0.77      0.82        39
+
+    accuracy                           0.70        44
+   macro avg       0.49      0.48      0.48        44
+weighted avg       0.79      0.70      0.74        44
+
+Epoch [400] Test set results: acc_test= 0.6818 acc_val: 0.6818 acc_train: 0.9286 dp_val: 0.1410 dp_test: 0.1410 eo_val: 0.1571 eo_test: 0.1571
+              precision    recall  f1-score   support
+
+           0       0.09      0.20      0.13         5
+           1       0.88      0.74      0.81        39
+
+    accuracy                           0.68        44
+   macro avg       0.48      0.47      0.47        44
+weighted avg       0.79      0.68      0.73        44
+
+Epoch [450] Test set results: acc_test= 0.6591 acc_val: 0.6591 acc_train: 0.9643 dp_val: 0.1026 dp_test: 0.1026 eo_val: 0.1171 eo_test: 0.1171
+              precision    recall  f1-score   support
+
+           0       0.08      0.20      0.12         5
+           1       0.88      0.72      0.79        39
+
+    accuracy                           0.66        44
+   macro avg       0.48      0.46      0.45        44
+weighted avg       0.79      0.66      0.71        44
+
+Optimization Finished!
+Test results: acc_test= 0.8864 acc_val: 0.8864 dp_val: 0.0000 dp_test: 0.0000 eo_val: 0.0000 eo_test: 0.0000
+Avg results: acc: 0.8864 std: 0.0000 dp: 0.0000 std: 0.0000 eo: 0.0000 std: 0.0000
+Total GPU Memory: 42297786368
+Used GPU Memory: 18464768
+Free GPU Memory: 58720256
+
+JOB STATISTICS
+==============
+Job ID: 5120203
+Cluster: snellius
+User/Group: igardner/igardner
+State: RUNNING
+Nodes: 1
+Cores per node: 18
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 00:23:24 core-walltime
+Job Wall-clock time: 00:01:18
+Memory Utilized: 0.00 MB (estimated maximum)
+Memory Efficiency: 0.00% of 120.00 GB (120.00 GB/node)
+WARNING: Efficiency statistics may be misleading for RUNNING jobs.
