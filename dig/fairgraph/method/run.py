@@ -238,9 +238,9 @@ if DS =='NBA':
                'HPO':[1,1,0.1,1],
                'correspondence': [10, 0.1, 0.1, 0.5]}
 elif DS =='Pokec-n':
-    ds = POKEC(dataset_sample='pokec_n')
+    ds = POKEC(dataset_sample='pockec_n')
 elif DS == 'Pokec-z':
-    ds = POKEC(dataset_sample='pokec_z') 
+    ds = POKEC(dataset_sample='pockec_z') 
 else:
     raise NotImplementedError(f'this dataset is not implemented: {DS}')
 
