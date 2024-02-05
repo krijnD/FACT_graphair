@@ -10,7 +10,7 @@ import argparse
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Run Graphair model with HPO")
-    parser.add_argument('--dataset', type=str, default='NBA', choices=['NBA', 'POKEC', 'CNG', 'RNCG'],
+    parser.add_argument('--dataset', type=str, default='NBA', choices=['NBA', 'POKEC', 'CNG', 'RCNG'],
                         help='Dataset to use for training and evaluation.')
     parser.add_argument('--sens_att', type=str, default=None,
                         help='For Congress which attribute to focus on')
