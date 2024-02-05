@@ -170,6 +170,7 @@ class run():
         if dataset_name=='POKEC_Z' or dataset_name=='POKEC_N':
             # call fit_batch_GraphSAINT
             st_time = time.time()
+            print('Dataset: pokec')
             model.fit_batch_GraphSAINT(epochs=epochs,adj=adj, x=features,sens=sens,idx_sens = idx_sens,minibatch=minibatch, warmup=0, adv_epoches=1)
             print("Training time: ", time.time() - st_time)
 
