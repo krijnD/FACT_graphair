@@ -239,8 +239,12 @@ if DS =='NBA':
                'correspondence': [10, 0.1, 0.1, 0.5]}
 elif DS =='Pokec-n':
     ds = POKEC(dataset_sample='pockec_n')
+    hyperparams = {'default':[20, 0.9, 0.7, 1],
+               'HPO':[0.1,1,0.1,0.1]}
 elif DS == 'Pokec-z':
-    ds = POKEC(dataset_sample='pockec_z') 
+    ds = POKEC(dataset_sample='pockec_z')
+    hyperparams = {'default':[20, 0.9, 0.7, 1],
+               'HPO':[10,1,0.1,1]} 
 else:
     raise NotImplementedError(f'this dataset is not implemented: {DS}')
 
